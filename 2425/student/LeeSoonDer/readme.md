@@ -8,9 +8,10 @@
 ---
 
 ## 🚀 About Me
-- 🎯 Passionate about **Data Engineering and AI**
-- 💡 Always eager to learn new technologies and frameworks
-  
+- 🎯 Passionate about **Data Engineering, AI, and Cloud Computing**
+- 💡 Always eager to learn new technologies and frameworks  
+- 📊 Experienced in **ERP Systems, AI Development, and Web Applications**
+
 ---
 
 ## 🛠️ Tech Stack & Tools
@@ -33,11 +34,24 @@
 
 ---
 
+## 💼 Experience  
+
+🔹 **Pose Detection System**  
+*Built a simple real-time pose detection app using TensorFlow Lite and Android Kotlin for fitness tracking.*  
+
+🔹 **Company Information System**  
+*Designed a web-based system to manage company data efficiently with SQL optimization.*  
+
+🔹 **Student Information Management System**  
+*Created a secure and user-friendly database system for managing student records.*  
+
+---
+
 ## 🎖️ Certifications  
-🔹 **Build Your Generative AI Productivity Skills** – *Microsoft & LinkedIn* (Issued Mar 2025)  
-🔹 **Career Essentials in Data Analysis** – *Microsoft & LinkedIn* (Issued Mar 2025)  
-🔹 **Elements of AI** – *MinnaLearn* (Issued Mar 2025)  
-🔹 **Microsoft Azure AI Essentials Professional Certificate** – *Microsoft & LinkedIn* (Issued Mar 2025)  
+🔹 **Build Your Generative AI Productivity Skills** – *Microsoft & LinkedIn* (Mar 2025)  
+🔹 **Career Essentials in Data Analysis** – *Microsoft & LinkedIn* (Mar 2025)  
+🔹 **Elements of AI** – *MinnaLearn* (Mar 2025)  
+🔹 **Microsoft Azure AI Essentials Professional Certificate** – *Microsoft & LinkedIn* (Mar 2025)  
 
 ---
 
@@ -45,6 +59,7 @@
 📧 **Email:** leeder@graduate.utm.my  
 📞 **Phone:** +60 16-7659728  
 💼 **LinkedIn:** [Lee Soon Der](https://www.linkedin.com/in/lee-soon-der-b86b20260/)  
+🔗 **GitHub:** [LeeSoonDer](https://github.com/LeeSoonDer)  
 
 ---
 

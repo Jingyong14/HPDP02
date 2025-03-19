@@ -41,5 +41,5 @@
 <br>
 
 ### GitHub Stats 🔥
-<img src="https://github-readme-stats.vercel.app/api?username=yourgithubusername&show_icons=true&locale=en" alt="yourgithubusername" >
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=yourgithubusername&" alt="yourgithubusername" >
+<img src="https://github-readme-stats.vercel.app/api?username=qiaoying1014&show_icons=true&locale=en" alt="yourgithubusername" >
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=qiaoying1014&" alt="yourgithubusername" >

@@ -90,7 +90,6 @@ I am currently a 3rd-year student with a CGPA of 3.79/4.00 (Semester 5) and have
 ## Get in Touch
 
 - **Email:** [jiachangloo123@gmail.com](mailto:jiachangloo123@gmail.com)
-- **Phone:** 011 – 5993 - 9440
 - **LinkedIn:** [Loo Jia Chang](https://www.linkedin.com/in/loo-jia-chang-45213b268/)
 - **GitHub:** [Your GitHub Username](https://github.com/your-github-username)
 

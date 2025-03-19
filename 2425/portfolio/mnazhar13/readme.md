@@ -29,7 +29,7 @@
 <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Diagrams.net_Logo.svg/768px-Diagrams.net_Logo.svg.png" alt="draw.io" width="40" height="40"/>
 <img src="https://yt3.googleusercontent.com/M7S2_gnnaJT5buAfWW4tanX9NELz5PddzNCQgnRV1oP8t12s5pg4cYKMChkEoh8gtGX__KtcYKU=s900-c-k-c0x00ffffff-no-rj" alt="canva" width="40" height="40"/>
-<a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> </p>
+</p>
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=mnazhar13&show_icons=true&locale=en&layout=compact" alt="mnazhar13" /></p>
 

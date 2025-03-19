@@ -22,7 +22,7 @@ Hello! I'm Ong Yi Yan, a computer science student at UTM with a passion for **hi
 
 ## 💻 Projects  
 
-### **[Trustify(https://github.com/ONGYIYAN/MYUniversitiesHackathon_HackQuest)**  
+### **[Trustify](https://github.com/ONGYIYAN/MYUniversitiesHackathon_HackQuest)**  
 🔹 **Description:** A decentralized platform for users to review local businesses on the blockchain.  
 🔹 **Technologies Used:** Solidity, JavaScript, HTML, CSS   
 ## 📫 Contact  

@@ -1,6 +1,9 @@
 # Hi there! 👋 I'm Jaslene Yu  
 
-<img src="your-image-url" width="150" height="150" style="border-radius: 50%;" alt="Jaslene Yu">
+<p align="center">
+  <img src="https://github.com/Jingyong14/HPDP02/blob/main/2425/portfolio/jaslene-u/profile.jpg" width="150" height="180" style="border-radius: 50%;" alt="Jaslene Yu">
+</p>
+
 
 ### 🎓 Computer Science (Data Engineering) Student | Aspiring Data Professional  
 

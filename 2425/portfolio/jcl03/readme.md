@@ -1,98 +1,96 @@
-# Hi there, I'm Loo Jia Chang 👋
+# Hi there! 👋 I'm Loo Jia Chang
 
-Welcome to my GitHub portfolio! I'm a dedicated Data Engineering student and developer with a passion for IoT, Robotics, Artificial Intelligence, and Machine Learning. Currently pursuing a Bachelor of Computer Science (Data Engineering) at Universiti Teknologi Malaysia, I strive to create innovative solutions by leveraging modern technologies and data-driven insights.
 
----
+### 🎓 Computer Science (Data Engineering) Student | Aspiring Data Professional
 
-## About Me
-
-I am currently a 3rd-year student with a CGPA of 3.79/4.00 (Semester 5) and have practical experience as a Data Pipeline Engineer and Data Analytics Intern at Chumbaka HQ. I have worked on developing data pipelines, designing star schema databases, and implementing analytical dashboards. My academic background and hands-on project work have equipped me with strong problem-solving skills and a solid foundation in system development, data mining, and algorithm design.
+I’m passionate about **data engineering, full-stack development, and innovative technologies**. Currently, I’m sharpening my skills in building data pipelines, analytics, and cutting-edge projects that blend AI, IoT, and modern web technologies.
 
 ---
 
-## Skills
-
-- **Programming Languages:** C++, Java, Python, R, PHP, SQL, HTML, CSS, JavaScript
-- **Technologies & Tools:** Arduino, Deep QLearning, PHP frameworks, Database design, Star Schema, Data Preprocessing
-- **Interests:** IoT, Robotics, Artificial Intelligence, Machine Learning
+## 🌱 About Me
+- 🎓 **Undergraduate Student** at **Universiti Teknologi Malaysia** pursuing a **Bachelor of Computer Science (Data Engineering)** (3rd year, CGPA: 3.79/4.00).
+- 💼 **Data Pipeline Engineer & Data Analytics Intern** at Chumbaka HQ.
+- 💻 Skilled in **C++, Java, Python, R, PHP, SQL, HTML, CSS, JavaScript, TypeScript**.
+- 🛠️ Proficient with tools such as **Visual Studio, Jupyter Notebook, and SQL**.
+- 🌍 Multilingual & passionate about **IoT, Robotics, Artificial Intelligence, Machine Learning, and modern web development**.
 
 ---
 
-## Experience
+## 🛠️ Tech Stack
 
-### Data Pipeline Engineer, Chumbaka HQ  
+**Languages & Frameworks:**
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+
+**Tools & Environments:**
+![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+
+---
+
+## 📌 Experience
+
+**Data Pipeline Engineer** at **Chumbaka HQ**  
 *November 2024 – Present*  
-- Developed and maintained data pipelines for the Biz Dashboard, including data staging and data mart creation.
-- Designed scalable solutions to support real-time data analytics.
+- 🚀 Developed robust data pipelines for the Biz Dashboard, including data staging and data mart creation.
 
-### Data Analytics Intern, Chumbaka HQ  
+**Data Analytics Intern** at **Chumbaka HQ**  
 *July 2024 – October 2024*  
-- **Junior Innovate Impact Analysis:**  
-  - Performed data cleaning on historical data for the Junior Innovate competition.
-  - Visualized cleaned data using Google Looker Studio.
-- **Kayam Dashboard:**  
-  - Developed an algorithm to match student usernames across two systems for star schema implementation.
-- **Biz Dashboard:**  
-  - Extracted data from existing systems and designed a star schema database diagram.
-- **Event Support:**  
-  - Assisted in organizing the Klang Valley Maker Fair.
-  - Managed judging teams for the Klang Valley Young Innovator Challenge at MMU and APU.
+- 🔍 Performed data cleaning and visualization for the Junior Innovate competition using Google Looker Studio.
+- 🧩 Developed an algorithm for matching usernames and designed star schema database diagrams.
+- 📊 Assisted in event data analysis and supported initiatives like the Klang Valley Maker Fair.
 
 ---
 
-## Achievements
+## 🚀 Projects & Achievements
 
-- **My Universities Hackathon (1st Runner Up):**  
-  Designed and developed a secure, user-friendly digital platform for refugees. The solution featured blockchain-based digital identity and health records, AI-driven job recommendations, and a secure aid distribution system. Technologies used include Next.js, Ethereum, and various AI/ML tools.
+**My Universities Hackathon (1st Runner Up)**  
+- 🏆 Designed and developed a secure digital platform for refugees leveraging blockchain, AI, and modern web technologies (Next.js, Ethereum).
 
----
+**AI-powered LMS**  
+- 🤖 Built an innovative learning platform using the OpenAI Assistant API with Next.js, enhancing the learning experience with AI-driven assistance.
 
-## Projects
+**Activity Management System for YouthVenture Company**  
+- 📅 Designed and implemented an online event registration and management system using an object-oriented framework.
 
-### AI-powered LMS
-- Developed an innovative learning platform using the OpenAI Assistant API to provide AI-driven assistance.
-- Built with Next.js to ensure scalability, responsiveness, and a seamless user experience.
+**Snake Game Bot with Deep QLearning**  
+- 🎮 Modified a Python-based snake game to train a deep QLearning model, achieving high scoring streaks with the help of pandas.
 
-### Activity Management System for YouthVenture Company
-- Designed and implemented an online event registration and management system using an OOP framework.
-- Enabled participants to register and staff to efficiently manage events.
+**Ticket Booking System (SPM Project)**  
+- 🎟️ Developed a functional ticket booking system using PHP, SQL, HTML, and CSS.
 
-### Snake Game Bot Model using Deep QLearning
-- Modified a classic snake game in Python to facilitate training with a deep QLearning algorithm.
-- Achieved a high scoring streak (around 60 points per game) by utilizing the pandas library for model training.
+**ESP8266 WiFi Projects**  
+- 🤖 Created a WiFi-controlled robot car using ESP8266 NodeMCU and ESP-01 modules.
+- 🔐 Developed a WiFi captive portal for ESP modules, implementing secure authentication.
 
-### Ticket Booking System (SPM Project)
-- Developed a ticket booking system using PHP, SQL, HTML, and CSS to streamline event reservations.
-
-### ESP8266 WiFi Remote Control Car
-- Created a WiFi-controlled robot car using the ESP8266 NodeMCU and ESP-01 modules.
-- Developed HTTP-based controls to enable mobile phone integration.
-
-### WiFi Captive Portal for ESP Module
-- Implemented a secure WiFi authentication method for ESP-01 modules, ensuring controlled device interaction.
-
-### Smart Warehouse Management System (YIC 2019)
-- Developed an inventory tracking system using MIT App Inventor, APIs, and Bluetooth.
-- Built a prototype using Arduino UNO MCUs, HC-05 Bluetooth modules, screens, LEDs, and buzzers.
+**Smart Warehouse Management System (YIC 2019)**  
+- 📦 Built an inventory tracking system using MIT App Inventor, Arduino, and Bluetooth, streamlining warehouse management.
 
 ---
 
-## Education
+## 🎓 Education
 
 **Bachelor of Computer Science (Data Engineering)**  
 *Universiti Teknologi Malaysia*  
 - **Year:** 3rd Year (Semester 5)  
 - **CGPA:** 3.79/4.00  
-- **Relevant Coursework:** Information Retrieval, Data Mining, System Development Technology, Database, Object Oriented Programming, Data Structure & Algorithm
+- **Relevant Coursework:** Information Retrieval, Data Mining, System Development Technology, Database, Object-Oriented Programming, Data Structures & Algorithms
 
 ---
 
-## Get in Touch
-
+## 📫 Connect with Me
 - **Email:** [jiachangloo123@gmail.com](mailto:jiachangloo123@gmail.com)
 - **LinkedIn:** [Loo Jia Chang](https://www.linkedin.com/in/loo-jia-chang-45213b268/)
 - **GitHub:** [Your GitHub Username](https://github.com/your-github-username)
 
 ---
 
-Thank you for visiting my portfolio! If you have any questions or collaboration ideas, feel free to reach out.
+*Thank you for visiting my portfolio! Feel free to reach out if you'd like to collaborate or discuss exciting projects.*

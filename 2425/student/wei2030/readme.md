@@ -25,8 +25,8 @@
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwTsKBgt67g7V83MUa-6I2Ex33DrnrxBDwMw&s" height="50px" width="50px" align="center" alt="Python">
 </p>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=wei2030&show_icons=true&locale=en&layout=compact" alt="wei2030" /></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=wei2030&show_icons=true&locale=en" alt="wei2030" /></p>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=wei2030&" alt="wei2030" /></p>
+<p>
+  <img src="https://github-readme-stats.vercel.app/api?username=wei2030&show_icons=true&locale=en" alt="wei2030">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=wei2030&" alt="wei2030">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=wei2030&show_icons=true&locale=en&layout=compact" alt="wei2030" />
+</p>

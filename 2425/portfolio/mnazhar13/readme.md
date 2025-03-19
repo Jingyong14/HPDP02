@@ -1,4 +1,4 @@
-<p align="center"><img align="center" alt="Coding" width="200" src="Gambar Portfolio.jpeg">
+<p align="center"><img align="center" alt="mnazhar13" width="200" src="Gambar Portfolio.jpeg">
 
 <h1 align="center">Hi 👋, I'm Muhammad Nur Azhar Bin Mohd Yazid</h1>
 <h3 align="left">I'm currently studying at Universiti Teknologi Malaysia as a 3rd-year Data Engineering student. I'm still eagerly learning all about the things that needed to be a full time developer.</h3>

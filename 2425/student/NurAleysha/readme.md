@@ -8,18 +8,22 @@
 
 <h1 align="center">Nur Aleysha Qurratu'aini Bt Mat Salleh</h1>
 
+<p align ="center">I'm Nur Aleysha, a third year Data Engineering student from Selangor. Always ready to pursue new
+challenges and grow, especially in the computer science field.</p>
 
-#### 👩🏻‍🎓Third year Data Engineering student from Selangor
+## 🎓 Education
 
-#### 📚 Learning the fundamentals of GitHub
+#### Bachelor of Computer Science (Data Engineering) with honours
 
-#### ⌨️ Learning C++
+## 💻 Skills
 
-#### Skills 💻 : C++ & Java
+#### Web Development: HTML, PHP, CSS
 
-## Education
+#### Programming: C++, Java, Python
 
-#### 🎓 Bachelor of Computer Science (Data Engineering) with honours
+#### Databases: MySQL
+
+#### Design & Tools/Software: Figma, SAP
 
 
 <h3 align="left">Languages and Tools:</h3>

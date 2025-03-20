@@ -1,5 +1,14 @@
 # Hi there, I am Aleysha 👋
 
+<p align="center">
+<div align="center">
+  <img src="" alt="alie" width="350px" height="350px">
+</div>
+</p>
+
+<h1 align="center">Nur Aleysha Qurratu'aini Bt Mat Salleh</h1>
+
+
 #### 👩🏻‍🎓Third year Data Engineering student from Selangor
 
 #### 📚 Learning the fundamentals of GitHub

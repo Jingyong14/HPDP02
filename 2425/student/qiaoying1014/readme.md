@@ -4,7 +4,7 @@
 <h3 align="center">Bachelor of Computer Science (Data Engineering) student at Universiti Teknologi Malaysia. Passionate about data analytics, AI, and smart systems.</h3>
 <img align="right" alt="coding" width="400" src="https://i.pinimg.com/originals/fc/71/63/fc71635c7f1b09ed30413f59bb749582.gif"></a>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=qiaoying1014&label=Profile%20views&color=0e75b6&style=flat" alt="yourgithubusername" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=qiaoying1014&label=Profile%20views&color=0e75b6&style=flat" alt="qiaoying1014" /> </p>
 
 - 🌱 I’m currently learning **High Performance Data Processing**  
 

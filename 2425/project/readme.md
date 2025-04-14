@@ -5,6 +5,8 @@
 <a href="https://github.com/drshahizan/HPDP/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/drshahizan/HPDP?color=2b9348"></a>
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fdrshahizan%2FHPDP&labelColor=%23d9e3f0&countColor=%23697689&style=flat)
 
+## If any link is unclickable/returns error 404, [refer this link](https://github.com/drshahizan/HPDP/tree/main/2425/project)
+
 # 📄 Project 1: Optimizing High-Performance Data Processing for Large-Scale Web Crawlers
 
 ## Project Synopsis

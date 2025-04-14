@@ -1,5 +1,4 @@
-Follow this template for submission
-
+Follow this template for submission; example structure refer [here](https://github.com/drshahizan/HPDP/tree/main/2425/project/p1/sample)
 
 ```
 📁 p1/[your group]

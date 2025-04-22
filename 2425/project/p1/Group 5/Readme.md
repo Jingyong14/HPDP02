@@ -37,7 +37,7 @@
     </tr>
     <tr>
         <td>1.</td>
-        <td>20-4-202</td>
+        <td>20-4-2025</td>
         <td>All Members</td>
         <td>Meeting 1</td>
         <td>Proposal discussion:
@@ -53,7 +53,7 @@
     </tr>
     <tr>
         <td>2.</td>
-        <td>22-4-202</td>
+        <td>22-4-2025</td>
         <td>All Members</td>
         <td>Proposal Submission</td>
         <td>Completed and submitted the project proposal</td>

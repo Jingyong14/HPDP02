@@ -37,7 +37,7 @@
     </tr>
     <tr>
         <td>1.</td>
-        <td>20-04-2025</td>
+        <td>16-04-2025</td>
         <td>All Members</td>
         <td>Meeting 1</td>
         <td>Discussion of project proposal, distribution of initial tasks, and planning of submission timeline.</td>

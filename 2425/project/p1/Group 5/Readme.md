@@ -1,6 +1,6 @@
 # Group 5: Optimizing High-Performance Data Processing for Web Crawling on Mudah.my
 
-<!-- Table for group members -->
+<h2>Group Members</h2>
 <table border="1">
     <tr>
         <th>Group Member</th>
@@ -35,13 +35,12 @@
         <th>Activity</th>
         <th>Details</th>
     </tr>
-        <tr>
+    <tr>
         <td>1.</td>
         <td>20-4-202</td>
         <td>All Members</td>
         <td>Meeting 1</td>
         <td>Proposal discussion:
-        <br>
         <br>
             <ul>
             <li>Data fields to be extracted</li>
@@ -51,5 +50,12 @@
             <li>Architecture diagram</li>
             </ul>
         </td>
+    </tr>
+    <tr>
+        <td>2.</td>
+        <td>22-4-202</td>
+        <td>All Members</td>
+        <td>Proposal Submission</td>
+        <td>Completed and submitted the project proposal</td>
     </tr>
 </table>

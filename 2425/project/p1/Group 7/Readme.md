@@ -47,6 +47,6 @@
         <td>22-04-2025</td>
         <td>All Members</td>
         <td>Proposal Submission</td>
-        <td>Final proposal submitted to supervisor for review and approval.</td>
+        <td>Draft proposal submitted for approval.</td>
     </tr>
 </table>

@@ -38,7 +38,7 @@ We designed a system that:
 ## 👥 Team Members – Group 4
 
 - **[SOH HAN WEI](https://github.com/wei2030)** – Project Lead, Data Crawling
-- **[xxx](https://)** – MongoDB Integration, Data Cleaning
+- **[LOO JIA CHANG](https://github.com//jcl03)** – MongoDB Integration, Data Cleaning
 - **[xxx](https://)** – Polars Optimization, Benchmarking
 - **[xxx](https://)** – Documentation, Report Preparation
 

@@ -34,4 +34,4 @@ This project is a collaboration by **Group 4** for the HPDP P1 course. Special t
 - **[SOH HAN WEI](https://github.com/wei2030)** – Project Lead, Data Crawling
 - **[LOO JIA CHANG](https://github.com/jcl03)** – MongoDB Integration, Data Cleaning
 - **[xxx](https://)** – Polars Optimization, Benchmarking
-- **[xxx](https://)** – Documentation, Report Preparation
+- **[NUR ARINI FATIHAH BINTI MOHD SABIR](https://github.com/arinifthh)** – Documentation, Report Preparation

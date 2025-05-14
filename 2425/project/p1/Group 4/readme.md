@@ -39,7 +39,7 @@ We designed a system that:
 
 - **[SOH HAN WEI](https://github.com/wei2030)** – Project Lead, Data Crawling
 - **[LOO JIA CHANG](https://github.com//jcl03)** – MongoDB Integration, Data Cleaning
-- **[xxx](https://)** – Polars Optimization, Benchmarking
+- **[MUHAMMAD NUR AZHAR BIN MOHD YAZID](https://github.com//mnazhar_13)** – Polars Optimization, Benchmarking
 - **[NUR ARINI FATIHAH BINTI MOHD SABIR](https://github.com/arinifthh)** – Documentation, Report Preparation
 
 ---

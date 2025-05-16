@@ -71,7 +71,7 @@ This makes NST a suitable choice for large-scale, structured data extraction.
 
 ## 📄 Project Documentation
 
-- 📘 [Final Report (PDF)](https://github.com/Jingyong14/HPDP02/tree/main/2425/project/p1/Group%207/report)
-- 📊 [Presentation Slides (PDF)](link_to_presentation_slides.pdf)
+- 📘 [Final Report](https://github.com/Jingyong14/HPDP02/tree/main/2425/project/p1/Group%207/report)
+- 📊 [Presentation Slides](link_to_presentation_slides.pdf)
 
 ---

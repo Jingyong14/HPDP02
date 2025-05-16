@@ -1,6 +1,6 @@
-# Group 7: Optimizing High-Performance Data Processing for Large-Scale Web Crawlers - News Straits Times (NST Online)
+# 🚀 Group 7: Optimizing High-Performance Data Processing for Large-Scale Web Crawlers - News Straits Times (NST Online)
 
-<h2>Group Members</h2>
+## Group Members
 <table border="1">
     <tr>
         <th>Group Member</th>
@@ -26,27 +26,52 @@
 
 <br>
 
-<h2>Logbook</h2>
-<table border="1">
-    <tr>
-        <th>No.</th>
-        <th>Date</th>
-        <th>Team Members</th>
-        <th>Activity</th>
-        <th>Details</th>
-    </tr>
-    <tr>
-        <td>1.</td>
-        <td>16-04-2025</td>
-        <td>All Members</td>
-        <td>Meeting 1</td>
-        <td>Discussion of project proposal, distribution of initial tasks, and planning of submission timeline.</td>
-    </tr>
-    <tr>
-        <td>2.</td>
-        <td>22-04-2025</td>
-        <td>All Members</td>
-        <td>Proposal Submission</td>
-        <td>Draft proposal submitted for approval.</td>
-    </tr>
-</table>
+## 📌 Introduction
+
+This project involves developing a web crawler to extract a large volume of news articles and then performing data processing tasks such as cleaning and preprocessing. The focus is on evaluating and optimizing the performance of these tasks using different Python libraries, specifically Pandas and Dask. By comparing these tools, the project aims to determine the most efficient approach for handling large-scale datasets in terms of speed and resource utilization.
+
+---
+
+## 🎯 Objectives
+
+- ✅ Develop a web crawler to extract at least 100,000 news articles from New Straits Times (NST) website.
+- ✅ Save extracted data in CSV format for structured storage.
+- ✅ Clean and preprocess the raw dataset to ensure quality.
+- ✅ Compare performance before and after optimization using relevant metrics.
+
+---
+
+## 🌐 Target Website
+
+Source: [New Straits Times (NST)](http://www.nst.com.my)  
+NST is a leading English-language news portal in Malaysia that provides rich and consistently structured content across categories like:
+
+- Nation
+- Politics
+- Business
+- Lifestyle
+- Sports
+
+This makes NST a suitable choice for large-scale, structured data extraction.
+
+---
+
+## 🗂️ Data Fields Extracted
+
+| No | Field Name       | Data Type | Description                                          |
+|----|------------------|-----------|------------------------------------------------------|
+| 1  | Section          | String    | News category (e.g., crime, politics, health)        |
+| 2  | Publication Date | Date      | Published date in mm:dd:yyyy @ hh:mm format        |
+| 3  | Headline         | String    | Article title                                        |
+| 4  | Summary          | String    | Brief summary of the article                         |
+
+> ⚠️ Ethical scraping techniques are followed (e.g., request delays, robots.txt compliance) to minimize server load and respect website rules.
+
+---
+
+## 📄 Project Documentation
+
+- 📘 [Final Report (PDF)](link_to_final_report.pdf)
+- 📊 [Presentation Slides (PDF)](link_to_presentation_slides.pdf)
+
+---

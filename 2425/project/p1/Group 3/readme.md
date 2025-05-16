@@ -59,7 +59,7 @@ We designed a system that:
 
 You can view our final deliverables here:
 
-- 📘 [Final Report (PDF)](report/Final_Report.pdf)
+- 📘 [Final Report (PDF)](2425/project/p1/Group 3/report/Group 3_Project 1_Report.pdf)
 - 🖥️ [Presentation Slides (PPTX)](report/Presentation_Slides.pptx)
 
 ---

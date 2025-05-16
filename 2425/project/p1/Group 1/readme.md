@@ -57,7 +57,6 @@ This project focuses on developing a web crawler and data processing pipeline to
 - 📦 [Part 2](https://github.com/Jingyong14/HPDP02/tree/main/2425/project/p1/Group%201/p2)    
 - 📄 [Final Report](https://github.com/Jingyong14/HPDP02/tree/main/2425/project/p1/Group%201/report)
 
-> ⚠️ Replace all links above with your actual GitHub file URLs.
 
 ---
 

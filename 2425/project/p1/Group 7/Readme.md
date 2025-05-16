@@ -48,8 +48,8 @@ NST is a leading English-language news portal in Malaysia that provides rich and
 
 - Nation
 - Politics
-- Business
-- Lifestyle
+- Crimes & Courts
+- Government & Public Policy
 - Sports
 
 This makes NST a suitable choice for large-scale, structured data extraction.

@@ -1,0 +1,6 @@
+Method,Time (s),Throughput (rows/s),Memory Used (MB)
+Pandas ,1.3986,86828.3348,22.3516
+Vectorized Pandas,1.2207,99483.2306,30.5312
+Polars,0.4165,291564.5276,56.2227
+Dask ,0.5102,238023.3072,3.2461
+PySpark,0.8057,150722.21,0

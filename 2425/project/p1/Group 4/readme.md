@@ -6,8 +6,8 @@ Welcome to our project repository for **HPDP P1** – developed by **Group 4**. 
 
 You can view our final deliverables here:
 
-- 📘 **[Final Report (PDF)](report/HPDP Project Report Group 4.pdf)**
-- 🖥️ **[Presentation Slides (PPTX)](report/HPDP P1 Presentation.pdf)**
+- 📘 [Final Report (PDF)](https://github.com/Jingyong14/HPDP02/blob/main/2425/project/p1/Group%204/report/HPDP%20P1%20Presentation.pdf)
+- 🖥️ [Presentation Slides (PPTX)](https://github.com/Jingyong14/HPDP02/blob/main/2425/project/p1/Group%204/report/HPDP%20Project%20Report%20Group%204.pdf)
 
 ---
 

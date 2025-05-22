@@ -14,17 +14,23 @@ This project focuses on developing a web crawler and data processing pipeline to
 
 ### 📊 Data Fields Extracted
 
-- Car title  
-- Price (RM)  
-- Brand & model  
-- Year  
-- Mileage  
-- Transmission  
-- Fuel type  
-- Location  
-- Condition  
-- Sales channel  
-- Installment (RM/month)
+| Attribute        | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| Car Name         | The full name of the car, including model year, brand, and trim/version details. |
+| Car Brand        | The manufacturer or brand of the vehicle.                                  |
+| Car Model        | The specific model of the car.                                              |
+| Manufacture Year | The year in which the car was made.                                        |
+| Body Type        | The style or design of the car.                                             |
+| Fuel Type        | The type of fuel the car uses.                                              |
+| Mileage          | The total distance the car has been driven, measured in kilometres (KM).    |
+| Transmission     | The type of transmission the car uses.                                      |
+| Color            | The colour of the car’s exterior.                                           |
+| Price            | The cost of the car, usually in the local currency.                        |
+| Installment      | The monthly payment if the car is purchased through an installment plan.    |
+| Condition        | The state of the car, either new, used or reconditioned.                   |
+| Seat Capacity    | The number of people the car can accommodate, including the driver and passengers. |
+| Location         | The geographic location where the car is being sold.                        |
+| Sales Channel    | The type of seller or platform through which the car is being sold.         |
 
 ---
 

@@ -34,5 +34,5 @@ We designed a system that:
 
 You can view our final deliverables here:
 
-- 📘 [Final Report (PDF)](report/Final_Report.pdf)
-- 🖥️ [Presentation Slides (PPTX)](report/Presentation_Slides.pptx)
+- 📘 [Final Report (PDF)](report/Group 5 - HPDP Project 1.pdf)
+- 🖥️ [Presentation Slides (PPTX)](report/Group 5 - Presentation Slide.pdf)

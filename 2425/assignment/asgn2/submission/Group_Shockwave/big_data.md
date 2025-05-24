@@ -14,7 +14,7 @@ In this section, we decided to select our dataset in Kaggle due to its functiona
 
 The dataset we chose is the **continental2.csv** file from the _COVID-19 in the American Continent_ dataset, which consists of **1.07 GB** of data. This dataset records the number of COVID-19 cases that happened across the years 2020 to 2022 in different countries.
 
-![Kaggle CSV View](figures/kaggle_screenshot.png)  
+![Kaggle CSV View](figures/Kaggle_Dataset.png)  
 **Figure 1.1**: View of the CSV file in Kaggle
 
 The dataset consists of **14 columns** (2 irrelevant ID columns) and **1,048,576 rows** of data.

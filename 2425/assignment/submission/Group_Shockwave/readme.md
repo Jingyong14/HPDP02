@@ -2,7 +2,7 @@
 <p>LIM JING YONG A22EC0182</p>
 <p>LEE SOON DER A22EC0065</p>
 
-<p>Our group uses the dataset "[COVID-19 in the American Continent](https://www.kaggle.com/datasets/tavoglc/covid19-in-the-american-continent/data?select=continental2.csv)" from Kaggle to perform Big Data Analytics.</p>
+Our group uses the dataset [COVID-19 in the American Continent](https://www.kaggle.com/datasets/tavoglc/covid19-in-the-american-continent/data?select=continental2.csv) from Kaggle to perform Big Data Analytics.
 
 **<p>Library used: Pandas, Polars, Dask</p>**
 

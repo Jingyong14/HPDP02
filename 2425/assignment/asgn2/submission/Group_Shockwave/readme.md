@@ -13,7 +13,7 @@ Our group uses the dataset [COVID-19 in the American Continent](https://www.kagg
 <br>
 
 ### Links
-[Assignment 2](https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/submission/Group_Shockwave/big_data.md)
+[Assignment 2](https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_Shockwave/big_data.md)
 <br>
 [Pandas library Google Colab](https://colab.research.google.com/drive/1f-2D5nJEvXicxa16Qt-VEDMfa279nZLc?usp=sharing#scrollTo=rIwM8MZ_0pZO)
 <br>

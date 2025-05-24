@@ -12,6 +12,14 @@ This assignment is designed to develop students' skills in academic writing and 
 
 All information refer [HERE](https://github.com/drshahizan/HPDP/tree/main/2425/assignment)
 
+## 📘 Assignment 2: Mastering Big Data Handling
+
+In the modern data-driven world, organizations face the challenge of managing and extracting insights from *massive datasets* that far exceed the capabilities of traditional data handling tools. This assignment provides hands-on experience in managing such datasets using Python and its scalable libraries.
+
+Students will apply real-world strategies for handling data volumes above **700MB** using techniques such as **chunking**, **sampling**, **type optimization**, and **parallel computing with Dask**.
+
+All information refer [HERE](https://github.com/drshahizan/HPDP/blob/main/2425/assignment/ass2.md)
+
 ## Contribution 🛠️
 Please create an [Issue](https://github.com/drshahizan/HPDP/issues) for any improvements, suggestions or errors in the content.
 

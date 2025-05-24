@@ -13,6 +13,7 @@ Our group uses the dataset [COVID-19 in the American Continent](https://www.kagg
 <br>
 
 ### Links
+<p>Assignment 2: </p>
 <p>Pandas library Google Colab: https://colab.research.google.com/drive/1f-2D5nJEvXicxa16Qt-VEDMfa279nZLc?usp=sharing#scrollTo=rIwM8MZ_0pZO</p>
 <p>Polars library Google Colab: https://colab.research.google.com/drive/1lzwhVm62mxMs00rsRQB7ycp2LnQmqlmj?usp=sharing</p>
 <p>Dask library Google Colab: https://colab.research.google.com/drive/1fVwd_XRN0ipIYVOyB8UT7EjTQXyrhxu9?usp=sharing</p>

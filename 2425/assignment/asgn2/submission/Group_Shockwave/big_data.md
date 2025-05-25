@@ -270,5 +270,6 @@ Figure 3.2 shows the output after running the code. Dask successfully demonstrat
 <div align="center">
 	<strong>Polars > Dask > Pandas</strong>
 </div>
+<br>
 
 <p>Where the dataset is not significantly large while processing operation is simple.</p>

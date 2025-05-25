@@ -34,6 +34,16 @@ This dataset is particularly suitable for a big data handling assignment because
 
 <h2>Task 2: Load and Inspect Data</h2>
 
+<p align="center"> <img src="https://github.com/user-attachments/assets/0a805554-e4a2-464b-a503-78e5e7c4ea6e" alt="ss code 1" /> 
+<br><strong>Figure 2.1 - Kaggle API</strong> </p>
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/16e9d301-8f6a-4542-ab22-499dd2d45f63" alt="ss code 2" /> 
+<br><strong>Figure 2.1 - Download and Unzip </strong> </p>
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/fb66f801-9131-4659-a855-4c7ebe399309" alt="ss code 3" /> 
+<br><strong>Figure 2.1 - Mounted to Drive </strong> </p>
+
+
 <h2>Task 3: Apply Big Data Handling Strategies</h2>
 
 <h2>Task 4: Comparative Analysis</h2>

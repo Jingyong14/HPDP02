@@ -23,7 +23,6 @@ The dataset consists of **14 columns** (2 irrelevant ID columns) and **1,048,576
 ![CSV Screenshot Part 2](figures/csv_screenshot2.png)  
 **Figure 1.2**: Data columns and row count from the CSV file
 
-<br></br>
 
 ## Task 2: Load and Inspect Data
 
@@ -49,13 +48,12 @@ After loading the dataset, we performed a basic inspection to understand its str
 ![Inspecting the dataset with Pandas](figures/Task2.4.png)  
 **Figure 2.4:** Dataset inspection using Pandas
 
-<br>
 
 ## Task 3: Apply Big Data Handling Strategies
 
 In this section, we showcase how the Dask and Polars libraries are used to optimize the performance of dataset loading.
 
-## Dask
+### Dask
 
 Dask is a parallel computing library that scales the Pandas interface for large-memory data processing using lazy evaluation and task scheduling. In this section, we apply five optimization strategies using Dask to handle a large dataset efficiently. The complete implementation is shown in Figure 3.1 below.
 
@@ -92,7 +90,7 @@ Finally, Figure 3.2 shows the output after running the code. Dask successfully d
 ![Dask Output](figures/Task3.2.png)  
 **Figure 3.2:** Output after executing all Dask operations
 
-## Polars
+### Polars
 
 Next, the **Polars** library is also used for optimization of dataset loading. Polars excels in handling datasets that are big but still fit into memory, making it a perfect choice for our scenario.
 
@@ -113,5 +111,30 @@ Figure 3.4 shows the output after running the code. Output of column names were 
 ![Figure 3.4 - Output of the Polars optimization code](figures/polars_result.png)
 
 **Figure 3.4:** Output of the Polars optimization code
+
+
+## Task 4: Comparative Analysis
+
+In this section, we evaluate the performance of each library and present the results of our qualitative performance measurements using graphs.
+
+### How We Compare
+
+To assess performance, we use Python libraries such as `time`, `psutil`, and `os` to calculate:
+- The **time taken**
+- The **total memory used**
+
+These measurements are taken at the **start** and **end** of the code execution that processes a large dataset. Each experiment is repeated **three times** to calculate the **average** processing time and memory usage for greater accuracy.
+
+### Code Snippets
+
+The following figure shows the code used to import performance measurement libraries and initialize tracking variables:
+
+![Figure 4.1 - Initial performance measurement code](figures/analysis_initial.png)  
+**Figure 4.1:** Code snippet for importing libraries and initializing performance tracking
+
+The next figure shows the code for recording final metrics and computing the actual time taken and memory consumed during the operation:
+
+![Figure 4.2 - Final performance measurement code](figures/analysis_final.png)  
+**Figure 4.2:** Code snippet for capturing final measurements and calculating performance
 
 

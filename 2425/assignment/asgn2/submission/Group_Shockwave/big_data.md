@@ -49,7 +49,7 @@ After loading the dataset, we performed a basic inspection to understand its str
 ![Inspecting the dataset with Pandas](figures/Task2.4.png)  
 **Figure 2.4:** Dataset inspection using Pandas
 
-<br></br>
+<br>
 
 ## Task 3: Apply Big Data Handling Strategies
 
@@ -91,5 +91,27 @@ Finally, Figure 3.2 shows the output after running the code. Dask successfully d
 
 ![Dask Output](figures/Task3.2.png)  
 **Figure 3.2:** Output after executing all Dask operations
+
+## Polars
+
+Next, the **Polars** library is also used for optimization of dataset loading. Polars excels in handling datasets that are big but still fit into memory, making it a perfect choice for our scenario.
+
+Polars utilizes **lazy evaluation** and **multithreading**, which we will demonstrate in the figures below.
+
+Figure 3.3 shows the full code used in our Polars library optimization technique:  
+- **Line 1**: Polars library is imported.  
+- **Line 4**: Dataset is read lazily using the `lazy()` function.  
+- **Lines 7 to 14**: Polars methods are used to display dataset shape, columns, and data types.  
+- **Lines 17 to end**: Null and duplicated data are dropped, and the `collect()` function is used to trigger actual execution.
+
+![Figure 3.3 - Full coding of Polars optimization technique](figures/polars_code.png)
+
+**Figure 3.3:** Full coding of Polars optimization technique
+
+Figure 3.4 shows the output after running the code. Output of column names were truncated due to string length exceeding browser width.
+
+![Figure 3.4 - Output of the Polars optimization code](figures/polars_output.png)
+
+**Figure 3.4:** Output of the Polars optimization code
 
 

@@ -1,5 +1,16 @@
 
-# 🚗 Carlist.my Web Crawler & Big Data Processing Project
+<p align="center">
+🚗 **Carlist.my Web Crawler & Big Data Processing Project**
+</p>
+
+<p align="center">
+| Name                                 | Matrics Number    |
+|------------------------------------|------------------|
+| MARCUS JOEY SAYNER                 | A22EC0193        |
+| MUHAMMAD LUQMAN HAKIM BIN MOHD RIZAUDIN | A22EC0086  |
+| CAMILY TANG JIA LEI                | A22EC0039        |
+| GOH JING YANG                     | A22EC0052        |
+</p>
 
 ## 📝 Project Overview
 

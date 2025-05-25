@@ -23,6 +23,8 @@ The dataset consists of **14 columns** (2 irrelevant ID columns) and **1,048,576
 ![CSV Screenshot Part 2](figures/csv_screenshot2.png)  
 **Figure 1.2**: Data columns and row count from the CSV file
 
+<br></br>
+
 ## Task 2: Load and Inspect Data
 
 In this section, the dataset was obtained using the Kaggle API and processed with Pandas in Google Colab. We also performed a basic inspection to understand the dataset's structure and contents.

@@ -207,6 +207,6 @@ Last but not least, Polars is the best library option for our exact scenario. Po
 
 With that being said, we can determine libraries efficiency can be ordered as:
 
-Polars > Dask > Pandas
+**Polars > Dask > Pandas**
 
 Where the dataset is not significantly large while processing operation is simple.

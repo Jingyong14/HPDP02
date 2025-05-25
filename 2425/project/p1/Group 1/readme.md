@@ -8,6 +8,7 @@
 | CAMILY TANG JIA LEI                   | A22EC0039        |
 | GOH JING YANG                        | A22EC0052        |
 
+---
 
 ## 📝 Project Overview
 

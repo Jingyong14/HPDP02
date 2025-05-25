@@ -43,6 +43,22 @@ We designed a system that:
 
 ---
 
+## 🌐 Target Website
+
+**Website**: [Utusan Malaysia](https://www.utusan.com.my/)  
+**Description**: Utusan Malaysia is a Malaysian online news portal that publishes articles on current events, politics, business, and entertainment. It serves as the target website for this project due to its structured layout and regularly updated content, making it suitable for web scraping and data analysis.
+
+### 📊 Data Fields Extracted
+
+| Attribute        | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| Article Title    | The headline or title of the news article.  |
+| Publication Date | The date on which the article was published on the Utusan Malaysia website, used to track content chronology. |
+| Article Category | The classification of the article based on its subject matter, such as politics, business, or entertainment.  |
+| Article URL | The direct web address (link) to the full article, allowing access to the original source for reference or validation. |
+
+---
+
 ## 🎯 Goals and Deliverables
 
 - ✅ Collect large-scale Utusan Malaysia news data

@@ -140,4 +140,46 @@ The next figure shows the code for recording final metrics and computing the act
 ![Figure 4.2 - Final performance measurement code](figures/analysis_final.png)  
 **Figure 4.2:** Code snippet for capturing final measurements and calculating performance
 
+### Result
+
+### Performance Results by Library
+
+Figure 4.3 shows the results of the first, second, and third run using the Pandas library.
+
+![Pandas Run 1](figures/Task4.3.1.jpg)  
+![Pandas Run 2](figures/Task4.3.2.jpg)  
+![Pandas Run 3](figures/Task4.3.3.jpg)  
+**Figure 4.3:** Three runs using Pandas library
+
+Figure 4.4 shows the results of the first, second, and third run using the Polars library.
+
+![Polars Run 1](figures/Task4.3.4.jpg)  
+![Polars Run 2](figures/Task4.3.5.jpg)  
+![Polars Run 3](figures/Task4.3.6.jpg)  
+**Figure 4.4:** Three runs using Polars library
+
+Figure 4.5 shows the results of the first, second, and third run using the Dask library.
+
+![Dask Run 1](figures/Task4.3.7.png)  
+![Dask Run 2](figures/Task4.3.8.png)  
+![Dask Run 3](figures/Task4.3.9.png)  
+**Figure 4.5:** Three runs using Dask library
+
+---
+
+### Execution Time Comparison
+
+Figure 4.6 presents a bar chart showing the processing time (in seconds) taken by each method over three repeated runs. Pandas took around 27 seconds on average. Polars consistently outperformed the others by completing tasks in as little as 11–16 seconds. Dask, while designed for scalability, showed longer processing time (around 42 seconds) due to task scheduling and overhead in parallel execution.
+
+![Execution Time Bar Chart](figures/Task4.4.png)  
+**Figure 4.6:** Execution time comparison of Pandas, Polars, and Dask
+
+---
+
+### Memory Usage Comparison
+
+Figure 4.7 presents a line chart showing the memory usage (in MB) for each approach across three runs. Pandas used the most memory (~1350MB), which may be problematic for large datasets. Polars significantly reduced memory usage to around 1100MB due to its efficient memory management in Rust. Dask showed the lowest memory usage because it loads data in chunks rather than all at once.
+
+![Memory Usage Line Chart](figures/Task4.5.png)  
+**Figure 4.7:** Memory usage comparison across Pandas, Polars, and Dask
 

@@ -23,3 +23,28 @@ The dataset consists of **14 columns** (2 irrelevant ID columns) and **1,048,576
 ![CSV Screenshot Part 2](figures/csv_screenshot2.png)  
 **Figure 1.2**: Data columns and row count from the CSV file
 
+## Task 2: Load and Inspect Data
+
+In this section, the dataset was obtained using the Kaggle API and processed with Pandas in Google Colab. We also performed a basic inspection to understand the dataset's structure and contents.
+
+Figure 2.1 below shows the use of the Kaggle API to automate dataset retrieval. This step is mandatory for enabling authenticated downloads in Colab.
+
+<img src="figure/Task2_1.png" alt="Using Kaggle API in Colab" width="600"/>  
+**Figure 2.1:** Use of Kaggle API in Google Colab
+
+Figure 2.2 below shows the installation of the Kaggle CLI tool and the command to download the desired dataset. This step automates the dataset retrieval process from the Kaggle website.
+
+<img src="figure/Task2_2.png" alt="Installing Kaggle CLI and downloading dataset" width="600"/>  
+**Figure 2.2:** Installing Kaggle CLI and downloading dataset
+
+Figure 2.3 below shows the code used to load the dataset (`continental2.csv`) into memory using the Pandas library. This method is commonly used for small to medium-sized datasets and is sufficient for initial inspection and cleaning.
+
+<img src="figure/Task2_3.png" alt="Loading CSV with Pandas" width="600"/>  
+**Figure 2.3:** Loading dataset using Pandas
+
+After loading the dataset, we performed a basic inspection to understand its structure and contents, as shown in Figure 2.4 below.
+
+<img src="figure/Task2_4.png" alt="Inspecting the dataset with Pandas" width="600"/>  
+**Figure 2.4:** Dataset inspection using Pandas
+
+

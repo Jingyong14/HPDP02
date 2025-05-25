@@ -22,6 +22,7 @@ The dataset consists of **14 columns** (2 irrelevant ID columns) and **1,048,576
 ![CSV Screenshot Part 1](figures/csv_screenshot1.png)  
 ![CSV Screenshot Part 2](figures/csv_screenshot2.png)  
 **Figure 1.2**: Data columns and row count from the CSV file
+
 <br>
 
 ## Task 2: Load and Inspect Data

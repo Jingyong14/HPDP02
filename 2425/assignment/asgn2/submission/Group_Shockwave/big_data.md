@@ -1,27 +1,33 @@
-# SECP3133 High Performance Data Processing - Section 02
+<h1>SECP3133 High Performance Data Processing - Section 02</h1>
 
-## Assignment 2 - Mastering Big Data Handling
+<h2>Assignment 2 - Mastering Big Data Handling</h2>
 
-### Group Shockwave:
-- **LIM JING YONG** - A22EC0182  
-- **LEE SOON DER** - A22EC0065
+<h3>Group Shockwave:</h3>
+<ul>
+<li><strong>LIM JING YONG</strong> - A22EC0182</li>
+<li><strong>LEE SOON DER</strong> - A22EC0065</li>
+</ul>
 
----
+<hr>
 
-## Task 1: Dataset Selection
+<h2>Task 1: Dataset Selection</h2>
 
-In this section, we decided to select our dataset in Kaggle due to its functionality to show the size of the dataset (in MB). This allows us to quickly find suitable and large enough dataset to undergo optimization during the dataset loading process.
+<p>In this section, we decided to select our dataset in Kaggle due to its functionality to show the size of the dataset (in MB). This allows us to quickly find suitable and large enough dataset to undergo optimization during the dataset loading process.</p>
 
-The dataset we chose is the **continental2.csv** file from the _COVID-19 in the American Continent_ dataset, which consists of **1.07 GB** of data. This dataset records the number of COVID-19 cases that happened across the years 2020 to 2022 in different countries.
+<p>The dataset we chose is the <strong>continental2.csv</strong> file from the <em>COVID-19 in the American Continent</em> dataset, which consists of <strong>1.07 GB</strong> of data. This dataset records the number of COVID-19 cases that happened across the years 2020 to 2022 in different countries.</p>
 
-![Kaggle CSV View](figures/Kaggle_Dataset.png)  
-**Figure 1.1**: View of the CSV file in Kaggle
+<div align="center">
+  <img src="figures/Kaggle_Dataset.png" width="700">
+  <p><strong>Figure 1.1:</strong> View of the CSV file in Kaggle</p>
+</div>
 
-The dataset consists of **14 columns** (2 irrelevant ID columns) and **1,048,576 rows** of data.
+<p>The dataset consists of <strong>14 columns</strong> (2 irrelevant ID columns) and <strong>1,048,576 rows</strong> of data.</p>
 
-![CSV Screenshot Part 1](figures/csv_screenshot1.png)  
-![CSV Screenshot Part 2](figures/csv_screenshot2.png)  
-**Figure 1.2**: Data columns and row count from the CSV file
+<div align="center">
+  <img src="figures/csv_screenshot1.png" width="600">
+  <img src="figures/csv_screenshot2.png" width="600">
+  <p><strong>Figure 1.2:</strong> Data columns and row count from the CSV file</p>
+</div>
 
 <br>
 

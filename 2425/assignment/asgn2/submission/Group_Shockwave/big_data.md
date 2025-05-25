@@ -74,30 +74,53 @@
   <p><strong>Figure 3.1:</strong> Full implementation using Dask</p>
 </div>
 
+<p>Figure 3.1.1 shows the line 11 of the implementation. Only relevant columns are selected to reduce load size to reduce memory usage and speed up loading by skipping irrelevant data.
+</p>
+
 <div align="center">
   <img src="figures/Task3.1.1.png" width="700">
   <p><strong>Figure 3.1.1:</strong> Selecting relevant columns</p>
 </div>
+
+<p>
+Figure 3.1.2 shows the line 14 of the implementation. Data types are optimized by converting numeric fields to float32 and categorical columns to category to reduce memory usage.
+</p>
 
 <div align="center">
   <img src="figures/Task3.1.2.png" width="700">
   <p><strong>Figure 3.1.2:</strong> Optimizing data types</p>
 </div>
 
+<p>
+Figure 3.1.3 shows the line 18 of the implementation. The CSV file is loaded in parallel using dd.read_csv() with a blocksize=”128MB” to split data into smaller partitions which is chunking.
+</p>
+
 <div align="center">
   <img src="figures/Task3.1.3.png" width="700">
   <p><strong>Figure 3.1.3:</strong> Loading CSV in chunks with Dask</p>
 </div>
+
+<p>
+Figure 3.1.4 shows the line 23 of the implementation. A 10% sample of the dataset is taken for faster prototyping.
+</p>
 
 <div align="center">
   <img src="figures/Task3.1.4.png" width="700">
   <p><strong>Figure 3.1.4:</strong> Sampling a portion of the dataset</p>
 </div>
 
+<p>
+Figure 3.1.5 shows the line 26 of the implementation. The function compute() is triggered to execute all processes of all lazy operations.
+</p>
+
 <div align="center">
   <img src="figures/Task3.1.5.png" width="700">
   <p><strong>Figure 3.1.5:</strong> Executing lazy operations with compute()</p>
 </div>
+
+<p>
+Figure 3.2 shows the output after running the code. Dask successfully demonstrates how these strategies collectively reduce memory usage and prepare data efficiently.
+</p>
 
 <div align="center">
   <img src="figures/Task3.2.png" width="700">
@@ -152,6 +175,8 @@
 
 <h3>Performance Results by Library</h3>
 
+<p>Figure 4.3 shows the results of the first, second, and third run using the pandas library.</p>
+
 <div align="center">
   <img src="figures/Task4.3.1.jpg" width="600">
   <img src="figures/Task4.3.2.jpg" width="600">
@@ -159,12 +184,16 @@
   <p><strong>Figure 4.3:</strong> Three runs using Pandas library</p>
 </div>
 
+<p>Figure 4.4 shows the results of the first, second, and third run using the polars library.</p>
+
 <div align="center">
   <img src="figures/Task4.3.4.jpg" width="600">
   <img src="figures/Task4.3.5.jpg" width="600">
   <img src="figures/Task4.3.6.jpg" width="600">
   <p><strong>Figure 4.4:</strong> Three runs using Polars library</p>
 </div>
+
+<p>Figure 4.5 shows the results of the first, second, and third run using the dask library</p>
 
 <div align="center">
   <img src="figures/Task4.3.7.png" width="600">
@@ -175,12 +204,18 @@
 
 <h3>Execution Time Comparison</h3>
 
+<p>Figure 4.6 below presents a bar chart showing the processing time (in seconds) taken by each method over three repeated runs. Pandas took around 27 seconds on average and Polars consistently outperformed the others by completing tasks in as little as 11-16 seconds. Dask, while designed for scalability, showed longer processing time (around 42 seconds) due to task scheduling and overhead in parallel execution.
+</p>
+
 <div align="center">
   <img src="figures/Task4.4.png" width="700">
   <p><strong>Figure 4.6:</strong> Execution time comparison of Pandas, Polars, and Dask</p>
 </div>
 
 <h3>Memory Usage Comparison</h3>
+
+<p>Figure 4.7 below presents a line chart showing the memory usage (in MB) for each approach across three runs. Pandas used the most memory (~1350MB), which may be problematic for large datasets. Polars significantly reduced memory usage to around 1100MB due to its efficient memory management in Rust. Dask showed the extremely lowest memory usage because it loads data in chunks rather than all at once.
+</p>
 
 <div align="center">
   <img src="figures/Task4.5.png" width="700">

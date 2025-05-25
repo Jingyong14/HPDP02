@@ -128,7 +128,7 @@ To assess performance, we use Python libraries such as `time`, `psutil`, and `os
 
 These measurements are taken at the **start** and **end** of the code execution that processes a large dataset. Each experiment is repeated **three times** to calculate the **average** processing time and memory usage for greater accuracy.
 
-### Code Snippets
+#### Code Snippets
 
 The following figure shows the code used to import performance measurement libraries and initialize tracking variables:
 
@@ -142,7 +142,7 @@ The next figure shows the code for recording final metrics and computing the act
 
 ### Result
 
-#### Performance Results by Library
+##### Performance Results by Library
 
 Figure 4.3 shows the results of the first, second, and third run using the Pandas library.
 
@@ -183,7 +183,7 @@ Figure 4.7 presents a line chart showing the memory usage (in MB) for each appro
 ![Memory Usage Line Chart](figures/Task4.5.png)  
 **Figure 4.7:** Memory usage comparison across Pandas, Polars, and Dask
 
-## Ease of Processing
+#### Ease of Processing
 
 | Method | Ease of Processing |
 |--------|--------------------|
@@ -191,3 +191,22 @@ Figure 4.7 presents a line chart showing the memory usage (in MB) for each appro
 | Polars | Performed excellently with simple multithreading and is relatively easy to adopt. |
 | Dask   | Powerful scalability but requires more setup and understanding of parallel processing concepts. |
 
+<br>
+
+## Task 5: Conclusion & Reflection
+
+From this assignment, we are able to understand the significance of using optimization libraries such as Dask or Polars when working with big data. Several observations were made during the progression of the project.
+
+Initially, Modin and Ray library were chosen as the tertiary library to perform optimization. However, the performance shows negative improvement, possibly due to the dataset not being big enough (even if it's 1GB). Memory used also increased significantly, due to Ray workers paralleling jobs and taking more space.
+
+Next, simplicity of task or operation when using these optimization libraries also play a part in defining the performance of the libraries. For example, due to this assignment measuring only the process of loading the dataset and some simple data inspections, libraries such as Dask get an increase in processing time due to its parallel and distributed architecture. This means extra time is used to create a “Task graph” to allow Dask to perform parallelism, which exceeds the actual time taken to run the codes. However, memory usage significantly decreases as chunk processing (128 MB in our case) loads shards of the entire dataset into each worker, lowering peak memory usage overall.
+
+Pandas library on the other hand performs averagely in terms of processing time and memory usage. As an eager execution library, processing time of loading the dataset was not significantly high due to simplicity of operation. However, memory usage across each run (Refer Task 4) appears the highest because the entire 1 GB dataset is loaded into memory on runtime through a single CPU and no parallelization.
+
+Last but not least, Polars is the best library option for our exact scenario. Polars support datasets which are not overly large (> 10 GB) due to multithreading which utilizes CPU cores instead of spawning workers like Dask. This factor lowers memory usage. Lazy execution property of Polars also optimizes the coding pipeline which is user-defined, rather than creating a new system-defined “Task Graph” like Dask on runtime, ensuring the total processing time does not surpass the actual time used to process the operations.
+
+With that being said, we can determine libraries efficiency can be ordered as:
+
+Polars > Dask > Pandas
+
+Where the dataset is not significantly large while processing operation is simple.

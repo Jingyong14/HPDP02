@@ -70,7 +70,7 @@
 <p>Dask is a parallel computing library that scales the Pandas interface for large-memory data processing using lazy evaluation and task scheduling. In this section, we apply five optimization strategies using Dask to handle a large dataset efficiently. The complete implementation is shown in Figure 3.1 below.</p>
 
 <div align="center">
-  <img src="figures/Task3.1.png" width="700">
+  <img src="figures/Task3.1.png" width="500" height="500">
   <p><strong>Figure 3.1:</strong> Full implementation using Dask</p>
 </div>
 
@@ -246,6 +246,7 @@ Figure 3.2 shows the output after running the code. Dask successfully demonstrat
       <td>Powerful scalability but requires more setup and understanding of parallel processing concepts.</td>
     </tr>
   </table>
+<p><strong>Table 4.8: </strong>Ease of processing for each method</p>
 </div>
 
 <br>

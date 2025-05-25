@@ -142,7 +142,7 @@ The next figure shows the code for recording final metrics and computing the act
 
 ### Result
 
-### Performance Results by Library
+#### Performance Results by Library
 
 Figure 4.3 shows the results of the first, second, and third run using the Pandas library.
 
@@ -167,7 +167,7 @@ Figure 4.5 shows the results of the first, second, and third run using the Dask 
 
 ---
 
-### Execution Time Comparison
+#### Execution Time Comparison
 
 Figure 4.6 presents a bar chart showing the processing time (in seconds) taken by each method over three repeated runs. Pandas took around 27 seconds on average. Polars consistently outperformed the others by completing tasks in as little as 11–16 seconds. Dask, while designed for scalability, showed longer processing time (around 42 seconds) due to task scheduling and overhead in parallel execution.
 
@@ -176,7 +176,7 @@ Figure 4.6 presents a bar chart showing the processing time (in seconds) taken b
 
 ---
 
-### Memory Usage Comparison
+#### Memory Usage Comparison
 
 Figure 4.7 presents a line chart showing the memory usage (in MB) for each approach across three runs. Pandas used the most memory (~1350MB), which may be problematic for large datasets. Polars significantly reduced memory usage to around 1100MB due to its efficient memory management in Rust. Dask showed the lowest memory usage because it loads data in chunks rather than all at once.
 

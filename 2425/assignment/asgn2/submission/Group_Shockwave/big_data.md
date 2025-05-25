@@ -87,7 +87,7 @@ Figure 3.1.2 shows the line 14 of the implementation. Data types are optimized b
 </p>
 
 <div align="center">
-  <img src="figures/Task3.1.2.png" width="400" height="350">
+  <img src="figures/Task3.1.2.png" width="400" height="300">
   <p><strong>Figure 3.1.2:</strong> Optimizing data types</p>
 </div>
 

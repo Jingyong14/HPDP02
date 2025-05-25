@@ -183,3 +183,11 @@ Figure 4.7 presents a line chart showing the memory usage (in MB) for each appro
 ![Memory Usage Line Chart](figures/Task4.5.png)  
 **Figure 4.7:** Memory usage comparison across Pandas, Polars, and Dask
 
+## Ease of Processing
+
+| Method | Ease of Processing |
+|--------|--------------------|
+| Pandas | Easiest to use with familiar syntax but lacks optimization for large data. |
+| Polars | Performed excellently with simple multithreading and is relatively easy to adopt. |
+| Dask   | Powerful scalability but requires more setup and understanding of parallel processing concepts. |
+

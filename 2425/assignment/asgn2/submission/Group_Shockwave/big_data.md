@@ -48,6 +48,7 @@ After loading the dataset, we performed a basic inspection to understand its str
 
 ![Inspecting the dataset with Pandas](figures/Task2.4.png)  
 **Figure 2.4:** Dataset inspection using Pandas
+
 <br>
 
 ## Task 3: Apply Big Data Handling Strategies
@@ -112,6 +113,7 @@ Figure 3.4 shows the output after running the code. Output of column names were 
 ![Figure 3.4 - Output of the Polars optimization code](figures/polars_result.png)
 
 **Figure 3.4:** Output of the Polars optimization code
+
 <br>
 
 ## Task 4: Comparative Analysis

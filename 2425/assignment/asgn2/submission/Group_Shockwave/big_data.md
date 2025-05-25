@@ -70,7 +70,7 @@
 <p>Dask is a parallel computing library that scales the Pandas interface for large-memory data processing using lazy evaluation and task scheduling. In this section, we apply five optimization strategies using Dask to handle a large dataset efficiently. The complete implementation is shown in Figure 3.1 below.</p>
 
 <div align="center">
-  <img src="figures/Task3.1.png" width="500" height="500">
+  <img src="figures/Task3.1.png" width="500" height="650">
   <p><strong>Figure 3.1:</strong> Full implementation using Dask</p>
 </div>
 
@@ -87,7 +87,7 @@ Figure 3.1.2 shows the line 14 of the implementation. Data types are optimized b
 </p>
 
 <div align="center">
-  <img src="figures/Task3.1.2.png" width="700">
+  <img src="figures/Task3.1.2.png" width="400" height="350">
   <p><strong>Figure 3.1.2:</strong> Optimizing data types</p>
 </div>
 
@@ -182,27 +182,27 @@ Figure 3.2 shows the output after running the code. Dask successfully demonstrat
 <p>Figure 4.3 shows the results of the first, second, and third run using the pandas library.</p>
 
 <div align="center">
-  <img src="figures/Task4.3.1.jpg" width="600">
-  <img src="figures/Task4.3.2.jpg" width="600">
-  <img src="figures/Task4.3.3.jpg" width="600">
+  <img src="figures/Task4.3.1.jpg" width="500">
+  <img src="figures/Task4.3.2.jpg" width="500">
+  <img src="figures/Task4.3.3.jpg" width="500">
   <p><strong>Figure 4.3:</strong> Three runs using Pandas library</p>
 </div>
 
 <p>Figure 4.4 shows the results of the first, second, and third run using the polars library.</p>
 
 <div align="center">
-  <img src="figures/Task4.3.4.jpg" width="600">
-  <img src="figures/Task4.3.5.jpg" width="600">
-  <img src="figures/Task4.3.6.jpg" width="600">
+  <img src="figures/Task4.3.4.jpg" width="500">
+  <img src="figures/Task4.3.5.jpg" width="500">
+  <img src="figures/Task4.3.6.jpg" width="500">
   <p><strong>Figure 4.4:</strong> Three runs using Polars library</p>
 </div>
 
 <p>Figure 4.5 shows the results of the first, second, and third run using the dask library</p>
 
 <div align="center">
-  <img src="figures/Task4.3.7.png" width="600">
-  <img src="figures/Task4.3.8.png" width="600">
-  <img src="figures/Task4.3.9.png" width="600">
+  <img src="figures/Task4.3.7.png" width="500">
+  <img src="figures/Task4.3.8.png" width="500">
+  <img src="figures/Task4.3.9.png" width="500">
   <p><strong>Figure 4.5:</strong> Three runs using Dask library</p>
 </div>
 

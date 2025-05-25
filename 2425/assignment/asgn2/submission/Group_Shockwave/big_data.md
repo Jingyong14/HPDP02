@@ -104,13 +104,13 @@ Figure 3.3 shows the full code used in our Polars library optimization technique
 - **Lines 7 to 14**: Polars methods are used to display dataset shape, columns, and data types.  
 - **Lines 17 to end**: Null and duplicated data are dropped, and the `collect()` function is used to trigger actual execution.
 
-![Figure 3.3 - Full coding of Polars optimization technique](figures/polars_code.png)
+![Figure 3.3 - Full coding of Polars optimization technique](figures/polars_coding.png)
 
 **Figure 3.3:** Full coding of Polars optimization technique
 
 Figure 3.4 shows the output after running the code. Output of column names were truncated due to string length exceeding browser width.
 
-![Figure 3.4 - Output of the Polars optimization code](figures/polars_output.png)
+![Figure 3.4 - Output of the Polars optimization code](figures/polars_result.png)
 
 **Figure 3.4:** Output of the Polars optimization code
 

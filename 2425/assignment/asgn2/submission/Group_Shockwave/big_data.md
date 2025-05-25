@@ -55,7 +55,7 @@ After loading the dataset, we performed a basic inspection to understand its str
 
 In this section, we showcase how the Dask and Polars libraries are used to optimize the performance of dataset loading.
 
-### Dask
+## Dask
 
 Dask is a parallel computing library that scales the Pandas interface for large-memory data processing using lazy evaluation and task scheduling. In this section, we apply five optimization strategies using Dask to handle a large dataset efficiently. The complete implementation is shown in Figure 3.1 below.
 

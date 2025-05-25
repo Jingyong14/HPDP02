@@ -107,10 +107,20 @@
 <h3>Polars</h3>
 <p>The <strong>Polars</strong> library is also used for optimization of dataset loading. Polars excels in handling datasets that are big but still fit into memory, making it a perfect choice for our scenario. Polars utilizes <em>lazy evaluation</em> and <em>multithreading</em>, which we will demonstrate in the figures below.</p>
 
+<p>Figure 3.3 shows the full code used in our Polars library optimization technique:</p>
+<ul>  
+<li><strong>Line 1</strong>: Polars library is imported.</li>
+<li><strong>Line 4</strong>: Dataset is read lazily using the `lazy()` function.</li>
+<li><strong>Lines 7 to 14</strong>: Polars methods are used to display dataset shape, columns, and data types.</li>
+<li><strong>Lines 17 to end</strong>: Null and duplicated data are dropped, and the `collect()` function is used to trigger actual execution.
+</ul>
+
 <div align="center">
   <img src="figures/polars_coding.png" width="700">
   <p><strong>Figure 3.3:</strong> Full coding of Polars optimization technique</p>
 </div>
+
+<p>Figure 3.4 shows the output after running the code. Output of column names were truncated due to string length exceeding browser width.</p>
 
 <div align="center">
   <img src="figures/polars_result.png" width="700">

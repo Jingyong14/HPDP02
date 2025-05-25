@@ -107,6 +107,6 @@ We designed a system that:
 You can view our final deliverables here:
 
 - 📘 [Final Report (PDF)](https://github.com/Jingyong14/HPDP02/blob/main/2425/project/p1/Group%203/report/Group%203_Project%201_Report.pdf)
-- 🖥️ [Presentation Slides (PPTX)](report/Presentation_Slides.pptx)
+- 🖥️ [Presentation Slides (PPTX)](https://github.com/Jingyong14/HPDP02/blob/main/2425/project/p1/Group%203/report/Group%203_Project%201_SlidePresentation.pptx)
 
 ---

@@ -22,9 +22,9 @@
 
 ## 🌐 Target Dataset
 
-Source: [Kaggle](https://www.kaggle.com/)
-<br>
-Dataset: [Transaction](https://www.kaggle.com/datasets/ismetsemedov/transactions)
+The chosen dataset is titled "Transactions – Synthetic Fraud Detection Data", sourced from Kaggle. It includes detailed information such as transaction ID, customer and card details, merchant and location data, device and channel usage, and a fraud label, making it suitable for exploring big data handling strategies in a realistic fraud detection context.
+
+Source: [Transaction](https://www.kaggle.com/datasets/ismetsemedov/transactions)
 
 
 

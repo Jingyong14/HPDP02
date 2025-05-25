@@ -49,5 +49,47 @@ After loading the dataset, we performed a basic inspection to understand its str
 ![Inspecting the dataset with Pandas](figures/Task2.4.png)  
 **Figure 2.4:** Dataset inspection using Pandas
 
+<br></br>
+
+## Task 3: Apply Big Data Handling Strategies
+
+In this section, we showcase how the Dask and Polars libraries are used to optimize the performance of dataset loading.
+
+### Dask
+
+Dask is a parallel computing library that scales the Pandas interface for large-memory data processing using lazy evaluation and task scheduling. In this section, we apply five optimization strategies using Dask to handle a large dataset efficiently. The complete implementation is shown in Figure 3.1 below.
+
+![Dask Full Implementation](figures/Task3.1.png)  
+**Figure 3.1:** Full implementation using Dask
+
+Figure 3.1.1 shows line 11 of the implementation. Only relevant columns are selected to reduce load size, which reduces memory usage and speeds up loading by skipping irrelevant data.
+
+![Dask Column Selection](figures/Task3.1.1.png)  
+**Figure 3.1.1:** Selecting relevant columns
+
+Figure 3.1.2 shows line 14 of the implementation. Data types are optimized by converting numeric fields to float32 and categorical columns to category, reducing memory usage.
+
+![Dask Data Type Optimization](figures/Task3.1.2.png)  
+**Figure 3.1.2:** Optimizing data types
+
+Figure 3.1.3 shows line 18 of the implementation. The CSV file is loaded in parallel using dd.read_csv() with blocksize="128MB" to split data into smaller partitions, also known as chunking.
+
+![Dask Chunk Loading](figures/Task3.1.3.png)  
+**Figure 3.1.3:** Loading CSV in chunks with Dask
+
+Figure 3.1.4 shows line 23 of the implementation. A 10% sample of the dataset is taken for faster prototyping.
+
+![Dask Sampling](figures/Task3.1.4.png)  
+**Figure 3.1.4:** Sampling a portion of the dataset
+
+Figure 3.1.5 shows line 26 of the implementation. The compute() function is triggered to execute all lazy operations.
+
+![Dask Compute Function](figures/Task3.1.5.png)  
+**Figure 3.1.5:** Executing lazy operations with compute()
+
+Finally, Figure 3.2 shows the output after running the code. Dask successfully demonstrates how these strategies collectively reduce memory usage and prepare the data efficiently.
+
+![Dask Output](figures/Task3.2.png)  
+**Figure 3.2:** Output after executing all Dask operations
 
 

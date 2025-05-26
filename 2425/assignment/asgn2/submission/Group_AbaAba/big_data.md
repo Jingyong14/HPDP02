@@ -91,7 +91,30 @@
   <p>We had decided to implement <strong>Dask</strong> and <strong>Polars</strong> as our optimization libraries for handling this large-scale data.</p>
 
   <h3><strong>Dask</strong></h3>
-  <p>xxx</p>
+<p>
+  The <code>Dask</code> library was selected for its ability to efficiently process large datasets through parallelism and lazy evaluation. One of the key optimization techniques applied was column-level filtering during the initial CSV read operation. Unlike <code>pandas</code>, which typically loads the entire dataset into memory, Dask allows for selective loading of only the required columns, significantly improving memory efficiency and I/O performance.</p>
+
+<p>The columns selected for analysis and optimization were:</p>
+<ul>
+<li>Genre</li>
+<li>Popularity</li>
+<li>Energy</li>
+<li>Danceability</li>
+<li>Tempo</li>
+</ul>
+
+<p>These features were identified as highly relevant for analyzing music characteristics related to user engagement and genre-based trends in the Spotify dataset. After loading the selected columns, data type optimization was performed by converting:</p>
+
+<p>Genre to category (to reduce string memory overhead),
+
+Popularity, Energy, and Danceability to int32, and
+
+Tempo to float32.
+</p>
+
+<p>These conversions contributed to a substantial reduction in memory usage, while preserving the integrity of the data for analytical tasks.</p>
+
+<p>Figures 3.3 and 3.4 present the full implementation using the Dask library, showcasing its effectiveness in handling and optimizing large-scale music datasets.</p>
 
   <h3><strong>Polars</strong></h3>
   <p>

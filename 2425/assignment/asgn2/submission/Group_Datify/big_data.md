@@ -94,21 +94,21 @@
   <figcaption>Figure 1: Pandas Environment Setup and Data Processing Workflow</figcaption>
 </figure>
 
-<br><br>
+<br>
 
 <figure>
   <img src="figures/figure2.png" alt="Polars Environment Setup and Data Processing Workflow">
   <figcaption>Figure 2: Polars Environment Setup and Data Processing Workflow</figcaption>
 </figure>
 
-<br><br>
+<br>
 
 <figure>
   <img src="figures/figure3.png" alt="Dask Environment Setup and Data Processing Workflow">
   <figcaption>Figure 3: Dask Environment Setup and Data Processing Workflow</figcaption>
 </figure>
 
-<br><br>
+<br>
 
 <p>
   To facilitate performance analysis, execution time was monitored using the ‘time’ module by marking the beginning and end of the execution interval. This process is illustrated in Figure 4, where the script initiates time tracking.
@@ -136,14 +136,14 @@
   <figcaption>Figure 5: Execution Time and Memory Usage Calculation in Pandas</figcaption>
 </figure>
 
-<br><br>
+<br>
 
 <figure>
   <img src="figures/figure6.png" alt="Execution Time and Memory Usage Calculation in Polars">
   <figcaption>Figure 6: Execution Time and Memory Usage Calculation in Polars</figcaption>
 </figure>
 
-<br><br>
+<br>
 
 <figure>
   <img src="figures/figure7.png" alt="Execution Time and Memory Usage Calculation in Dask">

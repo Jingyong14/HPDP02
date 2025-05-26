@@ -46,11 +46,9 @@
   The selected dataset was loaded and processed using three libraries—Pandas, Polars, and Dask—to demonstrate their performance. The objective was to efficiently read and process a large file while preserving the validity of the data and enabling further analysis, as illustrated in Table 1.
 </p>
 
-<h3>Appendix A: Summary of Dataset Handling and Evaluation Procedures Across Libraries</h3>
-
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
   <caption style="caption-side: top; font-weight: bold; margin-bottom: 8px;">
-    Table A1: Summary of Dataset Handling and Evaluation Procedures Across Libraries
+    Table 1: Summary of Dataset Handling and Evaluation Procedures Across Libraries
   </caption>
   <tbody>
     <tr>

@@ -89,6 +89,8 @@
   <figcaption>Figure 1: Pandas Environment Setup and Data Processing Workflow</figcaption>
 </figure>
 
+<br>
+
 <figure>
   <img src="figures/figure2.png" alt="Polars Environment Setup and Data Processing Workflow">
   <figcaption>Figure 2: Polars Environment Setup and Data Processing Workflow</figcaption>

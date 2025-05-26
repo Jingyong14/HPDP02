@@ -1,3 +1,19 @@
+<style>
+  figure {
+    margin: 20px auto;      
+    text-align: center;     
+    max-width: 600px;     
+  }
+
+  figure img {
+    display: block;
+    margin: 0 auto;        
+    max-width: 100%;       
+    height: auto;
+  }
+</style>
+
+
 <h1>SECP3133 High Performance Data Processing - Section 02</h1>
 
 <h2>Assignment 2 - Mastering Big Data Handling</h2>
@@ -88,8 +104,6 @@
   <img src="figures/figure1.png" alt="Pandas Environment Setup and Data Processing Workflow">
   <figcaption>Figure 1: Pandas Environment Setup and Data Processing Workflow</figcaption>
 </figure>
-
-<br>
 
 <figure>
   <img src="figures/figure2.png" alt="Polars Environment Setup and Data Processing Workflow">

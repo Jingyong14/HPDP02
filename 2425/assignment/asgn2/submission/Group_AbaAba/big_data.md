@@ -105,11 +105,7 @@
 
 <p>These features were identified as highly relevant for analyzing music characteristics related to user engagement and genre-based trends in the Spotify dataset. After loading the selected columns, data type optimization was performed by converting:</p>
 
-<p>Genre to category (to reduce string memory overhead),
-
-Popularity, Energy, and Danceability to int32, and
-
-Tempo to float32.
+<p>Genre to category (to reduce string memory overhead), Popularity, Energy, and Danceability to int32, and Tempo to float32.
 </p>
 
 <p>These conversions contributed to a substantial reduction in memory usage, while preserving the integrity of the data for analytical tasks.</p>

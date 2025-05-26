@@ -146,4 +146,88 @@
 
 <h4>4.2.5 Output</h4>
 <p>
-  Figure 12 shows the output of loading and inspecting the sampled Spotify dataset using Pandas. The DataFrame contains 55,144 records and 10 columns, including artist names, song titles, length, emotion, genre, release date, and several audio features such as popularity, energy, danceability, and positiveness. The data types are a mix of ‘strings’ (object) for categorical fields and
+  Figure 12 shows the output of loading and inspecting the sampled Spotify dataset using Pandas. The DataFrame contains 55,144 records and 10 columns, including artist names, song titles, length, emotion, genre, release date, and several audio features such as popularity, energy, danceability, and positiveness. The data types are a mix of ‘strings’ (object) for categorical fields and numerical fields stored as ‘float32’, ensuring optimised memory usage.
+
+<figure>
+  <img src="figures/figure12.png" alt="Output of Sampled Dataset in Pandas">
+  <figcaption>Figure 12: Output of Sampled Dataset in Pandas</figcaption>
+</figure>
+
+<h3>4.3 Polars</h3>
+<p>
+  Polars is a fast DataFrame library implemented in Rust. It is designed for performance, supporting multi-threaded execution, zero-copy data access, and lazy evaluation, making it a powerful alternative to Pandas for large datasets. Polars can process data significantly faster while consuming less memory.
+</p>
+
+<h4>4.3.1 Column Filtering and Data Type Optimisation</h4>
+<p>
+  Figure 13 demonstrates how only selected columns were loaded using the <code>columns</code> parameter in <code>pl.read_csv()</code>. This allowed faster loading and lower memory consumption. Polars automatically infers data types and optimises them by default, thus reducing manual intervention.
+</p>
+
+<figure>
+  <img src="figures/figure13.png" alt="Column Filtering and Type Optimisation in Polars">
+  <figcaption>Figure 13: Column Filtering and Type Optimisation in Polars</figcaption>
+</figure>
+
+<h4>4.3.2 Sampling and Data Cleaning</h4>
+<p>
+  Figure 14 shows how missing values were dropped using <code>.drop_nulls()</code> and a 10% sample was extracted using <code>.sample(fraction=0.1, seed=42)</code>. This process is similar to Pandas but benefits from Polars' faster execution and efficient memory handling.
+</p>
+
+<figure>
+  <img src="figures/figure14.png" alt="Sampling and Cleaning in Polars">
+  <figcaption>Figure 14: Sampling and Cleaning in Polars</figcaption>
+</figure>
+
+<h4>4.3.3 Output</h4>
+<p>
+  Figure 15 shows the structure of the resulting DataFrame in Polars, containing 55,144 records and the selected 10 columns. This confirms that Polars effectively mirrored the Pandas process but with greater performance efficiency.
+</p>
+
+<figure>
+  <img src="figures/figure15.png" alt="Output of Sampled Dataset in Polars">
+  <figcaption>Figure 15: Output of Sampled Dataset in Polars</figcaption>
+</figure>
+
+<h3>4.4 Dask</h3>
+<p>
+  Dask is a parallel computing library that scales Python workflows for multi-core and distributed computing environments. It provides a familiar interface to Pandas users and supports out-of-core computations, meaning it can handle datasets larger than memory by processing them in parallel in smaller blocks.
+</p>
+
+<h4>4.4.1 Column Filtering and Data Type Optimisation</h4>
+<p>
+  In Figure 16, the Dask DataFrame was created with the <code>usecols</code> parameter to load only the relevant columns. Type optimisation was applied after reading the data by converting strings to categories and floats to <code>float32</code>, similar to Pandas.
+</p>
+
+<figure>
+  <img src="figures/figure16.png" alt="Column Filtering and Type Optimisation in Dask">
+  <figcaption>Figure 16: Column Filtering and Type Optimisation in Dask</figcaption>
+</figure>
+
+<h4>4.4.2 Chunking, Data Cleaning, and Sampling</h4>
+<p>
+  As shown in Figure 17, missing values were dropped using <code>.dropna()</code>, and sampling was performed using <code>.sample(frac=0.1, random_state=42)</code>. Dask delayed the computation until explicitly instructed to execute via <code>.compute()</code>, making it more memory-efficient.
+</p>
+
+<figure>
+  <img src="figures/figure17.png" alt="Sampling and Cleaning in Dask">
+  <figcaption>Figure 17: Sampling and Cleaning in Dask</figcaption>
+</figure>
+
+<h4>4.4.3 Output</h4>
+<p>
+  Figure 18 displays the final sampled Dask DataFrame. Like Pandas and Polars, the output contains 55,144 rows and 10 columns, validating that the same logic was applied using a scalable and parallelised approach.
+</p>
+
+<figure>
+  <img src="figures/figure18.png" alt="Output of Sampled Dataset in Dask">
+  <figcaption>Figure 18: Output of Sampled Dataset in Dask</figcaption>
+</figure>
+
+<h2>5.0 Comparative Analysis</h2>
+<p>
+  Table A1 (Appendix A) summarises the performance of the three libraries in terms of execution time, memory usage, and ease of implementation. Polars outperformed the others in execution speed, followed by Dask and Pandas. While Pandas is easiest to use, it is the least scalable. Dask offers better scalability, and Polars strikes a balance between performance and simplicity.
+</p>
+
+<h2>6.0 Conclusion</h2>
+<p>
+  This assignment highlights the importance of selecting appropriate tools and optimisation strategies for handling large datasets. Pandas, while user-friendly, falls short in scalability. Polars demonstrated superior speed and efficiency, making it ideal for high-performance computing tasks. Dask, though slightly more complex, is highly effective for parallel and distributed data processing. By leveraging column filtering, chunking, sampling, and data type optimisation, data scientists can significantly reduce memory usage and execution time, thus enhancing the per

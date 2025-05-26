@@ -230,4 +230,15 @@
 
 <h2>6.0 Conclusion</h2>
 <p>
-  This assignment highlights the importance of selecting appropriate tools and optimisation strategies for handling large datasets. Pandas, while user-friendly, falls short in scalability. Polars demonstrated superior speed and efficiency, making it ideal for high-performance computing tasks. Dask, though slightly more complex, is highly effective for parallel and distributed data processing. By leveraging column filtering, chunking, sampling, and data type optimisation, data scientists can significantly reduce memory usage and execution time, thus enhancing the per
+  This assignment highlights the importance of selecting appropriate tools and optimisation strategies for handling large datasets. Pandas, while user-friendly, falls short in scalability. Polars demonstrated superior speed and efficiency, making it ideal for high-performance computing tasks. Dask, though slightly more complex, is highly effective for parallel and distributed data processing. By leveraging column filtering, chunking, sampling, and data type optimisation, data scientists can significantly reduce memory usage and execution time, thus enhancing the performance of big data pipelines.
+</p>
+
+<h2>7.0 References</h2>
+<ul>
+  <li>Devdope. (n.d.). <em>500K+ Spotify songs with lyrics, emotions & more</em> [Data set]. Kaggle. <a href="https://www.kaggle.com/datasets/devdope/900k-spotify">https://www.kaggle.com/datasets/devdope/900k-spotify</a></li>
+  <li>Edwin. (2025, February 27). <em>Dask: Detailed guide for scalable computing</em>. Python Central. <a href="https://www.pythoncentral.io/dask-detailed-guide-for-scalabale-computing/">https://www.pythoncentral.io/dask-detailed-guide-for-scalabale-computing/</a></li>
+  <li>Fischer, B. (2024, December 23). <em>Python advanced: 10 things you can do with Polars (and didn’t know about it)</em>. Medium. <a href="https://captain-solaris.medium.com/python-advanced-10-things-you-can-do-with-polars-and-didnt-know-about-it-cb8c071227ba">https://captain-solaris.medium.com/python-advanced-10-things-you-can-do-with-polars-and-didnt-know-about-it-cb8c071227ba</a></li>
+  <li>Johari, A. (2018, April 5). <em>Python Pandas guide - Learn Pandas for data analysis</em>. Medium. <a href="https://medium.com/edureka/python-pandas-tutorial-c5055c61d12e">https://medium.com/edureka/python-pandas-tutorial-c5055c61d12e</a></li>
+  <li>Shahizan, D. (n.d.). <em>drshahizan</em> [GitHub repository]. GitHub. <a href="https://github.com/drshahizan/drshahizan">https://github.com/drshahizan/drshahizan</a></li>
+  <li>Wijaya, C. Y. (2025, May 5). <em>Building end-to-end data pipelines with Dask</em>. KDnuggets. <a href="https://www.kdnuggets.com/building-end-to-end-data-pipelines-with-dask">https://www.kdnuggets.com/building-end-to-end-data-pipelines-with-dask</a></li>
+</ul>

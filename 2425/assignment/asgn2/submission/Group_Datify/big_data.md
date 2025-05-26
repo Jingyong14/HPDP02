@@ -2,7 +2,7 @@
 
 <h2>Assignment 2 - Mastering Big Data Handling</h2>
 
-<h3>Group Shockwave:</h3>
+<h3>Group Datify:</h3>
 <ul>
 <li><strong>CAMILY TANG JIA LEI</strong> - A22EC0039</li>
 <li><strong>NG SHU YU</strong> - A22EC0228</li>

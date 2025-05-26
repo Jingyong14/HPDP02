@@ -4,7 +4,7 @@
 
 <h3>Group Shockwave:</h3>
 <ul>
-<li><strong>CAMILY TANG JIA LEI</strong> - A22EC0182</li>
+<li><strong>CAMILY TANG JIA LEI</strong> - A22EC0039</li>
 <li><strong>NG SHU YU</strong> - A22EC0228</li>
 </ul>
 

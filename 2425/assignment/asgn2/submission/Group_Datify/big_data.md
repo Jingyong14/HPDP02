@@ -43,8 +43,38 @@
 
 <h2>3.0 Load and Inspect Data</h2>
 <p>
-  The selected dataset was loaded and processed using three libraries—Pandas, Polars, and Dask—to demonstrate their performance. The objective was to efficiently read and process a large file while preserving the validity of the data and enabling further analysis, as illustrated in Appendix A (Table A1).
+  The selected dataset was loaded and processed using three libraries—Pandas, Polars, and Dask—to demonstrate their performance. The objective was to efficiently read and process a large file while preserving the validity of the data and enabling further analysis, as illustrated in Table 1.
 </p>
+
+<h3>Appendix A: Summary of Dataset Handling and Evaluation Procedures Across Libraries</h3>
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <caption style="caption-side: top; font-weight: bold; margin-bottom: 8px;">
+    Table A1: Summary of Dataset Handling and Evaluation Procedures Across Libraries
+  </caption>
+  <tbody>
+    <tr>
+      <th style="text-align: left; width: 20%;">Environment Setup</th>
+      <td>The Kaggle API key was uploaded and configured in Google Colab to download and extract the dataset for all methods.</td>
+    </tr>
+    <tr>
+      <th style="text-align: left;">Data Loading</th>
+      <td>Each library loaded the same subset of relevant columns: artist, song, length, emotion, genre, release date, popularity, energy, danceability, and positiveness. Data types were optimised by converting strings to categorical types and numerical features to 32-bit floats to reduce memory usage.</td>
+    </tr>
+    <tr>
+      <th style="text-align: left;">Data Processing</th>
+      <td>Missing values were removed, and a 10% random sample was taken to ensure fair comparison across libraries.</td>
+    </tr>
+    <tr>
+      <th style="text-align: left;">Performance Measurement</th>
+      <td>Execution time for loading, cleaning, and sampling was recorded. Memory usage of the sampled dataset was also calculated to evaluate efficiency.</td>
+    </tr>
+    <tr>
+      <th style="text-align: left;">Inspection</th>
+      <td>Each sampled dataset was inspected by displaying basic info such as column names, data types, number of entries, execution time, memory usage, and a preview of the first few rows.</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2>4.0 Big Data Handling Strategies</h2>
 <p>

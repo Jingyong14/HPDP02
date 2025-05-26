@@ -51,7 +51,7 @@ Once the Kaggle API is properly configured, the commands in figure 2.2 are used 
 
 The following code in figure 2.3 is used to save the donwnloaded dataset to Google Drive for persistent storage and future use. The first command mounts the Google Drive to the Colab environment, allowing to read from and write to Drive directly. The second section creates a directory path inside Google Drive named Assign2/nyc_transport_data. In the third command, the cleaned DataFrame df is saved as a CSV file named mta_1712_cleaned.csv inside the target directory. The dataset is now saved securely in Google Drive and can be accessed later for inspection, modeling, or additional analysis.
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/fb66f801-9131-4659-a855-4c7ebe399309" alt="ss code 3" /> 
+<p align="center"> <img src="https://github.com/user-attachments/assets/b3e0b18c-e007-4478-bced-dd38fc946674" alt="ss code 3" /> 
 <br><strong>Figure 2.3 - Saving Dataset to Google Drive </strong> </p>
 
 ### 🔍 Brief Data Inspection
@@ -70,5 +70,11 @@ The output in figure 2.5 provides a quick overview of the dataset’s structure,
 <h2>Task 3: Apply Big Data Handling Strategies</h2>
 
 <h2>Task 4: Comparative Analysis</h2>
+Pandas Performance
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/97a092e3-0468-4ee9-b12b-e9df06aa3456" alt="ss output 1" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/1ebbf01b-f31f-4192-ab98-016ff77aef62" alt="ss output 2" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/e747dd40-ff6b-4fff-a2bb-5281e77b951d" alt="ss output 3" />
+<br><strong>Figure 4.1 - Pandas Performance </strong> </p>
 
 <h2>Task 5: Conclusion & Reflection</h2>

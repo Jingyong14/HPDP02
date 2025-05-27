@@ -15,7 +15,7 @@ For this assignment, the chosen dataset is Transactions.csv, a synthetic financi
 
 This dataset is designed for developing and testing fraud detection models by simulating realistic financial transaction patterns. It spans multiple merchant categories such as retail (both online and in-store), groceries, dining, travel, entertainment, healthcare, education, and gas. The diversity in transaction types and customer profiles makes it well-suited for exploratory analysis and performance comparison of big data processing techniques.
 
-
+---
 ## Task 1: Dataset Selection
 ### Dataset Description
 - **Name:** Transactions.csv  
@@ -31,7 +31,21 @@ The dataset falls within the Financial Fraud Detection domain. It integrates dat
     <li>Fraud indicators and behavioral metrics like transaction velocity, merchant risk scores, and binary fraud labels.</li>
   </ul>
 
-  ---
+---
+
+### Task 2: Load and Inspect Data
+
+---
+
+### Task 3: Apply Big Data Handling Strategies
+
+---
+
+### Task 4: Comparative Analysis
+
+---
+
+### Task 5: Conclusion & Reflection
 
 
 

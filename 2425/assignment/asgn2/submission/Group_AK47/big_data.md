@@ -11,29 +11,32 @@
 ---
 
 ## Project Overview
+For this assignment, the chosen dataset is Transactions.csv, a synthetic financial transactions dataset created using Python. The file size is approximately 2.93 GB, containing over 900,000 transaction records with 24 columns covering various data types including string, boolean, and integer fields.
 
-This project focuses on efficient handling and analysis of a large-scale synthetic financial transactions dataset designed for fraud detection model development. The dataset, named `Transactions.csv`, contains over 900,000 generated transactions simulating realistic patterns across various merchant categories and geographic regions.
+This dataset is designed for developing and testing fraud detection models by simulating realistic financial transaction patterns. It spans multiple merchant categories such as retail (both online and in-store), groceries, dining, travel, entertainment, healthcare, education, and gas. The diversity in transaction types and customer profiles makes it well-suited for exploratory analysis and performance comparison of big data processing techniques.
 
-The dataset serves as an ideal testbed for exploring advanced data processing techniques relevant to financial fraud analytics, featuring key variables such as transaction amounts, merchant details, device fingerprints, geographic info, and fraud labels.
 
----
-
-## Dataset Description
-
+## Task 1: Dataset Selection
+### Dataset Description
 - **Name:** Transactions.csv  
 - **Size:** Approximately 2.93 GB  
 - **Rows:** 900,000+  
-- **Columns:** 24+
+- **Columns:** 24
 
-The dataset was synthetically generated using Python to mimic real-world transaction behavior while avoiding privacy issues. It covers a wide range of transactional scenarios including retail, groceries, dining, travel, entertainment, and more.
+The dataset falls within the Financial Fraud Detection domain. It integrates data science with cybersecurity and financial analytics by offering insights into:
 
-### Key Features Include:
-- Transaction identifiers and timestamps
-- Merchant category and type
-- Transaction amount and currency
-- Customer geographic info (country, city, city size)
-- Device and channel used for the transaction
-- Fraud label indicating suspicious transactions
-- Transaction velocity and risk metrics
+  <ul>
+    <li>Transaction metadata including amounts, timestamps, and geographic details.</li>
+    <li>Customer and device characteristics such as card types, device fingerprints, and transaction channels.</li>
+    <li>Fraud indicators and behavioral metrics like transaction velocity, merchant risk scores, and binary fraud labels.</li>
+  </ul>
 
----
+  ---
+
+
+
+
+
+
+
+

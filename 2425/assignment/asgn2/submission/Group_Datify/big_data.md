@@ -106,22 +106,18 @@
 
 <div align="center" style="margin-bottom: 32px;">
   <img src="figures/figure1.png" alt="Pandas Environment Setup and Data Processing Workflow" style="max-width: 100%; height: auto;">
-  <p><strong>Figure 1:</strong> Pandas Environment Setup and Data Processing Workflow</p>
+  <p>Figure 1: Pandas Environment Setup and Data Processing Workflow</p>
 </div>
 
-<figure>
-  <img src="figures/figure2.png" alt="Polars Environment Setup and Data Processing Workflow">
-  <figcaption>Figure 2: Polars Environment Setup and Data Processing Workflow</figcaption>
-</figure>
+<div align="center" style="margin-bottom: 32px;">
+  <img src="figures/figure2.png" alt="Polars Environment Setup and Data Processing Workflow" style="max-width: 100%; height: auto;">
+  <p>Figure 2: Polars Environment Setup and Data Processing Workflow</p>
+</div>
 
-<br><br>
-
-<figure>
-  <img src="figures/figure3.png" alt="Dask Environment Setup and Data Processing Workflow">
-  <figcaption>Figure 3: Dask Environment Setup and Data Processing Workflow</figcaption>
-</figure>
-
-<br><br>
+<div align="center" style="margin-bottom: 32px;">
+  <img src="figures/figure3.png" alt="Dask Environment Setup and Data Processing Workflow" style="max-width: 100%; height: auto;">
+  <p>Figure 3: Dask Environment Setup and Data Processing Workflow</p>
+</div>
 
 <p>
   To facilitate performance analysis, execution time was monitored using the ‘time’ module by marking the beginning and end of the execution interval. This process is illustrated in Figure 4, where the script initiates time tracking.

@@ -1,4 +1,4 @@
-# Group Good Morning
+# Group GoodMorning
 
 ## Team Members
 

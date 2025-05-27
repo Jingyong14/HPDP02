@@ -104,12 +104,10 @@
 </p>
 
 
-<figure style="display: flex; flex-direction: column; align-items: center; margin-bottom: 32px;">
+<div align="center" style="margin-bottom: 32px;">
   <img src="figures/figure1.png" alt="Pandas Environment Setup and Data Processing Workflow" style="max-width: 100%; height: auto;">
-  <figcaption style="margin-top: 8px; text-align: center;">Figure 1: Pandas Environment Setup and Data Processing Workflow</figcaption>
-</figure>
-
-<br><br>
+  <p><strong>Figure 1:</strong> Pandas Environment Setup and Data Processing Workflow</p>
+</div>
 
 <figure>
   <img src="figures/figure2.png" alt="Polars Environment Setup and Data Processing Workflow">

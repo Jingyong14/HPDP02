@@ -61,8 +61,9 @@
   The selected dataset was loaded and processed using three libraries—Pandas, Polars, and Dask—to demonstrate their performance. The objective was to efficiently read and process a large file while preserving the validity of the data and enabling further analysis, as illustrated in Table 1.
 </p>
 
-<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <caption style="caption-side: top; font-weight: bold; margin-bottom: 8px;">
+<div style="text-align: center;">
+  <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; margin: 0 auto;">
+   <caption style="caption-side: top; font-weight: bold; margin-bottom: 8px;">
     Table 1: Summary of Dataset Handling and Evaluation Procedures Across Libraries
   </caption>
   <tbody>
@@ -88,6 +89,7 @@
     </tr>
   </tbody>
 </table>
+</div>
 
 <h2>4.0 Big Data Handling Strategies</h2>
 <p>
@@ -104,26 +106,20 @@
 </p>
 
 
-<figure>
+<figure style="text-align: center; margin-bottom: 32px;">
   <img src="figures/figure1.png" alt="Pandas Environment Setup and Data Processing Workflow">
-  <figcaption>Figure 1: Pandas Environment Setup and Data Processing Workflow</figcaption>
+  <figcaption style="margin-top: 8px;">Figure 1: Pandas Environment Setup and Data Processing Workflow</figcaption>
 </figure>
 
-<br><br>
-
-<figure>
+<figure style="text-align: center; margin-bottom: 32px;">
   <img src="figures/figure2.png" alt="Polars Environment Setup and Data Processing Workflow">
-  <figcaption>Figure 2: Polars Environment Setup and Data Processing Workflow</figcaption>
+  <figcaption style="margin-top: 8px;">Figure 2: Polars Environment Setup and Data Processing Workflow</figcaption>
 </figure>
 
-<br><br>
-
-<figure>
+<figure style="text-align: center; margin-bottom: 32px;">
   <img src="figures/figure3.png" alt="Dask Environment Setup and Data Processing Workflow">
-  <figcaption>Figure 3: Dask Environment Setup and Data Processing Workflow</figcaption>
+  <figcaption style="margin-top: 8px;">Figure 3: Dask Environment Setup and Data Processing Workflow</figcaption>
 </figure>
-
-<br><br>
 
 <p>
   To facilitate performance analysis, execution time was monitored using the ‘time’ module by marking the beginning and end of the execution interval. This process is illustrated in Figure 4, where the script initiates time tracking.

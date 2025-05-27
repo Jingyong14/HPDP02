@@ -169,6 +169,222 @@
   <figcaption>Figure 8: Column Filtering Using Pandas</figcaption>
 </figure>
 
+<br><br>
+
+<h4>4.2.2	Optimise Data Types</h4>
+<p>
+  To further reduce memory consumption, data types were optimised using a predefined dictionary ‘dtype_map’, as shown in Figure 9. String-based columns were converted to ‘category’ type, while numerical columns were stored as ‘float32’, which is more memory-efficient than the default ‘float64’.
+</p>
+
+<figure>
+  <img src="figures/figure9.png" alt="Data Type Optimisation Using Pandas">
+  <figcaption>Figure 9: Data Type Optimisation Using Pandas</figcaption>
+</figure>
+
+<br><br>
+
+<h4>4.2.3	Chunking and Data Cleaning, and Sampling</h4>
+<p>
+  Figure 10 illustrates how chunking, data cleaning, and sampling were applied simultaneously. The dataset was read in chunks of 5,000 rows using the chunksize parameter in pd.read_csv() to avoid memory issues. Within each chunk, missing values were removed using .dropna(). Then, a 10% random sample was extracted using the .sample(frac=0.1, random_state=42) method. The random_state=42 ensures reproducibility by returning the same random selection each time the code is executed—an essential practice for consistency in experiments. This reduced the data volume while preserving representativeness. The sampled subsets were stored and later combined into a final dataset.
+</p>
+
+<figure>
+  <img src="figures/figure10.png" alt="Chunking, Cleaning, and Sampling with Pandas">
+  <figcaption>Figure 10: Chunking, Cleaning, and Sampling with Pandas</figcaption>
+</figure>
+
+<br><br>
+
+<h4>4.2.4	Combining Sampling Data</h4>
+<p>
+  As depicted in Figure 11, the list of sampled chunks was concatenated using pd.concat() to create the final DataFrame. This resulting dataset was optimised for further processing and performance testing, offering a balance between accuracy and efficiency.
+</p>
+
+<figure>
+  <img src="figures/figure11.png" alt="Combining Sampled Chunks in Pandas">
+  <figcaption>Figure 11: Combining Sampled Chunks in Pandas</figcaption>
+</figure>
+
+<br><br>
+
+<h4>4.2.5	 Output</h4>
+<p>
+  Figure 12 shows the output of loading and inspecting the sampled Spotify dataset using Pandas. The DataFrame contains 55,144 records and 10 columns, including artist names, song titles, length, emotion, genre, release date, and several audio features such as popularity, energy, danceability, and positiveness. The data types are a mix of ‘strings’ (object) for categorical fields and ‘float32’ for numeric features, resulting in a memory usage of approximately 22.42 MB. The figure also highlights the execution time for loading and processing the data, which is about 16.49 seconds. The preview of the data in the figure illustrates the typical structure and content, showing detailed values in each column.
+</p>
+
+<figure>
+  <img src="figures/figure12.png" alt="Output of Pandas Library">
+  <figcaption>Figure 12: Output of Pandas Library</figcaption>
+</figure>
+
+<br><br>
+
+<h3>4.3	Polars</h3>
+<p>
+  Polars is a high-performance DataFrame library written in Rust, enabling extremely fast data manipulation and thus representing a highly appealing alternative to Pandas. One of its key features is automatic multithreading, whereby parallel operations are executed transparently across multiple cores without requiring any user configuration. This parallel query engine optimises performance, especially on large datasets, significantly reducing execution time compared to Pandas (Fisher, 2024).
+</p>
+
+<h4>4.3.1	Column Filtering</h4>
+<p>
+  Figure 13 demonstrates the Load Less Data strategy, where only ten relevant columns were selected using the ‘columns’ parameter in pl.read_csv(). This selective loading reduces memory usage and speeds up the initial data import process, which is especially beneficial when working in constrained environments like Google Colab. Additionally, Polars automatically leverages multithreading during the CSV parsing process, further improving efficiency by parallelising the workload across multiple CPU cores.
+</p>
+
+<figure>
+  <img src="figures/figure13.png" alt="Column Filtering Using Polars">
+  <figcaption>Figure 13: Column Filtering Using Polars</figcaption>
+</figure>
+
+<br><br>
+
+<h4>4.3.2	Optimise Data Types</h4>
+<p>
+  Following this, Figure 14 shows how the optimise data types strategy was implemented in Polars. Columns containing string or categorical data—such as "Artist(s)", "song", "Length", "emotion", "Genre", and "Release Date"—were cast to the ‘category’ type, which is efficient for repeated string values. Similarly, numerical columns like "Popularity", "Energy", "Danceability", and "Positiveness" were converted from default floating-point precision to ‘float32’, reducing memory usage without losing significant numerical detail. These operations are also automatically parallelised by Polars’ multithreaded engine, which contributes to reduced processing time.
+</p>
+
+<figure>
+  <img src="figures/figure14.png" alt="Data Type Optimisation Using Polars">
+  <figcaption>Figure 14: Data Type Optimisation Using Polars</figcaption>
+</figure>
+
+<br><br>
+
+<h4>4.3.3	File Loading</h4>
+<p>
+  Figure 15 shows the column-wise file loading using Polars. Only the required columns are loaded using the ‘columns’ parameter. This reduces memory usage and improves efficiency by avoiding unnecessary data. 
+</p>
+
+<figure>
+  <img src="figures/figure15.png" alt="File Loading using Polars">
+  <figcaption>Figure 15: File Loading using Polars</figcaption>
+</figure>
+
+<br><br>
+
+<h4>4.3.4	Data Cleaning and Sampling</h4>
+<p>
+  Figure 16 illustrates how missing values were handled using the .drop_nulls() method. At this stage, a clean dataset was obtained, making it ready for sampling. Subsequently, 10% of the cleaned dataset was sampled using .sample(fraction=0.1, seed=42). The use of seed=42 ensured that the sampling process produced consistent results across multiple runs, which is essential for reproducibility and fair performance comparisons. Both the data cleaning and sampling processes benefitted from Polars' built-in automatic multithreading, which enabled parallel data processing and resulted in significantly faster execution times.
+</p>
+
+<figure>
+  <img src="figures/figure16.png" alt="Cleaning and Sampling with Polars">
+  <figcaption>Figure 16: Cleaning and Sampling with Polars</figcaption>
+</figure>
+
+<br><br>
+
+<h4>4.3.5	Output</h4>
+<p>
+  Figure 17 displays the corresponding output when the same Spotify dataset is loaded using Polars. This figure demonstrates Polars’ more efficient handling of categorical data by using optimised categorical types, leading to a reduced memory footprint of only 10 MB. The schema presented in the figure explicitly shows categorical columns with physical ordering, which enhances performance. Furthermore, the execution time for loading and processing the data is recorded at 1.57 seconds. The data preview in Figure 17 shows a compact, well-structured view of the dataset, reflecting polars’ performance-orientated design.
+</p>
+
+<figure>
+  <img src="figures/figure17.png" alt="Output of Polars Library">
+  <figcaption>Figure 17: Output of Polars Library</figcaption>
+</figure>
+
+<br><br>
+
+<h3>4.4	Dask</h3>
+<p>
+  Dask, a scalable parallel computing Python library is used to operate on large datasets in an efficient manner (Edwin, 2025). Dask is a library specifically for big data and provides the same interface as Pandas but with parallelism and out-of-core computation (Wijaya, 2025).
+</p>
+
+<h4>4.4.1	Column Filtering</h4>
+<p>
+  Figure 18 illustrates the memory optimisation achieved through column filtering. To reduce memory usage and improve processing efficiency, only the necessary columns are loaded by specifying them with the ‘usecols’ parameter.
+</p>
+
+<figure>
+  <img src="figures/figure18.png" alt="Column Filtering Using Dask">
+  <figcaption>Figure 18: Column Filtering Using Dask</figcaption>
+</figure>
+
+<br><br>
+
+<h4>4.4.2	Optimise Data Types</h4>
+<p>
+  Figure 19 demonstrates memory optimisation through data type conversion. String-based columns are converted to the ‘category’ type, while numerical columns use ‘float32’ instead of the default ‘float64’. These optimisations help reduce memory consumption when working with large datasets.
+</p>
+
+<figure>
+  <img src="figures/figure19.png" alt="Data Type Optimisation Using Dask">
+  <figcaption>Figure 19: Data Type Optimisation Using Dask</figcaption>
+</figure>
+
+<br><br>
+
+<h4>4.4.3	File Loading</h4>
+<p>
+  Figure 20 shows the parallel file loading and lazy evaluation. The dataset was read using dd.read_csv(), which is different from how Pandas works. Dask reads the file in smaller chunks and processes them in parallel. This makes it possible to work with larger files without running into memory issues. Dask also does not run everything immediately; it waits until the result is needed, which helps speed up the process and avoid wasting memory.
+</p>
+
+<figure>
+  <img src="figures/figure20.png" alt="Parallel File Loading and Lazy Evaluation using Dask">
+  <figcaption>Figure 20: Parallel File Loading and Lazy Evaluation using Dask</figcaption>
+</figure>
+
+<br><br>
+
+<h4>4.4.4	Data Cleaning and Sampling</h4>
+<p>
+  Figure 21 shows the data cleaning and sampling without fully loading into memory. The dropna() function was used to remove rows with missing values, and a 10% sample of the data was taken using sample(). Both of these steps were done in parallel across the chunks of data, which makes them faster and more efficient, especially when dealing with big datasets.
+</p>
+
+<figure>
+  <img src="figures/figure21.png" alt="Cleaning and Sampling with Dask">
+  <figcaption>Figure 21: Cleaning and Sampling with DaskEvaluation using Dask</figcaption>
+</figure>
+
+<br><br>
+
+<h4>4.3.5	Output</h4>
+<p>
+  Figure 22 shows the output and how the dataset was successfully loaded and processed using the Dask library. The info section lists the number of entries of columns and the data types. The memory usage tells how much space the dataset takes, and the execution time shows how long the whole process took. The first few rows of data are also displayed, giving a quick view that everything looks in order.
+</p>
+
+<figure>
+  <img src="figures/figure22.png" alt="Output of Dask Library">
+  <figcaption>Figure 22: Output of Dask Library</figcaption>
+</figure>
+
+<br><br>
+
+<h2>5.0	Comparative Analysis</h2>
+<p>
+  In this comparative analysis, three data processing libraries—Pandas, Polars and Dask—are compared based on the time taken for execution, memory, and the ease of processing. Figure 23 shows the comparison of execution time and memory usage in bar charts.
+</p>
+
+<p>
+  In terms of execution time, Dask far outshone Pandas and Polars in that aspect. Dask completed the task in just 0.03 seconds, a testament to the power of its lazy and parallelised computation. Polars also performed well with an execution time of 1.57 seconds due to the capability of its Rust-based design. Pandas took 16.49 seconds and was the slowest among the three.
+</p>
+
+<p>
+  In regard to memory usage, Pandas used 22.42MB, Polars much less at 10MB, and Dask the most at 84.11MB. This is due to the fact that Dask has the distributed task overhead, which compromises memory for speed and scalability. Polars, which use the columnar memory model, use the most efficient memory usage.
+</p>
+
+<p>
+  By ease of processing, Pandas is the most straightforward to use, most appropriate for small and medium-sized datasets due to its easy syntax and rich ecosystem. Polars is slightly less familiar to beginners but nevertheless finds a good balance between speed and simplicity. Dask brings complications with its delayed computation, which may require a learning curve, but it can be powerful at handling large-scale data.
+</p>
+
+<figure>
+  <img src="figures/figure23.png" alt="Comparison of Execution Time and Memory Usage between Libraries">
+  <figcaption>Figure 23: Comparison of Execution Time and Memory Usage between Libraries</figcaption>
+</figure>
+
+<br><br>
+
+<h2>6.0	Conclusion and Reflection</h2>
+<p>
+  Two important observations were made regarding the execution time and resource usage of three data processing libraries (Pandas, Polars, and Dask). Vastly different execution times and memory usages were recorded, reflecting fundamentally different approaches to processing. First, Pandas, a heavyweight, widely used, and popular library, recorded the highest processing time among the three (16.49 seconds) and moderate memory consumption (22.42 MB). It is designed to operate in memory using a single-threaded approach. Polars, which utilizes Rust-based multi-threading, demonstrated the best execution time (1.57 seconds) and consumed approximately half the memory of Pandas (10.00 MB). Dask outperformed both libraries in execution time by completing the task in 0.03 seconds. Designed with a scalable parallel architecture and lazy execution, Dask minimised the risk of high memory usage from loading all data at once. However, it did record the highest memory consumption at 84.11 MB.
+</p>
+
+<p>
+  Each method possesses distinct advantages and disadvantages. Although Pandas offers extensive features and enjoys the highest level of user acceptance, it is primarily suitable for small to medium-sized datasets and exploratory data analysis due to its heavy memory usage, which limits scalability in terms of computing efficiency and speed. Even when sufficient memory is available, its performance is relatively slower compared to other options when handling large datasets. Polars enables fast, multithreaded data processing and requires less memory, making it well-suited for larger datasets, provided that adequate hardware is available. Dask is most effective when working with extremely large datasets that exceed RAM capacity and is particularly suitable for parallel and lazy computation. However, Dask also introduces significant complexity to programming, and its debugging process can be notably challenging.
+</p>
+
+<p>
+  This study emphasises the importance of selecting appropriate data processing tools and optimisation strategies tailored to dataset size and resource availability. It was demonstrated that traditional single-threaded approaches may be insufficient for big data applications without techniques such as chunking or sampling. While modern parallelised libraries are capable of delivering considerable performance gains, their effective use requires a deeper technical understanding and careful attention to detail. Ultimately, the empirical findings presented offer valuable insights into the trade-offs among usability, scalability, and efficiency in data processing—factors that are essential for timely and effective analysis in real-world data science applications.
+</p>
 
 <h2>7.0 References</h2>
 <ul>

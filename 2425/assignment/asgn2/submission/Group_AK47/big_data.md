@@ -20,7 +20,7 @@ This dataset is designed for developing and testing fraud detection models by si
 ### Dataset Description
 - **Name:** Transactions.csv  
 - **Size:** Approximately 2.93 GB  
-- **Rows:** 900,000+  
+- **Rows:** 7483766  
 - **Columns:** 24
 
 The dataset falls within the Financial Fraud Detection domain. It integrates data science with cybersecurity and financial analytics by offering insights into:

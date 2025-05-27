@@ -4,24 +4,26 @@
 
 <h3>Group Datify:</h3>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Matrics Number</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>CAMILY TANG JIA LEI</strong></td>
-      <td>A22EC0039</td>
-    </tr>
-    <tr>
-      <td><strong>NG SHU YU</strong></td>
-      <td>A22EC0228</td>
-    </tr>
-  </tbody>
-</table>
+<div align="center" style="margin-bottom: 32px;">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Matrics Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>CAMILY TANG JIA LEI</strong></td>
+        <td>A22EC0039</td>
+      </tr>
+      <tr>
+        <td><strong>NG SHU YU</strong></td>
+        <td>A22EC0228</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <hr>
 

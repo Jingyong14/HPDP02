@@ -119,6 +119,8 @@
   <figcaption>Figure 4: Start of Execution Time Tracking in All Libraries</figcaption>
 </figure>
 
+<br><br>
+
 <p>
   Moreover, each library provided its own method for determining execution time and memory usage, as shown in Figures 5, 6, and 7 for Pandas, Polars, and Dask, respectively. The total execution time was calculated by subtracting the start time from the end time, while memory consumption was obtained using library-specific functions. 
 </p>
@@ -149,6 +151,24 @@
   <img src="figures/figure7.png" alt="Execution Time and Memory Usage Calculation in Dask">
   <figcaption>Figure 7: Execution Time and Memory Usage Calculation in Dask</figcaption>
 </figure>
+
+<br><br>
+
+<h3>4.2	Pandas</h3>
+<p>
+  Pandas is a widely used Python library for data manipulation, analysis, and cleaning (Johari, 2018). While Pandas is capable of handling large datasets, its performance is constrained by the available system RAM. This limitation arises because Pandas loads the entire dataset into memory; therefore, if the dataset exceeds the available memory, it cannot be processed and execution is terminated.
+</p>
+
+<h4>4.2.1	Column Filtering</h4>
+<p>
+  As shown in Figure 8, ten essential columns were selected using the ‘usecols’ parameter. By loading only the required columns, memory usage was reduced and the dataset was efficiently prepared for analysis. The selected columns included: "Artist(s)", "song", "Length", "emotion", "Genre", "Release Date", "Popularity", "Energy", "Danceability", and "Positiveness".
+</p>
+
+<figure>
+  <img src="figures/figure8.png" alt="Column Filtering Using Pandas">
+  <figcaption>Figure 8: Column Filtering Using Pandas</figcaption>
+</figure>
+
 
 <h2>7.0 References</h2>
 <ul>

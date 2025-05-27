@@ -3,10 +3,25 @@
 <h2>Assignment 2 - Mastering Big Data Handling</h2>
 
 <h3>Group Datify:</h3>
-<ul>
-<li><strong>CAMILY TANG JIA LEI</strong> - A22EC0039</li>
-<li><strong>NG SHU YU</strong> - A22EC0228</li>
-</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Matrics Number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>CAMILY TANG JIA LEI</strong></td>
+      <td>A22EC0039</td>
+    </tr>
+    <tr>
+      <td><strong>NG SHU YU</strong></td>
+      <td>A22EC0228</td>
+    </tr>
+  </tbody>
+</table>
 
 <hr>
 

@@ -38,19 +38,23 @@ The dataset falls within the Financial Fraud Detection domain. It integrates dat
     <li>Fraud indicators and behavioral metrics like transaction velocity, merchant risk scores, and binary fraud labels.</li>
   </ul>
 
----
+  <div align="center">
+    <img src="figures/Transactions.png" alt="Overview of dataset">
+    <p><strong>Figure 1.1:</strong> Overview of Transactions.csv</p>
+  </div>
+
 
 ### Task 2: Load and Inspect Data
 
----
+
 
 ### Task 3: Apply Big Data Handling Strategies
 
----
+
 
 ### Task 4: Comparative Analysis
 
----
+
 
 ### Task 5: Conclusion & Reflection
 

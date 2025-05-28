@@ -114,12 +114,12 @@
 
   <div align="center">
     <img src="figures/dask1.png" alt="Dask Code">
-    <p><strong>Figure 3.1:</strong> Polars optimization technique code</p>
+    <p><strong>Figure 3.1:</strong> Dask optimization technique code</p>
   </div>
 
   <div align="center">
     <img src="figures/dask2.png" alt="Dask Performance">
-    <p><strong>Figure 3.2:</strong> Polars performance</p>
+    <p><strong>Figure 3.2:</strong> Dask performance</p>
   </div>
 
 

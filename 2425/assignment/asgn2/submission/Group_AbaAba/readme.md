@@ -1,36 +1,44 @@
-<h1 align="center"> 
-  Group AbaAba
-  <br>
-</h1>
 
-<table border="solid">
-  <tr>
-    <th>Name</th>
-    <th>Matric Number</th>
-  </tr>
-  <tr>
-    <td width=80%>SOH HAN WEI</td>
-    <td>A22EC0273</td>
-  </tr>
-  <tr>
-    <td width=80%>MARCUS JOEY SAYNER</td>
-    <td>A22EC0193</td>
-  </tr>
-</table>
-<!-- <br>
-<br> -->
+<h1 align="center">🎵 Group AbaAba 🎵</h1>
 
-## 🌐 Dataset
+<p align="center">
+  <strong>High-Performance Data Processing Project</strong><br>
+  <em>Universiti Teknologi Malaysia</em>
+</p>
 
- <p>
-    For this assignment, the selected dataset is <code>spotify_dataset.csv</code>, sourced from <strong>Kaggle</strong>, titled 
-    "<strong>500K+ Spotify Songs with Lyrics, Emotions & More</strong>". This dataset offers a comprehensive compilation 
-    of metadata and lyrical content for over <strong>900,000 songs</strong>, including audio features, emotional tagging, and artist information. 
-    The file is approximately <strong>1.15 GB</strong>, which satisfies requirements for large-scale data processing tasks under real-world constraints.
-  </p>
+<br>
 
-- **Source:** [500K+ Spotify Songs with Lyrics,Emotions & More](https://www.kaggle.com/datasets/devdope/900k-spotify)
+## 👥 Team Members
 
+| Name                 | Matric Number |
+|----------------------|---------------|
+| SOH HAN WEI          | A22EC0273     |
+| MARCUS JOEY SAYNER   | A22EC0193     |
 
+<br>
 
+## 🌐 Dataset Description
 
+For this assignment, we utilize the **`spotify_dataset.csv`** dataset obtained from Kaggle. The dataset, titled:
+
+> **"500K+ Spotify Songs with Lyrics, Emotions & More"**
+
+offers a comprehensive compilation of over **900,000 songs**, encompassing:
+
+- Audio and acoustic features  
+- Lyrical content  
+- Emotional annotations  
+- Artist metadata  
+
+This dataset is approximately **1.15 GB** in size, making it suitable for evaluating the performance of data processing techniques under large-scale, real-world constraints.
+
+- 📁 **Filename:** `spotify_dataset.csv`  
+- 🔗 **Source:** [Kaggle Dataset Link](https://www.kaggle.com/datasets/devdope/900k-spotify)  
+- 📦 **Size:** ~1.15 GB  
+- 🧾 **License:** Refer to Kaggle page for license information
+
+<br>
+
+## 📌 Objective
+
+The objective of this project is to perform **high-performance data processing** on a large-scale music dataset, enabling insights into song characteristics, trends, and emotional analysis using frameworks such as **Pandas**, **Polars**, **Dask**, and **PySpark**.

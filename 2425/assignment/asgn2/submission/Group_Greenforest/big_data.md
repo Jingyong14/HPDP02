@@ -18,7 +18,6 @@
 - [4.0 Big Data Handling Strategies](#40-big-data-handling-strategies)
 - [5.0 Comparative Analysis](#50-comparative-analysis)
 - [6.0 Conclusion and Reflection](#60-conclusion-and-reflection)
-- [References](#references)
 
 
 ## 1.0 Introduction
@@ -153,6 +152,9 @@ Before applying any big data optimization techniques, we used Pandas to clean th
 <p align="center"> <img src="https://github.com/user-attachments/assets/97a092e3-0468-4ee9-b12b-e9df06aa3456" alt="pandas first run" />
 <br><strong>Figure 4.1 - Pandas Performance </strong> </p>
 
+![image](https://github.com/user-attachments/assets/d4b693cc-255a-4033-aad5-3f486f176155)
+
+
 ### 5.2 Dask Performance
 
 <p align="center"> <img src="https://github.com/user-attachments/assets/4521e075-8ecb-4149-9e8b-09b1b99efd6b" alt="dask first run" />
@@ -160,11 +162,48 @@ Before applying any big data optimization techniques, we used Pandas to clean th
 <p align="center"> <img src="https://github.com/user-attachments/assets/f6015abd-25ab-441e-b93a-3b105fb26897" alt="dask first run" />
 <br><strong>Figure 4.1 - Dask Performance </strong> </p>
 
-### 5.3 Performance Comparison Table 
+![image](https://github.com/user-attachments/assets/6d48f46b-72bc-4e6f-b1b5-cd12567a5918)
 
-### 5.4 Performance Comparison Graph
+
+### 5.3 Another Library Performance
+
+
+### 5.4 Performance Comparison Table 
+
+<h4 align="center"><strong>Table 5.3.1 - Performance Comparison Table</strong></h4>
+
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Average Memory Used (MB)</th>
+      <th>Average Execution Time (s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pandas</td>
+      <td>2143.75</td>
+      <td>67.23</td>
+    </tr>
+    <tr>
+      <td>Dask</td>
+      <td>285.65</td>
+      <td>33.10</td>
+    </tr>
+    <tr>
+      <td>Another Library</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+### 5.5 Performance Comparison Graph
 
 
 ## 6.0 Conclusion and Reflection
-
-## References

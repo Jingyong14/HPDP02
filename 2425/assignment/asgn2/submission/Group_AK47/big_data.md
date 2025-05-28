@@ -15,9 +15,16 @@ For this assignment, the chosen dataset is Transactions.csv, a synthetic financi
 
 This dataset is designed for developing and testing fraud detection models by simulating realistic financial transaction patterns. It spans multiple merchant categories such as retail (both online and in-store), groceries, dining, travel, entertainment, healthcare, education, and gas. The diversity in transaction types and customer profiles makes it well-suited for exploratory analysis and performance comparison of big data processing techniques.
 
----
+## Intoduction
+In today’s data-driven landscape, organizations must process and analyze ever-growing datasets that surpass the capabilities of traditional data handling tools. This project tackles these challenges by working with a large-scale financial transactions dataset—ideal for exploring big data processing in fraud detection. Using Python and scalable data libraries, we demonstrate real-world strategies to efficiently manage, analyze, and extract insights from massive transaction records, preparing for practical scenarios in financial analytics and security.
+
+## Objective
+The objective of this project is to master efficient big data processing on a large-scale financial transactions dataset by utilizing advanced Python libraries such as Pandas, Dask, and Polars. We focus on applying and comparing high-performance strategies—including chunking, sampling, type optimization, and parallel processing—to optimize memory usage, execution time, and analytical capability. This project aims to demonstrate the effectiveness of modern data processing frameworks for extracting insights and supporting fraud detection in the financial sector.
+
 ## Task 1: Dataset Selection
 ### Dataset Description
+This synthetic dataset simulates realistic financial transactions for developing and testing fraud detection models. It covers a variety of categories—such as retail, grocery, dining, and travel—and includes key features like transaction amounts, device types, geographic locations, and a fraud label. Inspired by real-world data but generated to ensure privacy, the dataset is ideal for exploring patterns that distinguish legitimate from fraudulent transactions.
+
 - **Name:** Transactions.csv  
 - **Size:** Approximately 2.93 GB  
 - **Rows:** 7483766  

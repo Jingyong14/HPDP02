@@ -2,7 +2,7 @@
 
 ## 🧠 Assignment 2: Mastering Big Data Handling
 
- **Group AbaAba**  
+ **Group AK47**  
 | Name          | Matric No  |
 |---------------|------------|
 | Goh Jing Yang | A22EC0052  |

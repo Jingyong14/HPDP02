@@ -156,8 +156,19 @@
     <p><strong>Figure 3.4:</strong> Polars performance</p>
   </div>
 
-  <h2>Task 4: Comparative Analysis</h2>
-  <p>[Section content to be inserted]</p>
+<h2>Task 4: Comparative Analysis</h2>
+<p> To evaluate the efficiency of different data handling strategies, we compared the performance of traditional and optimized methods in terms of memory usage, execution time, and ease of processing. Three approaches were assessed: </p> <ul> <li><strong>Traditional Method</strong> using full load with <code>pandas.read_csv()</code></li> <li><strong>Dask Optimization</strong> with parallel processing and data type optimization</li> <li><strong>Polars Optimization</strong> with selective column loading and high-performance execution</li> </ul>
+<strong>Performance Summary Table</strong>
+<div align="center"> <table border="1" cellspacing="0" cellpadding="8"> <thead> <tr> <th>Method</th> <th>Execution Time (s)</th> <th>Memory Used (MB)</th> <th>Remarks</th> </tr> </thead> <tbody> <tr> <td>Traditional (Pandas)</td> <td>46.70</td> <td>1503.40</td> <td>Simple to implement but inefficient for large datasets.</td> </tr> <tr> <td>Dask (Optimized)</td> <td>248.10</td> <td>39.59</td> <td>Best memory efficiency but slower due to parallel task scheduling overhead.</td> </tr> <tr> <td>Polars (Load Less Data)</td> <td>2.02</td> <td>1005.92</td> <td>Extremely fast but memory usage depends on selected columns.</td> </tr> </tbody> </table> </div>
+<strong>Analysis</strong>
+Pandas (Traditional): Despite being the most straightforward method, it consumed the highest memory and provided moderate performance in terms of speed.
 
-  <h2>Task 5: Conclusion & Reflection</h2>
-  <p>[Section content to be inserted]</p>
+Dask: Achieved massive memory savings (~97% less than Pandas) by loading only selected columns and optimizing data types. However, the execution time increased due to Dask’s overhead in managing task graphs and parallelism.
+
+Polars: Demonstrated impressive speed (fastest among all) by leveraging its Rust-based engine and columnar data structure. Although memory usage was higher than Dask, it was significantly lower than Pandas and acceptable for most systems.
+
+<h2>Task 5: Conclusion & Reflection</h2>
+<strong>Conclusion</strong>
+<p> Through this assignment, we explored various strategies to handle large datasets efficiently. We demonstrated how traditional methods using Pandas are easy to implement but struggle with memory constraints when working with large files. In contrast, modern libraries like Dask and Polars offer scalable solutions through parallel processing and selective loading. </p> <p> Key takeaways: </p> <ul> <li><strong>Dask</strong> is ideal for memory-constrained environments, especially when only a subset of columns is needed.</li> <li><strong>Polars</strong> is optimal for high-speed processing when working with selected columns and medium-range memory usage is acceptable.</li> <li>Each optimization technique introduces trade-offs between memory, speed, and complexity.</li> </ul>
+<strong>Reflection</strong>
+<p> This assignment enhanced our understanding of big data management by applying real-world scalable techniques. We learned to: </p> <ul> <li>Profile system memory and track performance metrics using <code>psutil</code> and time functions.</li> <li>Use advanced libraries like Dask for distributed processing and Polars for high-speed data analysis.</li> <li>Balance trade-offs between different strategies to achieve efficient data loading and transformation.</li> </ul> <p> Moving forward, these skills will be valuable for tackling large-scale data challenges in industry applications and research-based data analytics. </p>

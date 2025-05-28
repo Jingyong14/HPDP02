@@ -44,19 +44,76 @@ The dataset falls within the Financial Fraud Detection domain. It integrates dat
   </div>
 
 
-### Task 2: Load and Inspect Data
+## Task 2: Load and Inspect Data
+To work with our large Transactions dataset in Python, we used Pandas and several memory management techniques to handle the file efficiently and to inspect its structure. Below are the key steps and their purposes:
+
+### 1. Import Required Libraries
+We import essential libraries:
+
+- pandas for data handling,
+- time for tracking execution time,
+- psutil and os for monitoring memory usage.
+
+This allows us to measure performance and handle the dataset programmatically.
+ <div align="center">
+    <img src="figures/Pandas_1.png" >
+  </div>
+
+### 2. Set Up Memory and Time Tracking
+Before loading the data, we initialize memory and time tracking to measure how resource-intensive the loading process is. This is especially useful for large datasets, as it helps us understand and compare the efficiency of different data-handling approaches.
+
+ <div align="center">
+    <img src="figures/Pandas_2.png" >
+  </div>
+
+### 3. Load the Full Dataset (Unoptimized)
+We use Pandas’ read_csv function to load the entire CSV file into memory. The low_memory=False parameter helps Pandas to infer data types more accurately but may use more memory.
+
+ <div align="center">
+    <img src="figures/Pandas_3.png" >
+  </div>
+
+  ### 4. Inspect the Dataset Structure
+After loading the data, we inspect its structure:
+
+- Shape: Total rows and columns,
+- Column Names: To understand what information is available,
+- Data Types: To check if the types are as expected.
+  
+ <div align="center">
+    <img src="figures/Pandas_4.png" >
+  </div>
+
+  ### 5. Basic Data Cleaning
+To prepare for analysis, we remove duplicate records and any rows with missing values. This ensures the data is clean and consistent for further processing.
+
+ <div align="center">
+    <img src="figures/Pandas_5.png" >
+  </div>
+
+  ### 6. Display Performance Metrics
+Finally, we record memory usage after loading and cleaning, and calculate the time taken. This provides insight into the cost of handling large files with Pandas and serves as a baseline for comparison with other libraries.
+
+<div align="center">
+    <img src="figures/Pandas_6.png" >
+  </div>
+<div align="center">
+    <img src="figures/Pandas_7.png" >
+  </div>
+<div align="center">
+    <img src="figures/Pandas_8.png" >
+    <p><strong>Output</strong></p>
+  </div
+
+## Task 3: Apply Big Data Handling Strategies
 
 
 
-### Task 3: Apply Big Data Handling Strategies
+## Task 4: Comparative Analysis
 
 
 
-### Task 4: Comparative Analysis
-
-
-
-### Task 5: Conclusion & Reflection
+## Task 5: Conclusion & Reflection
 
 
 

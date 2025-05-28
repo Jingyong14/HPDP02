@@ -83,21 +83,86 @@ The output in figure 3.5 provides a quick overview of the dataset’s structure,
 
 ## 4.0 Big Data Handling Strategies
 
+### 4.1 Pandas (Traditional Methods)
+Before applying any big data optimization techniques, we used Pandas to clean the dataset and establish a baseline for memory and execution time. 
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/1578e861-d8bd-4b19-847a-be4ced2bf165" alt="dask first run" />
+<br><strong>Figure 4.1.1 - Code Snippet for Inital Setup </strong> </p>
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/33f57c64-2952-497a-aee3-0adbdde1ff3b" alt="dask first run" />
+<br><strong>Figure 4.1.2 - Code Snippet to Start Performance Tracking </strong> </p>
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/702760e8-d6f4-438f-9c9c-f8fda69cdef6" alt="dask first run" />
+<br><strong>Figure 4.1.3 - Code Snippet to Start Performance Tracking </strong> </p>
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/e7672b5d-d5f4-4496-841a-0737ba6567d5" alt="dask first run" />
+<br><strong>Figure 4.1.4 - Code Snippet to Start Performance Tracking </strong> </p>
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/59c009a7-2cb4-4dd6-9847-2bacc0ec6071" alt="dask first run" />
+<br><strong>Figure 4.1.5 - Code Snippet to Start Performance Tracking </strong> </p>
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/6c29f376-3cf4-41b9-8180-b7638cd6c4e4" alt="dask first run" />
+<br><strong>Figure 4.1.6 - Code Snippet to Start Performance Tracking </strong> </p>
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/af881bb1-586c-43c9-a721-ab04fd705f87" alt="dask first run" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/56a57adf-7c25-41db-9298-01f5f2d147d7" alt="dask first run" />
+<br><strong>Figure 4.1.7 - Code Snippet to Start Performance Tracking </strong> </p>
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/df98b6e3-d531-4c09-bc54-306231ca85ee" alt="dask first run" />
+<br><strong>Figure 4.1.8 - Code Snippet to Start Performance Tracking </strong> </p>
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/d8d80abd-fe2d-424b-acf2-cc89acadd144" alt="dask first run" />
+<br><strong>Figure 4.1.9 - Code Snippet to Start Performance Tracking </strong> </p>
+
+### 4.2 Dask (Optimization)
+
+![image](https://github.com/user-attachments/assets/2152689d-f28f-408d-ab62-7d8a3d5e2fea)
+
+![image](https://github.com/user-attachments/assets/effcb687-0e6d-4f58-b0ed-f5557d123edc)
+
+![image](https://github.com/user-attachments/assets/d923a130-eb76-40de-be60-c999602857af)
+
+![image](https://github.com/user-attachments/assets/f8f47e1b-7ce3-4b70-a271-6842a5a91c9b)
+
+![image](https://github.com/user-attachments/assets/3fac57d6-6036-4a1b-829a-59bcc7dde7c2)
+
+![image](https://github.com/user-attachments/assets/f1859d9e-d20f-4bb2-80d8-6bb1c978919b)
+
+![image](https://github.com/user-attachments/assets/122cde5e-e85b-45ef-ad36-8361874bdb6b)
+
+![image](https://github.com/user-attachments/assets/71375d27-0836-4dd6-b0b8-0df62ed5e34c)
+
+![image](https://github.com/user-attachments/assets/6150c5f8-58a9-46a2-929e-bc9f13f9defb)
+
+![image](https://github.com/user-attachments/assets/b1d9403e-eded-4db8-afe9-8db9506800df)
+
+![image](https://github.com/user-attachments/assets/dd7dd303-3260-4b57-9773-6643fc9641e6)
+
+![image](https://github.com/user-attachments/assets/695c7dd3-3916-4193-9259-96b038aae2a9)
+![image](https://github.com/user-attachments/assets/125c5ea6-a7bb-4d73-9551-1d1c1761de7a)
+![image](https://github.com/user-attachments/assets/67eccaf7-3544-4458-8761-46af7c305e0f)
+![image](https://github.com/user-attachments/assets/c360d52f-6a4a-4209-831a-aae186bb9f17)
+
+
+### 4.3 Another Library (Optimization)
+
 ## 5.0 Comparative Analysis
 
-Pandas Performance
+### 5.1 Pandas Performance
 
 <p align="center"> <img src="https://github.com/user-attachments/assets/97a092e3-0468-4ee9-b12b-e9df06aa3456" alt="pandas first run" />
-<p align="center"> <img src="https://github.com/user-attachments/assets/1ebbf01b-f31f-4192-ab98-016ff77aef62" alt="pandas sec run" />
-<p align="center"> <img src="https://github.com/user-attachments/assets/e747dd40-ff6b-4fff-a2bb-5281e77b951d" alt="pandas third run" />
 <br><strong>Figure 4.1 - Pandas Performance </strong> </p>
 
-Dask Performance
+### 5.2 Dask Performance
 
 <p align="center"> <img src="https://github.com/user-attachments/assets/4521e075-8ecb-4149-9e8b-09b1b99efd6b" alt="dask first run" />
 <p align="center"> <img src="https://github.com/user-attachments/assets/9cabd3c2-08cc-472c-9dac-837c6a074951" alt="dask first run"/>
 <p align="center"> <img src="https://github.com/user-attachments/assets/f6015abd-25ab-441e-b93a-3b105fb26897" alt="dask first run" />
 <br><strong>Figure 4.1 - Dask Performance </strong> </p>
+
+### 5.3 Performance Comparison Table 
+
+### 5.4 Performance Comparison Graph
 
 
 ## 6.0 Conclusion and Reflection

@@ -9,9 +9,9 @@
 
 ## Dataset
 
-The dataset selected for this assignment is the **Traffic and Weather Datasets** dataset, publicly available on Kaggle. It contains comprehensive data related to traffic conditions and weather patterns, making it suitable for analyzing correlations, trends, and patterns across environmental and mobility factors.
+The dataset selected for this assignment is the UK Housing Prices Paid dataset, publicly available on Kaggle. It contains detailed property transaction data from England and Wales, making it ideal for analyzing pricing trends, regional patterns, and long-term market behavior.
 
-- **Source:** [Traffic and Weather Datasets](https://www.kaggle.com/datasets/orvile/traffic-and-weather-datasets/data)
+- **Source:** [UK Housing Prices Paid](https://www.kaggle.com/datasets/hm-land-registry/uk-housing-prices-paid)
 
 ## Submission
 

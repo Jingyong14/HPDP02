@@ -87,10 +87,18 @@ The output in figure 3.5 provides a quick overview of the dataset’s structure,
 
 Pandas Performance
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/97a092e3-0468-4ee9-b12b-e9df06aa3456" alt="ss output 1" />
-<p align="center"> <img src="https://github.com/user-attachments/assets/1ebbf01b-f31f-4192-ab98-016ff77aef62" alt="ss output 2" />
-<p align="center"> <img src="https://github.com/user-attachments/assets/e747dd40-ff6b-4fff-a2bb-5281e77b951d" alt="ss output 3" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/97a092e3-0468-4ee9-b12b-e9df06aa3456" alt="pandas first run" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/1ebbf01b-f31f-4192-ab98-016ff77aef62" alt="pandas sec run" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/e747dd40-ff6b-4fff-a2bb-5281e77b951d" alt="pandas third run" />
 <br><strong>Figure 4.1 - Pandas Performance </strong> </p>
+
+Dask Performance
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/4521e075-8ecb-4149-9e8b-09b1b99efd6b" alt="dask first run" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/9cabd3c2-08cc-472c-9dac-837c6a074951" alt="dask first run"/>
+<p align="center"> <img src="https://github.com/user-attachments/assets/f6015abd-25ab-441e-b93a-3b105fb26897" alt="dask first run" />
+<br><strong>Figure 4.1 - Dask Performance </strong> </p>
+
 
 ## 6.0 Conclusion and Reflection
 

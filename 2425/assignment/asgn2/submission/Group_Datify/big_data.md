@@ -249,9 +249,9 @@
   <p>Figure 15: File Loading using Polars</p>
 </div>
 
-<h4>4.3.4	Data Cleaning and Sampling</h4>
+<h4>4.3.4	Data Cleaning, Sampling, and Chunking</h4>
 <p>
-  Figure 16 illustrates how missing values were handled using the .drop_nulls() method. At this stage, a clean dataset was obtained, making it ready for sampling. Subsequently, 10% of the cleaned dataset was sampled using .sample(fraction=0.1, seed=42). The use of seed=42 ensured that the sampling process produced consistent results across multiple runs, which is essential for reproducibility and fair performance comparisons. Both the data cleaning and sampling processes benefitted from Polars' built-in automatic multithreading, which enabled parallel data processing and resulted in significantly faster execution times.
+  Figure 16 illustrates how missing values were handled using the .drop_nulls() method. At this stage, a clean dataset was obtained, making it ready for sampling. Subsequently, 10% of the cleaned dataset was sampled using .sample(fraction=0.1, seed=42). The use of seed=42 ensured that the sampling process produced consistent results across multiple runs, which is essential for reproducibility and fair performance comparisons. Both the data cleaning and sampling processes benefitted from Polars' built-in automatic multithreading, which enabled parallel data processing and resulted in significantly faster execution times. Polars automatically chunks data by storing each column as a series of fixed-size Arrow arrays. When reading large files, it does not load everything at once but processes the data in smaller batches. These chunks are handled in parallel, speeding up tasks like filtering and grouping. Polars handles chunking in the background during operation like ‘read_csv()’ to make it fast and memory-efficient when dealing with big datasets. 
 </p>
 
 <div align="center" style="margin-bottom: 32px;">
@@ -304,9 +304,9 @@
   <p>Figure 20: Parallel File Loading and Lazy Evaluation using Dask</p>
 </div>
 
-<h4>4.4.4	Data Cleaning and Sampling</h4>
+<h4>4.4.4	Data Cleaning, Sampling, and Chunking</h4>
 <p>
-  Figure 21 shows the data cleaning and sampling without fully loading into memory. The dropna() function was used to remove rows with missing values, and a 10% sample of the data was taken using sample(). Both of these steps were done in parallel across the chunks of data, which makes them faster and more efficient, especially when dealing with big datasets.
+  Figure 21 shows the data cleaning and sampling without fully loading into memory. The dropna() function was used to remove rows with missing values, and a 10% sample of the data was taken using sample(). Both of these steps were done in parallel across the chunks of data, which makes them faster and more efficient, especially when dealing with big datasets. Dask automatically chunks large datasets by splitting them into smaller partitions, which are like mini DataFrames. These partitions are processed in parallel across available CPU cores and allows Dask to handle data that does not fit into memory all at once. When loading a file with dd.read_csv(), Dask reads it in blocks, manages the partitions, and performs operations on each chunk efficiently in the background.
 </p>
 
 <div align="center" style="margin-bottom: 32px;">

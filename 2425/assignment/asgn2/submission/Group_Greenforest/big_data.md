@@ -21,9 +21,21 @@
 
 
 ## 1.0 Introduction
+
+This assignment focuses on exploring practical strategies for efficient big data handling using Python. Optimization techniques such as chunking, data type reduction, sampling, and selective data loading are implemented to improve processing efficiency. In addition, parallel computing approaches are applied using libraries such as Dask and Polars, alongside traditional Pandas, to compare performance across different frameworks in terms of memory usage and execution time.
+
+A dataset exceeding 1 GB in size is selected to simulate real-world scenarios where transportation systems, urban infrastructure, or other domains require large-scale data handling. Through this investigation, insights are gained into scalable techniques that enhance the performance and practicality of data analytics workflows in big data contexts.
+
 ### 1.1 Objectives
 
+1. To implement and compare big data handling strategies using Pandas, Dask, and Polars.
+
+2. To evaluate and optimize performance through memory-efficient loading, processing, and sampling techniques.
+
+3. To analyze and reflect on the effectiveness of each method in handling large datasets based on speed, resource usage, and scalability.
+
 ## 2.0 Dataset Selection
+This section introduces and justifies the selection of the “New York City Bus Data” dataset, which serves as the core dataset for the assignment. The dataset is chosen for its substantial size, structured format, and real-time public transportation context, all of which align well with the goals of high-performance big data analysis.
 
 ### 2.1 Dataset Details
 For this assignment, the dataset chosen is titled **"New York City Bus Data"**, **sourced from [Kaggle](https://www.kaggle.com/datasets/stoney71/new-york-city-transport-statistics?select=mta_1712.csv) and 
@@ -44,40 +56,41 @@ Figure 2.2.1 illustrates a sample view of the dataset's structure, including col
 This dataset is particularly suitable for a big data handling assignment because of its large volume, structured schema, and real-time characteristics. It offers practical opportunities to explore and apply big data techniques such as chunked or parallelized data loading, data type optimization for memory efficiency, and performance benchmarking using tools like Dask against traditional Pandas operations. Moreover, the dataset simulates a real-world use case where a transportation agency must process millions of records to monitor services, analyze delays, and optimize route planning.
 
 ## 3.0 Data Loading and Inspection
+This section outlines the essential steps taken to access, manage, and prepare the dataset from Kaggle for analysis in a Google Colab environment. The process begins with authenticating Kaggle API access, followed by downloading and extracting the dataset, then saving it to Google Drive for persistence, and finally performing a brief inspection of the data to understand its structure.
 
-### 🔐 Kaggle API Setup for Dataset Download
+### 3.1 Kaggle API Setup for Dataset Download
 
 To access and download datasets directly from Kaggle within Google Colab, we first need to authenticate using the Kaggle API. This requires a Kaggle account and an API key (kaggle.json). <br> 
 The first line in figure 3.1 prompts the user to upload the kaggle.json file, which contains the API credentials. <br>
 The second commands in figure 3.1 create a hidden .kaggle directory in the user’s home path. Then, it copy the uploaded kaggle.json file into this directory. Next, it set the appropriate permissions (read/write for user only) to ensure security and avoid access issues.
 
 <p align="center"> <img src="https://github.com/user-attachments/assets/0a805554-e4a2-464b-a503-78e5e7c4ea6e" alt="ss code 1" /> 
-<br><strong>Figure 3.1 - Kaggle API Setup </strong> </p>
+<br><strong>Figure 3.1.1 - Kaggle API Setup </strong> </p>
 
-### 📥 Dataset Download and Extraction
+### 3.2 Dataset Download and Extraction
 Once the Kaggle API is properly configured, the commands in figure 3.2 are used to download and extract the dataset. The first command uses the kaggle CLI tool to download the dataset from Kaggle. The dataset will be downloaded as a ZIP file into the current working directory. The second command extracts the contents of the downloaded ZIP file into a folder named nyc_transport. The -o flag allows existing files to be overwritten if they already exist. After extraction, the raw dataset (e.g., mta_1712.csv) will be available for further processing, cleaning, and analysis.
 
 <p align="center"> <img src="https://github.com/user-attachments/assets/16e9d301-8f6a-4542-ab22-499dd2d45f63" alt="ss code 2" /> 
-<br><strong>Figure 3.2 - Dataset Download and Extraction </strong> </p>
+<br><strong>Figure 3.2.1 - Dataset Download and Extraction </strong> </p>
 
-### 💾 Saving Dataset to Google Drive
+### 3.3 Saving Dataset to Google Drive
 
 The following code in figure 3.3 is used to save the donwnloaded dataset to Google Drive for persistent storage and future use. The first command mounts the Google Drive to the Colab environment, allowing to read from and write to Drive directly. The second section creates a directory path inside Google Drive named Assign2/nyc_transport_data. In the third command, the cleaned DataFrame df is saved as a CSV file named mta_1712_cleaned.csv inside the target directory. The dataset is now saved securely in Google Drive and can be accessed later for inspection, modeling, or additional analysis.
 
 <p align="center"> <img src="https://github.com/user-attachments/assets/b3e0b18c-e007-4478-bced-dd38fc946674" alt="ss code 3" /> 
-<br><strong>Figure 3.3 - Saving Dataset to Google Drive </strong> </p>
+<br><strong>Figure 3.3.1 - Saving Dataset to Google Drive </strong> </p>
 
-### 🔍 Brief Data Inspection
+### 3.4 Brief Data Inspection
 
-The code in figure 3.4 loads the CSV file into a pandas DataFrame for inspection. 
+The code in figure 3.4.1 loads the CSV file into a pandas DataFrame for inspection. 
 
 <p align="center"> <img src="https://github.com/user-attachments/assets/263ec5e9-9f21-4464-b7a5-8937e442dbfb" alt="ss code 4" /> 
-<br><strong>Figure 3.4 - Brief Data Inspection </strong> </p>
+<br><strong>Figure 3.4.1 - Brief Data Inspection </strong> </p>
 
-The output in figure 3.5 provides a quick overview of the dataset’s structure, including its dimensions, column names, and data types, laying the groundwork for deeper analysis and optimization steps.
+The output in figure 3.4.2 provides a quick overview of the dataset’s structure, including its dimensions, column names, and data types, laying the groundwork for deeper analysis and optimization steps.
 
 <p align="center"> <img src="https://github.com/user-attachments/assets/63563598-6eb2-4ad7-be35-a19a355099d5" alt="ss code 5" /> 
-<br><strong>Figure 3.5 - Inspection Output </strong> </p>
+<br><strong>Figure 3.4.2 - Inspection Output </strong> </p>
 
 
 ## 4.0 Big Data Handling Strategies
@@ -115,33 +128,50 @@ Before applying any big data optimization techniques, we used Pandas to clean th
 
 ### 4.2 Dask (Optimization)
 
-![image](https://github.com/user-attachments/assets/2152689d-f28f-408d-ab62-7d8a3d5e2fea)
+<p align="center"> <img src="https://github.com/user-attachments/assets/2152689d-f28f-408d-ab62-7d8a3d5e2fea" alt="dask first run" />
+<br><strong>Figure 4.2.1 - Code Snippet to Start Performance Tracking </strong> </p>
 
-![image](https://github.com/user-attachments/assets/effcb687-0e6d-4f58-b0ed-f5557d123edc)
+<p align="center"> <img src="https://github.com/user-attachments/assets/effcb687-0e6d-4f58-b0ed-f5557d123edc" alt="dask first run" />
+<br><strong>Figure 4.2.2 - Code Snippet to Start Performance Tracking </strong> </p>
 
-![image](https://github.com/user-attachments/assets/d923a130-eb76-40de-be60-c999602857af)
+<p align="center"> <img src="https://github.com/user-attachments/assets/d923a130-eb76-40de-be60-c999602857af" alt="dask first run" />
+<br><strong>Figure 4.2.3 - Code Snippet to Start Performance Tracking </strong> </p>
 
-![image](https://github.com/user-attachments/assets/f8f47e1b-7ce3-4b70-a271-6842a5a91c9b)
+<p align="center"> <img src="https://github.com/user-attachments/assets/f8f47e1b-7ce3-4b70-a271-6842a5a91c9b" alt="dask first run" />
+<br><strong>Figure 4.2.4 - Code Snippet to Start Performance Tracking </strong> </p>
 
-![image](https://github.com/user-attachments/assets/3fac57d6-6036-4a1b-829a-59bcc7dde7c2)
+<p align="center"> <img src="https://github.com/user-attachments/assets/3fac57d6-6036-4a1b-829a-59bcc7dde7c2" alt="dask first run" />
+<br><strong>Figure 4.2.5 - Code Snippet to Start Performance Tracking </strong> </p>
 
-![image](https://github.com/user-attachments/assets/f1859d9e-d20f-4bb2-80d8-6bb1c978919b)
+<p align="center"> <img src="https://github.com/user-attachments/assets/d020573f-784f-4b27-a3f7-6a4e149d31e3" alt="dask first run" />
+<br><strong>Figure 4.2.6 - Code Snippet to Start Performance Tracking </strong> </p>
 
-![image](https://github.com/user-attachments/assets/122cde5e-e85b-45ef-ad36-8361874bdb6b)
+<p align="center"> <img src="https://github.com/user-attachments/assets/122cde5e-e85b-45ef-ad36-8361874bdb6b" alt="dask first run" />
+<br><strong>Figure 4.2.7 - Code Snippet to Start Performance Tracking </strong> </p>
 
-![image](https://github.com/user-attachments/assets/71375d27-0836-4dd6-b0b8-0df62ed5e34c)
+<p align="center"> <img src="https://github.com/user-attachments/assets/71375d27-0836-4dd6-b0b8-0df62ed5e34c" alt="dask first run" />
+<br><strong>Figure 4.2.8 - Code Snippet to Start Performance Tracking </strong> </p>
 
-![image](https://github.com/user-attachments/assets/6150c5f8-58a9-46a2-929e-bc9f13f9defb)
+<p align="center"> <img src="https://github.com/user-attachments/assets/6150c5f8-58a9-46a2-929e-bc9f13f9defb" alt="dask first run" />
+<br><strong>Figure 4.2.9 - Code Snippet to Start Performance Tracking </strong> </p>
 
-![image](https://github.com/user-attachments/assets/b1d9403e-eded-4db8-afe9-8db9506800df)
+<p align="center"> <img src="https://github.com/user-attachments/assets/b1d9403e-eded-4db8-afe9-8db9506800df" alt="dask first run" />
+<br><strong>Figure 4.2.10 - Code Snippet to Start Performance Tracking </strong> </p>
 
-![image](https://github.com/user-attachments/assets/dd7dd303-3260-4b57-9773-6643fc9641e6)
+<p align="center"> <img src="https://github.com/user-attachments/assets/dd7dd303-3260-4b57-9773-6643fc9641e6" alt="dask first run" />
+<br><strong>Figure 4.2.11 - Code Snippet to Start Performance Tracking </strong> </p>
 
-![image](https://github.com/user-attachments/assets/695c7dd3-3916-4193-9259-96b038aae2a9)
-![image](https://github.com/user-attachments/assets/125c5ea6-a7bb-4d73-9551-1d1c1761de7a)
-![image](https://github.com/user-attachments/assets/67eccaf7-3544-4458-8761-46af7c305e0f)
-![image](https://github.com/user-attachments/assets/c360d52f-6a4a-4209-831a-aae186bb9f17)
+<p align="center"> <img src="https://github.com/user-attachments/assets/125c5ea6-a7bb-4d73-9551-1d1c1761de7a" alt="dask first run" />
+<br><strong>Figure 4.2.12 - Code Snippet to Start Performance Tracking </strong> </p>
 
+<p align="center"> <img src="https://github.com/user-attachments/assets/125c5ea6-a7bb-4d73-9551-1d1c1761de7a" alt="dask first run" />
+<br><strong>Figure 4.2.13 - Code Snippet to Start Performance Tracking </strong> </p>
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/67eccaf7-3544-4458-8761-46af7c305e0f" alt="dask first run" />
+<br><strong>Figure 4.2.14 - Code Snippet to Start Performance Tracking </strong> </p>
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/c360d52f-6a4a-4209-831a-aae186bb9f17" alt="dask first run" />
+<br><strong>Figure 4.2.15 - Code Snippet to Start Performance Tracking </strong> </p>
 
 ### 4.3 Another Library (Optimization)
 

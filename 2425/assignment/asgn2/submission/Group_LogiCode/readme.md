@@ -10,7 +10,6 @@ The objective is to evaluate the effectiveness of big data techniques by compari
 | Ong Yi Yan                | A22EC0101 |
 | Tang Yan Qing             | A22EC0109  |
 
-<br>
 
 ## 📁 Dataset Information
 The dataset selected is the **"Spotify Charts"** dataset, publicly available on Kaggle. It contains chart data from Spotify’s **Top 200** and **Viral 50** lists across various countries.

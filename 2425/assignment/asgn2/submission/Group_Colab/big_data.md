@@ -101,8 +101,6 @@ The columns included are:
   <p><strong>Figure 2.4:</strong> Loading Dataset Using Pandas</p>
 </div>
 
-<details>
-<summary><strong>📉 Basic Data Inspection</strong></summary>
 
 <p>After loading the dataset, we performed a basic inspection to understand its structure and contents. This included:</p>
 
@@ -117,12 +115,9 @@ The columns included are:
   <p><strong>Figure 2.5:</strong> Basic Data Inspection using Pandas</p>
 </div>
 
-</details>
 
 <br>
 
-<details>
-<summary><strong>⚙️ Standardizing Numerical Features</strong></summary>
 
 <p>We standardized the following numerical columns using <code>StandardScaler</code> from <code>sklearn.preprocessing</code> to ensure consistent scaling for further analysis:</p>
 
@@ -137,7 +132,6 @@ The columns included are:
   <p><strong>Figure 2.6:</strong> Standardizing Numerical Features</p>
 </div>
 
-</details>
 
 
 <h3>✅ Summary</h3>

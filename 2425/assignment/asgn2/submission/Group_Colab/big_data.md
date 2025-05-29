@@ -66,9 +66,6 @@ The columns included are:
 
 </div>
 
-### 1.3 Justification
-
-
 <h2>Task 2: Load and Inspect Data</h2>
 
 

@@ -68,6 +68,16 @@ The columns included are:
 
 <h2>Task 2: Load and Inspect Data</h2>
 
+In this task, the Spotify dataset was downloaded using **KaggleHub** in **Google Colab**, loaded into memory using **Pandas**, and inspected to understand its structure. Additionally, we performed basic preprocessing by standardizing selected numerical columns for future analysis.
+
+---
+
+### 📸 Figure 2.1: Installing and Using KaggleHub to Download the Dataset
+
+We first installed the required `kaggle` package with:
+
+
+
 
 <h2>Task 3: Apply Big Data Handling Strategies</h2>
 

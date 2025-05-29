@@ -68,15 +68,64 @@ The columns included are:
 
 <h2>Task 2: Load and Inspect Data</h2>
 
-In this task, the Spotify dataset was downloaded using **KaggleHub** in **Google Colab**, loaded into memory using **Pandas**, and inspected to understand its structure. Additionally, we performed basic preprocessing by standardizing selected numerical columns for future analysis.
+<p>In this task, the Spotify dataset was downloaded using KaggleHub in Google Colab, loaded into memory using Pandas, and inspected to understand its structure. Additionally, we performed basic preprocessing by standardizing selected numerical columns for future analysis.</p>
 
----
+<div align="center">
+  <img src="figures/Figure2.1.png" width="700">
+  <p><strong>Figure 2.1:</strong> Kaggle Installation</p>
+</div>
 
-### 📸 Figure 2.1: Installing and Using KaggleHub to Download the Dataset
+<p>After installing the necessary package, we used KaggleHub to download the dataset automatically. This helped avoid the need for manual downloads.</p>
 
-We first installed the required `kaggle` package with:
+<div align="center">
+  <img src="figures/Figure2.2.png" width="700">
+  <p><strong>Figure 2.2:</strong> Kaggle Data Download Process</p>
+</div>
 
+<p>Once downloaded, we located the dataset path and listed the files to verify the successful download of <code>spotify_dataset.csv</code>.</p>
 
+<div align="center">
+  <img src="figures/Figure2.3.png" width="700">
+  <p><strong>Figure 2.3:</strong> Locating and Listing Downloaded Files</p>
+</div>
+
+<p>The dataset was then loaded into memory using <code>pd.read_csv()</code>, which is efficient for small to medium-sized datasets. We also recorded performance metrics as follows:</p>
+
+<ul>
+  <li>⏱️ Execution Time: ~23.73 seconds</li>
+  <li>📦 Memory Usage: ~1790.17 MB</li>
+</ul>
+
+<div align="center">
+  <img src="figures/Figure2.4.png" width="700">
+  <p><strong>Figure 2.4:</strong> Loading Dataset Using Pandas</p>
+</div>
+
+<p>After loading, we performed a basic inspection and preprocessing, including checking data types, missing values, and standardizing numerical features using <code>StandardScaler</code> from <code>sklearn.preprocessing</code>. The columns standardized were:</p>
+
+<ul>
+  <li>Similarity Score 1</li>
+  <li>Similarity Score 2</li>
+  <li>Similarity Score 3</li>
+</ul>
+
+<div align="center">
+  <img src="figures/Figure2.5.png" width="700">
+  <p><strong>Figure 2.5:</strong> Basic Data Inspection and Preprocessing</p>
+</div>
+
+<h3>✅ Summary</h3>
+
+<p>By the end of this task, the Spotify dataset was:</p>
+
+<ul>
+  <li>✅ Successfully retrieved using KaggleHub</li>
+  <li>✅ Loaded into memory using Pandas</li>
+  <li>✅ Inspected for structural understanding</li>
+  <li>✅ Preprocessed with standardized numerical features</li>
+</ul>
+
+<p>This forms the baseline for comparing performance with other frameworks like Polars and Dask in later tasks.</p>
 
 
 <h2>Task 3: Apply Big Data Handling Strategies</h2>

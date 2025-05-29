@@ -106,10 +106,112 @@ Finally, we record memory usage after loading and cleaning, and calculate the ti
 </div>
 
 
-### Task 3: Apply Big Data Handling Strategies
+## Task 3: Apply Big Data Handling Strategies
 We selected Dask and Polars to be our optimization libraries so as to efficiently process and handle our large-scale transactions data for financial fraud detection.
 
+### Dask 
+We chose the Dask library due to its capability to process large datasets efficiently using parallelism and lazy evaluation. In contrast to Pandas, which by default loads the whole dataset into memory, Dask supports column-level filtering while performing the CSV read operation, thus enabling us to load only the necessary columns. This significantly enhances memory efficiency and I/O performance while dealing with big data.
 
+Columns Selected for Analysis and Optimization:
+
+- transaction_id
+- customer_id
+- card_number
+- timestamp
+- merchant_category
+- merchant_type
+- merchant
+- amount
+- currency
+
+These features were identified as highly relevant for analyzing transaction behavior, profiling merchant activity, and detecting potential fraud in the dataset.
+
+After loading the selected columns, we applied data type optimization by converting:
+
+- merchant_category, merchant_type, and currency to "category" (to reduce memory overhead from repeated strings)
+- transaction_id and customer_id to "int64"
+- card_number and merchant to "object"
+- timestamp to datetime64
+- amount to "float64"
+
+These conversions further reduced memory usage while preserving the integrity and analytical usefulness of the data.
+
+Figures 3.1 and 3.2 show the implementation using Dask and the performance results, demonstrating the effectiveness of these big data strategies for handling and optimizing large-scale transaction records.
+
+<div align="center">
+    <img src="figures/Dask_1.png" >
+</div>
+<div align="center">
+    <img src="figures/Dask_2.png" >
+</div>
+<div align="center">
+    <img src="figures/Dask_4.png" >
+    <p><strong>Figure 3.1: Dask optimization technique code</strong></p>
+</div>
+<div align="center">
+    <img src="figures/Dask_3.png" >
+</div>
+<div align="center">
+    <img src="figures/Dask_5.png" >
+    <p><strong>Figure 3.2: Dask performance</strong></p>
+</div>
+
+<strong>Summary</strong>
+
+Using Dask, we efficiently loaded and preprocessed a large-scale financial transactions dataset by leveraging column selection and data type optimization. This approach resulted in substantial improvements in both memory usage and processing speed, making Dask highly suitable for big data analytics in the financial domain.
+
+### Polars
+The Polars library was chosen because of its efficient data handling in Python, especially when dealing with big data. Filtering at the level of the first CSV read was among the significant optimization strategies we utilized. Compared to Pandas, which loads the entire schema by default, Polars allows projection at the I/O level itself, which is very memory and I/O friendly.
+
+The columns selected for analysis and optimization were:
+
+- transaction_id
+- customer_id
+- card_number
+- timestamp
+- merchant_category
+- merchant_type
+- merchant
+- amount
+- currency
+
+These fields were identified as the most relevant for analyzing transaction trends, merchant profiling, and supporting fraud detection use cases.
+
+After loading the required columns, we performed data type optimization by converting:
+
+- Categorical columns (merchant_category, merchant_type, currency) to Polars Categorical
+
+- Numeric columns (amount) to Float64
+
+- IDs and codes to string (for consistency)
+
+- timestamp cleaned and parsed as a datetime field
+
+These conversions aimed to further minimize memory usage while retaining full analytical utility.
+
+Figures 3.3 and 3.4 present the full implementation using the Polars library, showcasing its effectiveness in handling and optimizing large-scale transaction datasets.
+
+<div align="center">
+    <img src="figures/Polars_1.png" >
+</div>
+<div align="center">
+    <img src="figures/Polars_2.png" >
+</div>
+<div align="center">
+    <img src="figures/Polars_4.png" >
+    <p><strong>Figure 3.3: Polars optimization technique code</strong></p>
+</div>
+<div align="center">
+    <img src="figures/Polars_3.png" >
+</div>
+<div align="center">
+    <img src="figures/Polars_5.png" >
+    <p><strong>Figure 3.4: Polars performance</strong></p>
+</div>
+
+<strong>Summary</strong>
+
+Using Polars, we efficiently loaded and processed a large-scale financial transactions dataset by applying column filtering and aggressive data type optimization. This led to major improvements in processing speed and memory utilization, proving Polars to be a powerful choice for scalable big data analytics in finance.
 
 
 ## Task 4: Comparative Analysis

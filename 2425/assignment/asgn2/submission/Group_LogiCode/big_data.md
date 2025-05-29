@@ -35,11 +35,14 @@ Table 2.0.1 shows an overview of the Spotify Charts dataset used in this project
 This dataset is suitable for performance comparison tasks as it is large in volume and contains diverse types of data (e.g., numerical, categorical, missing values), providing a practical use case for benchmarking data processing libraries.
 
 ## 3.0 Load and Inspect Data
-To prepare the dataset for use, the Spotify Charts data was downloaded from Kaggle using the Kaggle API. The process began with installing the Kaggle package to enable command-line access to Kaggle resources. Then, the required credentials — Kaggle username and API key — were set manually as environment variables to authenticate the session. After successful authentication, the dataset was downloaded using the `kaggle datasets download` command and extracted from the ZIP archive. Once extracted, the dataset files were ready for inspection and further processing.
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/914643c2-d0c4-4a29-aa7a-67f6c46a9562" alt="Figure 3.0.1" width="400">
-</div>
+To prepare the dataset for use, the Spotify Charts data was downloaded from Kaggle using the Kaggle API. The process began with installing the Kaggle package to enable command-line access to Kaggle resources. Then, the required credentials (Kaggle username and API key) were set manually as environment variables to authenticate the session. After successful authentication, the dataset was downloaded using the `kaggle datasets download` command and extracted from the ZIP archive. **Figure 3.0.1** demonstrates how the Kaggle API is configured and used to download and extract the dataset efficiently. Once extracted, the dataset files were ready for inspection and further processing.
+
+After loading the dataset, a basic inspection was performed to understand its structure and content. The inspection began by using the pandas library to read the CSV file `charts.csv` into a DataFrame. The code used for this process is shown in **Figure 3.0.2**, which check the dataset's shape and retrieve summary information such as data types and non-null counts. The `shape` output indicated that the dataset contains over 26 million rows and 9 columns. To further explore the structure, the `info()` function was used, revealing that most columns are of object type, with only one integer and one float column. **Figure 3.0.3** displays this output, highlighting the presence of all expected columns such as `title`, `artist`, `rank`, and `streams`, as well as confirming that no null values were present across the dataset.
+
+<div align="center"> <img src="https://github.com/user-attachments/assets/914643c2-d0c4-4a29-aa7a-67f6c46a9562" alt="Figure 3.0.1" width="400"> <br><strong>Figure 3.0.1: Code snippet demonstrating the process of loading data using Kaggle API.</strong> </div>
+<div align="center"> <img src="https://github.com/user-attachments/assets/41432251-baff-4398-9566-3477e6848b8b" alt="Figure 3.0.1" width="400"><br><strong>Figure 3.0.2: Code snippet inspecting the Spotify Charts dataset.</strong> </div>
+<div align="center"> <img src="https://github.com/user-attachments/assets/7a508734-cea7-493c-9433-bdb186546b1c" alt="Figure 3.0.1" width="400"> <br><strong>Figure 3.0.3: Summary output of the dataset inspection showing entry count, column structure, and memory usage.</strong> </div>
 
 ## 4.0 Big Data Handling Strategies
 ## 5.0 Comparative Analysis

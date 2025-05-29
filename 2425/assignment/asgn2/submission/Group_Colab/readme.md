@@ -4,6 +4,15 @@
 - Nik Zulaikhaa Binti Zuraidi Afandi (A22EC0232)
 
 ---
+## Introduction
+In the modern data-driven world, organizations face the challenge of managing and extracting insights from massive datasets that far exceed the capabilities of traditional data handling tools. This assignment provides hands-on experience in managing such datasets using Python and its scalable libraries.
+
+In this assignment, a dataset with 1GB size will be used to performed a few optimized strategies including:
+- Load Less Data
+- Use Chunking
+- Optimize Data Types
+- Sampling
+- Parallel Processing with Dask
 
 ## 📂 Project Resources
 

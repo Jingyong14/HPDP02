@@ -215,7 +215,44 @@ Using Polars, we efficiently loaded and processed a large-scale financial transa
 
 
 ## Task 4: Comparative Analysis
+This section compares the performance and usability of three approaches for handling large-scale financial transaction data:
 
+- Traditional Method: Full load with Pandas
+- Optimized Method 1: Dask (with column selection & type optimization)
+- Optimized Method 2: Polars (with column selection & type optimization)
+
+We evaluate each method based on memory usage, execution time, and ease of processing.
+
+### Results Table
+
+| Method  | Execution Time (seconds) | Memory Usage (MB) | Ease of Processing                              |
+|---------|--------------------------|-------------------|-------------------------------------------------|
+| Pandas  | 259.60                   | 1564.06           | Simple, familiar, but slow for big data         |
+| Dask    | 2.29                     | 16.00             | Efficient, scalable, requires some setup        |
+| Polars  | 17.87                    | 2425.53           | Very fast, modern, easy with column filter      |
+
+
+<div align="center">
+    <img src="figures/output.png" >
+</div>
+
+<strong>1. Memory Usage</strong>
+   
+- Pandas: Consumes significant memory as it loads the entire dataset into RAM. Can be a bottleneck for very large datasets.
+- Dask: Extremely efficient memory usage due to lazy loading and partitioning. Only loads data as needed, ideal for big data.
+- Polars: Fast and modern, but in this case used more memory than Pandas or Dask, likely due to how Polars buffers data and type conversions.
+
+<strong>2. Execution Time</strong>
+   
+- Pandas: Much slower due to full in-memory loading and lack of parallelism.
+- Dask: Fastest due to chunked, parallel processing and optimized reads.
+- Polars: Also very fast, but slower than Dask here, possibly due to the complexity of type casting and additional internal processing.
+
+<strong>3. Ease of Processing </strong>
+
+- Pandas: Easiest for most users, but cannot handle huge data without running into resource issues.
+- Dask: Familiar syntax for Pandas users, but requires setup and a shift to lazy computation mindset. Great for scaling up from Pandas.
+- Polars: Intuitive and modern API, easy column projection and type optimization, but some advanced features (like string and datetime cleaning) may require learning new functions.
 
 
 ## Task 5: Conclusion & Reflection

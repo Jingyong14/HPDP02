@@ -10,8 +10,5 @@
 | Ong Yi Yan       | `A22EC0101`     |
 | Tang Yan Qing | `A22EC0109`     |
 
-
-<br>
-
 ## 1.0 Introduction
 

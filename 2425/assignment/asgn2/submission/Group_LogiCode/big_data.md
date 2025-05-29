@@ -24,12 +24,11 @@ Table 2.0.1 shows an overview of the Spotify Charts dataset used in this project
 |-----------------------|------------------------------------------------------------------------------|
 | **Dataset Name**      | Spotify Charts Dataset                                                       |
 | **Source**            | [Kaggle](https://www.kaggle.com/datasets/dhruvildave/spotify-charts)         |
-| **File Size**         | ~3.48 GB                                                                     |
+| **File Size**         | Approximately 3.48 GB                                                                     |
 | **Domain**            | Music Streaming                                                              |
 | **Number of Records** | 26,173,514                                                                   |
 | **File Format**       | CSV                                                                          |
 | **Columns**           | title (song name), artist, rank, date, region, chart type, streams (NULL for "viral50"), trend (popularity indicator), url (track link)                |
-| **Temporal Coverage** | January 2017 to present                                                      |
 
 </div>
 
@@ -46,3 +45,5 @@ To prepare the dataset for use, the Spotify Charts data was downloaded from Kagg
 ## 5.0 Comparative Analysis
 ## 6.0 Conclusion
 ## 7.0 References
+- Dhruvildave. (n.d.). *Spotify Charts Dataset* [Data set]. Kaggle. https://www.kaggle.com/datasets/dhruvildave/spotify-charts
+- Shahizan, D. (n.d.). drshahizan [GitHub repository]. GitHub. https://github.com/drshahizan/drshahizan

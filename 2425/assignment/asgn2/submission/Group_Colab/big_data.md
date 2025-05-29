@@ -78,14 +78,14 @@ The columns included are:
 <p>After installing the necessary package, we used KaggleHub to download the dataset automatically. This helped avoid the need for manual downloads.</p>
 
 <div align="center">
-  <img src="figures/task 2 - 2.PNG" width="300">
+  <img src="figures/task 2 - 2.PNG" width="400">
   <p><strong>Figure 2.2:</strong> Kaggle Data Download Process</p>
 </div>
 
 <p>Once downloaded, we located the dataset path and listed the files to verify the successful download of <code>spotify_dataset.csv</code>.</p>
 
 <div align="center">
-  <img src="figures/task 2 - 3.PNG" width="400">
+  <img src="figures/task 2 - 3.PNG" width="300">
   <p><strong>Figure 2.3:</strong> Locating and Listing Downloaded Files</p>
 </div>
 

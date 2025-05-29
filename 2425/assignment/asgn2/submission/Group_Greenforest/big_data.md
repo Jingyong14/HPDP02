@@ -174,6 +174,31 @@ Before applying any big data optimization techniques, we used Pandas to clean th
 <br><strong>Figure 4.2.15 - Code Snippet to Start Performance Tracking </strong> </p>
 
 ### 4.3 Polars (Optimization)
+<p align="center"> <img src="https://github.com/user-attachments/assets/49dfebdf-b545-4276-9c0f-6dd41b3341c4" alt="dask first run" />
+<br><strong>Figure 4.1.2 - Code Snippet to Start Performance Tracking </strong> </p>
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/dd0a54ea-da27-429e-9e90-63281f1e8066" alt="dask first run" />
+<br><strong>Figure 4.1.2 - Code Snippet to Start Performance Tracking </strong> </p>
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/2f05a6a2-eed6-46a6-ab04-07726567818d" alt="dask first run" />
+<br><strong>Figure 4.1.2 - Code Snippet to Start Performance Tracking </strong> </p>
+
+![image](https://github.com/user-attachments/assets/163309d6-8e98-4dd9-9e30-7ff266e9a858)
+![image](https://github.com/user-attachments/assets/34f9ece4-465d-4019-9c60-ff6b19990b43)
+![image](https://github.com/user-attachments/assets/ea1cbd39-c835-4788-a5f2-058a7fec088b)
+![image](https://github.com/user-attachments/assets/60f5d3ed-5e4e-43b9-a7d9-9ead91ae1f6c)
+![image](https://github.com/user-attachments/assets/ccf69f0a-295c-4f4a-9a0c-6255141f673b)
+![image](https://github.com/user-attachments/assets/3c9895ee-6b2a-427e-9d01-c2985e5b41d2)
+![image](https://github.com/user-attachments/assets/70d3fea2-a0e4-49ba-8844-00e918d68cc2)
+![image](https://github.com/user-attachments/assets/7896b061-66ba-49a4-8d17-d9d79753bce1)
+//
+![image](https://github.com/user-attachments/assets/ca5471b7-84e4-4fc1-8c1d-028297e5d73f)
+//
+![image](https://github.com/user-attachments/assets/d6089fa9-a2e1-41ed-839a-b8977f17ec74)
+![image](https://github.com/user-attachments/assets/e9ef7cea-3772-415e-9202-00b73d3c7e37)
+![image](https://github.com/user-attachments/assets/6804f3a9-37a5-4eb0-b6b4-9a2afe77e4d7)
+//
+![image](https://github.com/user-attachments/assets/1d5f1207-7384-46fa-aba4-59601771ef0d)
 
 ## 5.0 Comparative Analysis
 

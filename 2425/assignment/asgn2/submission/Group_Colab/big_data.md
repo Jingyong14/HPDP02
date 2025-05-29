@@ -2,7 +2,7 @@
 
 <h2>Assignment 2 - Mastering Big Data Handling</h2>
 
-<h3>Group Green Forest:</h3>
+<h3>Group Green Colab:</h3>
 <ul>
 <li><strong>Wong Qiao Ying</strong> - A22EC0118</li>
 <li><strong>Nik Zulaikhaa Binti Zuraidi Afandi</strong> - A22EC0232</li>

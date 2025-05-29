@@ -163,7 +163,7 @@
 
 <strong>Comparative Analysis Graph</strong>
 
- <p>Figure 4.1 and 4.2 show the comparative analysis graph between 3 libraries, which are Pandas, Dask, and Polars</p>
+ <p>Figure 4.1 and 4.2 show the comparative analysis graph between 3 different libraries, which are Pandas, Dask, and Polars</p>
 
   <div align="center">
     <img src="figures/graph1.png" alt="Polars Code">

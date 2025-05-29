@@ -1,6 +1,6 @@
 ## 👥 Group Members
 
-- Wong Qiao Ying (A22EC)
+- Wong Qiao Ying (A22EC0118)
 - Nik Zulaikhaa Binti Zuraidi Afandi (A22EC0232)
 
 ---

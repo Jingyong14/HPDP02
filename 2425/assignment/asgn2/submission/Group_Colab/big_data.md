@@ -20,7 +20,7 @@ The dataset has a size of **1GB** and is featured with **8551443 rows x 39 colum
 The columns included are:
 
 <div align="center">
-  <p><strong>Figure 1:</strong> Column of the dataset</p>
+  <p><strong>Table 1:</strong> Column of the dataset</p>
 
 | Column Name                         | Description                                                              | Example                                |
 |------------------------------------|---------------------------------------------------------------------------|----------------------------------------|

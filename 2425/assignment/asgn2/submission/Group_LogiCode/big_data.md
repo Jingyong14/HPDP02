@@ -42,7 +42,7 @@ After loading the dataset, a basic inspection was performed to understand its st
 
 <div align="center"><kbd><img src="https://github.com/user-attachments/assets/914643c2-d0c4-4a29-aa7a-67f6c46a9562" alt="Figure 3.0.1" width="400"></kbd><br><strong>Figure 3.0.1: Code snippet demonstrating the process of loading data using Kaggle API.</strong> </div><br>
 <div align="center"><kbd><img src="https://github.com/user-attachments/assets/41432251-baff-4398-9566-3477e6848b8b" alt="Figure 3.0.2" width="400"></kbd><br><strong>Figure 3.0.2: Code snippet inspecting the Spotify Charts dataset.</strong> </div><br>
-<div align="center"><kbd><img src="https://github.com/user-attachments/assets/7a508734-cea7-493c-9433-bdb186546b1c" alt="Figure 3.0.3" length="200"></kbd><br><strong>Figure 3.0.3: Summary output of the dataset inspection showing entry count, column structure, and memory usage.</strong> </div><br>
+<div align="center"><kbd><img src="https://github.com/user-attachments/assets/7a508734-cea7-493c-9433-bdb186546b1c" alt="Figure 3.0.3" width="200"></kbd><br><strong>Figure 3.0.3: Summary output of the dataset inspection showing entry count, column structure, and memory usage.</strong> </div><br>
 
 ## 4.0 Big Data Handling Strategies
 ## 5.0 Comparative Analysis

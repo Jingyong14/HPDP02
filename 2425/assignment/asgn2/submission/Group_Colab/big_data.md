@@ -71,21 +71,21 @@ The columns included are:
 <p>In this task, the Spotify dataset was downloaded using KaggleHub in Google Colab, loaded into memory using Pandas, and inspected to understand its structure. Additionally, we performed basic preprocessing by standardizing selected numerical columns for future analysis.</p>
 
 <div align="center">
-  <img src="figures/task 2 - 1.png" width="700">
+  <img src="figures/task 2 - 1.PNG" width="700">
   <p><strong>Figure 2.1:</strong> Kaggle Installation</p>
 </div>
 
 <p>After installing the necessary package, we used KaggleHub to download the dataset automatically. This helped avoid the need for manual downloads.</p>
 
 <div align="center">
-  <img src="figures/task 2 - 2.png" width="700">
+  <img src="figures/task 2 - 2.PNG" width="700">
   <p><strong>Figure 2.2:</strong> Kaggle Data Download Process</p>
 </div>
 
 <p>Once downloaded, we located the dataset path and listed the files to verify the successful download of <code>spotify_dataset.csv</code>.</p>
 
 <div align="center">
-  <img src="figures/task 2 - 3.png" width="700">
+  <img src="figures/task 2 - 3.PNG" width="700">
   <p><strong>Figure 2.3:</strong> Locating and Listing Downloaded Files</p>
 </div>
 
@@ -97,7 +97,7 @@ The columns included are:
 </ul>
 
 <div align="center">
-  <img src="figures/task 2 - 4.png" width="700">
+  <img src="figures/task 2 - 4.PNG" width="700">
   <p><strong>Figure 2.4:</strong> Loading Dataset Using Pandas</p>
 </div>
 
@@ -110,7 +110,7 @@ The columns included are:
 </ul>
 
 <div align="center">
-  <img src="figures/task 2 - 5.png" width="700">
+  <img src="figures/task 2 - 5.PNG" width="700">
   <p><strong>Figure 2.5:</strong> Basic Data Inspection and Preprocessing</p>
 </div>
 

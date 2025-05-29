@@ -101,7 +101,30 @@ The columns included are:
   <p><strong>Figure 2.4:</strong> Loading Dataset Using Pandas</p>
 </div>
 
-<p>After loading, we performed a basic inspection and preprocessing, including checking data types, missing values, and standardizing numerical features using <code>StandardScaler</code> from <code>sklearn.preprocessing</code>. The columns standardized were:</p>
+<details>
+<summary><strong>📉 Basic Data Inspection</strong></summary>
+
+<p>After loading the dataset, we performed a basic inspection to understand its structure and contents. This included:</p>
+
+<ul>
+  <li>Displaying the shape and column names of the dataset</li>
+  <li>Reviewing data types</li>
+  <li>Checking for missing values</li>
+</ul>
+
+<div align="center">
+  <img src="figures/task 2 - 5.PNG" width="400">
+  <p><strong>Figure 2.5:</strong> Basic Data Inspection using Pandas</p>
+</div>
+
+</details>
+
+<br>
+
+<details>
+<summary><strong>⚙️ Standardizing Numerical Features</strong></summary>
+
+<p>We standardized the following numerical columns using <code>StandardScaler</code> from <code>sklearn.preprocessing</code> to ensure consistent scaling for further analysis:</p>
 
 <ul>
   <li>Similarity Score 1</li>
@@ -110,9 +133,12 @@ The columns included are:
 </ul>
 
 <div align="center">
-  <img src="figures/task 2 - 5.PNG" width="400">
-  <p><strong>Figure 2.5:</strong> Basic Data Inspection and Preprocessing</p>
+  <img src="figures/task 2 - 6.PNG" width="400">
+  <p><strong>Figure 2.6:</strong> Standardizing Numerical Features</p>
 </div>
+
+</details>
+
 
 <h3>✅ Summary</h3>
 

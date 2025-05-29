@@ -8,7 +8,7 @@
 |------------------------|----------------|
 | Ong Yi Yan       | `A22EC0101`     |
 | Tang Yan Qing | `A22EC0109`     |
-### Lecturer: Dr. Aryati binti Bakri
+**Lecturer: Dr. Aryati binti Bakri**
 
 <br>
 

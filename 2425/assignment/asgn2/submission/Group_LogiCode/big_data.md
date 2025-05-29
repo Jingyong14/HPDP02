@@ -19,7 +19,7 @@ Table 2.0.1 shows an overview of the Spotify Charts dataset used in this project
 
 <div align="center">
 
-#### Table 2.0.1: Dataset Overview
+ Table 2.0.1: Dataset Overview
 | **Attribute**         | **Details**                                                                 |
 |-----------------------|------------------------------------------------------------------------------|
 | **Dataset Name**      | Spotify Charts Dataset                                                       |

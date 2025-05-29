@@ -1,11 +1,13 @@
-# SECP3133 High Performance Data Processing – Section 02  
-## Assignment 2 – Mastering Big Data Handling  
+## 🎓 SECP3133 – High Performance Data Processing (Section 02)
 
-### Group: LogiCode  
-| Name            | Matric Number     |
-|-----------------|-------------------|
-| Ong Yi Yan  | A22EC0101          |
-| Tang Yan Qing  | A22EC0109          |
+### 📊 Assignment 2: *Mastering Big Data Handling*
+
+###  Group: **LogiCode**
+
+| 👤 Member Name         | 🆔 Student ID   |
+|------------------------|----------------|
+| Ong Yi Yan       | `A22EC0101`     |
+| Tang Yan Qing | `A22EC0109`     |
 ### Lecturer: Dr. Aryati binti Bakri
 
 <br>

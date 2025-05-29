@@ -161,6 +161,20 @@
 <strong>Performance Summary Table</strong>
 <div align="center"> <table border="1" cellspacing="0" cellpadding="8"> <thead> <tr> <th>Method</th> <th>Execution Time (s)</th> <th>Memory Used (MB)</th> <th>Remarks</th> </tr> </thead> <tbody> <tr> <td>Traditional (Pandas)</td> <td>46.70</td> <td>1503.40</td> <td>Simple to implement but inefficient for large datasets.</td> </tr> <tr> <td>Dask (Optimized)</td> <td>248.10</td> <td>39.59</td> <td>Best memory efficiency but slower due to parallel task scheduling overhead.</td> </tr> <tr> <td>Polars (Load Less Data)</td> <td>2.02</td> <td>1005.92</td> <td>Extremely fast but memory usage depends on selected columns.</td> </tr> </tbody> </table> </div>
 <strong>Analysis</strong>
+
+<strong>Comparative Analysis Graph</strong>
+
+ <p>Figure 4.1 and 4.2 show the comparative analysis graph between 3 libraries, which are Pandas, Dask, and Polars</p>
+
+  <div align="center">
+    <img src="figures/graph1.png" alt="Polars Code">
+    <p><strong>Figure 4.1:</strong> Execution Time by Data Handling Method</p>
+  </div>
+
+  <div align="center">
+    <img src="figures/graph2.png" alt="Polars Performance">
+    <p><strong>Figure 4.2:</strong> Memory Used by Data Handling Method</p>
+  </div>
 Pandas (Traditional): Despite being the most straightforward method, it consumed the highest memory and provided moderate performance in terms of speed.
 
 Dask: Achieved massive memory savings (~97% less than Pandas) by loading only selected columns and optimizing data types. However, the execution time increased due to Dask’s overhead in managing task graphs and parallelism.

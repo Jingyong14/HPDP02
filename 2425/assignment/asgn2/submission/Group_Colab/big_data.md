@@ -10,12 +10,12 @@
 
 <hr>
 
-<h2>Task 1: Dataset Selection</h2>
+<h2>💽 Task 1: Dataset Selection</h2>
 
-### 1.1 Dataset Details
+### 📇 1.1 Dataset Details
 The title of the dataset we used is [**🎧 500K+ Spotify Songs with Lyrics,Emotions & More**](https://www.kaggle.com/datasets/devdope/900k-spotify) which is found on [Kaggle](https://www.kaggle.com/). This is a large-scale, music dataset with over 500,000 tracks. It includes lyrics, structured metadata, emotion labels, and more than 30 contextual and audio features per song. It was designed with AI applications in mind, particularly those involving music understanding, semantic search, and playlist generation.
 
-### 1.2 Features Included
+### 🖲️ 1.2 Features Included
 The dataset has a size of **1.36GB** and is featured with **8551443 rows x 39 columns** of data.
 The columns included are:
 

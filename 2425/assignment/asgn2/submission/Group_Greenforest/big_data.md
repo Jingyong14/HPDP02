@@ -116,8 +116,8 @@ Before applying any big data optimization techniques, we used Pandas to clean th
 <p align="center"> <img src="https://github.com/user-attachments/assets/6c29f376-3cf4-41b9-8180-b7638cd6c4e4" alt="dask first run" />
 <br><strong>Figure 4.1.6 - Code Snippet to Start Performance Tracking </strong> </p>
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/af881bb1-586c-43c9-a721-ab04fd705f87" alt="dask first run" />
-<p align="center"> <img src="https://github.com/user-attachments/assets/56a57adf-7c25-41db-9298-01f5f2d147d7" alt="dask first run" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/0f3c0802-3a63-4000-99da-d1a80ac1af4f" alt="dask first run" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/472c1a02-14e3-4bc2-885d-2313d0e66d58" alt="dask first run" />
 <br><strong>Figure 4.1.7 - Code Snippet to Start Performance Tracking </strong> </p>
 
 <p align="center"> <img src="https://github.com/user-attachments/assets/df98b6e3-d531-4c09-bc54-306231ca85ee" alt="dask first run" />
@@ -173,30 +173,32 @@ Before applying any big data optimization techniques, we used Pandas to clean th
 <p align="center"> <img src="https://github.com/user-attachments/assets/c360d52f-6a4a-4209-831a-aae186bb9f17" alt="dask first run" />
 <br><strong>Figure 4.2.15 - Code Snippet to Start Performance Tracking </strong> </p>
 
-### 4.3 Another Library (Optimization)
+### 4.3 Polars (Optimization)
 
 ## 5.0 Comparative Analysis
 
 ### 5.1 Pandas Performance
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/97a092e3-0468-4ee9-b12b-e9df06aa3456" alt="pandas first run" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/2bd296b3-7926-45a7-a420-2f56e8eb7811" alt="pandas first run" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/2f12a085-a850-47aa-85b6-0eff4ccc5789" alt="pandas first run" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/8ce8d0c6-7462-4bfd-abfb-4a422e4c4b4e" alt="pandas first run" />
 <br><strong>Figure 4.1 - Pandas Performance </strong> </p>
-
-![image](https://github.com/user-attachments/assets/d4b693cc-255a-4033-aad5-3f486f176155)
 
 
 ### 5.2 Dask Performance
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/4521e075-8ecb-4149-9e8b-09b1b99efd6b" alt="dask first run" />
-<p align="center"> <img src="https://github.com/user-attachments/assets/9cabd3c2-08cc-472c-9dac-837c6a074951" alt="dask first run"/>
-<p align="center"> <img src="https://github.com/user-attachments/assets/f6015abd-25ab-441e-b93a-3b105fb26897" alt="dask first run" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/cf2eb0a3-5aec-4291-95b0-cf89d3856f7c" alt="dask first run" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/1c17cd84-2071-4b70-866e-c744ebe71e53" alt="dask first run"/>
+<p align="center"> <img src="https://github.com/user-attachments/assets/24715f28-3a99-4b65-860e-2b8f6e648e66" alt="dask first run" />
 <br><strong>Figure 4.1 - Dask Performance </strong> </p>
 
-![image](https://github.com/user-attachments/assets/6d48f46b-72bc-4e6f-b1b5-cd12567a5918)
 
+### 5.3 Polars Performance
 
-### 5.3 Another Library Performance
-
+<p align="center"> <img src="https://github.com/user-attachments/assets/c2f73513-477e-4c71-a135-ce3c59960901" alt="pandas first run" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/721736a9-2c83-4866-a3fb-8f3d4c98bbb5" alt="pandas first run" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/327db067-8ded-4ff0-8904-af7bffafb15d" alt="pandas first run" />
+<br><strong>Figure 4.1 - Polars Performance </strong> </p>
 
 ### 5.4 Performance Comparison Table 
 
@@ -215,16 +217,16 @@ Before applying any big data optimization techniques, we used Pandas to clean th
   <tbody>
     <tr>
       <td>Pandas</td>
-      <td>2143.75</td>
-      <td>67.23</td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <td>Dask</td>
-      <td>285.65</td>
-      <td>33.10</td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <td>Another Library</td>
+      <td>Polars</td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -233,7 +235,9 @@ Before applying any big data optimization techniques, we used Pandas to clean th
 
 </div>
 
-### 5.5 Performance Comparison Graph
+### 5.5 Performance Comparison Chart
+<p align="center"> <img src="https://github.com/user-attachments/assets/c08922ea-53ee-4530-b935-b09abe02e7f9" alt="dask first run" />
+<br><strong>Figure 4.1 - Performance Comparison Bar Chart </strong> </p>
 
 
 ## 6.0 Conclusion and Reflection

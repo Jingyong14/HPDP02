@@ -103,11 +103,11 @@ Finally, we record memory usage after loading and cleaning, and calculate the ti
 <div align="center">
     <img src="figures/Pandas_8.png" >
     <p><strong>Output</strong></p>
-  </div
+</div>
 
 
-
-## Task 3: Apply Big Data Handling Strategies
+### Task 3: Apply Big Data Handling Strategies
+We selected Dask and Polars to be our optimization libraries so as to efficiently process and handle our large-scale transactions data for financial fraud detection.
 
 
 

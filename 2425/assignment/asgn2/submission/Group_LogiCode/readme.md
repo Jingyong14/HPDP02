@@ -1,4 +1,4 @@
-# <img src="https://developer.spotify.com/images/guidelines/Spotify_Icon_RGB_Green.png" alt="Spotify Logo" width="28" height="28" style="vertical-align: middle; margin-right: 8px;"> Assignment 2: Mastering Big Data Handling
+# <img src="https://cdn-icons-png.flaticon.com/512/174/174872.png" alt="Spotify Logo" width="28" height="28" style="vertical-align: middle; margin-right: 8px;"> Assignment 2: Mastering Big Data Handling
 
 ## 🧑‍🤝‍🧑 Group Members
 

@@ -2,14 +2,14 @@
 
 ### 📊 Assignment 2: *Mastering Big Data Handling*
 
-###  Group: **LogiCode**
+### Lecturer: Dr. Aryati binti Bakri
+**Group: LogiCode**
 
 | 👤 Member Name         | 🆔 Student ID   |
 |------------------------|----------------|
 | Ong Yi Yan       | `A22EC0101`     |
 | Tang Yan Qing | `A22EC0109`     |
 
-**Lecturer: Dr. Aryati binti Bakri**
 
 <br>
 

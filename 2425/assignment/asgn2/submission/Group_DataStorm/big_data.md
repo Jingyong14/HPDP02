@@ -42,7 +42,10 @@ It also incorporates geographic diversity (e.g., multiple countries and currenci
 - **Total Columns:** 24
 
 Figure 1.0 shows the preview of the dataset from Kaggle.
-
+<div align="center">
+    <img src="Images/DatasetPreview.png" alt="Preview of dataset">
+    <p><strong>Figure 1.0: Preview of synthetic_fraud_data.csv</strong></p>
+  </div>
 
 
 <h2>Task 2: Load and Inspect Data</h2>

@@ -159,7 +159,36 @@
 <h2>Task 4: Comparative Analysis</h2>
 <p> To evaluate the efficiency of different data handling strategies, we compared the performance of traditional and optimized methods in terms of memory usage, execution time, and ease of processing. Three approaches were assessed: </p> <ul> <li><strong>Traditional Method</strong> using full load with <code>pandas.read_csv()</code></li> <li><strong>Dask Optimization</strong> with parallel processing and data type optimization</li> <li><strong>Polars Optimization</strong> with selective column loading and high-performance execution</li> </ul>
 <strong>Performance Summary Table</strong>
-<div align="center"> <table border="1" cellspacing="0" cellpadding="8"> <thead> <tr> <th>Method</th> <th>Execution Time (s)</th> <th>Memory Used (MB)</th> <th>Remarks</th> </tr> </thead> <tbody> <tr> <td>Traditional (Pandas)</td> <td>46.70</td> <td>1503.40</td> <td>Simple to implement but inefficient for large datasets.</td> </tr> <tr> <td>Dask (Optimized)</td> <td>248.10</td> <td>39.59</td> <td>Best memory efficiency but slower due to parallel task scheduling overhead.</td> </tr> <tr> <td>Polars (Load Less Data)</td> <td>2.02</td> <td>1005.92</td> <td>Extremely fast but memory usage depends on selected columns.</td> </tr> </tbody> </table> </div>
+<div align="center">
+ <p><strong>Table 4.1:</strong> Performance Comparison</p>
+ <table border="1" cellspacing="0" cellpadding="8">
+  <thead>
+   <tr>
+    <th>Method</th>
+    <th>Execution Time (s)</th>
+    <th>Memory Used (MB)</th>
+    <th>Remarks</th> </tr>
+  </thead>
+  <tbody>
+   <tr>
+    <td>Traditional (Pandas)</td>
+    <td>46.70</td>
+    <td>1503.40</td>
+    <td>Simple to implement but inefficient for large datasets.</td>
+   </tr>
+   <tr>
+    <td>Dask (Optimized)</td>
+    <td>248.10</td> <td>39.59</td>
+    <td>Best memory efficiency but slower due to parallel task scheduling overhead.</td>
+   </tr>
+   <tr>
+    <td>Polars (Load Less Data)</td>
+    <td>2.02</td> <td>1005.92</td>
+    <td>Extremely fast but memory usage depends on selected columns.</td>
+   </tr>
+  </tbody>
+ </table>
+</div>
 
 <strong>Comparative Analysis Graph</strong>
 

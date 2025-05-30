@@ -207,7 +207,7 @@ Before applying any big data optimization techniques, we used Pandas to clean th
 <p align="center"> <img src="https://github.com/user-attachments/assets/2bd296b3-7926-45a7-a420-2f56e8eb7811" alt="pandas first run" />
 <p align="center"> <img src="https://github.com/user-attachments/assets/2f12a085-a850-47aa-85b6-0eff4ccc5789" alt="pandas first run" />
 <p align="center"> <img src="https://github.com/user-attachments/assets/8ce8d0c6-7462-4bfd-abfb-4a422e4c4b4e" alt="pandas first run" />
-<br><strong>Figure 4.1 - Pandas Performance </strong> </p>
+<br><strong>Figure 5.1.1 - Pandas Performance </strong> </p>
 
 
 ### 5.2 Dask Performance
@@ -215,7 +215,7 @@ Before applying any big data optimization techniques, we used Pandas to clean th
 <p align="center"> <img src="https://github.com/user-attachments/assets/cf2eb0a3-5aec-4291-95b0-cf89d3856f7c" alt="dask first run" />
 <p align="center"> <img src="https://github.com/user-attachments/assets/1c17cd84-2071-4b70-866e-c744ebe71e53" alt="dask first run"/>
 <p align="center"> <img src="https://github.com/user-attachments/assets/24715f28-3a99-4b65-860e-2b8f6e648e66" alt="dask first run" />
-<br><strong>Figure 4.1 - Dask Performance </strong> </p>
+<br><strong>Figure 5.2.1 - Dask Performance </strong> </p>
 
 
 ### 5.3 Polars Performance
@@ -223,7 +223,7 @@ Before applying any big data optimization techniques, we used Pandas to clean th
 <p align="center"> <img src="https://github.com/user-attachments/assets/c2f73513-477e-4c71-a135-ce3c59960901" alt="pandas first run" />
 <p align="center"> <img src="https://github.com/user-attachments/assets/721736a9-2c83-4866-a3fb-8f3d4c98bbb5" alt="pandas first run" />
 <p align="center"> <img src="https://github.com/user-attachments/assets/327db067-8ded-4ff0-8904-af7bffafb15d" alt="pandas first run" />
-<br><strong>Figure 4.1 - Polars Performance </strong> </p>
+<br><strong>Figure 5.3.1 - Polars Performance </strong> </p>
 
 ### 5.4 Performance Comparison Table 
 
@@ -242,27 +242,30 @@ Before applying any big data optimization techniques, we used Pandas to clean th
   <tbody>
     <tr>
       <td>Pandas</td>
-      <td></td>
-      <td></td>
+      <td>1800.70</td>
+      <td>84.21</td>
     </tr>
     <tr>
       <td>Dask</td>
-      <td></td>
-      <td></td>
+      <td>304.79</td>
+      <td>61.23</td>
     </tr>
     <tr>
       <td>Polars</td>
-      <td>-</td>
-      <td>-</td>
+      <td>1004.32</td>
+      <td>10.36</td>
     </tr>
   </tbody>
 </table>
+
+Table 5.4.1 clearly demonstrates that Polars and Dask significantly outperform Pandas in both memory usage and execution time for the given task. Polars appears to be the most efficient in terms of memory, while Dask shows the fastest execution time.
 
 </div>
 
 ### 5.5 Performance Comparison Chart
 <p align="center"> <img src="https://github.com/user-attachments/assets/c08922ea-53ee-4530-b935-b09abe02e7f9" alt="dask first run" />
-<br><strong>Figure 4.1 - Performance Comparison Bar Chart </strong> </p>
+<br><strong>Figure 5.5.1 - Performance Comparison Bar Chart </strong> </p>
 
 
 ## 6.0 Conclusion and Reflection
+

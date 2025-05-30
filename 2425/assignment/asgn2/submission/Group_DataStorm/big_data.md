@@ -2,7 +2,7 @@
 
 <h2>Assignment 2 - Mastering Big Data Handling</h2>
 
-<h3>Group Green Forest:</h3>
+<h3>Group DataStorm:</h3>
 <ul>
 <li><strong>NUR FARAH ADIBAH BINTI IDRIS</strong> - A22EC0245</li>
 <li><strong>NUR ALEYSHA QURRATU'AINI BINTI MAT SALLEH</strong> - A22EC0241</li>
@@ -10,16 +10,11 @@
 
 <hr>
 
+<h2>Introduction</h2>
+
+<h2>Objectives</h2>
+
 <h2>Task 1: Dataset Selection</h2>
-
-### 1.1 Dataset Details
-
-
-### 1.2 Features Included
-
-
-
-### 1.3 Justification
 
 
 <h2>Task 2: Load and Inspect Data</h2>

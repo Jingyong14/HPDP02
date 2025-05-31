@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/96f22c1a-3fc6-4f93-89e6-e1aeb5198cd3)## 🎓 SECP3133 – High Performance Data Processing (Section 02)
+## 🎓 SECP3133 – High Performance Data Processing (Section 02)
 
 ### 📊 Assignment 2: *Mastering Big Data Handling*
 

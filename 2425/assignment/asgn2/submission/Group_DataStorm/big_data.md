@@ -252,12 +252,27 @@ The table below presents a comparison based on execution time and memory usage:
 | Polars  | 24.17                    | 16.23            |
 
 </div>
-Figure 4.1 and Table 4.1 show that Polars are better than Pandas and Dask in terms of execution time in seconds and memory usage in MB. Polars completes all tasks in just 24.17 seconds and uses only 16.23 MB of memory. making it the most memory-efficient and fastest among the three libraries. Dask performs significantly better than Pandas, with an execution time of 43.99 seconds and memory usage of 95.46 MB. On the other hand, Pandas present the slowest performance and highest memory usage with 65.20 seconds and 1175.30 MB.  In terms of memory usage, Polars uses 72x less memory than Pandas, and Dask uses about 12x less memory than Pandas.
+Figure 4.1 and Table 4.1 show that Polars are better than Pandas and Dask in terms of execution time in seconds and memory usage in MB. Polars completes all tasks in just 24.17 seconds and uses only 16.23 MB of memory. making it the most memory-efficient and fastest among the three libraries. Dask performs significantly better than Pandas, with an execution time of 43.99 seconds and memory usage of 95.46 MB. On the other hand, Pandas present the slowest performance and highest memory usage with 65.20 seconds and 1175.30 MB.  
 
 
 
 
 <h2>Task 5: Conclusion & Reflection</h2>
+<h3>Conclusion</h3>
+To conclude, Polars showed the best performance with the fastest execution time and the lowest memory usage. Meanwhile, Dask performs better than Pandas since it uses significantly less memory and executes faster. In terms of memory usage, Polars uses 72 times less memory than Pandas, and Dask uses about 12 times less memory than Pandas. Thus, Pandas was less efficient to use with this dataset as it is the slowest and consumes the most memory. 
+
+Each of these libraries has its benefits and limitations. Table 5.1 shows the benefit and limitation of each library
+
+<p><strong>Table 5.1: Benefit and limitation of each library</strong></p>
+
+| Library | Benefits                              | Limitations                    |
+|---------|---------------------------------------|--------------------------------|
+| Pandas  |   Easy to use                         |  High memory usage             |
+| Dask    |   Supports parallelism                |  Slightly more complex syntax  |
+| Polars  |   Extremely fast and memory efficient |  Less mature ecosystem         |
+
+<h3>Reflection</h3>
+
 
 
 

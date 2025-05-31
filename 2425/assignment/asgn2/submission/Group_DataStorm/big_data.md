@@ -55,7 +55,7 @@ Figure 1.0 shows the preview of the dataset from Kaggle.
 
 <h2>Task 4: Comparative Analysis</h2>
 Figure 4.0 shows the performance comparison of data processing libraries
-<img src="images/Performance Comparison Library.png" alt="Performance" width="200"/>
+<img src="https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_DataStorm/Images/Performance%20Comparison%20Library.png" alt="Performance" />
 
 
 <h2>Task 5: Conclusion & Reflection</h2>

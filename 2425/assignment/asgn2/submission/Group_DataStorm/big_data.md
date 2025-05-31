@@ -54,6 +54,9 @@ Figure 1.0 shows the preview of the dataset from Kaggle.
 <h2>Task 3: Apply Big Data Handling Strategies</h2>
 
 <h2>Task 4: Comparative Analysis</h2>
+Figure 4.0 shows the performance comparison of data processing libraries
+<img src="images/Performance Comparison Library.png" alt="Performance" width="200"/>
+
 
 <h2>Task 5: Conclusion & Reflection</h2>
 

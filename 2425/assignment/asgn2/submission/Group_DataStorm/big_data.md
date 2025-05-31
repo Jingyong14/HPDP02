@@ -173,11 +173,11 @@ Figure 3.2.4 demostrate that the `.sample(n=10000, with_replacement=False)` meth
 
 <h4>3.2.6 Output</h4>
 
-Figure 3.2.6 shows
+Figure 3.2.6 shows a better performance by using Dask. The total execution time and memory usage were lower than Pandas. This is due to Dask's ability to process data in Parallel and chunks.
 
 <div align="center">
     <img src="Images/dask6.png" alt="dask6" width="400">
-    <p><strong>Figure 3.3.6: Performance Metrics for Big Data Handling Process using Dask</strong></p>
+    <p><strong>Figure 3.2.6: Performance Metrics for Big Data Handling Process using Dask</strong></p>
 </div>
 <h3>3.3 Polars</h3>
 <h4>3.3.1 Load Less Data</h4>
@@ -191,7 +191,7 @@ As shown in Figure 3.3.1, the same set of columns was selected using the `column
 
 <h4>3.3.2 Chunking</h4>
 
-Figure 3.3.2 illustrate that instead of traditional chunking, Polars uses lazy evaluation with `scan_csv()`, allowing for deferred and optimized computation. A filter was applied to extract transactions with an amount greater than 100, and `.collect()` was used to execute the operation only when necessary.
+Figure 3.3.2 illustrates that instead of traditional chunking, Polars uses lazy evaluation with `scan_csv()`, allowing for deferred and optimized computation. A filter was applied to extract transactions with an amount greater than 100, and `.collect()` was used to execute the operation only when necessary.
 
 <div align="center">
     <img src="Images/po2.png" alt="po2" width="600">
@@ -200,7 +200,7 @@ Figure 3.3.2 illustrate that instead of traditional chunking, Polars uses lazy e
 
 <h4>3.3.3 Optimize Data Types</h4>
 
-Refer to Figure 3.3.3, a similar optimization was done using `.with_columns()` and applying `.cast()` to convert columns to efficient types such as `Categorical` and `Float32`. This step took advantage of Polars’ strong type system and internal compression.
+Refer to Figure 3.3.3, a similar optimization was done using `.with_columns()` and applying `.cast()` to convert columns to efficient types such as `Categorical` and `Float32`. This step took advantage of Polar’s strong type system and internal compression.
 
 <div align="center">
     <img src="Images/po3.png" alt="po3" width="600">

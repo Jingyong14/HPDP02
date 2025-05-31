@@ -129,7 +129,7 @@ Figure 3.1.6 displays the the performance metrics for Pandas. The total executio
 <h3>3.2 Dask</h3>
 <h4>3.2.1 Load Less Data</h4>
 
-As shown in Figure 3.2.1, 
+As shown in Figure 3.2.1, the same set of columns was selected using the `usecols` parameter in `dd.read_csv()`. In Dask, data is not immediately loaded into memory until the operation is performed since Dask use lazy loading.
 
 <div align="center">
     <img src="Images/dask1.png" alt="dask1" width="600">
@@ -138,7 +138,7 @@ As shown in Figure 3.2.1,
 
 <h4>3.2.2 Chunking</h4>
 
-Figure 3.2.2 
+Figure 3.2.2 shows that in Dask, chunking(Lazy evaluation) is automatically and no need to do manual chunking like in Pandas. Dask automatically divides the CSV file into partitions.
 
 <div align="center">
     <img src="Images/dask2.png" alt="dask2" width="600">
@@ -147,7 +147,7 @@ Figure 3.2.2
 
 <h4>3.2.3 Optimize Data Types</h4>
 
-Refer to Figure 3.2.3, 
+Refer to Figure 3.2.3, Dask use `.astype()` to convert memory-heavy data types to `category` and reduce float precision to `float32`. This will optimise memory usage and execution time.
 
 <div align="center">
     <img src="Images/dask3.png" alt="dask3" width="600">
@@ -156,7 +156,7 @@ Refer to Figure 3.2.3,
 
 <h4>3.2.4 Sampling</h4>
 
-Figure 3.2.4 demostrate that the `.sample(n=10000, with_replacement=False)` method was used to perform the same operation, extracting a random sample while maintaining performance.
+Figure 3.2.4 demonstrates that the `.sample(frac=0.1)` method was used to perform the same operation, extracting a random sample while maintaining performance. The sample fraction is processed lazily and in parallel.
 
 <div align="center">
     <img src="Images/dask4.png" alt="dask4" width="600">
@@ -165,6 +165,7 @@ Figure 3.2.4 demostrate that the `.sample(n=10000, with_replacement=False)` meth
 
 <h4>3.2.5 Parallel Processing (Aggregation)</h4>
 
+Figure 3.2.5 shows that Dask performed the same aggregation using `df.groupby("card_type")["amount"].sum().compute().reset_index()` across multiple partitions, then merges the result with `.compute()` .
 
 <div align="center">
     <img src="Images/dask5.png" alt="dask5" width="600">
@@ -227,7 +228,7 @@ Using lazy evaluation, Polars performed the same aggregation with `.group_by("ca
 
 <h4>3.3.6 Output</h4>
 
-Figure 3.1.6 demonstrates a better performance by using Polars. The total execution time was lower, and memory usage was reduced. This is due to Polars' use of lazy evaluation, multi-threaded execution, and an optimized columnar data format. As a result, Polars was able to process the same data more efficiently, making it a more suitable choice for large-scale data analysis in terms of speed and resource management.  
+Figure 3.3.6 demonstrates a better performance by using Polars. The total execution time was lower, and memory usage was reduced. This is due to Polars' use of lazy evaluation, multi-threaded execution, and an optimized columnar data format. As a result, Polars was able to process the same data more efficiently, making it a more suitable choice for large-scale data analysis in terms of speed and resource management.  
 
 <div align="center">
     <img src="Images/po6otpt.png" alt="po6otpt" width="400">
@@ -257,6 +258,10 @@ Figure 4.1 and Table 4.1 show that Polars are better than Pandas and Dask in ter
 
 
 <h2>Task 5: Conclusion & Reflection</h2>
+
+
+
+
 
 
 

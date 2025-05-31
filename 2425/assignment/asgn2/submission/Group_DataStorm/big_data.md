@@ -133,7 +133,7 @@ As shown in Figure 3.2.1, the same set of columns was selected using the `usecol
 
 <div align="center">
     <img src="Images/dask1.png" alt="dask1" width="600">
-    <p><strong>Figure 3.3.1: Load Less Data using Dask</strong></p>
+    <p><strong>Figure 3.2.1: Load Less Data using Dask</strong></p>
   </div>
 
 <h4>3.2.2 Chunking</h4>
@@ -151,7 +151,7 @@ Refer to Figure 3.2.3, Dask use `.astype()` to convert memory-heavy data types t
 
 <div align="center">
     <img src="Images/dask3.png" alt="dask3" width="600">
-    <p><strong>Figure 3.3.3: Optimize Data Types using Dask</strong></p>
+    <p><strong>Figure 3.2.3: Optimize Data Types using Dask</strong></p>
 </div>
 
 <h4>3.2.4 Sampling</h4>

@@ -17,7 +17,7 @@ The assignment aims to develop effective big data handling skills using Python l
 
 - Utilize Pandas, Dask, and Polars to manage and process large datasets.
 - Apply strategies such as chunking, sampling, and data type optimization using these libraries.
-- Evaluate performance differences across traditional and optimized methods in terms of memory usage and execution time.
+- Evaluate performance differences across traditional and optimized methods in terms of memory usage, execution time and ease of use.
 ## 2.0 Dataset Selection
 To conduct a meaningful performance and scalability comparison among different data processing libraries, the Spotify Charts Dataset from Kaggle has been selected. It contains historical data of all “Top 200” and “Viral 50” charts published by Spotify globally, updated every 2–3 days since January 1, 2017. The dataset includes over 26 million records, with key details such as song title, artist, rank, date, region, chart type, number of streams, trend indicator, and track URL.
 

@@ -69,6 +69,13 @@ Next, the fundamental metadata such as shape, column names, and data types was e
 
 <h2>Task 3: Apply Big Data Handling Strategies</h2>
 
+The objective of this task was to apply strategies to handle and process large datasets using Python. Given the substantial size of the dataset, traditional data loading and manipulation could lead to excessive memory consumption and long execution times. In order to address this issue, five big data strategies were implemented using three libraries, which are **Pandas**, **Dask**, and **Polars**. The strategies include, loading less data, chunking, optimizing data types, sampling, and parallel processing. These strategies helped reduce memory usage, improve performance, and prepare the dataset for future analysis. 
+
+<h3>3.1 Pandas</h3>
+<h4>3.1.1 Load Less Data</h4>
+
+Figure 3.1.1 shows that only six essential columns (`transaction_id` , `customer_id`, `amount`, `country`, `city`, `card_type`) were selected during data loading using the usecols parameter in read_csv(). This reduced the amount of data read into memory and minimized unnecessary processing.
+
 <h2>Task 4: Comparative Analysis</h2>
 Figure 4.0 shows the performance comparison of data processing libraries
 <img src="https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_DataStorm/Images/Performance%20Comparison%20Library.png" alt="Performance" />

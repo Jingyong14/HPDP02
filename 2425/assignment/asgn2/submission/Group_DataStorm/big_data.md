@@ -119,11 +119,11 @@ As shown in Figure 3.1.5, Group-by aggregation was performed using `groupby("car
 
 <h4>3.1.6 Output</h4>
 
-Figure 3.1.6 displays the output for big data handling process using Pandas.
+Figure 3.1.6 displays the the performance metrics for Pandas. The total execution time was 65.20 seconds, and the memory used during processing was around 1175.30MB. This reflects Pandas' limitatin when dealing with large datasets, as it loads data eagerly into memory and operates in a single-threaded manner. 
 
 <div align="center">
-    <img src="Images/pa6.png" alt="pa6">
-    <p><strong>Figure 3.1.6: Output for big data handling process using Pandas</strong></p>
+    <img src="Images/pa6otpt.png" alt="pa6otpt">
+    <p><strong>Figure 3.1.6: Performance Metrics for Big Data Handling Process using Pandas</strong></p>
 </div>
 
 <h3>3.2 Dask</h3>
@@ -176,11 +176,11 @@ Using lazy evaluation, Polars performed the same aggregation with `.group_by("ca
 
 <h4>3.3.6 Output</h4>
 
-Figure 3.3.6 displays the output for big data handling process using Polars.
+Figure 3.1.6 demonstrates a better performance by using Polars. The total execution time was lower, and memory usage was reduced. This is due to Polars' use of lazy evaluation, multi-threaded execution, and an optimized columnar data format. As a result, Polars was able to process the same data more efficiently, making it a more suitable choice for large-scale data analysis in terms of speed and resource management.  
 
 <div align="center">
-    <img src="Images/po6.png" alt="po6">
-    <p><strong>Figure 3.3.6: Output for big data handling process using Polars</strong></p>
+    <img src="Images/po6otpt.png" alt="po6otpt">
+    <p><strong>Figure 3.3.6: OPerformance Metrics for Big Data Handling Process using Polars</strong></p>
 </div>
 
 <h2>Task 4: Comparative Analysis</h2>

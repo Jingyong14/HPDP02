@@ -1,4 +1,4 @@
-## 🎓 SECP3133 – High Performance Data Processing (Section 02)
+![image](https://github.com/user-attachments/assets/96f22c1a-3fc6-4f93-89e6-e1aeb5198cd3)## 🎓 SECP3133 – High Performance Data Processing (Section 02)
 
 ### 📊 Assignment 2: *Mastering Big Data Handling*
 
@@ -63,10 +63,12 @@ In addition, **chunking** was applied during data loading in pandas by using `ch
 
 To reduce processing load, a **10% sampling strategy** was applied. In **Polars**, rows with null values were dropped, then every tenth row was selected using a temporary row number—this is shown in **Figure 4.0.5**. **Dask** used the built-in `.sample()` method with `frac=0.10` and a fixed random state for reproducibility, as illustrated in **Figure 4.0.6**. For **Pandas**, sampling was applied during chunk processing: each chunk was cleaned, the `date` column converted to datetime, and 10% randomly selected. Chunk-wise sampling in **Figure 4.0.7**, can lead to slight differences in total sampled rows as sampling occurs separately on each chunk instead of the full dataset. The output shapes after sampling are presented in **Figures 4.0.8** (Polars), **4.0.9** (Dask), and **4.0.10** (Pandas).
 
-<div align="center"> <kbd><img src="https://github.com/user-attachments/assets/eeb89102-4a72-4207-8d11-c594bdbadec2" alt="Figure 4.0.1" width="600"></kbd> <br><strong>Figure 4.0.1: Definition of selected columns and their optimized data types for efficient loading in pandas and Polars.</strong> </div><br>
-<div align="center"> <kbd><img src="https://github.com/user-attachments/assets/3af27974-db69-4797-ba39-f2ed7bddb10e" alt="Figure 4.0.2" width="500"></kbd> <br><strong>Figure 4.0.2: Pandas code snippet for reading the dataset with selective columns and predefined data types.</strong> </div><br>
-<div align="center"> <kbd><img src="https://github.com/user-attachments/assets/bd414beb-2978-44b9-ae23-0599eca4d1b3" alt="Figure 4.0.3" width="500"></kbd> <br><strong>Figure 4.0.3: Dask code snippet showing selective data loading and optimized data types during CSV reading.</strong> </div><br>
-<div align="center"> <kbd><img src="https://github.com/user-attachments/assets/4fbb778c-bf02-4d7d-a43a-f9bc076a9bf7" alt="Figure 4.0.4" width="400"></kbd> <br><strong>Figure 4.0.4: Polars code snippet demonstrating selective column loading with Polars-specific data type handling.</strong> </div><br>
+<div align="center"> <kbd><img src="https://github.com/user-attachments/assets/10b28d93-bb2e-4ff4-b3b9-fc2d12eb36f6" alt="Figure 4.0.5" width="600"></kbd> <br><strong>Figure 4.0.5: Polars code snippet for sampling 10% of the dataset by filtering every tenth row after dropping nulls.</strong> </div><br>
+<div align="center"> <kbd><img src="https://github.com/user-attachments/assets/b6ffd901-281b-4a2c-b84f-e1933b9d4cdd" alt="Figure 4.0.6" width="500"></kbd> <br><strong>Figure 4.0.6: Dask code snippet demonstrating 10% random sampling with a fixed seed for reproducibility.</strong> </div><br>
+<div align="center"> <kbd><img src="https://github.com/user-attachments/assets/59251883-1c2b-48b1-9633-06f2f8e7c1b5" alt="Figure 4.0.7" width="500"></kbd> <br><strong>Figure 4.0.7: Pandas code snippet showing chunk-wise sampling of 10% after cleaning and datetime conversion.</strong> </div><br>
+<div align="center"> <kbd><img src="https://github.com/user-attachments/assets/6354f291-5f98-43c4-9180-13947aa1ab3f" alt="Figure 4.0.8" width="400"></kbd> <br><strong>Figure 4.0.8: Output shape of the Polars sampled dataset.</strong> </div><br>
+<div align="center"> <kbd><img src="https://github.com/user-attachments/assets/ff1e1ec3-f450-42e0-999a-529492e52a44" alt="Figure 4.0.9" width="400"></kbd> <br><strong>Figure 4.0.9: Output shape of the Dask sampled dataset.</strong> </div><br>
+<div align="center"> <kbd><img src="https://github.com/user-attachments/assets/9830fad4-dfeb-4cb1-a56c-186b3b9a0336" alt="Figure 4.0.10" width="400"></kbd> <br><strong>Figure 4.0.10: Output shape of the Pandas sampled dataset.</strong> </div><br>
 
 ## 5.0 Comparative Analysis
 To evaluate the performance and efficiency of different data processing libraries on large-scale datasets, a comparative analysis was conducted between three libraries: Pandas, Dask and Polars using the Spotify Charts dataset. Two primary metrics — memory usage and execution time were measured during the processing of the dataset. In addition, ease of processing was qualitatively evaluated based on experience during implementation.

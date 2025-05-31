@@ -30,8 +30,8 @@ The chosen dataset is titled **"Transactions – Synthetic Fraud Detection Data"
 
 ## 📄 Submission
 
-🔗 [Full Code]()  <br> <br>
-📝 [Markdown Report](https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_DataStorm/big_data.md) <br><br>
+🔗 [Full Code](https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_DataStorm/big_data.ipynb)  <br>
+📝 [Markdown Report](https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_DataStorm/big_data.md) <br>
 📘 [Log Book ]()
 
 

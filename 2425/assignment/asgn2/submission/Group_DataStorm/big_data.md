@@ -127,7 +127,58 @@ Figure 3.1.6 displays the the performance metrics for Pandas. The total executio
 </div>
 
 <h3>3.2 Dask</h3>
+<h4>3.2.1 Load Less Data</h4>
 
+As shown in Figure 3.2.1, 
+
+<div align="center">
+    <img src="Images/dask1.png" alt="dask1" width="600">
+    <p><strong>Figure 3.3.1: Load Less Data using Dask</strong></p>
+  </div>
+
+<h4>3.2.2 Chunking</h4>
+
+Figure 3.2.2 
+
+<div align="center">
+    <img src="Images/dask2.png" alt="dask2" width="600">
+    <p><strong>Figure 3.2.2: Chunking using Dask</strong></p>
+</div>
+
+<h4>3.2.3 Optimize Data Types</h4>
+
+Refer to Figure 3.2.3, 
+
+<div align="center">
+    <img src="Images/dask3.png" alt="dask3" width="600">
+    <p><strong>Figure 3.3.3: Optimize Data Types using Dask</strong></p>
+</div>
+
+<h4>3.2.4 Sampling</h4>
+
+Figure 3.2.4 demostrate that the `.sample(n=10000, with_replacement=False)` method was used to perform the same operation, extracting a random sample while maintaining performance.
+
+<div align="center">
+    <img src="Images/dask4.png" alt="dask4" width="600">
+    <p><strong>Figure 3.2.4: Sampling using Dask</strong></p>
+</div>
+
+<h4>3.2.5 Parallel Processing (Aggregation)</h4>
+
+
+<div align="center">
+    <img src="Images/dask5.png" alt="dask5" width="600">
+    <p><strong>Figure 3.2.5: Parallel Processing (Aggregation) using Dask</strong></p>
+</div>
+
+<h4>3.2.6 Output</h4>
+
+Figure 3.2.6 shows
+
+<div align="center">
+    <img src="Images/dask6.png" alt="dask6" width="400">
+    <p><strong>Figure 3.3.6: Performance Metrics for Big Data Handling Process using Dask</strong></p>
+</div>
 <h3>3.3 Polars</h3>
 <h4>3.3.1 Load Less Data</h4>
 
@@ -184,7 +235,7 @@ Figure 3.1.6 demonstrates a better performance by using Polars. The total execut
 </div>
 
 <h2>Task 4: Comparative Analysis</h2>
-Figure 4.1 shows the performance comparison of data processing libraries
+Figure 4.1 shows the performance comparison of data processing libraries 
 <div align="center">
     <img src="https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_DataStorm/Images/Performance%20Comparison%20Library.png" alt="Performance" />
     <p><strong>Figure 4.1: Performance comparison of data processing between libraries</strong></p>

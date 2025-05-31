@@ -83,7 +83,7 @@ Figure 3.1.1 shows that only six essential columns (`transaction_id` , `customer
 
 <h4>3.1.2 Chunking</h4>
 
-As shown in Figure 3.1.2, The dataset was processed in chunks of 100,000 rows using `read_csv(chunksize=...)`. An operation was performed to count the number of transactions where the amount exceeded 100. This strategy allowed large datasets to be processed incrementally without overloading memory.
+As shown in Figure 3.1.2, the dataset was processed in chunks of 100,000 rows using `read_csv(chunksize=...)`. An operation was performed to count the number of transactions where the amount exceeded 100. This strategy allowed large datasets to be processed incrementally without overloading memory.
 
 <div align="center">
     <img src="Images/pa2.png" alt="pa2">
@@ -114,7 +114,73 @@ As shown in Figure 3.1.5, Group-by aggregation was performed using `groupby("car
 
 <div align="center">
     <img src="Images/pa5.png" alt="pa5">
-    <p><strong>Figure 3.1.2: Parallel Processing (Aggregation) using Pandas</strong></p>
+    <p><strong>Figure 3.1.5: Parallel Processing (Aggregation) using Pandas</strong></p>
+</div>
+
+<h4>3.1.6 Output</h4>
+
+Figure 3.1.6 displays the output for big data handling process using Pandas.
+
+<div align="center">
+    <img src="Images/pa6.png" alt="pa6">
+    <p><strong>Figure 3.1.6: Output for big data handling process using Pandas</strong></p>
+</div>
+
+<h3>3.2 Dask</h3>
+
+<h3>3.3 Polars</h3>
+<h4>3.3.1 Load Less Data</h4>
+
+As shown in Figure 3.3.1, the same set of columns was selected using the `columns` parameter in `pl.read_csv()`. Polars benefits from being columnar and optimized for selecting specific fields, making this operation both fast and memory-efficient.
+
+<div align="center">
+    <img src="Images/po1.png" alt="po1">
+    <p><strong>Figure 3.3.1: Load Less Data using Polars</strong></p>
+  </div>
+
+<h4>3.3.2 Chunking</h4>
+
+Figure 3.3.2 illustrate that instead of traditional chunking, Polars uses lazy evaluation with `scan_csv()`, allowing for deferred and optimized computation. A filter was applied to extract transactions with an amount greater than 100, and `.collect()` was used to execute the operation only when necessary.
+
+<div align="center">
+    <img src="Images/po2.png" alt="po2">
+    <p><strong>Figure 3.3.2: Chunking using Polars</strong></p>
+</div>
+
+<h4>3.3.3 Optimize Data Types</h4>
+
+Refer to Figure 3.3.3, a similar optimization was done using `.with_columns()` and applying `.cast()` to convert columns to efficient types such as `Categorical` and `Float32`. This step took advantage of Polars’ strong type system and internal compression.
+
+<div align="center">
+    <img src="Images/po3.png" alt="po3">
+    <p><strong>Figure 3.3.3: Optimize Data Types using Polars</strong></p>
+</div>
+
+<h4>3.3.4 Sampling</h4>
+
+Figure 3.1.4 demostrate that the `.sample(n=10000, with_replacement=False)` method was used to perform the same operation, extracting a random sample while maintaining performance.
+
+<div align="center">
+    <img src="Images/po4.png" alt="po4">
+    <p><strong>Figure 3.3.4: Sampling using Polars</strong></p>
+</div>
+
+<h4>3.3.5 Parallel Processing (Aggregation)</h4>
+
+Using lazy evaluation, Polars performed the same aggregation with `.group_by("card_type").agg(pl.col("amount").sum())` as shown in Figure 3.3.5. The results were collected and formatted using `.map_elements()` to ensure two decimal places. This approach was inherently faster due to Polars’ native multi-threading and memory efficiency.
+
+<div align="center">
+    <img src="Images/po5.png" alt="po5">
+    <p><strong>Figure 3.3.5: Parallel Processing (Aggregation) using Polars</strong></p>
+</div>
+
+<h4>3.3.6 Output</h4>
+
+Figure 3.3.6 displays the output for big data handling process using Polars.
+
+<div align="center">
+    <img src="Images/po6.png" alt="po6">
+    <p><strong>Figure 3.3.6: Output for big data handling process using Polars</strong></p>
 </div>
 
 <h2>Task 4: Comparative Analysis</h2>

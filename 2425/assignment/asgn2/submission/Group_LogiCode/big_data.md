@@ -70,6 +70,10 @@ To reduce processing load, a **10% sampling strategy** was applied. In **Polars*
 <div align="center"> <kbd><img src="https://github.com/user-attachments/assets/ff1e1ec3-f450-42e0-999a-529492e52a44" alt="Figure 4.0.9" width="600"></kbd> <br><strong>Figure 4.0.9: Output shape of the Dask sampled dataset.</strong> </div><br>
 <div align="center"> <kbd><img src="https://github.com/user-attachments/assets/9830fad4-dfeb-4cb1-a56c-186b3b9a0336" alt="Figure 4.0.10" width="600"></kbd> <br><strong>Figure 4.0.10: Output shape of the Pandas sampled dataset.</strong> </div><br>
 
+To improve performance with large datasets, Dask was used for parallel processing. It divides data into partitions and processes them across multiple CPU cores, enabling faster execution and lower memory usage. TThe full workflow includes column selection, data type optimization, dropping nulls, date conversion, and sampling—performed in parallel. Figure 4.0.11 shows the complete Dask code used for this process.
+
+<div align="center"> <kbd><img src="https://github.com/user-attachments/assets/7bc09f5c-5866-4257-aaff-6a42c658c911" alt="Figure 4.0.11" width="600"></kbd> <br><strong>Figure 4.0.11: Dask code snippet for parallel big data processing.</strong> </div><br>
+
 ## 5.0 Comparative Analysis
 To evaluate the performance and efficiency of different data processing libraries on large-scale datasets, a comparative analysis was conducted between three libraries: Pandas, Dask and Polars using the Spotify Charts dataset. Two primary metrics — memory usage and execution time were measured during the processing of the dataset. In addition, ease of processing was qualitatively evaluated based on experience during implementation.
 

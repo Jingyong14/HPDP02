@@ -11,7 +11,13 @@
 | Tang Yan Qing | `A22EC0109`     |
 
 ## 1.0 Introduction
+In today’s data-driven era, handling massive datasets that exceed traditional processing capabilities presents significant challenges. This assignment focuses on practical techniques for managing and analyzing datasets larger than 700MB using Python. Key strategies include chunking, sampling, data type optimization, and parallel computing with Dask. These methods are applied to improve memory efficiency, reduce execution time, and enhance overall data processing performance. The task provides hands-on experience in scalable data analysis, reflecting common practices used in real-world big data environments.
 ## 1.1 Objectives
+The assignment aims to develop effective big data handling skills using Python libraries. The key objectives are:
+
+- Utilize Pandas, Dask, and Polars to manage and process large datasets.
+- Apply strategies such as chunking, sampling, and data type optimization using these libraries.
+- Evaluate performance differences across traditional and optimized methods in terms of memory usage and execution time.
 ## 2.0 Dataset Selection
 To conduct a meaningful performance and scalability comparison among different data processing libraries, the Spotify Charts Dataset from Kaggle has been selected. It contains historical data of all “Top 200” and “Viral 50” charts published by Spotify globally, updated every 2–3 days since January 1, 2017. The dataset includes over 26 million records, with key details such as song title, artist, rank, date, region, chart type, number of streams, trend indicator, and track URL.
 

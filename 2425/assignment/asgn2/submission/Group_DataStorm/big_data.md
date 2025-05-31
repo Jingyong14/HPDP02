@@ -272,7 +272,7 @@ Each of these libraries has its benefits and limitations. Table 5.1 shows the be
 | Polars  |   Extremely fast and memory efficient |  Less mature ecosystem         |
 
 <h3>Reflection</h3>
-
+During this assignment, we learn how to retrieve a dataset from Kaggle using the API, which makes accessing data easier. Moreover, we explored several big data handling techniques such as chunking, loading less data, optimising data types, sampling and using parallel processing. These techniques helped us to handle massive datasets more effectively. Furthermore, we also compare the performance of Pandas, Dask and Polars to investigate their benefits and limitations. From this assignment, we found that Polars shows the best speed and memory utilization, while Dask handled big data well with parallel processing. This assignment improved our practical skills in handling big data and is useful for our future career in fields related to data handling. 
 
 
 

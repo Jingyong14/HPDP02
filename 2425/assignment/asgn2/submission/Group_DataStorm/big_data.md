@@ -76,6 +76,47 @@ The objective of this task was to apply strategies to handle and process large d
 
 Figure 3.1.1 shows that only six essential columns (`transaction_id` , `customer_id`, `amount`, `country`, `city`, `card_type`) were selected during data loading using the usecols parameter in read_csv(). This reduced the amount of data read into memory and minimized unnecessary processing.
 
+<div align="center">
+    <img src="Images/pa1.png" alt="pa1">
+    <p><strong>Figure 3.1.1: Load Less Data using Pandas</strong></p>
+  </div>
+
+<h4>3.1.2 Chunking</h4>
+
+As shown in Figure 3.1.2, The dataset was processed in chunks of 100,000 rows using `read_csv(chunksize=...)`. An operation was performed to count the number of transactions where the amount exceeded 100. This strategy allowed large datasets to be processed incrementally without overloading memory.
+
+<div align="center">
+    <img src="Images/pa2.png" alt="pa2">
+    <p><strong>Figure 3.1.2: Chunking using Pandas</strong></p>
+</div>
+
+<h4>3.1.3 Optimize Data Types</h4>
+
+Refer to Figure 3.1.3, in order to reduce memory usage, categorical columns like customer_id, country, city, and card_type were converted to the `category` data type, and the amount column was cast to `float32`. These conversions reduced the dataset’s overall memory footprint.
+
+<div align="center">
+    <img src="Images/pa3.png" alt="pa3">
+    <p><strong>Figure 3.1.3: Optimize Data Types using Pandas</strong></p>
+</div>
+
+<h4>3.1.4 Sampling</h4>
+
+Figure 3.1.4 demostrate that a random sample of 10,000 rows was selected using `.sample(n=10000)`. This enabled quicker testing and prototyping on a manageable subset of the full dataset.
+
+<div align="center">
+    <img src="Images/pa4.png" alt="pa4">
+    <p><strong>Figure 3.1.4: Sampling using Pandas</strong></p>
+</div>
+
+<h4>3.1.5 Parallel Processing (Aggregation)</h4>
+
+As shown in Figure 3.1.5, Group-by aggregation was performed using `groupby("card_type")["amount"].sum()` to compute the total transaction amount per card type. Although Pandas is single-threaded, it handled the operation effectively on the optimized dataset. The result was rounded and formatted to display two decimal places.
+
+<div align="center">
+    <img src="Images/pa5.png" alt="pa5">
+    <p><strong>Figure 3.1.2: Parallel Processing (Aggregation) using Pandas</strong></p>
+</div>
+
 <h2>Task 4: Comparative Analysis</h2>
 Figure 4.0 shows the performance comparison of data processing libraries
 <img src="https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_DataStorm/Images/Performance%20Comparison%20Library.png" alt="Performance" />

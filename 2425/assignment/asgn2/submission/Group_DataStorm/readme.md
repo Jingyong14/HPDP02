@@ -28,4 +28,10 @@ The chosen dataset is titled **"Transactions – Synthetic Fraud Detection Data"
 
 
 
+## 📄 Submission
+
+🔗 [Full Code]()  <br> <br>
+📝 [Markdown Report]() <br><br>
+📘 [Log Book ]()
+
 

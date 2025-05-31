@@ -19,7 +19,7 @@ Table 2.0.1 shows an overview of the Spotify Charts dataset used in this project
 
 <div align="center">
 
- Table 2.0.1: Dataset Overview
+**Table 2.0.1: Dataset Overview**
 | **Attribute**         | **Details**                                                                 |
 |-----------------------|------------------------------------------------------------------------------|
 | **Dataset Name**      | Spotify Charts Dataset                                                       |
@@ -32,7 +32,7 @@ Table 2.0.1 shows an overview of the Spotify Charts dataset used in this project
 
 </div>
 
-This dataset is suitable for performance comparison tasks as it is large in volume and contains diverse types of data (e.g., numerical, categorical, missing values), providing a practical use case for benchmarking data processing libraries.
+This dataset is suitable for performance comparison tasks as it is large in volume and contains diverse types of data like numerical, categorical, and missing values, providing a practical use case for benchmarking data processing libraries.
 
 ## 3.0 Load and Inspect Data
 
@@ -46,6 +46,20 @@ After loading the dataset, a basic inspection was performed to understand its st
 
 ## 4.0 Big Data Handling Strategies
 ## 5.0 Comparative Analysis
+To evaluate the performance and efficiency of different data processing libraries on large-scale datasets, a comparative analysis was conducted between three libraries: Pandas, Dask and Polars using the Spotify Charts dataset. Two primary metrics — memory usage and execution time were measured during the processing of the dataset. In addition, ease of processing was qualitatively evaluated based on experience during implementation.
+
+In terms of memory usage, as shown in **Figure 5.0.1**, Pandas used the most memory at 575.81 MB, followed by Dask at 146.91 MB. Polars was the most efficient, using only 99.91 MB. Even though Pandas reads the dataset in chunks rather than all at once, the full data still ends up in memory after processing, which explains the high usage. Dask performed better because it uses lazy evaluation and parallel processing, avoiding loading the entire dataset into memory at once. It also only converted the sampled 10% into a usable format, which helped save memory. Polars stood out due to its lazy execution style and how it manages memory using Rust. It handled all steps in a single, optimized pipeline without creating large copies in between, leading to much lower memory usage. These results show that using more efficient libraries—especially Polars—can really help when working with large datasets, especially on systems with limited resources.
+
+<div align="center"><kbd><img src="https://github.com/user-attachments/assets/0510cf7c-0b4a-41a9-a108-23f301833ddc" alt="Figure 4.0.1" width="600"/></kbd><br><strong>Figure 5.0.1: Bar Chart of Memory Usage by Libraries</strong></div><br>
+
+Execution time results are illustrated in **Figure 5.0.2**. It showed a similar trend to the memory usage results. Pandas required the longest time to complete data processing tasks, with a total of 133.48 seconds. Dask did slightly better, completing the same operations in 118.00 seconds. Polars significantly outperformed both by completing the task in just 13.70 seconds. Pandas is the slowest because it processes each chunk one by one and does most of the work using Python, which is slower and adds extra time when combining the chunks. Dask was able to speed things up a little by running parts of the task in parallel, but the performance boost was limited due to system constraints and Dask’s internal overhead. Polars had a clear advantage because it uses Rust-based backend and lazy evaluation. Instead of doing each step right away, it plans the whole process first, then runs it all at once in a fast and efficient way. This made Polars much quicker at cleaning and sampling the data.
+
+<div align="center"><kbd><img src="https://github.com/user-attachments/assets/3eb42698-2e1a-435f-8c65-f71754100306" alt="Figure 4.0.2" width="600"/></kbd><br><strong>Figure 5.0.2: Bar Chart of Execution Time by Libraries</strong></div><br>
+
+Regarding ease of use, Pandas is the simplest to work with because of its familiar syntax and rich documentation. Dask is quite similar to Pandas, which makes it easier for people who already know Pandas to get started. However, while Dask offers better performance with large datasets, it introduces some extra complexity. This includes setting up the environment properly and understanding how lazy evaluation works. Polars, while the fastest and most memory-efficient, uses different syntax and ideas like lazy evaluation and expressions, which may take more time to learn. Also, its documentation is not as complete or beginner-friendly as Pandas or Dask, so users might need extra effort when starting out.
+
+Overall, while Pandas remains easy to use, Polars provides the best performance in both speed and memory usage, making it a strong choice for processing large datasets efficiently.
+
 ## 6.0 Conclusion
 ## 7.0 References
 - Dhruvildave. (n.d.). *Spotify Charts Dataset* [Data set]. Kaggle. https://www.kaggle.com/datasets/dhruvildave/spotify-charts

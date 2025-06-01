@@ -195,12 +195,19 @@ Dask shows the most minimal memory footprint at **112.7 MB**, a result of its la
 
 The **Execution Time** chart further reinforces the performance disparity among the libraries. Pandas records the longest execution time of **18.54 seconds**, aligning with its known limitations in scalability and parallel processing. Polars and Dask complete the loading process in a mere **2.88 seconds**, highlighting their superior speed and scalability. Polars achieves this through optimized memory access patterns and low-level system efficiency, while Dask leverages concurrent processing across partitions to reduce bottlenecks.
 
-In summary, the graphical analysis clearly demonstrates that **Polars and Dask significantly outperform Pandas** in both execution speed and memory efficiency. These findings suggest that for large-scale data processing tasks, Polars and Dask are the preferred tools due to their architectural advantages and ability to handle high-volume data more effectively.
-
 <div align="center">
   <img src="figures/task4-barchart.png">
   <p><strong>Figure 4.4:</strong> Performace Bar Chart of Pandas, Polars, and Dask for Full Dataset Loading</p>
 </div>
+
+In addition to performance metrics, ease of processing is a critical factor in selecting an appropriate data processing library. Pandas is widely regarded as the most user-friendly among the three due to its extensive documentation, large community support, and intuitive API. Its syntax is straightforward and familiar to most Python users, making it an excellent choice for beginners and rapid prototyping. Most tutorials, examples, and industry codebases rely on Pandas, which further contributes to its accessibility.
+
+Polars, while newer, offers a familiar syntax that closely resembles Pandas but introduces some differences due to its lazy execution model and expression-based transformations. Users may experience a slight learning curve when adapting to Polars' query syntax, especially for complex data transformations. However, once mastered, Polars provides both clarity and performance benefits. Its growing documentation and active development community are making it increasingly approachable.
+
+Dask, on the other hand, is more complex to work with due to its distributed computing paradigm and lazy evaluation strategy. Although Dask mimics the Pandas API, users must be aware of when computations are deferred and explicitly call .compute() to trigger execution. This adds a layer of complexity, especially when debugging or chaining multiple operations. Furthermore, configuring Dask for multi-core or cluster environments can be non-trivial for users unfamiliar with parallel processing.
+
+In summary, the graphical analysis clearly demonstrates that **Polars and Dask significantly outperform Pandas** in both execution speed and memory efficiency. These findings suggest that for large-scale data processing tasks, Polars and Dask are the preferred tools due to their architectural advantages and ability to handle high-volume data more effectively.
+
 <br>
 <h2>Task 5: Conclusion & Reflection</h2>
 

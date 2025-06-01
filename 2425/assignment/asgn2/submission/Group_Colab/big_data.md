@@ -303,3 +303,17 @@ In summary, the graphical analysis clearly demonstrates that **Polars and Dask s
 <br>
 <h2>Task 5: Conclusion & Reflection</h2>
 
+✅ Conclusion  
+In conclusion, through this assignment, we explored a comprehensive workflow for big data handling—from dataset selection and preprocessing to performance evaluation across modern Python data libraries. The Spotify dataset offered a rich, complex environment to benchmark the three libraries:
+
+- **Pandas:** Best for small-to-medium datasets with excellent ease of use and rapid prototyping.
+- **Polars:** Delivers impressive speed and memory efficiency for single-node processing, with a syntax reminiscent of Pandas.
+- **Dask:** Ideal for very large datasets and distributed computing, though it requires more attention to task execution and environment setup.
+
+These insights not only highlight the trade-offs between libraries but also emphasize the importance of choosing the right tool based on project scale and complexity. Going forward, these techniques can be extended to larger or more specialized data processing tasks, ensuring efficient and scalable analytics workflows.
+
+✅ Reflection  
+
+**Nik Zulaikhaa Binti Zuraidi Afandi**
+Through this task, I deepened my understanding of modern data processing tools and their performance differences. Working with the Spotify dataset challenged me to consider memory usage, processing time, and API nuances. This experience will guide my decisions in future projects, especially when dealing with large or distributed data environments.
+

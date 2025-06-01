@@ -45,6 +45,23 @@ The columns included are:
 </div>
 
 <h2>Task 2: Load and Inspect Data</h2>
+In this section, the dataset was obtained using the Kaggle API and processed with Pandas in Google Colab. We also performed a basic inspection to understand the dataset's structure and contents.
+
+The figure documents a workflow where required libraries are checked, a dataset is fetched, and its contents are extracted for further processing. The exact context (e.g., whether this is part of a tutorial, research, or automated script) is unclear, but it resembles common data preparation steps in Python environments.
+
+The figure shows a Python script and its execution output for loading and analyzing a dataset. At the top is a code block importing necessary libraries (pandas, time, os) and loading a CSV file containing housing data. The script measures how long the data loading takes and displays information about the dataset.
+
+Below the code, the figure displays the program's output, which includes:
+
+The dataset loading time (21.12 seconds)
+
+The dataset dimensions (shown in an unusual format)
+
+The column names (listing various property transaction fields)
+
+Memory usage statistics
+
+The output suggests this is property transaction data, though there appears to be some inconsistencies in the formatting and labels. The figure appears to demonstrate a basic data loading and inspection process, likely from a data analysis or data science workflow.
 
 <h2>Task 3: Apply Big Data Handling Strategies</h2>
 

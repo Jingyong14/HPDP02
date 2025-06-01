@@ -23,6 +23,8 @@
 
 ## Introduction
 
+In today’s data-driven environment, analysts must process datasets that exceed traditional memory constraints. This project utilizes the 2019 Airline Delays and Cancellations dataset (1.37 GB) from Kaggle to demonstrate scalable data loading and processing. Using Python with Pandas, Dask, and Polars, we apply selective column loading, chunked reading, data‐type optimization, sampling, and parallel execution to handle big data processing. We evaluate each library’s performance by measuring execution time and DataFrame‐only memory usage, thereby identifying efficient approaches for large‐volume flight analytics.
+
 ## Objectives
 
 ## Task 1: Dataset Selection

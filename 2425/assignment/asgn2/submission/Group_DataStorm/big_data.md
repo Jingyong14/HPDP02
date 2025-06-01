@@ -24,9 +24,10 @@ Given the scale and complexity of the dataset, traditional data processing metho
 
 <h2>Task 1: Dataset Selection</h2>
 <h3>Dataset Description</h3>
+
 The dataset selected for this assignment is a synthetically generated financial transactions dataset, designed to closely mimic real-world consumer behavior while maintaining data privacy. It was created using Python to support the development and evaluation of fraud detection models. The dataset includes a wide variety of transaction types across categories such as retail, groceries, dining, healthcare, entertainment, and travel, allowing for comprehensive analysis of legitimate and fraudulent activities.
 <br>
-<br>
+
 Each transaction entry is accompanied by detailed attributes including:
 - transaction amount
 - timestamp

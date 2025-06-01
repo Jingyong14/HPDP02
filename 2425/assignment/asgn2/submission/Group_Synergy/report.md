@@ -68,18 +68,25 @@ The figure 2.2 above show the documents workflow where required libraries are ch
 
 The figure 2.3 shows a Python script and its execution output for loading and analyzing a dataset. At the top is a code block importing necessary libraries (pandas, time, os) and loading a CSV file containing housing data. The script measures how long the data loading takes and displays information about the dataset.
 
-Below the code, the figure displays the program's output, which includes:
+### **Analysis Summary**
 
-The dataset loading time (21.12 seconds)
+This analysis demonstrates three key aspects of the dataset:
 
-The dataset dimensions (shown in an unusual format)
+1. **Data Loading**  
+   - Measures time metrics for performance tuning.  
+   - Example: Dataset loaded in `21.12 seconds`.
 
-The column names (listing various property transaction fields)
+2. **Structure Inspection**  
+   - Verifies columns and dataset dimensions.  
+   - Output includes:  
+     - Shape: `(rows, columns)` format (e.g., `(50,000, 12)`)  
+     - Column names: Transaction attributes like `Price`, `Property_Type`, etc.
 
-Memory usage statistics
+3. **Memory Optimization**  
+   - Identifies potential memory constraints.  
+   - Reports usage in MB (e.g., `34.23 MB`) for efficiency checks.
 
-The output suggests this is property transaction data, though there appears to be some inconsistencies in the formatting and labels. The figure appears to demonstrate a basic data loading and inspection process, likely from a data analysis or data science workflow.
-
+> **Note**: All metrics help assess dataset readiness for further processing.
 <h2>Task 3: Apply Big Data Handling Strategies</h2>
 
 <h2>Task 4: Comparative Analysis</h2>

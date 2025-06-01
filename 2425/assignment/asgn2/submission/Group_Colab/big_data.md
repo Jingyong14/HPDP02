@@ -151,6 +151,7 @@ The columns included are:
 <h2>Task 3: Apply Big Data Handling Strategies</h2>
 
 <h2>Task 4: Comparative Analysis</h2>
+
 ### 4.1 Loading Dataset
 The raw dataset is loaded using Pandas, Polars, and Dask library in different runs. During the loading process, the performance for each load is calculated and visualized in graphs for comparison. Memory usage is measured in Megabyte (MB) whereas the execution time is measured in seconds (s). 
 <br>
@@ -188,7 +189,7 @@ Table 2 displays the summary of performance of each library in tables for easier
 
 </div>
 
-### 4.1 Comparison between Three Libraries
+### 4.2 Comparison between Three Libraries
 Figure 4.4 displays the bar charts that illustrate the comparative performance of Pandas, Polars, and Dask in terms of memory usage and execution time during dataset loading operations. As observed in the **Memory Usage** chart, Pandas demonstrates the highest memory consumption at **1950 MB**, which reflects its eager, single-threaded loading strategy that requires the entire dataset to reside in memory. In contrast, Polars exhibits more efficient memory handling, consuming **1268.5 MB**. This improvement is largely due to Polars’ columnar data format and native multithreaded execution implemented in Rust, which enable more compact and cache-friendly data representation.
 
 Dask shows the most minimal memory footprint at **112.7 MB**, a result of its lazy evaluation and partitioned data reading. Rather than loading the entire dataset at once, Dask processes the data in manageable chunks, significantly reducing memory overhead at the initial loading stage. However, it is important to acknowledge that this figure may increase during full computation phases involving `.compute()` or aggregation tasks.

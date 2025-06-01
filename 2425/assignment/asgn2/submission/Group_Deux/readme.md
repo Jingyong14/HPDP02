@@ -22,7 +22,7 @@ This dataset, titled **Synthetic Financial Fraud Transactions**, simulates real-
 ---
 
 ## 📝 Report
-- [Group Deux_Report](https://raw.githubusercontent.com/Jingyong14/HPDP02/main/2425/assignment/asgn2/submission/Group_Deux/Deux_HPDP_Asg2.pdf)
+- [Group Deux_Report (pdf)](https://raw.githubusercontent.com/Jingyong14/HPDP02/main/2425/assignment/asgn2/submission/Group_Deux/Deux_HPDP_Asg2.pdf)
 
 ## 🔗 Google Colab Notebooks
 

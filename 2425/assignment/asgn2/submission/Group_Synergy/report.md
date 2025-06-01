@@ -113,9 +113,9 @@ This analysis demonstrates three key aspects of the dataset:
 </div>
 
 ## Execution Time Analysis
-- **Pandas**: 83.6 seconds (slowest)
-- **Dask**: 11.0 seconds (7.6x faster than Pandas)
-- **Polars**: 11.0 seconds (equal to Dask, 7.6x faster than Pandas)
+- **Pandas**: 71.1 seconds
+- **Dask**: 83.6 seconds (slowest)
+- **Polars**: 11.0 seconds
 
 > **Observation**: Both Dask and Polars show identical and significantly better performance than Pandas for this operation.
 

@@ -152,7 +152,7 @@ The columns included are:
 
 <h2>Task 4: Comparative Analysis</h2>
 The raw dataset is loaded using Pandas, Polars, and Dask library in different runs. During the loading process, the performance for each load is calculated and visualized in graphs for comparison. Memory usage is measured in Megabyte (MB) whereas the execution time is measured in seconds (s). 
-<div></div>
+<br>
 Figures 4.1 displays the full coding to load dataset using Pandas library. The memory usage of Pandas is **1950.00MB** whereas the execution time is **18.54s**.
 
 <div align="center">

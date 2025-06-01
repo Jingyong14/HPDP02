@@ -45,11 +45,28 @@ The columns included are:
 </div>
 
 <h2>Task 2: Load and Inspect Data</h2>
+
+<div align="center">
+  <img src="Figures/fig2.1.png" width="800">
+  <p><strong>Figure 2.1:</strong> Data columns and row count from the CSV file</p>
+</div>
+
 In this section, the dataset was obtained using the Kaggle API and processed with Pandas in Google Colab. We also performed a basic inspection to understand the dataset's structure and contents.
 
-The figure documents a workflow where required libraries are checked, a dataset is fetched, and its contents are extracted for further processing. The exact context (e.g., whether this is part of a tutorial, research, or automated script) is unclear, but it resembles common data preparation steps in Python environments.
+<div align="center">
+  <img src="Figures/fig2.2.png" width="800">
+  <p><strong>Figure 2.2:</strong> Data columns and row count from the CSV file</p>
+</div>
 
-The figure shows a Python script and its execution output for loading and analyzing a dataset. At the top is a code block importing necessary libraries (pandas, time, os) and loading a CSV file containing housing data. The script measures how long the data loading takes and displays information about the dataset.
+The figure 2.2 above show the documents workflow where required libraries are checked, a dataset is fetched, and its contents are extracted for further processing. The exact context (e.g., whether this is part of a tutorial, research, or automated script) is unclear, but it resembles common data preparation steps in Python environments.
+
+
+<div align="center">
+  <img src="Figures/fig2.3.png" width="800">
+  <p><strong>Figure 2.3:</strong> Data columns and row count from the CSV file</p>
+</div>
+
+The figure 2.3 shows a Python script and its execution output for loading and analyzing a dataset. At the top is a code block importing necessary libraries (pandas, time, os) and loading a CSV file containing housing data. The script measures how long the data loading takes and displays information about the dataset.
 
 Below the code, the figure displays the program's output, which includes:
 

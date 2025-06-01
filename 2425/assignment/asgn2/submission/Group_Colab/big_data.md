@@ -171,8 +171,8 @@ The columns included are:
 </div>
 
 <ul>
-  <li>📦 Memory Usage: <code>xx.xx MB</code></li>
-  <li>⏱️ Load Time: <code>xx.xxxx sec</code></li>
+  <li>📦 Memory Usage: <code>1790.17 MB</code></li>
+  <li>⏱️ Load Time: <code>21.1007 sec</code></li>
 </ul>
 
 <br>
@@ -187,8 +187,8 @@ The columns included are:
 </div>
 
 <ul>
-  <li>📦 Memory Usage: <code>xx.xx MB</code></li>
-  <li>⏱️ Load Time: <code>xx.xxxx sec</code></li>
+  <li>📦 Memory Usage: <code>1950.00 MB</code></li>
+  <li>⏱️ Load Time: <code>21.6816 sec</code></li>
 </ul>
 
 <br>
@@ -203,9 +203,9 @@ The columns included are:
 </div>
 
 <ul>
-  <li>📦 Memory Usage: <code>xx.xx MB</code></li>
-  <li>⏱️ Load Time: <code>xx.xxxx sec</code></li>
-  <li>⚙️ Optimization Time: <code>xx.xxxx sec</code></li>
+  <li>📦 Memory Usage: <code>1766.80 MB</code></li>
+  <li>⏱️ Load Time: <code>21.6686 sec</code></li>
+  <li>⚙️ Optimization Time: <code>10.7711 sec</code></li>
 </ul>
 
 <br>
@@ -220,10 +220,10 @@ The columns included are:
 </div>
 
 <ul>
-  <li>📦 Memory Usage After Sampling: <code>xx.xx MB</code></li>
-  <li>⏱️ Load Time (Full Dataset): <code>xx.xxxx sec</code></li>
-  <li>⏱️ Sampling Time: <code>xx.xxxx sec</code></li>
-  <li>⚙️ Processing Time (Scaling): <code>xx.xxxxxxxx sec</code></li>
+  <li>📦 Memory Usage After Sampling: <code>196.08 MB</code></li>
+  <li>⏱️ Load Time (Full Dataset): <code>25.0614 sec</code></li>
+  <li>⏱️ Sampling Time: <code>0.5254 sec</code></li>
+  <li>⚙️ Processing Time (Scaling): <code>0.001819372 sec</code></li>
 </ul>
 
 <br>

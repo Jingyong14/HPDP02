@@ -148,7 +148,98 @@ The columns included are:
 <p>This forms the baseline for comparing performance with other frameworks like Polars and Dask in later tasks.</p>
 
 
-<h2>Task 3: Apply Big Data Handling Strategies</h2>
+<h2>Task 3: Handling Big Data Strategies</h2>
+
+<p>In this task, we explored and implemented several strategies to efficiently handle the Spotify dataset, especially considering its large size. The techniques applied include:</p>
+
+<ul>
+  <li>Loading only necessary data columns</li>
+  <li>Chunking data during the loading phase</li>
+  <li>Optimizing data types</li>
+  <li>Sampling to reduce dataset size</li>
+</ul>
+
+<br>
+
+<h3>✅ Step 1: Load Less Data</h3>
+
+<p>We first identified and excluded unnecessary columns to reduce memory usage and improve load time.</p>
+
+<div align="center">
+  <img src="figures/task 3 - 1.PNG" width="400">
+  <p><strong>Figure 3.1:</strong> Loading Selected Columns Only</p>
+</div>
+
+<ul>
+  <li>📦 Memory Usage: <code>xx.xx MB</code></li>
+  <li>⏱️ Load Time: <code>xx.xxxx sec</code></li>
+</ul>
+
+<br>
+
+<h3>✅ Step 2: Chunking</h3>
+
+<p>To further optimize loading, we used chunking to process the data in manageable parts.</p>
+
+<div align="center">
+  <img src="figures/task 3 - 2.PNG" width="400">
+  <p><strong>Figure 3.2:</strong> Loading Data in Chunks</p>
+</div>
+
+<ul>
+  <li>📦 Memory Usage: <code>xx.xx MB</code></li>
+  <li>⏱️ Load Time: <code>xx.xxxx sec</code></li>
+</ul>
+
+<br>
+
+<h3>✅ Step 3: Optimize Data Types</h3>
+
+<p>We optimized data types by converting object columns to category types and downcasting numeric columns. This significantly reduced memory usage.</p>
+
+<div align="center">
+  <img src="figures/task 3 - 3.PNG" width="400">
+  <p><strong>Figure 3.3:</strong> Data Type Optimization</p>
+</div>
+
+<ul>
+  <li>📦 Memory Usage: <code>xx.xx MB</code></li>
+  <li>⏱️ Load Time: <code>xx.xxxx sec</code></li>
+  <li>⚙️ Optimization Time: <code>xx.xxxx sec</code></li>
+</ul>
+
+<br>
+
+<h3>✅ Step 4: Sampling</h3>
+
+<p>Finally, we performed sampling to reduce the dataset size to 10% of its original volume, maintaining a representative subset for further analysis.</p>
+
+<div align="center">
+  <img src="figures/task 3 - 4.PNG" width="400">
+  <p><strong>Figure 3.4:</strong> Sampling 10% of the Dataset</p>
+</div>
+
+<ul>
+  <li>📦 Memory Usage After Sampling: <code>xx.xx MB</code></li>
+  <li>⏱️ Load Time (Full Dataset): <code>xx.xxxx sec</code></li>
+  <li>⏱️ Sampling Time: <code>xx.xxxx sec</code></li>
+  <li>⚙️ Processing Time (Scaling): <code>xx.xxxxxxxx sec</code></li>
+</ul>
+
+<br>
+
+<h3>✅ Summary</h3>
+
+<p>Through these strategies, we effectively reduced memory usage and optimized data handling for large datasets in Pandas. Key improvements include:</p>
+
+<ul>
+  <li>✅ Reduced memory usage through selective column loading and data type optimization</li>
+  <li>✅ Efficient data processing via chunking</li>
+  <li>✅ Reduced dataset size for faster and more manageable analysis through sampling</li>
+</ul>
+
+<p>These steps provide a robust foundation for scaling data analysis and comparisons with other frameworks like Polars and Dask.</p>
+
 
 <h2>Task 4: Comparative Analysis</h2>
 

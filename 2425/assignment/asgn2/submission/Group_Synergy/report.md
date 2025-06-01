@@ -105,5 +105,34 @@ This analysis demonstrates three key aspects of the dataset:
 
 ### 4.2 Comparison between Three Libraries
 
+#### Library Performance Comparison
+
+<div align="center">
+  <img src="Figures/lib_compare.png" width="800">
+  <p><strong>Figure 4.2:</strong> Data columns and row count from the CSV file</p>
+</div>
+
+## Execution Time Analysis
+- **Pandas**: 83.6 seconds (slowest)
+- **Dask**: 11.0 seconds (7.6x faster than Pandas)
+- **Polars**: 11.0 seconds (equal to Dask, 7.6x faster than Pandas)
+
+> **Observation**: Both Dask and Polars show identical and significantly better performance than Pandas for this operation.
+
+## Memory Usage Analysis
+- **Pandas**: 14,334.1 MB (highest memory consumption)
+- **Dask**: 3,996.4 MB (~3.6x more efficient than Pandas)
+- **Polars**: 2,109.0 MB (lowest memory usage, ~6.8x more efficient than Pandas)
+
+> **Key Findings**:
+> 1. Polars demonstrates the best overall performance with both fastest execution and lowest memory usage
+> 2. Dask shows excellent speed improvement over Pandas but uses more memory than Polars
+> 3. Pandas is the least efficient in both time and memory metrics for this workload
+
+## Recommendations
+- For large datasets: **Polars** (best balance of speed and memory efficiency)
+- For distributed computing: **Dask** (when parallel processing is needed)
+- For small datasets: **Pandas** (when familiarity outweighs performance needs)
+
 <h2>Task 5: Conclusion & Reflection</h2>
 

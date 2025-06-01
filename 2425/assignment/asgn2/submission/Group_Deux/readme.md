@@ -23,5 +23,10 @@ This dataset, titled **Synthetic Financial Fraud Transactions**, simulates real-
 
 ## 🔗 Google Colab Notebooks
 
-- 📘 [Data Loading & Inspection](https://colab.research.google.com/drive/1rzQHW2OQTPmJVL43q1oQAfnuH95fCCKT?usp=sharing)
+- [Data Loading & Inspection](https://colab.research.google.com/drive/1umw5c2AHIT4isP9yjFZYO7M3brPkVmFq#scrollTo=uzf6Sgg1yFxC)
+- [Pandas](https://colab.research.google.com/drive/1F6HO2tsfqPxt6Infb8P62PWGDdFBj9uP?usp=drive_link)
+- [Polars](https://colab.research.google.com/drive/1OI4LOUIh6b1Dg-9CK7wrfC-zuG9vakpd?usp=sharing)
+- [Dask](https://colab.research.google.com/drive/1VbXF99l1FKJy2zV5tG9E3NYBjTxx7Jws#scrollTo=BAVgDtT1Kpfm)
+- [Visualization](https://colab.research.google.com/drive/1WPv2IGLrbQRBZm8ooBz0ZRzr7e5BjQte?usp=sharing)
+
 

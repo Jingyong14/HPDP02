@@ -52,8 +52,9 @@ Figure 1.0 shows the preview of the dataset from Kaggle.
 
 
 <h2>Task 2: Load and Inspect Data</h2>
-The selected dataset was loaded and initial inspection of the dataset was performed in order to understand its structure. This step served as a foundation of for applying big data handling techniques in later tasks. <br>
+The selected dataset was loaded and initial inspection of the dataset was performed in order to understand its structure. This step served as a foundation for applying big data handling techniques in later tasks. <br>
 <br>
+
 As shown in Figure 2.1, the process began by setting up the environment in Google Colab, where the Kaggle API was configured using the `kaggle.json` file to enable automated dataset downloading. After downloading and unzipping the dataset file (`synthetic_fraud_data.csv`), the Pandas library was used to load the entire dataset into memory.
 
 <div align="center">
@@ -75,7 +76,7 @@ The objective of this task was to apply strategies to handle and process large d
 <h3>3.1 Pandas</h3>
 <h4>3.1.1 Load Less Data</h4>
 
-Figure 3.1.1 shows that only six essential columns (`transaction_id` , `customer_id`, `amount`, `country`, `city`, `card_type`) were selected during data loading using the usecols parameter in read_csv(). This reduced the amount of data read into memory and minimized unnecessary processing.
+Figure 3.1.1 shows that only six essential columns (`transaction_id` , `customer_id`, `amount`, `country`, `city`, `card_type`) were selected during data loading using the usecols parameter in `read_csv()`. This reduced the amount of data read into memory and minimized unnecessary processing.
 
 <div align="center">
     <img src="Images/pa1.png" alt="pa1" width="600">
@@ -120,7 +121,7 @@ As shown in Figure 3.1.5, Group-by aggregation was performed using `groupby("car
 
 <h4>3.1.6 Output</h4>
 
-Figure 3.1.6 displays the the performance metrics for Pandas. The total execution time was 65.20 seconds, and the memory used during processing was around 1175.30MB. This reflects Pandas' limitatin when dealing with large datasets, as it loads data eagerly into memory and operates in a single-threaded manner. 
+Figure 3.1.6 displays the the performance metrics for Pandas. The total execution time was 65.20 seconds, and the memory used during processing was around 1175.30MB. This reflects Pandas' limitation when dealing with large datasets, as it loads data eagerly into memory and operates in a single-threaded manner. 
 
 <div align="center">
     <img src="Images/pa6otpt.png" alt="pa6otpt" width="400">

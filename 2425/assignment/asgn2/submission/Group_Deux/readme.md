@@ -29,4 +29,5 @@ This dataset, titled **Synthetic Financial Fraud Transactions**, simulates real-
 - [Dask](https://colab.research.google.com/drive/1VbXF99l1FKJy2zV5tG9E3NYBjTxx7Jws#scrollTo=BAVgDtT1Kpfm)
 - [Visualization](https://colab.research.google.com/drive/1WPv2IGLrbQRBZm8ooBz0ZRzr7e5BjQte?usp=sharing)
 
-
+## 📃Log Book
+- [LogBook](https://docs.google.com/spreadsheets/d/121_WVqDgm7My9mnIwD76hoyrdXapHz4TF0KxaMjAlQs/edit?usp=sharing)

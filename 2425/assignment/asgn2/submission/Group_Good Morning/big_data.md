@@ -27,6 +27,12 @@ In today’s data-driven environment, analysts must process datasets that exceed
 
 ## Objectives
 
+The objectives of this assignment are:
+
+- To handle data volumes above 700MB.
+- To apply big data handling strategies, including chunking, sampling, type optimization, and parallel computing.
+- To evaluate and compare the performance between traditional and optimized data handling methods based on execution time and memory usage.
+
 ## Task 1: Dataset Selection
 
 ## Task 2: Load and Inspect Data

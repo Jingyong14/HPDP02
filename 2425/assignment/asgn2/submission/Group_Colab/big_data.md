@@ -187,5 +187,19 @@ Table 2 displays the summary of performance of each library in tables for easier
 
 </div>
 
+
+Figure 4.4 displays the bar charts that illustrate the comparative performance of Pandas, Polars, and Dask in terms of memory usage and execution time during dataset loading operations. As observed in the **Memory Usage** chart, Pandas demonstrates the highest memory consumption at **1950 MB**, which reflects its eager, single-threaded loading strategy that requires the entire dataset to reside in memory. In contrast, Polars exhibits more efficient memory handling, consuming **1268.5 MB**. This improvement is largely due to Polars’ columnar data format and native multithreaded execution implemented in Rust, which enable more compact and cache-friendly data representation.
+
+Dask shows the most minimal memory footprint at **112.7 MB**, a result of its lazy evaluation and partitioned data reading. Rather than loading the entire dataset at once, Dask processes the data in manageable chunks, significantly reducing memory overhead at the initial loading stage. However, it is important to acknowledge that this figure may increase during full computation phases involving `.compute()` or aggregation tasks.
+
+The **Execution Time** chart further reinforces the performance disparity among the libraries. Pandas records the longest execution time of **18.54 seconds**, aligning with its known limitations in scalability and parallel processing. Polars and Dask complete the loading process in a mere **2.88 seconds**, highlighting their superior speed and scalability. Polars achieves this through optimized memory access patterns and low-level system efficiency, while Dask leverages concurrent processing across partitions to reduce bottlenecks.
+
+In summary, the graphical analysis clearly demonstrates that **Polars and Dask significantly outperform Pandas** in both execution speed and memory efficiency. These findings suggest that for large-scale data processing tasks, Polars and Dask are the preferred tools due to their architectural advantages and ability to handle high-volume data more effectively.
+
+<div align="center">
+  <img src="figures/task4-barchart.png">
+  <p><strong>Figure 4.4:</strong> Performace Bar Chart of Pandas, Polars, and Dask for Full Dataset Loading</p>
+</div>
+<br>
 <h2>Task 5: Conclusion & Reflection</h2>
 

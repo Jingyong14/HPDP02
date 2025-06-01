@@ -20,4 +20,4 @@ The dataset selected is the **"Spotify Charts"** dataset, publicly available on 
 
  1. Coding Notebook - [big_data.ipynb](big_data.ipynb)
  2. Markdown Report - [big_data.md](big_data.md)
- 3. Logbook - [logbook.xlsx](logbook.xlsx)
+ 3. Logbook - [logbook.xlsx](https://docs.google.com/spreadsheets/d/1E3WyV4PseVbFPOS1t36WH6hAEeOAE8Bnq5QlmB9yVeY/edit?usp=sharing)

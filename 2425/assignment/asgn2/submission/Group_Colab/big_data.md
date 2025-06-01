@@ -156,7 +156,7 @@ The raw dataset is loaded using Pandas, Polars, and Dask library in different ru
 Figures 4.1 displays the full coding to load dataset using Pandas library. The memory usage of Pandas is **1950.00MB** whereas the execution time is **18.54s**.
 
 <div align="center">
-  <img src="figures/Task4-Pandas.png" width="400">
+  <img src="figures/Task4-Pandas.png">
   <p><strong>Figure 4.1:</strong> Loading full dataset using Pandas</p>
 </div>
 

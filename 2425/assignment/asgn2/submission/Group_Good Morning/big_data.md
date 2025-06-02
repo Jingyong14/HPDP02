@@ -118,6 +118,11 @@ The goal of this project was to efficiently process large-scale datasets using P
 
 #### 4.1.1 Load Less Data
 Figure 3.1.1 shows that only the relevant columns (e.g., MONTH, DAY_OF_WEEK, DEP_DEL15, DEP_TIME_BLK, DISTANCE_GROUP, CARRIER_NAME, NUMBER_OF_SEATS, PLANE_AGE, DEPARTING_AIRPORT) were loaded using the usecols parameter in read_csv(). This minimized memory usage by avoiding unnecessary columns.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d117018b-3f97-4974-a976-9b694a398528" alt="img">
+  <br>
+  <strong>Figure 4.1.1: Load Less Data (Pandas)</strong>
+</p>
 
 #### 4.1.2 Chunking
 As shown in Figure 4.1.2, chunking was performed using the chunksize parameter with a size of 100,000 rows. Each chunk was cleaned by dropping null values before being appended to a list for final concatenation. This approach allowed the large dataset to be processed in smaller, memory-friendly batches.
@@ -139,11 +144,6 @@ Figure 4.1.6 presents the performance metrics: Pandas took approximately 23.57 s
 
 #### 4.2.1 Load Less Data
 As shown in Figure 4.2.1, only necessary columns were loaded using the usecols parameter in dd.read_csv(), similar to Pandas. However, Dask defers actual data loading until computation is triggered, thanks to its lazy evaluation strategy.
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/d117018b-3f97-4974-a976-9b694a398528" alt="img">
-  <br>
-  <strong>Figure 4.1.1: Load Less Data (Pandas)</strong>
-</p>
 
 #### 4.2.2 Chunking
 Figure 4.2.2 demonstrates that Dask automatically handles chunking by partitioning the data into manageable blocks (100MB in this case) via the blocksize parameter. This removes the need for manual chunk iteration.

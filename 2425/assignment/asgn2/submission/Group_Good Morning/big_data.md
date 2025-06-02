@@ -178,6 +178,11 @@ Dask supports native parallelism. As shown in Figure 4.2.5, operations like drop
 
 #### 4.2.6 Output
 Figure 4.2.6 summarizes Dask's performance. With native multi-threading and chunked processing, Dask achieved better memory efficiency and execution time than Pandas. Actual results showed around 24.81 seconds runtime and 154.00 MB of memory usage.
+<p align="center">
+  <img src="https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_Good%20Morning/figures/Dask%20output.png" alt="img">
+  <br>
+  <strong>Figure 4.2.6: Output (Dask)</strong>
+</p>
 
 ### 4.3 Polars 
 #### 4.3.1 Load Less Data

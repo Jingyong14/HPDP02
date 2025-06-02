@@ -216,7 +216,7 @@ As shown in Figure 4.3.2, Polars does not use traditional chunking but relies on
 #### 4.3.3 Optimize Data Types
 Refer to Figure 4.3.3, Polars uses schema_overrides to define efficient column types during CSV loading. Categorical and low-bit integer types (Int8, Int16) were applied for improved memory and speed performance.
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6bc3e06d-8766-44c7-91d5-d63d448519eb" alt="img">
+  <img src="https://github.com/user-attachments/assets/c5f2cb3a-f2d3-4dd7-b7b6-bf8e0cf6928c" alt="img">
   <br>
   <strong>Figure 4.3.3: Optimized Data Types (Polars)</strong>
 </p>

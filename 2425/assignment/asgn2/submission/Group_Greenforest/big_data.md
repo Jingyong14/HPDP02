@@ -112,36 +112,37 @@ Figure 4.1.1 displays Python code snippets for the initial setup phase under Pan
 Figure 4.1.2 depicts the initial Python code for processing a large dataset using Pandas, beginning with performance tracking to record memory usage and execution start time. It then proceeds to load the `mta_1712.csv` file from Google Drive into a Pandas DataFrame. After loading, the code performs a brief data inspection, checking the dataset's shape, column names, data types, and identifying any duplicate or missing values. Finally, basic data cleaning steps are applied by removing duplicate rows and dropping entirely empty rows, establishing a baseline for the traditional Pandas approach before optimizations are introduced.
 
 <p align="center"> <img src="https://github.com/user-attachments/assets/41fdacd1-cfc5-4a0a-8c25-db0e4684c500" alt="dask first run" />
-<br><strong>Figure 4.1.3 - Code Snippet for Inital Setup </strong> </p>
+<br><strong>Figure 4.1.3 - Code Snippet for Pandas Final Stage Processing </strong> </p>
 
 Figure 4.1.3 showcases the final stages of the Pandas baseline processing, specifically addressing the handling of missing data and the subsequent calculation of performance metrics. The code first systematically fills missing values in various columns, using 'Unknown' for text fields and `0.0` or `-1` for numerical ones, ensuring data completeness. After these cleaning operations are complete, the script captures the final memory usage and end time. Finally, it calculates and displays the total memory consumed and the total execution time for all Pandas operations.
 
 ### 4.2 Dask (Optimization)
 <p align="center"> <img src="https://github.com/user-attachments/assets/852d5e31-26a0-4a0e-ab1a-1da8e7acc86f" alt="dask first run" />
-<br><strong>Figure 4.3.1 -  Code Snippet for Inital Setup </strong> </p>
+<br><strong>Figure 4.2.1 -  Code Snippet for Inital Setup on Dask</strong> </p>
 
-Figure 4.1.3 illustrates the process of loading a large transportation dataset efficiently using Dask.
-Only selected columns were read into memory with optimized data types, followed by random sampling of 1% to reduce computational load prior to data cleaning.
+Figure 4.2.1 outlines the initial setup process for utilizing Dask. It begins by demonstrating the installation of Dask using `pip install dask`, followed by output confirming that the Dask package and its dependencies are already satisfied.
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/41b28074-99b0-404b-bd2f-8a52b6592535" alt="Optimized Data Loading and Sampling Using Dask" /> <br><strong>Figure 4.1.3 - Optimized Data Loading and Sampling Using Dask</strong> </p>
-Figure 4.1.4 illustrates the preprocessing steps, where categorical columns were converted and enriched with an 'Unknown' category.
-Missing values were filled, duplicates removed, and the dataset was computed. Performance was tracked to measure memory and time efficiency.
+<p align="center"> <img src="https://github.com/user-attachments/assets/41b28074-99b0-404b-bd2f-8a52b6592535" alt="Optimized Data Loading and Sampling Using Dask" /> <br><strong>Figure 4.2.2 - Code Snippet for Optimize Data Operations Using Dask</strong> </p>
+Certainly, here's a one-paragraph explanation for Figure 4.2.2.
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/8a78583a-eacb-4c68-b84c-406ee3923e45" alt="Data Preprocessing and Optimization" /> <br><strong>Figure 4.1.4 - Data Preprocessing and Optimization</strong> </p>
+Figure 4.2.2 details the initial steps for optimized data handling using Dask. It begins with recording the initial memory state and start time. Crucially, it implements **less data loading** by specifying `usecols` to load only a subset of relevant columns from the CSV. Further optimization is achieved by defining `dtype_map`, explicitly setting **appropriate data types** (e.g., 'category' for categorical columns, 'object' for others) to minimize memory footprint. The dataset is then loaded into a Dask DataFrame using `dd.read_csv`, leveraging **chunking** with `blocksize='128MB'` to process the large file in manageable segments. Finally, **sampling** is applied with `df_dask.sample(frac=0.01)` to work with a smaller, representative portion of the data for faster initial inspection, which includes printing the shape, column names, and data types of the sampled Dask DataFrame.
 
+<p align="center"> <img src="https://github.com/user-attachments/assets/8a78583a-eacb-4c68-b84c-406ee3923e45" alt="Data Preprocessing and Optimization" /> <br><strong>Figure 4.2.3 - Code Snippet for Final Stage Processing on Dask </strong> </p>
 
+Figure 4.2.3 efficiently processes a Dask DataFrame by first optimizing memory usage through applying the 'category' data type to relevant columns and ensuring an 'Unknown' category is available for handling missing values. It then systematically fills specified missing values with 'Unknown' and removes duplicate rows from the dataset. All these distributed Dask operations are then executed and consolidated into a single pandas DataFrame. Finally, the code meticulously tracks and reports the memory consumed and the total execution time of these Dask-powered data manipulations, providing clear performance metrics for the optimization strategy.
 
 ### 4.3 Polars (Optimization)
 <p align="center"> <img src="https://github.com/user-attachments/assets/aee6140c-f4f4-43d9-9e94-11a61f547a61" alt="dask first run" />
-<br><strong>Figure 4.3.1 -  Code Snippet for Inital Setup </strong> </p>
+<br><strong>Figure 4.3.1 -  Code Snippet for Inital Setup on Polars</strong> </p>
 
 Figure 4.3.1 illustrates loading the dataset with Polars’ lazy evaluation, selecting relevant columns for efficiency. The dataset schema was inspected to verify column names and data types, along with a count of rows before any cleaning was applied.
 
 <p align="center"> <img src="https://github.com/user-attachments/assets/fbbda807-8c2e-4c66-a907-9f3b564cb244" alt="dask first run" />
-<br><strong>Figure 4.3.1 - Data Loading and Initial Inspection Using Polars </strong> </p>
+<br><strong>Figure 4.3.2 - Data Loading and Initial Inspection Using Polars </strong> </p>
 
-Figure 4.1.6 shows how missing values were filled and selected columns cast to categorical types using Polars expressions. Duplicates were removed, and performance metrics for memory usage and execution time were recorded after processing.
-<p align="center"> <img src="https://github.com/user-attachments/assets/5341ecc8-9d74-44d3-99fc-2cf8d93c2e5b" alt="Data Preprocessing and Optimization" /> <br><strong>Figure 4.1.4 - Data Preprocessing and Optimization</strong> </p>
+Figure 4.3.2 shows how missing values were filled and selected columns cast to categorical types using Polars expressions. Duplicates were removed, and performance metrics for memory usage and execution time were recorded after processing.
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/5341ecc8-9d74-44d3-99fc-2cf8d93c2e5b" alt="Data Preprocessing and Optimization" /> <br><strong>Figure 4.3.3 - Data Preprocessing and Optimization</strong> </p>
 
 ## 5.0 Comparative Analysis
 This section presents a detailed comparison of the performance characteristics (memory usage and execution time) of three popular Python data manipulation libraries: Pandas, Dask, and Polars. The analysis aims to highlight the efficiency gains achieved through optimization techniques when handling data cleaning operations.

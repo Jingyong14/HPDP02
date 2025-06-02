@@ -139,6 +139,11 @@ Figure 4.1.6 presents the performance metrics: Pandas took approximately 23.57 s
 
 #### 4.2.1 Load Less Data
 As shown in Figure 4.2.1, only necessary columns were loaded using the usecols parameter in dd.read_csv(), similar to Pandas. However, Dask defers actual data loading until computation is triggered, thanks to its lazy evaluation strategy.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d117018b-3f97-4974-a976-9b694a398528" alt="img">
+  <br>
+  <strong>Figure 4.1.1: Load Less Data (Pandas)</strong>
+</p>
 
 #### 4.2.2 Chunking
 Figure 4.2.2 demonstrates that Dask automatically handles chunking by partitioning the data into manageable blocks (100MB in this case) via the blocksize parameter. This removes the need for manual chunk iteration.

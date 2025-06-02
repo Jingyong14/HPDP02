@@ -100,8 +100,12 @@ Before applying any big data optimization techniques, we used Pandas to clean th
 
 <p align="center"> <img src="https://github.com/user-attachments/assets/1578e861-d8bd-4b19-847a-be4ced2bf165" alt="dask first run" />
 <br><strong>Figure 4.1.1 - Code Snippet for Inital Setup </strong> </p>
-![image](https://github.com/user-attachments/assets/87f82082-e0e5-4461-be16-ebb7b886a5f5)
 
+<p align="center"> <img src="https://github.com/user-attachments/assets/87f82082-e0e5-4461-be16-ebb7b886a5f5" alt="dask first run" />
+<br><strong>Figure 4.1.1 - Code Snippet for Inital Setup </strong> </p>
+
+<p align="center"> <img src="https://github.com/user-attachments/assets/41fdacd1-cfc5-4a0a-8c25-db0e4684c500" alt="dask first run" />
+<br><strong>Figure 4.1.1 - Code Snippet for Inital Setup </strong> </p>
 
 ### 4.2 Dask (Optimization)
 <p align="center"> <img src="https://github.com/user-attachments/assets/852d5e31-26a0-4a0e-ab1a-1da8e7acc86f" alt="dask first run" />

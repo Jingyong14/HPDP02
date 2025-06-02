@@ -114,6 +114,42 @@ The goal of this project was to efficiently process large-scale datasets using P
 - Sampling
 - Parallel Processing
 
+### 4.1 Pandas 
+
+#### 4.1.1 Load Less Data
+Figure 3.1.1 shows that only the relevant columns (e.g., MONTH, DAY_OF_WEEK, DEP_DEL15, DEP_TIME_BLK, DISTANCE_GROUP, CARRIER_NAME, NUMBER_OF_SEATS, PLANE_AGE, DEPARTING_AIRPORT) were loaded using the usecols parameter in read_csv(). This minimized memory usage by avoiding unnecessary columns.
+
+
+#### 4.1.2 Chunking
+As shown in Figure 4.1.2, chunking was performed using the chunksize parameter with a size of 100,000 rows. Each chunk was cleaned by dropping null values before being appended to a list for final concatenation. This approach allowed the large dataset to be processed in smaller, memory-friendly batches.
+#### 4.1.3 Optimize Data Types
+Figure 4.1.3 illustrates the use of a dtype mapping during CSV reading to reduce memory consumption. Columns like DEP_TIME_BLK, CARRIER_NAME, and DEPARTING_AIRPORT were cast to the category type, while numeric columns were downcast to smaller integer types such as int8 and int16.
+#### 4.1.4 Sampling
+Figure 4.1.4 shows a random 10% sample was extracted using .sample(frac=0.1). This helped reduce computation time in downstream tasks such as modeling or visualization.
+#### 4.1.5 Parallel Processing
+Although Pandas is inherently single-threaded, some level of parallelism was indirectly achieved by cleaning and processing in chunks (Figure 4.1.2). However, the final concatenation and deduplication steps were executed sequentially, which may limit scalability.
+#### 4.1.6 Output
+Figure 4.1.6 presents the performance metrics: Pandas took approximately XX.XX seconds and consumed XXX.XX MB of memory (replace with your output). This reflects its limitation in memory management and single-threaded processing, especially for larger datasets.
+
+
+### 4.2 Dask 
+#### 4.2.1 Load Less Data
+
+#### 4.2.2 Chunking
+#### 4.2.3 Optimize Data Types
+#### 4.2.4 Sampling
+#### 4.2.5 Parallel Processing
+#### 4.2.6 Output
+
+### 4.3 Polars 
+#### 4.3.1 Load Less Data
+
+#### 4.3.2 Chunking
+#### 4.3.3 Optimize Data Types
+#### 4.3.4 Sampling
+#### 4.3.5 Parallel Processing
+#### 4.3.6 Output
+
 ## 5.0 Comparative Analysis
 This chapter evaluates and compares performance between traditional Pandas full loading and optimized data handling methods (selective column loading, chunking, sampling, type optimization, and parallel computing) in each library (Pandas, Dask, and Polars) based on execution time (seconds), memory usage (MB), and ease of processing as illustrated in Figure 5.1 and Table 5.2.
 

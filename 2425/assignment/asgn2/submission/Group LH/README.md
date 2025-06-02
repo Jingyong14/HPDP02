@@ -8,7 +8,7 @@
 | Muhammad Daniel Hakim bin Syahrulnizam         | A22EC0207       |
 
 ---
-
+## Summary 🚀
 This project demonstrates effective strategies for handling and optimizing large-scale data processing using the ```NYC Yellow Taxi Trip dataset``` 🚕. By sampling, chunking, and selectively loading relevant columns, we manage memory usage efficiently when working with CSV files too large for traditional Pandas workflows 🐼.
 
 We explored multiple tools—**Pandas** 🐼, **Dask** ⚡, and **Polars** ❄️—highlighting their strengths and weaknesses in terms of speed, scalability, and memory consumption. While Pandas is straightforward and suitable for smaller datasets, Dask excels in parallel and out-of-core computation, handling large datasets with remarkable speed and low memory overhead. Polars offers fast performance but can consume more memory in some cases.

@@ -194,7 +194,7 @@ As illustrated in Figure 4.2.4, a 10% sample was taken using .sample(frac=0.1). 
 </p>
 
 #### 4.2.5 Parallel Processing
-Dask supports native parallelism. As shown in Figure 4.2.5, operations like dropna, deduplication, and sampling were executed across distributed partitions, then gathered using .compute(). This enabled faster processing for large files.
+Dask supports native parallelism. As shown in Figure 4.2.4 just now, operations like dropna, deduplication, and sampling were executed across distributed partitions, then gathered using .compute(). This enabled faster processing for large files.
 
 #### 4.2.6 Output
 Figure 4.2.6 summarizes Dask's performance. With native multi-threading and chunked processing, Dask achieved better memory efficiency and execution time than Pandas. Actual results showed around 24.81 seconds runtime and 154.00 MB of memory usage.

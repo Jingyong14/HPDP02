@@ -1,4 +1,13 @@
-## Assignment 2: Mastering Big Data Handling 🚀
+# Assignment 2: Big Data Handling and Optimization Using NYC Taxi Trip Dataset🚕 
+
+## 👥 Group Members
+
+| Name               | Matric Number |
+|--------------------|---------------|
+| Muhammad Luqman Hakim Bin Mohd Rizaudin        | A22EC0086       |
+| Muhammad Daniel Hakim bin Syahrulnizam         | A22EC0207       |
+
+---
 
 This project demonstrates effective strategies for handling and optimizing large-scale data processing using the ```NYC Yellow Taxi Trip dataset``` 🚕. By sampling, chunking, and selectively loading relevant columns, we manage memory usage efficiently when working with CSV files too large for traditional Pandas workflows 🐼.
 

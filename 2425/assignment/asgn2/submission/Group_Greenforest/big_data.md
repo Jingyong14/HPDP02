@@ -102,13 +102,19 @@ The output in figure 3.4.2 provides a quick overview of the dataset’s structur
 Before applying any big data optimization techniques, we used Pandas to clean the dataset and establish a baseline for memory and execution time. 
 
 <p align="center"> <img src="https://github.com/user-attachments/assets/1578e861-d8bd-4b19-847a-be4ced2bf165" alt="dask first run" />
-<br><strong>Figure 4.1.1 - Code Snippet for Inital Setup </strong> </p>
+<br><strong>Figure 4.1.1 - Code Snippet for Inital Setup on Pandas</strong> </p>
+
+Figure 4.1.1 displays Python code snippets for the initial setup phase under Pandas Library
 
 <p align="center"> <img src="https://github.com/user-attachments/assets/87f82082-e0e5-4461-be16-ebb7b886a5f5" alt="dask first run" />
-<br><strong>Figure 4.1.1 - Code Snippet for Inital Setup </strong> </p>
+<br><strong>Figure 4.1.2 - Code Snippet for Pandas Loading and Cleaning </strong> </p>
+
+Figure 4.1.2 depicts the initial Python code for processing a large dataset using Pandas, beginning with performance tracking to record memory usage and execution start time. It then proceeds to load the `mta_1712.csv` file from Google Drive into a Pandas DataFrame. After loading, the code performs a brief data inspection, checking the dataset's shape, column names, data types, and identifying any duplicate or missing values. Finally, basic data cleaning steps are applied by removing duplicate rows and dropping entirely empty rows, establishing a baseline for the traditional Pandas approach before optimizations are introduced.
 
 <p align="center"> <img src="https://github.com/user-attachments/assets/41fdacd1-cfc5-4a0a-8c25-db0e4684c500" alt="dask first run" />
-<br><strong>Figure 4.1.1 - Code Snippet for Inital Setup </strong> </p>
+<br><strong>Figure 4.1.3 - Code Snippet for Inital Setup </strong> </p>
+
+Figure 4.1.3 showcases the final stages of the Pandas baseline processing, specifically addressing the handling of missing data and the subsequent calculation of performance metrics. The code first systematically fills missing values in various columns, using 'Unknown' for text fields and `0.0` or `-1` for numerical ones, ensuring data completeness. After these cleaning operations are complete, the script captures the final memory usage and end time. Finally, it calculates and displays the total memory consumed and the total execution time for all Pandas operations.
 
 ### 4.2 Dask (Optimization)
 <p align="center"> <img src="https://github.com/user-attachments/assets/852d5e31-26a0-4a0e-ab1a-1da8e7acc86f" alt="dask first run" />

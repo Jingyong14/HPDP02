@@ -5,8 +5,8 @@
 
 | Name               | Matric Number |
 |--------------------|---------------|
-| Muhammad Luqman Hakim Bin Mohd Rizaudin           | A22EC0086       |
-| Muhammad Daniel Hakim bin Syahrulnizam           | A22EC0207       |
+| Muhammad Luqman Hakim Bin Mohd Rizaudin        | A22EC0086       |
+| Muhammad Daniel Hakim bin Syahrulnizam         | A22EC0207       |
 
 ---
 

@@ -100,140 +100,35 @@ Before applying any big data optimization techniques, we used Pandas to clean th
 
 <p align="center"> <img src="https://github.com/user-attachments/assets/1578e861-d8bd-4b19-847a-be4ced2bf165" alt="dask first run" />
 <br><strong>Figure 4.1.1 - Code Snippet for Inital Setup </strong> </p>
+![image](https://github.com/user-attachments/assets/87f82082-e0e5-4461-be16-ebb7b886a5f5)
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/33f57c64-2952-497a-aee3-0adbdde1ff3b" alt="dask first run" />
-<br><strong>Figure 4.1.2 - Code Snippet to Start Performance Tracking </strong> </p>
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/702760e8-d6f4-438f-9c9c-f8fda69cdef6" alt="dask first run" />
-<br><strong>Figure 4.1.3 - Code Snippet to Start Performance Tracking </strong> </p>
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/e7672b5d-d5f4-4496-841a-0737ba6567d5" alt="dask first run" />
-<br><strong>Figure 4.1.4 - Code Snippet to Start Performance Tracking </strong> </p>
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/59c009a7-2cb4-4dd6-9847-2bacc0ec6071" alt="dask first run" />
-<br><strong>Figure 4.1.5 - Code Snippet to Start Performance Tracking </strong> </p>
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/6c29f376-3cf4-41b9-8180-b7638cd6c4e4" alt="dask first run" />
-<br><strong>Figure 4.1.6 - Code Snippet to Start Performance Tracking </strong> </p>
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/0f3c0802-3a63-4000-99da-d1a80ac1af4f" alt="dask first run" />
-<p align="center"> <img src="https://github.com/user-attachments/assets/472c1a02-14e3-4bc2-885d-2313d0e66d58" alt="dask first run" />
-<br><strong>Figure 4.1.7 - Code Snippet to Start Performance Tracking </strong> </p>
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/df98b6e3-d531-4c09-bc54-306231ca85ee" alt="dask first run" />
-<br><strong>Figure 4.1.8 - Code Snippet to Start Performance Tracking </strong> </p>
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/d8d80abd-fe2d-424b-acf2-cc89acadd144" alt="dask first run" />
-<br><strong>Figure 4.1.9 - Code Snippet to Start Performance Tracking </strong> </p>
 
 ### 4.2 Dask (Optimization)
+<p align="center"> <img src="https://github.com/user-attachments/assets/852d5e31-26a0-4a0e-ab1a-1da8e7acc86f" alt="dask first run" />
+<br><strong>Figure 4.3.1 -  Code Snippet for Inital Setup </strong> </p>
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/2152689d-f28f-408d-ab62-7d8a3d5e2fea" alt="dask first run" />
-<br><strong>Figure 4.2.1 - Code Snippet to Start Performance Tracking </strong> </p>
+Figure 4.1.3 illustrates the process of loading a large transportation dataset efficiently using Dask.
+Only selected columns were read into memory with optimized data types, followed by random sampling of 1% to reduce computational load prior to data cleaning.
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/effcb687-0e6d-4f58-b0ed-f5557d123edc" alt="dask first run" />
-<br><strong>Figure 4.2.2 - Code Snippet to Start Performance Tracking </strong> </p>
+<p align="center"> <img src="https://github.com/user-attachments/assets/41b28074-99b0-404b-bd2f-8a52b6592535" alt="Optimized Data Loading and Sampling Using Dask" /> <br><strong>Figure 4.1.3 - Optimized Data Loading and Sampling Using Dask</strong> </p>
+Figure 4.1.4 illustrates the preprocessing steps, where categorical columns were converted and enriched with an 'Unknown' category.
+Missing values were filled, duplicates removed, and the dataset was computed. Performance was tracked to measure memory and time efficiency.
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/d923a130-eb76-40de-be60-c999602857af" alt="dask first run" />
-<br><strong>Figure 4.2.3 - Code Snippet to Start Performance Tracking </strong> </p>
+<p align="center"> <img src="https://github.com/user-attachments/assets/8a78583a-eacb-4c68-b84c-406ee3923e45" alt="Data Preprocessing and Optimization" /> <br><strong>Figure 4.1.4 - Data Preprocessing and Optimization</strong> </p>
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/f8f47e1b-7ce3-4b70-a271-6842a5a91c9b" alt="dask first run" />
-<br><strong>Figure 4.2.4 - Code Snippet to Start Performance Tracking </strong> </p>
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/3fac57d6-6036-4a1b-829a-59bcc7dde7c2" alt="dask first run" />
-<br><strong>Figure 4.2.5 - Code Snippet to Start Performance Tracking </strong> </p>
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/d020573f-784f-4b27-a3f7-6a4e149d31e3" alt="dask first run" />
-<br><strong>Figure 4.2.6 - Code Snippet to Start Performance Tracking </strong> </p>
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/122cde5e-e85b-45ef-ad36-8361874bdb6b" alt="dask first run" />
-<br><strong>Figure 4.2.7 - Code Snippet to Start Performance Tracking </strong> </p>
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/71375d27-0836-4dd6-b0b8-0df62ed5e34c" alt="dask first run" />
-<br><strong>Figure 4.2.8 - Code Snippet to Start Performance Tracking </strong> </p>
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/6150c5f8-58a9-46a2-929e-bc9f13f9defb" alt="dask first run" />
-<br><strong>Figure 4.2.9 - Code Snippet to Start Performance Tracking </strong> </p>
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/b1d9403e-eded-4db8-afe9-8db9506800df" alt="dask first run" />
-<br><strong>Figure 4.2.10 - Code Snippet to Start Performance Tracking </strong> </p>
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/dd7dd303-3260-4b57-9773-6643fc9641e6" alt="dask first run" />
-<br><strong>Figure 4.2.11 - Code Snippet to Start Performance Tracking </strong> </p>
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/125c5ea6-a7bb-4d73-9551-1d1c1761de7a" alt="dask first run" />
-<br><strong>Figure 4.2.12 - Code Snippet to Start Performance Tracking </strong> </p>
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/125c5ea6-a7bb-4d73-9551-1d1c1761de7a" alt="dask first run" />
-<br><strong>Figure 4.2.13 - Code Snippet to Start Performance Tracking </strong> </p>
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/67eccaf7-3544-4458-8761-46af7c305e0f" alt="dask first run" />
-<br><strong>Figure 4.2.14 - Code Snippet to Start Performance Tracking </strong> </p>
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/c360d52f-6a4a-4209-831a-aae186bb9f17" alt="dask first run" />
-<br><strong>Figure 4.2.15 - Code Snippet to Start Performance Tracking </strong> </p>
 
 ### 4.3 Polars (Optimization)
-<p align="center"> <img src="https://github.com/user-attachments/assets/49dfebdf-b545-4276-9c0f-6dd41b3341c4" alt="dask first run" />
-<br><strong>Figure 4.1.2 -  Code Snippet for Inital Setup </strong> </p>
+<p align="center"> <img src="https://github.com/user-attachments/assets/aee6140c-f4f4-43d9-9e94-11a61f547a61" alt="dask first run" />
+<br><strong>Figure 4.3.1 -  Code Snippet for Inital Setup </strong> </p>
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/dd0a54ea-da27-429e-9e90-63281f1e8066" alt="dask first run" />
-<br><strong>Figure 4.1.2 - Code Snippet to Start Performance Tracking </strong> </p>
+Figure 4.3.1 illustrates loading the dataset with Polars’ lazy evaluation, selecting relevant columns for efficiency. The dataset schema was inspected to verify column names and data types, along with a count of rows before any cleaning was applied.
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/2f05a6a2-eed6-46a6-ab04-07726567818d" alt="dask first run" />
-<br><strong>Figure 4.1.2 - Code Snippet to Start Performance Tracking </strong> </p>
-This section initiates performance tracking by recording the process’s memory usage and the system time at the start of execution, as shown in Figure 4.1.2. This allows for a later comparison of memory and time usage before and after data processing.
-<p align="center"> <img src="https://github.com/user-attachments/assets/163309d6-8e98-4dd9-9e30-7ff266e9a858" alt="dask first run" />
-<br><strong>Figure 4.1.2 - Code Snippet to Start Performance Tracking </strong> </p>
-The dataset file path is specified in Figure 4.1.3, indicating where the raw CSV file is located. This step ensures that the data source is correctly identified for processing.
-<p align="center"> <img src="https://github.com/user-attachments/assets/34f9ece4-465d-4019-9c60-ff6b19990b43" alt="dask first run" />
-<br><strong>Figure 4.1.3 – Code Snippet Defining the File Path </strong> </p>
+<p align="center"> <img src="https://github.com/user-attachments/assets/fbbda807-8c2e-4c66-a907-9f3b564cb244" alt="dask first run" />
+<br><strong>Figure 4.3.1 - Data Loading and Initial Inspection Using Polars </strong> </p>
 
-A targeted selection of columns to be read from the dataset is defined, as illustrated in Figure 4.1.4. This approach reduces memory usage and speeds up processing by focusing only on essential data.
-<p align="center"> <img src="https://github.com/user-attachments/assets/ea1cbd39-c835-4788-a5f2-058a7fec088b" alt="dask first run" />
-<br><strong>Figure 4.1.4 – Code Snippet Defining Columns to Use </strong> </p>
-
-A dictionary mapping default placeholder values for missing data is prepared in Figure 4.1.5. These values are used to fill nulls consistently during data cleaning to maintain data integrity
-<p align="center"> <img src="https://github.com/user-attachments/assets/60f5d3ed-5e4e-43b9-a7d9-9ead91ae1f6c" alt="dask first run" />
-<br><strong>Figure 4.1.5 – Code Snippet Defining Fill Values for Nulls </strong> </p>
-
-The dataset is loaded as a Polars LazyFrame, as shown in Figure 4.1.6. This deferred execution model enables optimized query planning and memory-efficient streaming processing.
-<p align="center"> <img src="https://github.com/user-attachments/assets/ccf69f0a-295c-4f4a-9a0c-6255141f673b" alt="dask first run" />
-<br><strong>Figure 4.1.6 – Code Snippet Reading Data as LazyFrame </strong> </p>
-
-The schema of the dataset, including column names and data types, is retrieved and displayed, as seen in Figure 4.1.7. This provides an overview of the dataset structure and highlights potential data quality issues.
-<p align="center"> <img src="https://github.com/user-attachments/assets/3c9895ee-6b2a-427e-9d01-c2985e5b41d2" alt="dask first run" />
-<br><strong>Figure 4.1.7 – Code Snippet Inspecting Dataset Schema </strong> </p>
-
-A quick overview of the dataset’s size and structure is presented in Figure 4.1.8, including row count and column names. This verification step ensures the data has been loaded correctly and highlights any initial anomalies.
-<p align="center"> <img src="https://github.com/user-attachments/assets/70d3fea2-a0e4-49ba-8844-00e918d68cc2" alt="dask first run" />
-<br><strong>Figure 4.1.8 – Code Snippet Inspecting Dataset Size and Structure </strong> </p>
-
-Data transformation expressions are created in Figure 4.1.9 to fill null values and cast specific columns to categorical types. This preparation optimizes the dataset for querying and analysis.
-<p align="center"> <img src="https://github.com/user-attachments/assets/7896b061-66ba-49a4-8d17-d9d79753bce1" alt="dask first run" />
-<br><strong>Figure 4.1.9 – Code Snippet Building Expressions for Cleaning and Casting </strong> </p>
-
-The LazyFrame is executed and collected into a Polars DataFrame with streaming, as demonstrated in Figure 4.1.10. This triggers the deferred operations and processes the dataset efficiently in chunks.
-<p align="center"> <img src="https://github.com/user-attachments/assets/7896b061-66ba-49a4-8d17-d9d79753bce1" alt="dask first run" />
-<br><strong>Figure 4.1.2 - Code Snippet to Start Performance Tracking </strong> </p>
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/ca5471b7-84e4-4fc1-8c1d-028297e5d73f" alt="dask first run" />
-<br><strong>Figure 4.1.10 – Code Snippet Executing LazyFrame and Collecting Data </strong> </p>
-
-//
-<p align="center"> <img src="https://github.com/user-attachments/assets/d6089fa9-a2e1-41ed-839a-b8977f17ec74" alt="dask first run" />
-<br><strong>Figure 4.1.2 - Code Snippet to Start Performance Tracking </strong> </p>
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/e9ef7cea-3772-415e-9202-00b73d3c7e37" alt="dask first run" />
-<br><strong>Figure 4.1.2 - Code Snippet to Start Performance Tracking </strong> </p>
-
-<p align="center"> <img src="https://github.com/user-attachments/assets/6804f3a9-37a5-4eb0-b6b4-9a2afe77e4d7" alt="dask first run" />
-<br><strong>Figure 4.1.2 - Code Snippet to Start Performance Tracking </strong> </p>
-
-//
-<p align="center"> <img src="https://github.com/user-attachments/assets/1d5f1207-7384-46fa-aba4-59601771ef0d" alt="dask first run" />
-<br><strong>Figure 4.1.2 - Code Snippet to Start Performance Tracking </strong> </p>
-
+Figure 4.1.6 shows how missing values were filled and selected columns cast to categorical types using Polars expressions. Duplicates were removed, and performance metrics for memory usage and execution time were recorded after processing.
+<p align="center"> <img src="https://github.com/user-attachments/assets/5341ecc8-9d74-44d3-99fc-2cf8d93c2e5b" alt="Data Preprocessing and Optimization" /> <br><strong>Figure 4.1.4 - Data Preprocessing and Optimization</strong> </p>
 
 ## 5.0 Comparative Analysis
 ### 5.1 Pandas Performance

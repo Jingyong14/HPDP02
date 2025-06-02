@@ -14,7 +14,7 @@ We have chosen to work with the **2019 Airline Delays and Cancellations** datase
 📁 **Filename:** `full_data_flightdelay.csv`  
 🔗 **Data Source:** [2019 Airline Delays w/Weather and Airport Detail](https://www.kaggle.com/datasets/threnjen/2019-airline-delays-and-cancellations?resource=download)  
 📦 **Size:** 1.37 GB  
-📄 **Raw Data Documentation:** [Raw Data Documentation Text File(https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_Good%20Morning/figures/raw_data_documentation.txt)
+📄 **Raw Data Documentation:** [Raw Data Documentation Text File](https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_Good%20Morning/figures/raw_data_documentation.txt)
 
 ## Submission
 

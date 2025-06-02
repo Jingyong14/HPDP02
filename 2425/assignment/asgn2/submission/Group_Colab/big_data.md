@@ -71,7 +71,7 @@ The columns included are:
 <p>In this task, the Spotify dataset was downloaded using KaggleHub in Google Colab, loaded into memory using Pandas, and inspected to understand its structure. Additionally, we performed basic preprocessing by standardizing selected numerical columns for future analysis.</p>
 
 <div align="center">
-  <img src="figures/task 2 - 1.PNG" width="200">
+  <img src="https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_Colab/figures/task%202%20-%201.PNG" width="200">
   <p><strong>Figure 2.1:</strong> Kaggle Installation</p>
 </div>
 

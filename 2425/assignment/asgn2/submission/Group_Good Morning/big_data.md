@@ -216,6 +216,11 @@ Figure 4.3.1 shows that pl.read_csv() with the columns parameter was used to loa
 
 #### 4.3.2 Chunking
 As shown in Figure 4.3.2, Polars does not use traditional chunking but relies on lazy evaluation through internal query optimization. Computations are only triggered when required, such as during .sample() or .collect() operations.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d355c463-3e18-467c-9bfd-7924b7dd0da7" alt="img">
+  <br>
+  <strong>Figure 4.3.2: Chunking (Polars)</strong>
+</p>
 
 #### 4.3.3 Optimize Data Types
 Refer to Figure 4.3.3, Polars uses schema_overrides to define efficient column types during CSV loading. Categorical and low-bit integer types (Int8, Int16) were applied for improved memory and speed performance.

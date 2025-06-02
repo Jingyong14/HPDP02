@@ -35,7 +35,7 @@ The objectives of this assignment are:
 
 ## 2.0 Dataset Selection
 
-In this assignment, the 2019 Airline Delays and Cancellations dataset from Kaggle has been selected as a single CSV file named `full_data_flightdelay.csv` (approximately 1.4 GB in size). This dataset provides comprehensive information about airline delays and cancellations across the United States in 2019. It contains 6,489,062 flight records from January 1, 2019 to December 31, 2019, each with 26 fields capturing both operational (e.g., airline, airport, aircraft) and environmental (e.g., weather) attributes. This dataset falls under the broader Aviation domain and is tailored for data analysis in airline operations, delay prediction, and transportation planning. The further details of the dataset is listed below and as showned in **Figure 1.1**.
+In this assignment, the 2019 Airline Delays and Cancellations dataset from Kaggle has been selected as a single CSV file named `full_data_flightdelay.csv` (approximately 1.4 GB in size). This dataset provides comprehensive information about airline delays and cancellations across the United States in 2019. It contains 6,489,062 flight records from January 1, 2019 to December 31, 2019, each with 26 fields capturing both operational (e.g., airline, airport, aircraft) and environmental (e.g., weather) attributes. This dataset falls under the broader Aviation domain and is tailored for data analysis in airline operations, delay prediction, and transportation planning. The further details of the dataset is listed below and as showned in Figure 1.1.
 
 - Filename: full_data_flightdelay.csv
 - Source: [2019 Airline Delays and Cancellations dataset from Kaggle](https://www.kaggle.com/datasets/threnjen/2019-airline-delays-and-cancellations)
@@ -55,7 +55,7 @@ In this assignment, the 2019 Airline Delays and Cancellations dataset from Kaggl
 This section uses the traditional pandas workflow as baseline to load the entire CSV into a DataFrame and then inspect the resulting DataFrame by printing its shape, column names, data types, and a five-row preview. Subsequent big data handling methods with different libraries will follow the same “load → clean → inspect” steps for a fair performance comparison.
 
 ### 3.1 Download Dataset
-The dataset was downloaded via KaggleHub into Google Colab. Refer to **Figure 3.1**, the code first imported the necessary libraries - `os` for file‐path handling, `pandas` for data handling, and `kagglehub` to fetch Kaggle datasets. The code then downloaded the latest version of the “2019 Airline Delays and Cancellations” dataset and returns the local directory where the files were extracted. Finally, it built the full file path `csv_path` to the main CSV to be loaded later.
+The dataset was downloaded via KaggleHub into Google Colab. Refer to Figure 3.1, the code first imported the necessary libraries - `os` for file‐path handling, `pandas` for data handling, and `kagglehub` to fetch Kaggle datasets. The code then downloaded the latest version of the “2019 Airline Delays and Cancellations” dataset and returns the local directory where the files were extracted. Finally, it built the full file path `csv_path` to the main CSV to be loaded later.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e5e07677-02d6-4527-b573-40f5a1d088b0" alt="img">
@@ -64,7 +64,7 @@ The dataset was downloaded via KaggleHub into Google Colab. Refer to **Figure 3.
 </p>
 
 ### 3.2 Load and Process Data
-The loading and processing steps are shown in **Figure 3.2**. First, the `time`, `psutil`, and `pandas` libraries are imported, where:
+The loading and processing steps are shown in Figure 3.2. First, the `time`, `psutil`, and `pandas` libraries are imported, where:
 
 * **`time`**: Provides `time.time()` to record timestamps and measure execution duration.
 * **`psutil`**: Allows querying system resources—here, it’s used to capture the Python process’s resident memory before and after loading.
@@ -81,7 +81,7 @@ After loading, basic cleaning is performed by chaining `.dropna()` to remove any
 </p>
 
 ### 3.3 Evaluate Performance
-The performance of the traditional pandas data loading was measured next, as shown in **Figure 3.3.1**. The total memory consumed by the process (in megabytes) was computed by taking the difference between `mem_after` and `mem_before` (both obtained via `psutil.Process(os.getpid()).memory_info().rss`) and dividing by 1024². The duration of the loading step was determined by subtracting `start_time` from `end_time`. Finally, both the peak process memory increase (2992.44 MB) and the total execution time (57.97 seconds) were displayed, as shown in **Figure 3.3.2**, underscoring the need for optimization when handling very large CSV files.
+The performance of the traditional pandas data loading was measured next, as shown in Figure 3.3.1. The total memory consumed by the process (in megabytes) was computed by taking the difference between `mem_after` and `mem_before` (both obtained via `psutil.Process(os.getpid()).memory_info().rss`) and dividing by 1024². The duration of the loading step was determined by subtracting `start_time` from `end_time`. Finally, both the peak process memory increase (2992.44 MB) and the total execution time (57.97 seconds) were displayed, as shown in Figure 3.3.2, underscoring the need for optimization when handling very large CSV files.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/9b172050-f6d4-4ee7-98d6-71f06de39394" alt="img">
@@ -109,7 +109,16 @@ The data inspection process is illustrated in Figure 3.4.1, where the DataFrame�
 ## 4.0 Apply Big Data Handling Strategies
 
 ## 5.0 Comparative Analysis
-This chapter evaluates and compares performance between traditional Pandas full loading and optimized data handling methods (selective column loading, chunking, sampling, type optimization, and parallel computing) in each library (Pandas, Dask, and Polars) based on execution time (seconds), memory usage (MB), and ease of processing.
+This chapter evaluates and compares performance between traditional Pandas full loading and optimized data handling methods (selective column loading, chunking, sampling, type optimization, and parallel computing) in each library (Pandas, Dask, and Polars) based on execution time (seconds), memory usage (MB), and ease of processing as illustrated in Figure 5.1 and Table 5.2.
+
+**Execution Time Comparison**
+Polars demonstrated the fastest performance, completing the full load–clean–sample workflow in just **9.05 seconds**, thanks to its SIMD‐accelerated, multi‐threaded CSV parser. Optimized Pandas followed in second place, finishing in **23.57 seconds** by reducing I/O overhead through selective column loading, dtype downcasting, chunked reads, and early sampling. Dask closely trailed optimized Pandas at **24.81 seconds**, with its block‐parallel approach incurring only a small scheduling overhead. By contrast, unoptimized Pandas was the slowest, requiring **54.15 seconds** to load and process the entire 6.5 million‐row dataset without any optimizations.
+
+**Memory Usage Comparison**
+When measuring the final in‐memory footprint after sampling, optimized Pandas used the least memory at just **2.1 MB**, because it dropped unused columns, cast to smaller dtypes (`int8`/`int16` and `category`), and sampled only 10 % of rows. Dask maintained a modest peak of **154.0 MB** by processing the dataset in 100 MB blocks and only materializing needed partitions upon calling `.compute()`. Polars required **380.3 MB**, balancing its columnar, Arrow‐based buffers and multi‐threaded parsing overhead. Unoptimized Pandas consumed the most memory by far **2,575.7 MB** since it loaded all 26 columns at default 64‐bit dtypes without chunking or filtering.
+
+**Ease of Processing**
+Unoptimized Pandas is the simplest to implement: a single `pd.read_csv()` call followed by `.dropna()` and `.drop_duplicates()`. No additional code is required, but performance and memory costs are prohibitively high for large datasets. Optimized Pandas demands more effort, requiring explicit `usecols` and `dtype` mappings, manual chunk loops, and early sampling logic; these extra steps yield dramatic improvements in both memory and speed, but at the expense of greater code complexity. Dask strikes a balance by offering a nearly identical Pandas‐like API (`dd.read_csv()`, `.dropna()`, `.drop_duplicates()`, `.sample()`), handling out‐of‐core and parallel execution transparently—though users must understand lazy evaluation and the need to call `.compute()` to materialize results. Polars requires learning a new Rust‐based DataFrame API (`pl.read_csv()`, `.filter()`, `.unique()`, `.sample()`), which adds a small learning curve; once mastered, it delivers the fastest parsing and transformation operations among all methods.
 
 <p align="center">
   <img src="https://github.com/Jingyong14/HPDP02/blob/821b114892212b66271814036a7655823f1cadb5/2425/assignment/asgn2/submission/Group_Good%20Morning/figures/performance_chart.png" alt="Performance evaluation chart">

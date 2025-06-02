@@ -202,6 +202,11 @@ Polars internally parallelizes operations such as drop_nulls() and unique() acro
 
 #### 4.3.6 Output
 Figure 4.3.6 demonstrates Polars' excellent performance: faster execution and reduced memory consumption compared to Pandas and Dask. The reported metrics were 9.05 seconds execution time and 380.32 MB memory usage (replace with your output).
+<p align="center">
+  <img src="https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_Good%20Morning/figures/Polars%20output.png" alt="img">
+  <br>
+  <strong>Figure 4.1.6: Output (Pandas)</strong>
+</p>
 
 ## 5.0 Comparative Analysis
 This chapter evaluates and compares performance between traditional Pandas full loading and optimized data handling methods (selective column loading, chunking, sampling, type optimization, and parallel computing) in each library (Pandas, Dask, and Polars) based on execution time (seconds), memory usage (MB), and ease of processing as illustrated in Figure 5.1 and Table 5.2.

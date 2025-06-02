@@ -15,7 +15,7 @@ The dataset selected for this assignment is the UK Housing Prices Paid dataset, 
 
 ## Submission
 
-**Big Data Handling Strategies (Jupyter Notebook):** [`big_data.ipynb`]()
+**Big Data Handling Strategies (Google Colab):**
 
 <br>
 

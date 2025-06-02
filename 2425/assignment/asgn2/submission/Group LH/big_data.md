@@ -65,10 +65,33 @@ This project explores multiple strategies for handling and processing large-scal
 | improvement_surcharge    | Surcharge fee                                            |
 | total_amount             | Total charged amount                                     |
 
+<br><br>
+
 ---
 
 ### Task 2: Load and Inspect Data
 
+![image](https://github.com/user-attachments/assets/d1e53a20-9a62-40fc-92e5-775ceb7b6a32)
+
+The above code imports the Pandas library as `pd` and reads the first 500,000 rows from the CSV file `combined_yellow_tripdata.csv` into a DataFrame called `df`. This sampling approach helps manage memory usage when dealing with large datasets. 
+
+It then:
+- Prints the shape of the DataFrame to show the number of rows and columns,
+- Lists all column names to give an overview of the dataset structure,
+- Displays the data types of each column to understand how Pandas has interpreted the data, which is essential for proper data processing and analysis.
+
+<br>
+
+![image](https://github.com/user-attachments/assets/0e05e91e-99a5-46d3-87b8-b675a67e65f0)
+
+The output shows that the dataset contains 500,000 rows and 19 columns, indicating a substantial sample of trip records. The column names describe various attributes of each trip, such as vendor ID, timestamps for pickup and drop-off, number of passengers, trip distance, pickup/drop-off coordinates, fare details, and payment information. 
+
+The data types reveal how Pandas interpreted each column:  
+- Numerical values like ```VendorID```, ```passenger_count```, and ```RateCodeID``` are stored as ```int64```;  
+- Continuous values such as ```trip_distance``` and fare-related columns are ```float64```;  
+- Textual or date-like data such as ```tpep_pickup_datetime```, ```tpep_dropoff_datetime```, and ```store_and_fwd_flag``` are currently recognized as ```object``` types, which are generic and may need to be explicitly converted to ```datetime``` or ```category``` formats for proper analysis.
+
+This summary helps assess data readiness and identify preprocessing steps needed for further analysis.
 
 
 ---

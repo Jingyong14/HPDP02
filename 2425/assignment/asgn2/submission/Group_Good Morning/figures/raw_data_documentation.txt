@@ -1,0 +1,100 @@
+AIRPORT_COORDINATES
+	ORIGIN_AIRPORT_ID: 	Airport ID, matches to ORIGIN_AIRPORT_ID in other files
+	DISPLAY_AIRPORT_NAME:  	Display Airport, matches to DISPLAY_AIRPORT_NAME in other files
+	LATITUDE: 		Latitude for airport
+	LONGITUDE: 		Longitude for airport
+
+B43_AIRCRAFT_INVENTORY
+	MANUFACTURE_YEAR: 	Manufacture year
+	TAIL_NUM: 		Unique tail number, matches to TAIL_NUM in other files
+	NUMBER_OF_SEATS: 	Number of seats on aircraft
+	
+CARRIER_DECODE
+	AIRLINE_ID: 		Airport ID, matches to AIRLINE_ID in other files
+	OP_UNIQUE_CARRIER: 	Carrier code, matches to OP_UNIQUE_CARRIER in other files
+	CARRIER_NAME: 		Carrier name, matches to UNIQUE_CARRIER_NAME or CARRIER_NAME in other files
+
+ONTIME_REPORTING_XX
+	MONTH: 			Month
+	DAY_OF_MONTH: 		Day of the month (1-31)
+	DAY_OF_WEEK: 		Day of the week
+	OP_UNIQUE_CARRIER: 	Carrier code, matches to OP_UNIQUE_CARRIER in other files
+	TAIL_NUM: 		Unique tail number, matches to TAIL_NUM in other files
+	OP_CARRIER_FL_NUM: 	Flight number
+	ORIGIN_AIRPORT_ID: 	Airport ID, matches to ORIGIN_AIRPORT_ID in other files
+	ORIGIN: 		Origin airport abbreviation
+	ORIGIN_CITY_NAME: 	Origin city name
+	DEST_AIRPORT_ID: 	Destination airport ID, matches Airport ID in other files
+	DEST: 			Destination airport abbreviation
+	DEST_CITY_NAME: 	Destination city name
+	CRS_DEP_TIME: 		Planned departure time
+	DEP_TIME: 		Actual departure time
+	DEP_DELAY_NEW: 		Departure delay in minutes
+	DEP_DEL15:		TARGET VARIABLE Binary if delayed over 15 min, 1 is yes
+	DEP_TIME_BLK:		Departure time block
+	CRS_ARR_TIME:		Planned arrival time
+	ARR_TIME:		Actual arrival time
+	ARR_DELAY_NEW:		Arrival delay in minutes
+	ARR_TIME_BLK:		Arrival time block
+	CANCELLED:		Flag if flight was cancelled
+	CANCELLATION_CODE:	Cancellation Code
+	CRS_ELAPSED_TIME:	Flight planned elapsed time
+	ACTUAL_ELAPSED_TIME:	Flight actual elapsed time
+	DISTANCE:		Flight Distance in miles
+	DISTANCE_GROUP:		Flight distance group
+	CARRIER_DELAY:		Flag for a carrier delay
+	WEATHER_DELAY:		Flag for a weather delay
+	NAS_DELAY:		Flag for a NAS delay
+	SECURITY_DELAY:		Flag for a security delay
+	LATE_AIRCRAFT_DELAY:	Flag for a late aircraft delay
+
+P10_EMPLOYEES
+	YEAR: 			Year
+	AIRLINE_ID: 		Airport ID, matches to AIRLINE_ID in other files
+	OP_UNIQUE_CARRIER: 	Carrier code, matches to OP_UNIQUE_CARRIER in other files
+	UNIQUE_CARRIER_NAME: 	Carrier name, matches to UNIQUE_CARRIER_NAME in other files
+	CARRIER: 		Carrier abbreviation
+	CARRIER_NAME: 		Carrier name, matches to UNIQUE_CARRIER_NAME or CARRIER_NAME in other files
+	ENTITY:			
+	GENERAL_MANAGE:		General managers
+	PILOTS_COPILOTS:	Pilots/Copilots
+	OTHER_FLT_PERS:		Other flight personnel
+	PASS_GEN_SVC_ADMIN:	Passenger/General Services & Administration
+	MAINTENANCE:		Maintenance Employees
+	ARCFT_TRAF_HANDLING_GRP1: Aircraft Traffic Handling Group1 Employees
+	GEN_ARCFT_TRAF_HANDLING	: General Aircraft Traffic Handling Employees
+	AIRCRAFT_CONTROL:	Aircraft Control Employees
+	PASSENGER_HANDLING:	Passenger Handling Employees
+	CARGO_HANDLING:		Cargo Handling Employees
+	TRAINEES_INTRUCTOR:	Trainees and Instructor
+	STATISTICAL:		Statistical Employees
+	TRAFFIC_SOLICITERS:	Traffic Soliciters
+	OTHER:			Other Employees
+	TRANSPORT_RELATED:	Transport Related Employees
+	TOTAL:			Total employees
+
+T3_AIR_CARRIER_SUMMARY_AIRPORT_ACTIVITY_XXXX
+	OP_UNIQUE_CARRIER: 	Carrier code, matches to OP_UNIQUE_CARRIER in other files
+	CARRIER_NAME: 		Carrier name, matches to UNIQUE_CARRIER_NAME or CARRIER_NAME in other files
+	ORIGIN_AIRPORT_ID: 	Airport ID, matches to ORIGIN_AIRPORT_ID in other files
+	SERVICE_CLASS: 		Service class of flight (required in download)
+	REV_ACRFT_DEP_PERF_510: Departures performed for year
+	REV_PAX_ENP_110: 	Passengers enplaned for year
+
+airports_list
+	ORIGIN_AIRPORT_ID: 	Airport ID, matches to ORIGIN_AIRPORT_ID in other files
+	DISPLAY_AIRPORT_NAME: 	Display Airport, matches to DISPLAY_AIRPORT_NAME in other files
+	ORIGIN_CITY_NAME: 	City
+	NAME: 			Matches to NAME in airport_weather
+
+
+airport_weather_xxxx
+	See GHCND_documentation.pdf for full list
+	Important features:
+	NAME: 			Location of reading
+	PRCP: 			Inches of precipitation for day
+	SNOW: 			Inches of snowfall for day
+	SNWD: 			Inches of snow on ground for day
+	TMAX: 			Max temperature for day
+	AWND: 			Max wind speed for day
+

@@ -129,7 +129,7 @@ Figure 4.1.4 shows a random 10% sample was extracted using .sample(frac=0.1). Th
 #### 4.1.5 Parallel Processing
 Although Pandas is inherently single-threaded, some level of parallelism was indirectly achieved by cleaning and processing in chunks (Figure 4.1.2). However, the final concatenation and deduplication steps were executed sequentially, which may limit scalability.
 #### 4.1.6 Output
-Figure 4.1.6 presents the performance metrics: Pandas took approximately XX.XX seconds and consumed XXX.XX MB of memory (replace with your output). This reflects its limitation in memory management and single-threaded processing, especially for larger datasets.
+Figure 4.1.6 presents the performance metrics: Pandas took approximately XX.XX seconds and consumed XXX.XX MB of memory. This reflects its limitation in memory management and single-threaded processing, especially for larger datasets.
 
 
 ### 4.2 Dask 

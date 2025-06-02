@@ -89,6 +89,54 @@ This analysis demonstrates three key aspects of the dataset:
 > **Note**: All metrics help assess dataset readiness for further processing.
 <h2>Task 3: Apply Big Data Handling Strategies</h2>
 
+
+<div align="center">
+  <img src="Figures/fig4.png" width="800">
+  <p><strong>Figure 4.1.1:</strong> Data columns and row count from the CSV file</p>
+</div>
+
+The figure 4.1.1 illustrates the "Load Less Data" strategy by demonstrating optimized data loading using pd.read_csv() with the usecols parameter to load only four relevant columns—Price, Property Type, Old/New, and Duration—instead of the entire dataset. This approach significantly improves performance, reducing loading time to 20 ms and memory usage to approximately 2003.45 MB, showcasing the efficiency benefits of selective column loading.
+
+
+<div align="center">
+  <img src="Figures/fig5.png" width="800">
+  <p><strong>Figure 4.1.2:</strong> Data columns and row count from the CSV file</p>
+</div>
+
+The figure 4.1.2 illustrates the use of chunked processing in pandas to efficiently handle large datasets. Instead of loading the entire file at once, the data is read in smaller batches using the chunksize parameter, allowing for selective column extraction and gradual processing. Each chunk is appended to a list and later combined into a single DataFrame. This "Chunking" technique helps manage memory usage more effectively, making it suitable for working with datasets that are too large to fit into memory all at once, and offers flexibility for filtering or transforming data during the loading process.
+
+
+<div align="center">
+  <img src="Figures/fig6.png" width="800">
+  <p><strong>Figure 4.1.3:</strong> Data columns and row count from the CSV file</p>
+</div>
+
+The figure 4.1.3 demonstrates the "Optimize Data Types" technique in pandas, which enhances memory efficiency by converting numeric columns to smaller integer types and transforming repetitive string columns into categorical types. This optimization significantly reduces memory usage, making it easier to work with large datasets in memory. Although the conversion process may add some processing time, the trade-off results in improved performance and the ability to handle larger data more efficiently.
+
+<div align="center">
+  <img src="Figures/fig7.png" width="800">
+  <p><strong>Figure 4.1.4:</strong> Data columns and row count from the CSV file</p>
+</div>
+
+The figure 4.1.4 showcases the "Stratified Sampling" technique in pandas, where data is grouped by a specific column (such as Property Type) and a proportional sample is drawn from each group. This method ensures balanced representation across categories while reducing the overall data size for analysis. It retains all original columns and applies a fixed random state for reproducibility. This approach is useful for memory-efficient, representative data analysis, especially when working with large datasets.
+
+
+The image (image.png) presents a comparison of five pandas optimization techniques based on execution time and memory usage. It highlights that selecting fewer columns is the fastest method, while chunking and full data loading take longer due to I/O overhead. In terms of memory efficiency, stratified sampling and data type optimization significantly reduce memory usage, whereas loading full data or unnecessary columns leads to the highest memory consumption. This comparison emphasizes the importance of choosing the right technique based on performance and resource constraints.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <h2>Task 4: Comparative Analysis</h2>
 
 ### 4.1 Loading Dataset

@@ -42,6 +42,7 @@ In this assignment, the 2019 Airline Delays and Cancellations dataset from Kaggl
 - Data size: 1.37 GB
 - Number of rows: 6,489,062
 - Number of columns: 26
+- Data Fields Description: [raw_data_documentation.txt](https://www.kaggle.com/datasets/threnjen/2019-airline-delays-and-cancellations?select=raw_data_documentation.txt)
 - Domain: Transportation / Aviation Analytics
 - License: [U.S. Government Works](https://www.usa.gov/government-works/)
 

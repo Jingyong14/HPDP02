@@ -15,4 +15,11 @@ The dataset selected for this assignment is the UK Housing Prices Paid dataset, 
 
 ## Submission
 
+**Big Data Handling Strategies (Jupyter Notebook):** [`big_data.ipynb`]()
+
+- **Markdown Report:** [`report.md`](https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_Synergy/report.md)
+
+- **PDF Report:** 
+
+- **Logbook (Google Sheets):** [Logbook Sheet]()
 

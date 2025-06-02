@@ -171,6 +171,7 @@ The figure 3.2.5 shows a parallel data cleaning and aggregation strategy using D
 </div>
 The figure 3.2.6 shows a performance comparison of various Dask optimization strategies, highlighting their trade-offs in execution time and memory usage.
 
+## 3.3 Polars
 
 
 

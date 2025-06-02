@@ -233,7 +233,7 @@ Refer to Figure 4.3.3, Polars uses schema_overrides to define efficient column t
 #### 4.3.4 Sampling
 In Figure 4.3.4, a 10% sample was selected using .sample(fraction=0.1). Polars handled this operation quickly and efficiently thanks to its multi-threaded engine.
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/84bb1edb-fef3-4981-a458-11f3f7f6c2c3" alt="img">
+  <img src="https://github.com/user-attachments/assets/93119824-2674-40bd-ba0f-660bd838b6d2" alt="img">
   <br>
   <strong>Figure 4.3.4: Sampling (Polars)</strong>
 </p>
@@ -246,7 +246,7 @@ Figure 4.3.6 demonstrates Polars' excellent performance: faster execution and re
 <p align="center">
   <img src="https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_Good%20Morning/figures/Polars%20output.png" alt="img">
   <br>
-  <strong>Figure 4.1.6: Output (Pandas)</strong>
+  <strong>Figure 4.3.6: Output (Polars)</strong>
 </p>
 
 ## 5.0 Comparative Analysis

@@ -16,7 +16,11 @@ This project explores multiple strategies for handling and processing large-scal
 
 ---
 
-## 📊 Dataset Overview
+## 🧪 Tasks & Implementation
+
+### Task 1: Dataset Selection
+
+#### 📊 Dataset Overview
 
 - **Source**: [NYC Yellow Taxi Trip Data - Kaggle](https://www.kaggle.com/datasets/elemento/nyc-yellow-taxi-trip-data)
 - **Domain**: Transportation / Ride Hailing
@@ -28,9 +32,7 @@ This project explores multiple strategies for handling and processing large-scal
   - yellow_tripdata_2025-01.csv
 - **Number of Records (Jan 2016)**: ~10.6 million
 
----
-
-## 🧾 Dataset Details
+#### 🧾 Dataset Details
 
 | Column Name              | Description                                              |
 |--------------------------|----------------------------------------------------------|
@@ -54,15 +56,11 @@ This project explores multiple strategies for handling and processing large-scal
 
 ---
 
-## 🧪 Tasks & Implementation
-
-### Task 1: Dataset Selection
-
-
-
 ### Task 2: Load and Inspect Data
 
 
+
+---
 
 ### Task 3: Apply Big Data Handling Strategies
 | Task | Explanation | Code Snippet | Screenshot |
@@ -73,12 +71,12 @@ This project explores multiple strategies for handling and processing large-scal
 | **3.4 Sampling** | Load and analyze a representative subset of the dataset to perform quick analysis. | ```python import pandas as pd df = pd.read_csv("large_dataset.csv") sample_df = df.sample(frac=0.1, random_state=42) print(sample_df.head()) ``` | ![3.4-output](images/3.4_output.png) |
 | **3.5 Parallel Processing with Dask** | Use Dask to process data in parallel, making use of all CPU cores. Dask is similar to Pandas but supports lazy evaluation and parallelism. | ```python import dask.dataframe as dd ddf = dd.read_csv("large_dataset.csv") print(ddf.head()) ``` | ![3.5-output](images/3.5_output.png) |
 
-
-
+---
 
 ### Task 4: Comparative Analysis
 
 
+---
 
 ### Task 5: Conclusion & Reflection
 - This assignment provided hands-on experience in managing and analysing large datasets.
@@ -86,6 +84,7 @@ This project explores multiple strategies for handling and processing large-scal
 - Got familiar with **Dask** and **Modin** as tools for parallel and distributed data processing.
 - It is important to choose the right tool based on the **dataset size** and **processing goals**.
 
+---
 
 ## 📌 Key Observations
 

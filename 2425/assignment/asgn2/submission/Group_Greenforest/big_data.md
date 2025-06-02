@@ -135,6 +135,7 @@ Figure 4.1.6 shows how missing values were filled and selected columns cast to c
 <p align="center"> <img src="https://github.com/user-attachments/assets/5341ecc8-9d74-44d3-99fc-2cf8d93c2e5b" alt="Data Preprocessing and Optimization" /> <br><strong>Figure 4.1.4 - Data Preprocessing and Optimization</strong> </p>
 
 ## 5.0 Comparative Analysis
+This section presents a detailed comparison of the performance characteristics (memory usage and execution time) of three popular Python data manipulation libraries: Pandas, Dask, and Polars. The analysis aims to highlight the efficiency gains achieved through optimization techniques when handling data cleaning operations.
 ### 5.1 Pandas Performance
 
 <p align="center"> <img src="https://github.com/user-attachments/assets/2bd296b3-7926-45a7-a420-2f56e8eb7811" alt="pandas first run" />
@@ -142,6 +143,7 @@ Figure 4.1.6 shows how missing values were filled and selected columns cast to c
 <p align="center"> <img src="https://github.com/user-attachments/assets/8ce8d0c6-7462-4bfd-abfb-4a422e4c4b4e" alt="pandas first run" />
 <br><strong>Figure 5.1.1 - Pandas Performance </strong> </p>
 
+Figure 5.11 details the performance of the Pandas library before applying specific optimization strategies. The results show the memory consumed and the time taken for a given task using standard Pandas operations. Three different runs are presented to demonstrate the average in performance.
 
 ### 5.2 Dask Performance
 
@@ -150,6 +152,7 @@ Figure 4.1.6 shows how missing values were filled and selected columns cast to c
 <p align="center"> <img src="https://github.com/user-attachments/assets/24715f28-3a99-4b65-860e-2b8f6e648e66" alt="dask first run" />
 <br><strong>Figure 5.2.1 - Dask Performance </strong> </p>
 
+Figure 5.2.1 presents the performance metrics when the data processing task is optimized using the Dask library. Dask is designed for parallel computing and out-of-core processing, aiming to improve efficiency for larger-than-memory datasets. The results showcase the memory and execution time after Dask optimization.
 
 ### 5.3 Polars Performance
 
@@ -157,6 +160,8 @@ Figure 4.1.6 shows how missing values were filled and selected columns cast to c
 <p align="center"> <img src="https://github.com/user-attachments/assets/721736a9-2c83-4866-a3fb-8f3d4c98bbb5" alt="pandas first run" />
 <p align="center"> <img src="https://github.com/user-attachments/assets/327db067-8ded-4ff0-8904-af7bffafb15d" alt="pandas first run" />
 <br><strong>Figure 5.3.1 - Polars Performance </strong> </p>
+
+Figure 5.3.1 illustrates the performance when the data processing task is optimized using the Polars library, specifically leveraging its "Lazy" evaluation mode. Polars is a DataFrame library written in Rust, known for its high performance and efficient memory management. The results above reflect the improvements in memory and execution time with Polars optimization.
 
 ### 5.4 Performance Comparison Table 
 

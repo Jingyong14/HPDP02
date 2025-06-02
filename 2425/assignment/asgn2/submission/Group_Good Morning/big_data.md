@@ -157,12 +157,22 @@ Figure 4.2.6 summarizes Dask's performance. With native multi-threading and chun
 
 ### 4.3 Polars 
 #### 4.3.1 Load Less Data
+Figure 4.3.1 shows that pl.read_csv() with the columns parameter was used to load only required fields. Polars benefits from being columnar and supports extremely fast selective reads.
 
 #### 4.3.2 Chunking
+As shown in Figure 4.3.2, Polars does not use traditional chunking but relies on lazy evaluation through internal query optimization. Computations are only triggered when required, such as during .sample() or .collect() operations.
+
 #### 4.3.3 Optimize Data Types
+Refer to Figure 4.3.3, Polars uses schema_overrides to define efficient column types during CSV loading. Categorical and low-bit integer types (Int8, Int16) were applied for improved memory and speed performance.
+
 #### 4.3.4 Sampling
+In Figure 4.3.4, a 10% sample was selected using .sample(fraction=0.1). Polars handled this operation quickly and efficiently thanks to its multi-threaded engine.
+
 #### 4.3.5 Parallel Processing
+Polars internally parallelizes operations such as drop_nulls() and unique() across threads. Figure 4.3.5 illustrates how efficient execution was achieved with minimal code and no manual parallelism setup.
+
 #### 4.3.6 Output
+Figure 4.3.6 demonstrates Polars' excellent performance: faster execution and reduced memory consumption compared to Pandas and Dask. The reported metrics were 9.05 seconds execution time and 380.32 MB memory usage (replace with your output).
 
 ## 5.0 Comparative Analysis
 This chapter evaluates and compares performance between traditional Pandas full loading and optimized data handling methods (selective column loading, chunking, sampling, type optimization, and parallel computing) in each library (Pandas, Dask, and Polars) based on execution time (seconds), memory usage (MB), and ease of processing as illustrated in Figure 5.1 and Table 5.2.

@@ -71,7 +71,7 @@ The columns included are:
 <p>In this task, the Spotify dataset was downloaded using KaggleHub in Google Colab, loaded into memory using Pandas, and inspected to understand its structure. Additionally, we performed basic preprocessing by standardizing selected numerical columns for future analysis.</p>
 
 <div align="center">
-  <img src="figures/task 2 - 1.PNG" width="200">
+  <img src="https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_Colab/figures/task%202%20-%201.PNG" width="200">
   <p><strong>Figure 2.1:</strong> Kaggle Installation</p>
 </div>
 
@@ -315,11 +315,11 @@ These insights not only highlight the trade-offs between libraries but also emph
 ✅ Reflection  
 
 **Wong Qiao Ying**
+This assignment improved my skills in handling large datasets by applying practical strategies like chunking, sampling, datatype optimization, and parallel processing. It highlighted the limitations of traditional methods and showed how optimized approaches can significantly reduce memory usage and execution time. Overall, it was a valuable hands-on experience in efficient data processing.
 
 
 <br><br>
 **Nik Zulaikhaa Binti Zuraidi Afandi**
-
 Through this task, I deepened my understanding of modern data processing tools and their performance differences. Working with the Spotify dataset challenged me to consider memory usage, processing time, and API nuances. This experience will guide my decisions in future projects, especially when dealing with large or distributed data environments.
 
 

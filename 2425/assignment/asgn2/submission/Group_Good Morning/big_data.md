@@ -25,7 +25,7 @@
 
 In today’s data-driven environment, analysts must process datasets that exceed traditional memory constraints. This project utilizes the 2019 Airline Delays and Cancellations dataset (1.37 GB) from Kaggle to demonstrate scalable data loading and processing. Using Python with Pandas, Dask, and Polars, we apply selective column loading, chunked reading, data‐type optimization, sampling, and parallel execution to handle big data processing. We evaluate each library’s performance by measuring execution time and memory usage, thereby identifying efficient approaches for large‐volume flight analytics.
 
-## 1.1 Objectives
+### 1.1 Objectives
 
 The objectives of this assignment are:
 
@@ -42,6 +42,7 @@ In this assignment, the 2019 Airline Delays and Cancellations dataset from Kaggl
 - Data size: 1.37 GB
 - Number of rows: 6,489,062
 - Number of columns: 26
+- Data Fields Description: [raw_data_documentation.txt](https://www.kaggle.com/datasets/threnjen/2019-airline-delays-and-cancellations?select=raw_data_documentation.txt)
 - Domain: Transportation / Aviation Analytics
 - License: [U.S. Government Works](https://www.usa.gov/government-works/)
 
@@ -107,6 +108,147 @@ The data inspection process is illustrated in Figure 3.4.1, where the DataFrame�
 </p>
 
 ## 4.0 Apply Big Data Handling Strategies
+The goal of this project was to efficiently process large-scale datasets using Python. Given the dataset's significant size (1.37GB), conventional data loading methods risked high memory usage and slow processing speeds. To overcome these challenges, we implemented five optimization strategies across three Python libraries (Pandas, Dask, and Polars):
+- Load Less Data
+- Use Chunking
+- Optimize Data Types
+- Sampling
+- Parallel Processing
+
+### 4.1 Pandas 
+
+#### 4.1.1 Load Less Data
+Figure 3.1.1 shows that only the relevant columns (e.g., MONTH, DAY_OF_WEEK, DEP_DEL15, DEP_TIME_BLK, DISTANCE_GROUP, CARRIER_NAME, NUMBER_OF_SEATS, PLANE_AGE, DEPARTING_AIRPORT) were loaded using the usecols parameter in read_csv(). This minimized memory usage by avoiding unnecessary columns.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d117018b-3f97-4974-a976-9b694a398528" alt="img">
+  <br>
+  <strong>Figure 4.1.1: Load Less Data (Pandas)</strong>
+</p>
+
+#### 4.1.2 Chunking
+As shown in Figure 4.1.2, chunking was performed using the chunksize parameter with a size of 100,000 rows. Each chunk was cleaned by dropping null values before being appended to a list for final concatenation. This approach allowed the large dataset to be processed in smaller, memory-friendly batches.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/371e0115-b5dd-4dc1-8da5-3e75a091840f" alt="img">
+  <br>
+  <strong>Figure 4.1.2: Chunking (Pandas)</strong>
+</p>
+
+#### 4.1.3 Optimize Data Types
+Figure 4.1.3 illustrates the use of a dtype mapping during CSV reading to reduce memory consumption. Columns like DEP_TIME_BLK, CARRIER_NAME, and DEPARTING_AIRPORT were cast to the category type, while numeric columns were downcast to smaller integer types such as int8 and int16.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3f560e96-9912-4407-8863-b321cd1df5dd" alt="img">
+  <br>
+  <strong>Figure 4.1.3: Optimized Data Types (Pandas)</strong>
+</p>
+
+#### 4.1.4 Sampling
+Figure 4.1.4 shows a random 10% sample was extracted using .sample(frac=0.1). This helped reduce computation time in downstream tasks such as modeling or visualization.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/64dd61e1-5ef3-4454-98a8-ff1ce2a6a8dc" alt="img">
+  <br>
+  <strong>Figure 4.1.4: Sampling (Pandas)</strong>
+</p>
+
+#### 4.1.5 Parallel Processing
+Although Pandas is inherently single-threaded, some level of parallelism was indirectly achieved by cleaning and processing in chunks (Figure 4.1.2). However, the final concatenation and deduplication steps were executed sequentially, which may limit scalability.
+
+#### 4.1.6 Output
+Figure 4.1.6 presents the performance metrics: Pandas took approximately 23.57 seconds and consumed 2.05 MB of memory. This reflects its limitation in memory management and single-threaded processing, especially for larger datasets.
+<p align="center">
+  <img src="https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_Good%20Morning/figures/Pandas%20output.png" alt="img">
+  <br>
+  <strong>Figure 4.1.6: Output (Pandas)</strong>
+</p>
+
+### 4.2 Dask 
+
+#### 4.2.1 Load Less Data
+As shown in Figure 4.2.1, only necessary columns were loaded using the usecols parameter in dd.read_csv(), similar to Pandas. However, Dask defers actual data loading until computation is triggered, thanks to its lazy evaluation strategy.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4b3b33e2-8017-4d76-b115-fc51561b9239" alt="img">
+  <br>
+  <strong>Figure 4.2.1: Load Less Data (Dask)</strong>
+</p>
+
+#### 4.2.2 Chunking
+Figure 4.2.2 demonstrates that Dask automatically handles chunking by partitioning the data into manageable blocks (100MB in this case) via the blocksize parameter. This removes the need for manual chunk iteration.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/65456efa-3315-4097-aa85-eca1df3e0c61" alt="img">
+  <br>
+  <strong>Figure 4.2.2: Chunking (Dask)</strong>
+</p>
+
+#### 4.2.3 Optimize Data Types
+Refer to Figure 4.2.3. Just like in Pandas, a dtype mapping was passed during CSV loading to optimize memory usage. Dask also supports the assume_missing=True flag to prevent type inference issues with nullable integers.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9c253c2d-e82e-40ed-be10-6946cfe434a6" alt="img">
+  <br>
+  <strong>Figure 4.2.3: Optimized Data Types (Dask)</strong>
+</p>
+
+#### 4.2.4 Sampling
+As illustrated in Figure 4.2.4, a 10% sample was taken using .sample(frac=0.1). The lazy computation ensures efficient performance, and actual data is only fetched when .compute() is called.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7bdc4586-f897-409c-ac76-547270b5299b" alt="img">
+  <br>
+  <strong>Figure 4.2.4: Sampling (Dask)</strong>
+</p>
+
+#### 4.2.5 Parallel Processing
+Dask automates parallel processing by default. When operations like dropna, drop_duplicates, and sample are called, Dask automatically distributes these tasks across multiple cores or workers based on the available system resources. This internal parallelism means we don’t need to explicitly configure threads or processes. Dask handles the task scheduling and execution behind the scenes, providing scalable performance with minimal code changes.
+
+#### 4.2.6 Output
+Figure 4.2.6 summarizes Dask's performance. With native multi-threading and chunked processing, Dask achieved better memory efficiency and execution time than Pandas. Actual results showed around 24.81 seconds runtime and 154.00 MB of memory usage.
+<p align="center">
+  <img src="https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_Good%20Morning/figures/Dask%20output.png" alt="img">
+  <br>
+  <strong>Figure 4.2.6: Output (Dask)</strong>
+</p>
+
+### 4.3 Polars 
+
+#### 4.3.1 Load Less Data
+Figure 4.3.1 shows that pl.read_csv() with the columns parameter was used to load only required fields. Polars benefits from being columnar and supports extremely fast selective reads.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8759e33e-ea6b-4bb9-a2ae-83f11cae9f7e" alt="img">
+  <br>
+  <strong>Figure 4.3.1: Load Less Data(Polars)</strong>
+</p>
+
+#### 4.3.2 Chunking
+As shown in Figure 4.3.2, Polars does not use traditional chunking but relies on lazy evaluation through internal query optimization. Computations are only triggered when required, such as during .sample() or .collect() operations.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d355c463-3e18-467c-9bfd-7924b7dd0da7" alt="img">
+  <br>
+  <strong>Figure 4.3.2: Chunking (Polars)</strong>
+</p>
+
+#### 4.3.3 Optimize Data Types
+Refer to Figure 4.3.3, Polars uses schema_overrides to define efficient column types during CSV loading. Categorical and low-bit integer types (Int8, Int16) were applied for improved memory and speed performance.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c5f2cb3a-f2d3-4dd7-b7b6-bf8e0cf6928c" alt="img">
+  <br>
+  <strong>Figure 4.3.3: Optimized Data Types (Polars)</strong>
+</p>
+
+#### 4.3.4 Sampling
+In Figure 4.3.4, a 10% sample was selected using .sample(fraction=0.1). Polars handled this operation quickly and efficiently thanks to its multi-threaded engine.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/93119824-2674-40bd-ba0f-660bd838b6d2" alt="img">
+  <br>
+  <strong>Figure 4.3.4: Sampling (Polars)</strong>
+</p>
+
+#### 4.3.5 Parallel Processing
+Polars provides built-in multi-threading and performs operations like drop_nulls() and unique() in parallel automatically. Its engine is designed to leverage all available CPU cores, so data transformations are executed concurrently without the need for manual thread management. This results in highly efficient execution, as seen in our experiment, with no extra configuration needed from the user.
+
+#### 4.3.6 Output
+Figure 4.3.6 demonstrates Polars' excellent performance: faster execution and reduced memory consumption compared to Pandas and Dask. The reported metrics were 9.05 seconds execution time and 380.32 MB memory usage.
+<p align="center">
+  <img src="https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_Good%20Morning/figures/Polars%20output.png" alt="img">
+  <br>
+  <strong>Figure 4.3.6: Output (Polars)</strong>
+</p>
 
 ## 5.0 Comparative Analysis
 This chapter evaluates and compares performance between traditional Pandas full loading and optimized data handling methods (selective column loading, chunking, sampling, type optimization, and parallel computing) in each library (Pandas, Dask, and Polars) based on execution time (seconds), memory usage (MB), and ease of processing as illustrated in Figure 5.1 and Table 5.2.
@@ -143,3 +285,12 @@ Unoptimized Pandas is the simplest to implement: a single `pd.read_csv()` call f
 
 ## 6.0 Conclusion & Reflection
 
+### 6.1 Conclusion
+
+This assignment highlights the importance of applying big data handling strategies when working with large datasets that exceed traditional memory capacities. By evaluating Pandas, Dask, and Polars using five optimization techniques, loading fewer columns, chunking, data type optimization, sampling, and parallel processing. We found that significant improvements in speed and memory efficiency can be achieved.
+
+Polars emerged as the most efficient library overall, offering the fastest execution time (9.05 seconds) due to its high-performance, multi-threaded architecture and optimized memory access via Apache Arrow. Dask also showed strong performance with built-in parallelism and lazy evaluation, making it a good choice for distributed computing workflows. Optimized Pandas, while more manual, demonstrated that traditional libraries can still handle large data effectively if best practices are applied.
+
+### 6.2 Reflection
+
+Through this project, we gained practical experience in managing real-world big data challenges and learned how to critically evaluate tool choices based on workload characteristics. Moving forward, we will be better equipped to design scalable data pipelines that balance performance, simplicity, and memory usage. This hands-on exercise also deepened our understanding of how modern data libraries operate under the hood, and how to leverage them to tackle high-volume analytics tasks efficiently.

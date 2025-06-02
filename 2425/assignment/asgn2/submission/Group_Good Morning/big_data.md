@@ -242,7 +242,7 @@ In Figure 4.3.4, a 10% sample was selected using .sample(fraction=0.1). Polars h
 Polars internally parallelizes operations such as drop_nulls() and unique() across threads. Figure 4.3.5 illustrates how efficient execution was achieved with minimal code and no manual parallelism setup.
 
 #### 4.3.6 Output
-Figure 4.3.6 demonstrates Polars' excellent performance: faster execution and reduced memory consumption compared to Pandas and Dask. The reported metrics were 9.05 seconds execution time and 380.32 MB memory usage (replace with your output).
+Figure 4.3.6 demonstrates Polars' excellent performance: faster execution and reduced memory consumption compared to Pandas and Dask. The reported metrics were 9.05 seconds execution time and 380.32 MB memory usage.
 <p align="center">
   <img src="https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_Good%20Morning/figures/Polars%20output.png" alt="img">
   <br>

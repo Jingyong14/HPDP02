@@ -208,7 +208,11 @@ Figure 4.2.6 summarizes Dask's performance. With native multi-threading and chun
 
 #### 4.3.1 Load Less Data
 Figure 4.3.1 shows that pl.read_csv() with the columns parameter was used to load only required fields. Polars benefits from being columnar and supports extremely fast selective reads.
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8759e33e-ea6b-4bb9-a2ae-83f11cae9f7e" alt="img">
+  <br>
+  <strong>Figure 4.3.1: Load Less Data(Polars)</strong>
+</p>
 
 #### 4.3.2 Chunking
 As shown in Figure 4.3.2, Polars does not use traditional chunking but relies on lazy evaluation through internal query optimization. Computations are only triggered when required, such as during .sample() or .collect() operations.

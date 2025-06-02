@@ -16,6 +16,17 @@ This project explores multiple strategies for handling and processing large-scal
 
 ---
 
+## 📌 Key Observations
+### ✅ Benefits & Limitations of Each Method
+
+| Method  | Benefits                                               | Limitations                                   |
+|---------|--------------------------------------------------------|-----------------------------------------------|
+| Pandas  | Simple, fast for small/medium datasets                 | Cannot handle out-of-memory datasets          |
+| Dask    | Parallel, scalable to big data                         | Lazy execution, startup overhead              |
+| Polars  | Pandas-compatible, parallel execution                  | Requires Ray engine, overhead for small tasks |
+
+---
+
 ## 🧪 Tasks & Implementation
 
 ### Task 1: Dataset Selection
@@ -100,29 +111,26 @@ It imports Dask’s dataframe module and reads `"combined_yellow_tripdata.csv"` 
 ---
 
 ### Task 4: Comparative Analysis
+![image](https://github.com/user-attachments/assets/30a7c60f-9145-4c6d-a162-5e3ee70f9faa)
+
+To evaluate the performance of different data processing libraries, we conducted a comparison between Pandas, Polars, and Dask using a dataset and a set of operations. The key performance metrics considered were execution time and memory usage.
+
+Polars completed the task in 65.19 seconds, but it consumed a significantly large amount of memory — approximately 10,118.38 MB. This suggests that while Polars can be fast in many scenarios, its memory efficiency might be a concern for certain large-scale operations or environments with limited resources.
+
+Dask, in contrast, demonstrated exceptional performance, completing the same task in just 0.39 seconds. Interestingly, it also showed a negative memory usage value (-56.74 MB). This may indicate that Dask managed to free up memory during execution, possibly due to lazy evaluation or distributed computing efficiencies.
+
+As for Pandas, the operation failed to complete — it crashed during execution, likely due to memory constraints or inefficiencies when handling larger datasets or complex computations.
+
+The chart visually reinforces these observations, with Polars showing a tall bar for both time and memory usage, while Dask remains low on both axes. The absence of a bar for Pandas indicates its inability to complete the task, highlighting a limitation when compared to Polars and Dask in this context.
 
 
 ---
 
 ### Task 5: Conclusion & Reflection
-- This assignment provided hands-on experience in managing and analysing large datasets.
-- Learned how to optimise performance by selecting only required data and processing in chunks.
-- Got familiar with **Dask** and **Modin** as tools for parallel and distributed data processing.
-- It is important to choose the right tool based on the **dataset size** and **processing goals**.
+This project provided valuable hands-on experience in managing and analyzing large datasets from Kaggle. It highlighted the importance of efficient data handling techniques, such as selecting only the necessary columns and processing data in chunks to reduce memory usage and improve performance.
 
----
+Through this assignment, we became familiar with powerful parallel and distributed computing tools like Dask and Modin. These libraries proved to be significantly more efficient than traditional tools like Pandas, especially when working with large datasets. Dask, in particular, stood out for its fast execution time and low memory footprint.
 
-## 📌 Key Observations
-
-
----
-
-## ✅ Benefits & Limitations of Each Method
-
-| Method  | Benefits                                               | Limitations                                   |
-|---------|--------------------------------------------------------|-----------------------------------------------|
-| Pandas  | Simple, fast for small/medium datasets                 | Cannot handle out-of-memory datasets          |
-| Dask    | Parallel, scalable to big data                         | Lazy execution, startup overhead              |
-| Polars  | Pandas-compatible, parallel execution                  | Requires Ray engine, overhead for small tasks |
+A key takeaway from this experience is that selecting the right tool is crucial and should be based on the dataset size and the specific processing goals. While Pandas is useful for small-scale tasks, tools like Dask are better suited for large-scale data processing due to their scalability and performance benefits.
 
 ---

@@ -315,11 +315,11 @@ These insights not only highlight the trade-offs between libraries but also emph
 ✅ Reflection  
 
 **Wong Qiao Ying**
+This assignment improved my skills in handling large datasets by applying practical strategies like chunking, sampling, datatype optimization, and parallel processing. It highlighted the limitations of traditional methods and showed how optimized approaches can significantly reduce memory usage and execution time. Overall, it was a valuable hands-on experience in efficient data processing.
 
 
 <br><br>
 **Nik Zulaikhaa Binti Zuraidi Afandi**
-
 Through this task, I deepened my understanding of modern data processing tools and their performance differences. Working with the Spotify dataset challenged me to consider memory usage, processing time, and API nuances. This experience will guide my decisions in future projects, especially when dealing with large or distributed data environments.
 
 

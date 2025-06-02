@@ -209,3 +209,8 @@ Unoptimized Pandas is the simplest to implement: a single `pd.read_csv()` call f
 
 ## 6.0 Conclusion & Reflection
 
+This assignment highlights the importance of applying big data handling strategies when working with large datasets that exceed traditional memory capacities. By evaluating Pandas, Dask, and Polars using five optimization techniques, loading fewer columns, chunking, data type optimization, sampling, and parallel processing—we found that significant improvements in speed and memory efficiency can be achieved.
+
+Polars emerged as the most efficient library overall, offering the fastest execution time (9.05 seconds) due to its high-performance, multi-threaded architecture and optimized memory access via Apache Arrow. Dask also showed strong performance with built-in parallelism and lazy evaluation, making it a good choice for distributed computing workflows. Optimized Pandas, while more manual, demonstrated that traditional libraries can still handle large data effectively if best practices are applied.
+
+Through this project, we gained practical experience in managing real-world big data challenges and learned how to critically evaluate tool choices based on workload characteristics. Moving forward, we will be better equipped to design scalable data pipelines that balance performance, simplicity, and memory usage. This hands-on exercise also deepened our understanding of how modern data libraries operate under the hood, and how to leverage them to tackle high-volume analytics tasks efficiently.

@@ -35,7 +35,7 @@ The objectives of this assignment are:
 
 ## Task 1: Dataset Selection
 
-In this assignment, the 2019 Airline Delays and Cancellations dataset from Kaggle has been selected. This dataset provides comprehensive information about airline delays and cancellations across the United States in 2019 with 6,489,062 records and 26 data fields.
+In this assignment, the 2019 Airline Delays and Cancellations dataset from Kaggle has been selected as a single CSV file named full_data_flightdelay.csv (approximately 1.4 GB in size). This dataset provides comprehensive information about airline delays and cancellations across the United States in 2019. It contains 6,489,062 flight records from January 1, 2019 to December 31, 2019, each with 26 fields capturing both operational (e.g., airline, airport, aircraft) and environmental (e.g., weather) attributes. This dataset falls under the broader Aviation domain and is tailored for data analysis in airline operations, delay prediction, and transportation planning. The further details of the dataset is listed below and as showned in Figure 1.1.
 
 - Filename: full_data_flightdelay.csv
 - Source: [2019 Airline Delays and Cancellations dataset from Kaggle](https://www.kaggle.com/datasets/threnjen/2019-airline-delays-and-cancellations)
@@ -45,6 +45,11 @@ In this assignment, the 2019 Airline Delays and Cancellations dataset from Kaggl
 - Domain: Transportation / Aviation Analytics
 - License: [U.S. Government Works](https://www.usa.gov/government-works/)
 
+<p align="center">
+  <img src="https://github.com/Jingyong14/HPDP02/blob/512799f6295cd4231040a926617364bc4b39d919/2425/assignment/asgn2/submission/Group_Good%20Morning/figures/dataset.png" alt="Dataset">
+  <br>
+  <strong>Figure 1.1</strong>
+</p>
 
 ## Task 2: Load and Inspect Data
 

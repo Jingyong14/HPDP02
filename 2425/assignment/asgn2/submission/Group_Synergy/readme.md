@@ -17,6 +17,24 @@ The dataset selected for this assignment is the UK Housing Prices Paid dataset, 
 
 **Big Data Handling Strategies (Jupyter Notebook):** [`big_data.ipynb`]()
 
+<br>
+
+[Pandas library Google Colab](https://colab.research.google.com/drive/1bc9s2x55cW2ZQkg8dTgJpEKsAbY6GWRb)
+
+<br>
+<br>
+
+[Dask library Google Colab](https://colab.research.google.com/drive/1B-4pMgkKnPgUGs9jqcofhlERNHGjrg5v)
+
+<br>
+
+<br>
+
+[Polars library Google Colab](https://colab.research.google.com/drive/1u9kgPfraJMw-2is9-Jyr_sixrXaYrAtz)
+
+<br>
+
+
 - **Markdown Report:** [`report.md`](https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_Synergy/report.md)
 
 - **PDF Report:** 

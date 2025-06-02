@@ -126,19 +126,38 @@ Figure 3.1.1 shows that only the relevant columns (e.g., MONTH, DAY_OF_WEEK, DEP
 
 #### 4.1.2 Chunking
 As shown in Figure 4.1.2, chunking was performed using the chunksize parameter with a size of 100,000 rows. Each chunk was cleaned by dropping null values before being appended to a list for final concatenation. This approach allowed the large dataset to be processed in smaller, memory-friendly batches.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/371e0115-b5dd-4dc1-8da5-3e75a091840f" alt="img">
+  <br>
+  <strong>Figure 4.1.2: Chunking (Pandas)</strong>
+</p>
 
 #### 4.1.3 Optimize Data Types
 Figure 4.1.3 illustrates the use of a dtype mapping during CSV reading to reduce memory consumption. Columns like DEP_TIME_BLK, CARRIER_NAME, and DEPARTING_AIRPORT were cast to the category type, while numeric columns were downcast to smaller integer types such as int8 and int16.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3f560e96-9912-4407-8863-b321cd1df5dd" alt="img">
+  <br>
+  <strong>Figure 4.1.3: Optimized Data Types (Pandas)</strong>
+</p>
 
 #### 4.1.4 Sampling
 Figure 4.1.4 shows a random 10% sample was extracted using .sample(frac=0.1). This helped reduce computation time in downstream tasks such as modeling or visualization.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/64dd61e1-5ef3-4454-98a8-ff1ce2a6a8dc" alt="img">
+  <br>
+  <strong>Figure 4.1.4: Sampling (Pandas)</strong>
+</p>
 
 #### 4.1.5 Parallel Processing
 Although Pandas is inherently single-threaded, some level of parallelism was indirectly achieved by cleaning and processing in chunks (Figure 4.1.2). However, the final concatenation and deduplication steps were executed sequentially, which may limit scalability.
 
 #### 4.1.6 Output
 Figure 4.1.6 presents the performance metrics: Pandas took approximately 23.57 seconds and consumed 2.05 MB of memory. This reflects its limitation in memory management and single-threaded processing, especially for larger datasets.
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/64dd61e1-5ef3-4454-98a8-ff1ce2a6a8dc" alt="img">
+  <br>
+  <strong>Figure 4.1.6: Output (Pandas)</strong>
+</p>
 
 ### 4.2 Dask 
 

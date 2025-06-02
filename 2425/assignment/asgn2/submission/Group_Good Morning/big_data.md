@@ -163,15 +163,35 @@ Figure 4.1.6 presents the performance metrics: Pandas took approximately 23.57 s
 
 #### 4.2.1 Load Less Data
 As shown in Figure 4.2.1, only necessary columns were loaded using the usecols parameter in dd.read_csv(), similar to Pandas. However, Dask defers actual data loading until computation is triggered, thanks to its lazy evaluation strategy.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4b3b33e2-8017-4d76-b115-fc51561b9239" alt="img">
+  <br>
+  <strong>Figure 4.2.1: Load Less Data (Dask)</strong>
+</p>
 
 #### 4.2.2 Chunking
 Figure 4.2.2 demonstrates that Dask automatically handles chunking by partitioning the data into manageable blocks (100MB in this case) via the blocksize parameter. This removes the need for manual chunk iteration.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/65456efa-3315-4097-aa85-eca1df3e0c61" alt="img">
+  <br>
+  <strong>Figure 4.2.2: Chunking (Dask)</strong>
+</p>
 
 #### 4.2.3 Optimize Data Types
 Refer to Figure 4.2.3. Just like in Pandas, a dtype mapping was passed during CSV loading to optimize memory usage. Dask also supports the assume_missing=True flag to prevent type inference issues with nullable integers.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9c253c2d-e82e-40ed-be10-6946cfe434a6" alt="img">
+  <br>
+  <strong>Figure 4.2.3: Optimized Data Types (Dask)</strong>
+</p>
 
 #### 4.2.4 Sampling
 As illustrated in Figure 4.2.4, a 10% sample was taken using .sample(frac=0.1). The lazy computation ensures efficient performance, and actual data is only fetched when .compute() is called.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7bdc4586-f897-409c-ac76-547270b5299b" alt="img">
+  <br>
+  <strong>Figure 4.2.4: Sampling (Dask)</strong>
+</p>
 
 #### 4.2.5 Parallel Processing
 Dask supports native parallelism. As shown in Figure 4.2.5, operations like dropna, deduplication, and sampling were executed across distributed partitions, then gathered using .compute(). This enabled faster processing for large files.

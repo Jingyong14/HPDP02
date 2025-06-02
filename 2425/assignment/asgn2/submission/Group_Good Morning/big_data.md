@@ -107,6 +107,12 @@ The data inspection process is illustrated in Figure 3.4.1, where the DataFrameâ
 </p>
 
 ## 4.0 Apply Big Data Handling Strategies
+The goal of this project was to efficiently process large-scale datasets using Python. Given the dataset's significant size (2.955GB), conventional data loading methods risked high memory usage and slow processing speeds. To overcome these challenges, we implemented five optimization strategies across three Python libraries (Pandas, Dask, and Polars):
+- Load Less Data
+- Use Chunking
+- Optimize Data Types
+- Sampling
+- Parallel Processing
 
 ## 5.0 Comparative Analysis
 This chapter evaluates and compares performance between traditional Pandas full loading and optimized data handling methods (selective column loading, chunking, sampling, type optimization, and parallel computing) in each library (Pandas, Dask, and Polars) based on execution time (seconds), memory usage (MB), and ease of processing as illustrated in Figure 5.1 and Table 5.2.

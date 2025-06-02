@@ -1,6 +1,4 @@
-
-# 🚕 Big Data Handling and Optimization Using NYC Taxi Trip Dataset
-
+# Assignment 2: Big Data Handling and Optimization Using NYC Taxi Trip Dataset🚕 
 ## 👥 Group Members
 
 | Name               | Matric Number |

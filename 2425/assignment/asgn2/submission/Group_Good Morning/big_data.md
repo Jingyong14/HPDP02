@@ -111,13 +111,16 @@ The data inspection process is illustrated in Figure 3.4.1, where the DataFrame�
 ## 5.0 Comparative Analysis
 This chapter evaluates and compares performance between traditional Pandas full loading and optimized data handling methods (selective column loading, chunking, sampling, type optimization, and parallel computing) in each library (Pandas, Dask, and Polars) based on execution time (seconds), memory usage (MB), and ease of processing as illustrated in Figure 5.1 and Table 5.2.
 
-**Execution Time Comparison**
+**Execution Time Comparison**:
+
 Polars demonstrated the fastest performance, completing the full load–clean–sample workflow in just **9.05 seconds**, thanks to its SIMD‐accelerated, multi‐threaded CSV parser. Optimized Pandas followed in second place, finishing in **23.57 seconds** by reducing I/O overhead through selective column loading, dtype downcasting, chunked reads, and early sampling. Dask closely trailed optimized Pandas at **24.81 seconds**, with its block‐parallel approach incurring only a small scheduling overhead. By contrast, unoptimized Pandas was the slowest, requiring **54.15 seconds** to load and process the entire 6.5 million‐row dataset without any optimizations.
 
-**Memory Usage Comparison**
+**Memory Usage Comparison**:
+
 When measuring the final in‐memory footprint after sampling, optimized Pandas used the least memory at just **2.1 MB**, because it dropped unused columns, cast to smaller dtypes (`int8`/`int16` and `category`), and sampled only 10 % of rows. Dask maintained a modest peak of **154.0 MB** by processing the dataset in 100 MB blocks and only materializing needed partitions upon calling `.compute()`. Polars required **380.3 MB**, balancing its columnar, Arrow‐based buffers and multi‐threaded parsing overhead. Unoptimized Pandas consumed the most memory by far **2,575.7 MB** since it loaded all 26 columns at default 64‐bit dtypes without chunking or filtering.
 
-**Ease of Processing**
+**Ease of Processing**:
+
 Unoptimized Pandas is the simplest to implement: a single `pd.read_csv()` call followed by `.dropna()` and `.drop_duplicates()`. No additional code is required, but performance and memory costs are prohibitively high for large datasets. Optimized Pandas demands more effort, requiring explicit `usecols` and `dtype` mappings, manual chunk loops, and early sampling logic; these extra steps yield dramatic improvements in both memory and speed, but at the expense of greater code complexity. Dask strikes a balance by offering a nearly identical Pandas‐like API (`dd.read_csv()`, `.dropna()`, `.drop_duplicates()`, `.sample()`), handling out‐of‐core and parallel execution transparently—though users must understand lazy evaluation and the need to call `.compute()` to materialize results. Polars requires learning a new Rust‐based DataFrame API (`pl.read_csv()`, `.filter()`, `.unique()`, `.sample()`), which adds a small learning curve; once mastered, it delivers the fastest parsing and transformation operations among all methods.
 
 <p align="center">

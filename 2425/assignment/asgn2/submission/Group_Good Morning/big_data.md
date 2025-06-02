@@ -154,7 +154,7 @@ Although Pandas is inherently single-threaded, some level of parallelism was ind
 #### 4.1.6 Output
 Figure 4.1.6 presents the performance metrics: Pandas took approximately 23.57 seconds and consumed 2.05 MB of memory. This reflects its limitation in memory management and single-threaded processing, especially for larger datasets.
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/64dd61e1-5ef3-4454-98a8-ff1ce2a6a8dc" alt="img">
+  <img src="https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_Good%20Morning/figures/Pandas%20output.png" alt="img">
   <br>
   <strong>Figure 4.1.6: Output (Pandas)</strong>
 </p>

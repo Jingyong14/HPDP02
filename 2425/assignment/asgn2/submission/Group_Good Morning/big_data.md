@@ -30,8 +30,8 @@ In today’s data-driven environment, analysts must process datasets that exceed
 The objectives of this assignment are:
 
 - To handle big data volumes above 700MB.
-- To apply big data handling strategies, including chunking, sampling, type optimization, and parallel computing.
-- To evaluate and compare the performance between traditional Pandas and optimized data handling methods in Pandas, Dask, and Polars based on execution time, memory usage, and ease of processing.
+- To apply big data handling strategies, including selective column loading, chunking, sampling, type optimization, and parallel computing.
+- To evaluate and compare the performance between traditional Pandas and optimized data handling methods with Pandas, Dask, and Polars based on execution time, memory usage, and ease of processing.
 
 ## 2.0 Dataset Selection
 
@@ -109,11 +109,25 @@ The data inspection process is illustrated in Figure 3.4.1, where the DataFrame�
 ## 4.0 Apply Big Data Handling Strategies
 
 ## 5.0 Comparative Analysis
+This chapter evaluates and compares performance between traditional Pandas full loading and optimized data handling methods (selective column loading, chunking, sampling, type optimization, and parallel computing) in each library (Pandas, Dask, and Polars) based on execution time (seconds), memory usage (MB), and ease of processing.
 
 <p align="center">
-  <img src="https://github.com/Jingyong14/HPDP02/blob/821b114892212b66271814036a7655823f1cadb5/2425/assignment/asgn2/submission/Group_Good%20Morning/figures/performance_chart.png" alt="performance evaluation chart">
+  <img src="https://github.com/Jingyong14/HPDP02/blob/821b114892212b66271814036a7655823f1cadb5/2425/assignment/asgn2/submission/Group_Good%20Morning/figures/performance_chart.png" alt="Performance evaluation chart">
   <br>
-  <strong>Figure 5.1: Performance Comparison Chart</strong>
+  <strong>Figure 5.1: Performance Comparative Analysis</strong>
+  <br>
+  <br>
+  <strong>Table 5.2: Performance Result</strong>
 </p>
 
+| Method                 | Execution Time (s) | Memory Used (MB) | Ease of Processing                                                                                              |
+|------------------------|--------------------|------------------|------------------------------------------------------------------------------------------------------|
+| **Pandas (No Opt)**    | 54.15              | 2,575.7          | Very simple to implement (single `read_csv()`) but slow and extremely memory‐intensive for large CSVs.   |
+| **Pandas (Optimized)** | 23.57              | 2.1              | Requires column filtering, dtype downcasting, chunking, and sampling—but yields minimal memory use and moderate speed. |
+| **Dask**               | 24.81              | 154.0            | Familiar Pandas‐like API with lazy, block‐parallel execution. Efficient memory usage, though slight scheduling overhead. |
+| **Polars**             | 9.05               | 380.3            | Fastest SIMD‐accelerated, multi‐threaded parser. Moderate memory footprint; requires learning a new Rust‐based API. |
+
+
+
 ## 6.0 Conclusion & Reflection
+

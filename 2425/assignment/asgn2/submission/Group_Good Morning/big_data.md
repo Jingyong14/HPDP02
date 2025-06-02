@@ -194,7 +194,7 @@ As illustrated in Figure 4.2.4, a 10% sample was taken using .sample(frac=0.1). 
 </p>
 
 #### 4.2.5 Parallel Processing
-Dask supports native parallelism. As shown in Figure 4.2.4 just now, operations like dropna, deduplication, and sampling were executed across distributed partitions, then gathered using .compute(). This enabled faster processing for large files.
+Dask automates parallel processing by default. When operations like dropna, drop_duplicates, and sample are called, Dask automatically distributes these tasks across multiple cores or workers based on the available system resources. This internal parallelism means we don’t need to explicitly configure threads or processes. Dask handles the task scheduling and execution behind the scenes, providing scalable performance with minimal code changes.
 
 #### 4.2.6 Output
 Figure 4.2.6 summarizes Dask's performance. With native multi-threading and chunked processing, Dask achieved better memory efficiency and execution time than Pandas. Actual results showed around 24.81 seconds runtime and 154.00 MB of memory usage.
@@ -239,7 +239,7 @@ In Figure 4.3.4, a 10% sample was selected using .sample(fraction=0.1). Polars h
 </p>
 
 #### 4.3.5 Parallel Processing
-Polars internally parallelizes operations such as drop_nulls() and unique() across threads. Figure 4.3.5 illustrates how efficient execution was achieved with minimal code and no manual parallelism setup.
+Polars provides built-in multi-threading and performs operations like drop_nulls() and unique() in parallel automatically. Its engine is designed to leverage all available CPU cores, so data transformations are executed concurrently without the need for manual thread management. This results in highly efficient execution, as seen in our experiment, with no extra configuration needed from the user.
 
 #### 4.3.6 Output
 Figure 4.3.6 demonstrates Polars' excellent performance: faster execution and reduced memory consumption compared to Pandas and Dask. The reported metrics were 9.05 seconds execution time and 380.32 MB memory usage.

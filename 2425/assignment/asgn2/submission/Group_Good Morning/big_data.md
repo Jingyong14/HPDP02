@@ -35,7 +35,7 @@ The objectives of this assignment are:
 
 ## 2.0 Dataset Selection
 
-In this assignment, the 2019 Airline Delays and Cancellations dataset from Kaggle has been selected as a single CSV file named `full_data_flightdelay.csv` (approximately 1.4 GB in size). This dataset provides comprehensive information about airline delays and cancellations across the United States in 2019. It contains 6,489,062 flight records from January 1, 2019 to December 31, 2019, each with 26 fields capturing both operational (e.g., airline, airport, aircraft) and environmental (e.g., weather) attributes. This dataset falls under the broader Aviation domain and is tailored for data analysis in airline operations, delay prediction, and transportation planning. The further details of the dataset is listed below and as showned in Figure 1.1.
+In this assignment, the 2019 Airline Delays and Cancellations dataset from Kaggle has been selected as a single CSV file named `full_data_flightdelay.csv` (approximately 1.4 GB in size). This dataset provides comprehensive information about airline delays and cancellations across the United States in 2019. It contains 6,489,062 flight records from January 1, 2019 to December 31, 2019, each with 26 fields capturing both operational (e.g., airline, airport, aircraft) and environmental (e.g., weather) attributes. This dataset falls under the broader Aviation domain and is tailored for data analysis in airline operations, delay prediction, and transportation planning. The further details of the dataset is listed below and as showned in **Figure 1.1**.
 
 - Filename: full_data_flightdelay.csv
 - Source: [2019 Airline Delays and Cancellations dataset from Kaggle](https://www.kaggle.com/datasets/threnjen/2019-airline-delays-and-cancellations)
@@ -52,9 +52,10 @@ In this assignment, the 2019 Airline Delays and Cancellations dataset from Kaggl
 </p>
 
 ## 3.0 Load and Inspect Data
+This section uses the traditional pandas workflow as baseline to load the entire CSV into a DataFrame and then inspect the resulting DataFrame by printing its shape, column names, data types, and a five-row preview. Subsequent big data handling methods with different libraries will follow the same “load → clean → inspect” steps for a fair performance comparison.
 
 ### 3.1 Download Dataset
-The dataset was downloaded via KaggleHub into Google Colab. Refer to Figure 3.1, the code first imported the necessary libraries - `os` for file‐path handling, `pandas` for data handling, and `kagglehub` to fetch Kaggle datasets. The code then downloaded the latest version of the “2019 Airline Delays and Cancellations” dataset and returns the local directory where the files were extracted. Finally, it built the full file path `csv_path` to the main CSV to be loaded later.
+The dataset was downloaded via KaggleHub into Google Colab. Refer to **Figure 3.1**, the code first imported the necessary libraries - `os` for file‐path handling, `pandas` for data handling, and `kagglehub` to fetch Kaggle datasets. The code then downloaded the latest version of the “2019 Airline Delays and Cancellations” dataset and returns the local directory where the files were extracted. Finally, it built the full file path `csv_path` to the main CSV to be loaded later.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e5e07677-02d6-4527-b573-40f5a1d088b0" alt="img">
@@ -63,31 +64,31 @@ The dataset was downloaded via KaggleHub into Google Colab. Refer to Figure 3.1,
 </p>
 
 ### 3.2 Load and Process Data
-The loading and processing steps are shown in Figure 3.2. First, the `time`, `psutil`, and `pandas` libraries are imported, where:
+The loading and processing steps are shown in **Figure 3.2**. First, the `time`, `psutil`, and `pandas` libraries are imported, where:
 
 * **`time`**: Provides `time.time()` to record timestamps and measure execution duration.
-* **`psutil`**: Allows querying system resources (e.g., memory usage) during data operations.
-* **`pandas`**: Offers DataFrame structures and functions for loading, cleaning, and analyzing tabular data.
+* **`psutil`**: Allows querying system resources—here, it’s used to capture the Python process’s resident memory before and after loading.
+* **`pandas`**: Offers `DataFrame` structures and functions for loading, cleaning, and analyzing tabular data.
 
-Then, a timestamp is recorded in `start_time` to mark the beginning of the operation. The entire CSV file is then read into a DataFrame via `df_pd = pd.read_csv(csv_path)`.
+Next, a `psutil.Process(os.getpid())` object is created and used to record `mem_before = process.memory_info().rss` (in bytes) so that peak memory usage can be determined. A timestamp is then recorded in `start_time` to mark the beginning of the operation. The entire CSV file is loaded into a DataFrame via `df_pd = pd.read_csv(csv_path)`
 
-After the data has been loaded, basic cleaning is performed by chaining `.dropna()` to remove any rows containing null values, followed by `.drop_duplicates()` to eliminate duplicate records. Once these operations are complete, a second timestamp is captured in `end_time` to determine the total runtime of the load-and-clean procedure.
+After loading, basic cleaning is performed by chaining `.dropna()` to remove any rows containing null values, followed by `.drop_duplicates()` to eliminate duplicate records. Once these operations finish, a second timestamp is captured in `end_time`, and `mem_after = process.memory_info().rss` is recorded. The difference between `mem_after` and `mem_before` yields the total process‐level memory consumed by the load‐and‐clean pipeline, while `end_time – start_time` gives the total runtime.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/34a9b102-e167-411e-8954-3599a2600487" alt="img">
+  <img src="https://github.com/user-attachments/assets/1eeb12fd-cbcb-4424-9a13-7ea636691db5" alt="img">
   <br>
   <strong>Figure 3.2: Data Loading and Processing (Pandas Traditional)</strong>
 </p>
 
 ### 3.3 Evaluate Performance
-The performance of the traditional pandas data loading was measured next, as shown in Figure 3.3.1. The total memory used by `df_pd` (in megabytes) was computed by summing all column memory usages (including object‐type columns) via `df_pd.memory_usage(deep=True).sum() / 1024**2`. Then, the duration of the loading step was calculated by subtracting `start_time` from `end_time`. Finally, both the peak memory usage (in MB) and the total execution time (in seconds) were displayed. It was observed that the full DataFrame load required approximately **2992.44 MB** of memory and completed in roughly **57.97 seconds** as shown in Figure 3.3.2, underscoring the need for optimization when handling very large CSV files.
+The performance of the traditional pandas data loading was measured next, as shown in **Figure 3.3.1**. The total memory consumed by the process (in megabytes) was computed by taking the difference between `mem_after` and `mem_before` (both obtained via `psutil.Process(os.getpid()).memory_info().rss`) and dividing by 1024². The duration of the loading step was determined by subtracting `start_time` from `end_time`. Finally, both the peak process memory increase (2992.44 MB) and the total execution time (57.97 seconds) were displayed, as shown in **Figure 3.3.2**, underscoring the need for optimization when handling very large CSV files.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/89ae47d1-f7fe-45cf-ad59-1628986b2ade" alt="img">
+  <img src="https://github.com/user-attachments/assets/9b172050-f6d4-4ee7-98d6-71f06de39394" alt="img">
   <br>
   <strong>Figure 3.3.1: Performance Evaluation (Pandas Traditional)</strong>
   <br>
-  <img src="https://github.com/user-attachments/assets/1c28c0ce-d39e-4233-9ce5-cdcca1578a16" alt="img">
+  <img src="https://github.com/user-attachments/assets/7d41d8dc-2204-42c4-90bd-fb825448b8d8" alt="img">
   <br>
   <strong>Figure 3.3.2: Performance Result (Pandas Traditional)</strong>
 </p>
@@ -108,5 +109,11 @@ The data inspection process is illustrated in Figure 3.4.1, where the DataFrame�
 ## 4.0 Apply Big Data Handling Strategies
 
 ## 5.0 Comparative Analysis
+
+<p align="center">
+  <img src="https://github.com/Jingyong14/HPDP02/blob/821b114892212b66271814036a7655823f1cadb5/2425/assignment/asgn2/submission/Group_Good%20Morning/figures/performance_chart.png" alt="performance evaluation chart">
+  <br>
+  <strong>Figure 5.1: Performance Comparison Chart</strong>
+</p>
 
 ## 6.0 Conclusion & Reflection

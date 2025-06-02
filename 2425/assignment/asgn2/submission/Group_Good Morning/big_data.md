@@ -107,7 +107,7 @@ The data inspection process is illustrated in Figure 3.4.1, where the DataFrameâ
 </p>
 
 ## 4.0 Apply Big Data Handling Strategies
-The goal of this project was to efficiently process large-scale datasets using Python. Given the dataset's significant size (2.955GB), conventional data loading methods risked high memory usage and slow processing speeds. To overcome these challenges, we implemented five optimization strategies across three Python libraries (Pandas, Dask, and Polars):
+The goal of this project was to efficiently process large-scale datasets using Python. Given the dataset's significant size (1.37GB), conventional data loading methods risked high memory usage and slow processing speeds. To overcome these challenges, we implemented five optimization strategies across three Python libraries (Pandas, Dask, and Polars):
 - Load Less Data
 - Use Chunking
 - Optimize Data Types
@@ -208,14 +208,25 @@ Figure 4.2.6 summarizes Dask's performance. With native multi-threading and chun
 #### 4.3.1 Load Less Data
 Figure 4.3.1 shows that pl.read_csv() with the columns parameter was used to load only required fields. Polars benefits from being columnar and supports extremely fast selective reads.
 
+
 #### 4.3.2 Chunking
 As shown in Figure 4.3.2, Polars does not use traditional chunking but relies on lazy evaluation through internal query optimization. Computations are only triggered when required, such as during .sample() or .collect() operations.
 
 #### 4.3.3 Optimize Data Types
 Refer to Figure 4.3.3, Polars uses schema_overrides to define efficient column types during CSV loading. Categorical and low-bit integer types (Int8, Int16) were applied for improved memory and speed performance.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6bc3e06d-8766-44c7-91d5-d63d448519eb" alt="img">
+  <br>
+  <strong>Figure 4.3.3: Optimized Data Types (Polars)</strong>
+</p>
 
 #### 4.3.4 Sampling
 In Figure 4.3.4, a 10% sample was selected using .sample(fraction=0.1). Polars handled this operation quickly and efficiently thanks to its multi-threaded engine.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/84bb1edb-fef3-4981-a458-11f3f7f6c2c3" alt="img">
+  <br>
+  <strong>Figure 4.3.4: Sampling (Polars)</strong>
+</p>
 
 #### 4.3.5 Parallel Processing
 Polars internally parallelizes operations such as drop_nulls() and unique() across threads. Figure 4.3.5 illustrates how efficient execution was achieved with minimal code and no manual parallelism setup.

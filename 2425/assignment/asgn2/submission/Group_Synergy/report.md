@@ -128,6 +128,49 @@ The figure 3.1.4 showcases the "Stratified Sampling" technique in pandas, where 
 
 The image 3.1.5 presents a comparison of five pandas optimization techniques based on execution time and memory usage. It highlights that selecting fewer columns is the fastest method, while chunking and full data loading take longer due to I/O overhead. In terms of memory efficiency, stratified sampling and data type optimization significantly reduce memory usage, whereas loading full data or unnecessary columns leads to the highest memory consumption. This comparison emphasizes the importance of choosing the right technique based on performance and resource constraints.
 
+## 3.2 Dask
+
+<div align="center">
+  <img src="Figures/fig9.png" width="800">
+  <p><strong>Figure 3.2.1 :</strong>
+</div>
+
+The figure 3.2.1 shows a strategy for optimizing data loading using Dask by selectively loading specific columns and leveraging lazy evaluation. This approach reduces memory usage, speeds up data processing, and enhances scalability when working with large datasets.
+
+<div align="center">
+  <img src="Figures/fig10.png" width="800">
+  <p><strong>Figure 3.2.2 :</strong>
+</div>
+
+The figure 3.2.2 shows a chunk-based data loading strategy using Dask, which efficiently processes large CSV files by breaking them into manageable parts. This approach reduces memory usage, speeds up initial data access, and supports scalability—making it ideal for handling datasets larger than RAM while enabling tasks like sampling, validation, or partial aggregation.
+
+<div align="center">
+  <img src="Figures/fig11.png" width="800">
+  <p><strong>Figure 3.2.3 :</strong>
+</div>
+
+The figure 3.2.3 shows a strategy using Dask to optimize data types for memory efficiency. By converting columns to types like category or float32, it significantly reduces memory usage and speeds up processing. This method is ideal for large datasets with repetitive values and is especially useful during preprocessing or in memory-constrained environments.
+
+<div align="center">
+  <img src="Figures/fig12.png" width="800">
+  <p><strong>Figure 3.2.4 :</strong>
+</div>
+
+The figure 3.2.4 shows a stratified sampling strategy using Dask, which selects a balanced subset of a large dataset while preserving the distribution of key categories (e.g., "Property Type"). This approach enhances memory efficiency, avoids sampling bias, and supports scalable, accurate analysis—ideal for tasks like model training or exploratory data analysis on large datasets.
+
+<div align="center">
+  <img src="Figures/fig13.png" width="800">
+  <p><strong>Figure 3.2.5 :</strong>
+</div>
+
+The figure 3.2.5 shows a parallel data cleaning and aggregation strategy using Dask, where essential columns are loaded, categorical values are standardized, and groupby operations are run in parallel. This approach improves speed, reduces memory usage, and ensures clean, consistent data—making it ideal for large-scale analysis like property price comparisons across categories.
+
+<div align="center">
+  <img src="Figures/fig14.png" width="800">
+  <p><strong>Figure 3.2.6 :</strong>
+</div>
+The figure 3.2.6 shows a performance comparison of various Dask optimization strategies, highlighting their trade-offs in execution time and memory usage.
+
 
 
 

@@ -19,6 +19,6 @@ We have chosen to work with the **2019 Airline Delays and Cancellations** datase
 
 | Submission Type  | Link |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Google Colab     | [Assignment 2 Coding](https://colab.research.google.com/drive/1NlzTNER8U7-cs_JU3uiAcacfS2X5L1nu?usp=sharing)                    |
-| Report           | [Full Report](https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_Good%20Morning/big_data.md) |
-| Log Book         | [Team Log Book](https://docs.google.com/spreadsheets/d/1xFHCE8I6gWkwpjX28rlTCTEgi7b80YWTh-QxOBBeU10/edit?usp=sharing)           |
+| Google Colab Coding | [Assignment 2 ipynb](https://colab.research.google.com/drive/1NlzTNER8U7-cs_JU3uiAcacfS2X5L1nu?usp=sharing)                  |
+| Full Report      | [Markdown Report](https://github.com/Jingyong14/HPDP02/blob/main/2425/assignment/asgn2/submission/Group_Good%20Morning/big_data.md) |
+| Log Book         | [Log Book xlsx](https://docs.google.com/spreadsheets/d/1xFHCE8I6gWkwpjX28rlTCTEgi7b80YWTh-QxOBBeU10/edit?usp=sharing)           |

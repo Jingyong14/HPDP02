@@ -39,5 +39,5 @@ The dataset selected for this assignment is the UK Housing Prices Paid dataset, 
 
 - **PDF Report:** 
 
-- **Logbook (Google Sheets):** [Logbook Sheet]()
+- **Logbook (Google Sheets):** [Logbook Sheet](https://docs.google.com/spreadsheets/d/1oqTxC9ZkO34-vFSHfbazOruI8u81NhiYI27lXw6ARQg/edit?gid=0#gid=0)
 

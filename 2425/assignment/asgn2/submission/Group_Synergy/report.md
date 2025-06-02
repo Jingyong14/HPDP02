@@ -175,45 +175,45 @@ The figure 3.2.6 shows a performance comparison of various Dask optimization str
 
 <div align="center">
   <img src="Figures/fig15.png" width="800">
-  <p><strong>Figure 3.2.6 :</strong>
+  <p><strong>Figure 3.3.1 :</strong>
 </div>
 
-The figure shows a data loading strategy using Polars, which efficiently reads only selected columns from a large CSV file. This approach delivers fast execution and low memory usage, offering a high-performance alternative to Dask or Pandas for quick, memory-efficient data access.
+The figure 3.3.1 shows a data loading strategy using Polars, which efficiently reads only selected columns from a large CSV file. This approach delivers fast execution and low memory usage, offering a high-performance alternative to Dask or Pandas for quick, memory-efficient data access.
 
 <div align="center">
   <img src="Figures/fig16.png" width="800">
-  <p><strong>Figure 3.2.6 :</strong>
+  <p><strong>Figure 3.3.2 :</strong>
 </div>
 
-This figure demonstrates the use of simulated chunking in Polars, where only the first 1 million rows of a large CSV file are loaded for processing. This method achieves ultra-fast loading, processing 1M rows in 1.25 seconds while consuming only 97.3 MB of memory, compared to the memory requirements of loading the entire dataset. By using the native n_rows parameter in Polars, this approach avoids out-of-memory errors, supports quick prototyping, and is ideal for efficient sampling and statistical analysis without the need for additional dependencies. It is also scalable, allowing for iterative processing of chunks to handle the full dataset.
+This figure 3.3.2 demonstrates the use of simulated chunking in Polars, where only the first 1 million rows of a large CSV file are loaded for processing. This method achieves ultra-fast loading, processing 1M rows in 1.25 seconds while consuming only 97.3 MB of memory, compared to the memory requirements of loading the entire dataset. By using the native n_rows parameter in Polars, this approach avoids out-of-memory errors, supports quick prototyping, and is ideal for efficient sampling and statistical analysis without the need for additional dependencies. It is also scalable, allowing for iterative processing of chunks to handle the full dataset.
 
 <div align="center">
   <img src="Figures/fig17.png" width="800">
-  <p><strong>Figure 3.2.6 :</strong>
+  <p><strong>Figure 3.3.3 :</strong>
 </div>
 
-This figure illustrates the strategy of optimizing memory usage in Polars by explicitly casting columns to more efficient data types. Numeric columns, such as "Price," are downcast to pl.Float32 or pl.Int32, while categorical columns like "Property Type" and "Duration" are converted to pl.Categorical. This approach leads to significant memory reduction, faster operations (especially during computations like groupby), and a cleaner, reproducible workflow by explicitly defining the data types for each column.
+This figure 3.3.3 illustrates the strategy of optimizing memory usage in Polars by explicitly casting columns to more efficient data types. Numeric columns, such as "Price," are downcast to pl.Float32 or pl.Int32, while categorical columns like "Property Type" and "Duration" are converted to pl.Categorical. This approach leads to significant memory reduction, faster operations (especially during computations like groupby), and a cleaner, reproducible workflow by explicitly defining the data types for each column.
 
 <div align="center">
   <img src="Figures/fig18.png" width="800">
-  <p><strong>Figure 3.2.6 :</strong>
+  <p><strong>Figure 3.3.4 :</strong>
 </div>
 
-This figure demonstrates the implementation of stratified sampling in Polars by property type, ensuring that all property categories (D, C, T, F, G) are proportionally represented in the subset. The key benefits include balanced representation, memory efficiency through optimized Polars operations, reproducibility with a fixed random seed (seed=42), and scalability, allowing the process to handle larger datasets more effectively than pandas. This strategy is crucial for maintaining statistical integrity in machine learning training sets and provides flexibility to adjust the sample size while minimizing memory usage with Polars' lazy evaluation and categorical data types.
+This figure 3.3.4 demonstrates the implementation of stratified sampling in Polars by property type, ensuring that all property categories (D, C, T, F, G) are proportionally represented in the subset. The key benefits include balanced representation, memory efficiency through optimized Polars operations, reproducibility with a fixed random seed (seed=42), and scalability, allowing the process to handle larger datasets more effectively than pandas. This strategy is crucial for maintaining statistical integrity in machine learning training sets and provides flexibility to adjust the sample size while minimizing memory usage with Polars' lazy evaluation and categorical data types.
 
 <div align="center">
   <img src="Figures/fig19.png" width="800">
-  <p><strong>Figure 3.2.6 :</strong>
+  <p><strong>Figure 3.3.5 :</strong>
 </div>
 
-This figure highlights the use of lazy evaluation and parallel processing in Polars to optimize a data transformation pipeline. The process involves reading specific columns from a CSV, converting text columns to categorical data types, grouping by property type, and computing the count and average price per group. Key benefits include lazy optimization, where Polars optimizes the entire query plan before execution, parallel processing that distributes the workload across CPU cores, and memory efficiency through categorical data types. Additionally, the method chaining syntax in Polars allows for a clean and expressive way to perform complex transformations efficiently.
+This figure 3.3.5 highlights the use of lazy evaluation and parallel processing in Polars to optimize a data transformation pipeline. The process involves reading specific columns from a CSV, converting text columns to categorical data types, grouping by property type, and computing the count and average price per group. Key benefits include lazy optimization, where Polars optimizes the entire query plan before execution, parallel processing that distributes the workload across CPU cores, and memory efficiency through categorical data types. Additionally, the method chaining syntax in Polars allows for a clean and expressive way to perform complex transformations efficiently.
 
 <div align="center">
   <img src="Figures/fig20.png" width="800">
-  <p><strong>Figure 3.2.6 :</strong>
+  <p><strong>Figure 3.3.6 :</strong>
 </div>
 
-This figure presents a performance benchmark comparing various Polars optimization strategies based on execution time and memory usage
+This figure 3.3.6 presents a performance benchmark comparing various Polars optimization strategies based on execution time and memory usage
 
 
 

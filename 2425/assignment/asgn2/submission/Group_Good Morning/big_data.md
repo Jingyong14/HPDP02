@@ -119,27 +119,41 @@ The goal of this project was to efficiently process large-scale datasets using P
 #### 4.1.1 Load Less Data
 Figure 3.1.1 shows that only the relevant columns (e.g., MONTH, DAY_OF_WEEK, DEP_DEL15, DEP_TIME_BLK, DISTANCE_GROUP, CARRIER_NAME, NUMBER_OF_SEATS, PLANE_AGE, DEPARTING_AIRPORT) were loaded using the usecols parameter in read_csv(). This minimized memory usage by avoiding unnecessary columns.
 
-
 #### 4.1.2 Chunking
 As shown in Figure 4.1.2, chunking was performed using the chunksize parameter with a size of 100,000 rows. Each chunk was cleaned by dropping null values before being appended to a list for final concatenation. This approach allowed the large dataset to be processed in smaller, memory-friendly batches.
+
 #### 4.1.3 Optimize Data Types
 Figure 4.1.3 illustrates the use of a dtype mapping during CSV reading to reduce memory consumption. Columns like DEP_TIME_BLK, CARRIER_NAME, and DEPARTING_AIRPORT were cast to the category type, while numeric columns were downcast to smaller integer types such as int8 and int16.
+
 #### 4.1.4 Sampling
 Figure 4.1.4 shows a random 10% sample was extracted using .sample(frac=0.1). This helped reduce computation time in downstream tasks such as modeling or visualization.
+
 #### 4.1.5 Parallel Processing
 Although Pandas is inherently single-threaded, some level of parallelism was indirectly achieved by cleaning and processing in chunks (Figure 4.1.2). However, the final concatenation and deduplication steps were executed sequentially, which may limit scalability.
+
 #### 4.1.6 Output
 Figure 4.1.6 presents the performance metrics: Pandas took approximately 23.57 seconds and consumed 2.05 MB of memory. This reflects its limitation in memory management and single-threaded processing, especially for larger datasets.
 
 
 ### 4.2 Dask 
+
 #### 4.2.1 Load Less Data
+As shown in Figure 4.2.1, only necessary columns were loaded using the usecols parameter in dd.read_csv(), similar to Pandas. However, Dask defers actual data loading until computation is triggered, thanks to its lazy evaluation strategy.
 
 #### 4.2.2 Chunking
+Figure 4.2.2 demonstrates that Dask automatically handles chunking by partitioning the data into manageable blocks (100MB in this case) via the blocksize parameter. This removes the need for manual chunk iteration.
+
 #### 4.2.3 Optimize Data Types
+Refer to Figure 4.2.3. Just like in Pandas, a dtype mapping was passed during CSV loading to optimize memory usage. Dask also supports the assume_missing=True flag to prevent type inference issues with nullable integers.
+
 #### 4.2.4 Sampling
+As illustrated in Figure 4.2.4, a 10% sample was taken using .sample(frac=0.1). The lazy computation ensures efficient performance, and actual data is only fetched when .compute() is called.
+
 #### 4.2.5 Parallel Processing
+Dask supports native parallelism. As shown in Figure 4.2.5, operations like dropna, deduplication, and sampling were executed across distributed partitions, then gathered using .compute(). This enabled faster processing for large files.
+
 #### 4.2.6 Output
+Figure 4.2.6 summarizes Dask's performance. With native multi-threading and chunked processing, Dask achieved better memory efficiency and execution time than Pandas. Actual results showed around 24.81 seconds runtime and 154.00 MB of memory usage.
 
 ### 4.3 Polars 
 #### 4.3.1 Load Less Data

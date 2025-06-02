@@ -56,44 +56,38 @@ This project explores multiple strategies for handling and processing large-scal
 
 ## 🧪 Tasks & Implementation
 
-### ✅ Task 1: Load and Inspect Data
+### Task 1: Dataset Selection
 
 
 
-### ⚙️ Task 2: Load Less Data
+### Task 2: Load and Inspect Data
 
 
 
-### 🔁 Task 3: Chunking
+### Task 3: Apply Big Data Handling Strategies
+| Task | Explanation | Code Snippet | Screenshot |
+|------|-------------|--------------|------------|
+| **3.1 Load Less Data** | Instead of loading the entire dataset, load only the required columns or rows using `usecols` and `nrows`. | ```python import pandas as pd df = pd.read_csv("large_dataset.csv", usecols=["id", "name"], nrows=1000) print(df.head()) ``` | ![3.1-output](images/3.1_output.png) |
+| **3.2 Use Chunking** | Process large datasets in smaller chunks to save memory using the `chunksize` parameter in `pandas.read_csv()`. | ```python import pandas as pd chunks = pd.read_csv("large_dataset.csv", chunksize=5000) for chunk in chunks: print(chunk.shape) ``` | ![3.2-output](images/3.2_output.png) |
+| **3.3 Optimize Data Types** | Reduce memory usage by converting columns to appropriate data types (e.g., `int8`, `category`). | ```python df = pd.read_csv("large_dataset.csv") df["id"] = df["id"].astype("int32") df["category"] = df["category"].astype("category") print(df.info()) ``` | ![3.3-output](images/3.3_output.png) |
+| **3.4 Sampling** | Load and analyze a representative subset of the dataset to perform quick analysis. | ```python import pandas as pd df = pd.read_csv("large_dataset.csv") sample_df = df.sample(frac=0.1, random_state=42) print(sample_df.head()) ``` | ![3.4-output](images/3.4_output.png) |
+| **3.5 Parallel Processing with Dask** | Use Dask to process data in parallel, making use of all CPU cores. Dask is similar to Pandas but supports lazy evaluation and parallelism. | ```python import dask.dataframe as dd ddf = dd.read_csv("large_dataset.csv") print(ddf.head()) ``` | ![3.5-output](images/3.5_output.png) |
 
 
 
-### ⚖️ Task 4: Optimize Data Types
+
+### Task 4: Comparative Analysis
 
 
 
-### 🧪 Task 5: Sampling
-
-
-
-### ⚡ Task 6: Parallel Processing with Dask
-
-
-
-### 🚀 Task 7: Parallel Processing with Modin
-
-
-
-### 📈 Task 8: Performance Benchmarking
-
-
-
-### 📊 Task 9: Visualisation & Table Summary
-
+### Task 5: Conclusion & Reflection
+- This assignment provided hands-on experience in managing and analysing large datasets.
+- Learned how to optimise performance by selecting only required data and processing in chunks.
+- Got familiar with **Dask** and **Modin** as tools for parallel and distributed data processing.
+- It is important to choose the right tool based on the **dataset size** and **processing goals**.
 
 
 ## 📌 Key Observations
-
 
 
 ---
@@ -104,13 +98,6 @@ This project explores multiple strategies for handling and processing large-scal
 |---------|--------------------------------------------------------|-----------------------------------------------|
 | Pandas  | Simple, fast for small/medium datasets                 | Cannot handle out-of-memory datasets          |
 | Dask    | Parallel, scalable to big data                         | Lazy execution, startup overhead              |
-| Modin   | Pandas-compatible, parallel execution                  | Requires Ray engine, overhead for small tasks |
+| Polars  | Pandas-compatible, parallel execution                  | Requires Ray engine, overhead for small tasks |
 
 ---
-
-## 💡 Reflections
-
-- This assignment provided hands-on experience in managing and analysing large datasets.
-- Learned how to optimise performance by selecting only required data and processing in chunks.
-- Got familiar with **Dask** and **Modin** as tools for parallel and distributed data processing.
-- It is important to choose the right tool based on the **dataset size** and **processing goals**.

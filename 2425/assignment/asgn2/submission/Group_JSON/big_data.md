@@ -1,5 +1,13 @@
 # Big Data Handling Analysis Report
 
+## 🧠 Assignment 2: Mastering Big Data Handling
+
+> **Group JSON**  
+> 👤 TIEW CHUAN SHEN — `A22EC0113`  
+> 👤 JOSEPH LAU YEO KAI — `A22EC0055`
+
+---
+
 ## 1. Dataset Description
 
 ### 1.1 Dataset Overview
@@ -7,7 +15,7 @@
 - **Source**: Kaggle (orvile/traffic-and-weather-datasets)
 - **Size**: >700MB
 - **Domain**: Transportation and Weather
-- **Records**: [To be filled after data inspection]
+- **Records**: 103681 record entries
 
 ### 1.2 Dataset Structure
 The dataset combines traffic and weather information, providing a comprehensive view of how weather conditions affect traffic patterns. This makes it an excellent candidate for big data analysis as it contains:

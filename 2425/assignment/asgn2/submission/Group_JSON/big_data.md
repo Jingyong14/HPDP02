@@ -127,22 +127,39 @@ result = ddf.compute()
 | Dask | 53.50mb | 6.25s | Yes |
 
 ### 4.2 Visualization
-[To be added: Performance comparison charts]
+  <div align="center">
+    <img src="output.png" alt="Output Result">
+    <p><strong>Figure 4.2.1:</strong> Performance Comparison Chart</p>
+  </div>
 
 ## 5. Conclusion and Reflection
 
 ### 5.1 Key Observations
-[To be filled after analysis]
+<p>Three data processing libraries including Pandas, Polars and Dask undergo a performance evaluation which investigates their time execution and memory usage together with processing simplicity. Performance results for the three libraries appear in bar chart format in Figure 6.0.1.</p>
+<p>The analysis of execution time reveals Polars as the swiftest library which completes the task within 5.08 seconds. The second fastest performer is Dask which demonstrates parallel processing efficiency by finishing the task in 6.25 seconds. The three libraries perform at different speeds with Pandas being the slowest as it requires 38.55 seconds to complete the task. Polars and Dask demonstrate better performance for this dataset and operations when compared to traditional single-threaded Pandas.</p>
+<p>Polars delivers the highest processing speed among the three libraries by handling 20401.15 rows every second. Dask processes data at a rate of 16586.01 rows per second through its parallel execution system. The processing speed of Pandas reaches only 95.46 rows per second because of its sequential row handling which is slower than the vectorized and parallel processing capabilities found in Polars and Dask.</p>
+<p>Dask demonstrates the best memory efficiency among all libraries based on the Memory Used (MB) Comparison because it consumes only 53.50 MB. Data storage outside of RAM becomes possible thanks to Dask's out-of-core processing design that enables it to manage datasets which exceed the installed RAM. Dask demonstrates lower memory requirements than Pandas because it occupies about 330.07 MB. The memory consumption of Polars reached its maximum point at 4817.09 MB during this particular dataset test case.</p>
+<p>The study reveals that Dask's off-core processing system proved more effective in reducing memory usage for this specific scenario compared to Polars despite Polars' general efficiency in processing memory through its columnar structure. Beginners who want to perform data manipulation in Python usually choose Pandas as the main library because of its accessible features. The library offers an easy-to-use API together with numerous community resources that enable users to perform standard data analysis on datasets of moderate size. Polars presents a contemporary API that strongly resembles Pandas but brings lazy evaluation together with expressions that demand users to learn new features for improved performance results. Although Dask serves as a robust computing tool for distributed and large-scale operations, users need to master delayed computation and compute() calls to execute operations which makes it suitable only for users who manage datasets demanding out-of-core or parallel processing techniques.</p>
+<p>The analysis indicates that each library demonstrates unique advantages in terms of performance. Polars leads the competition through its outstanding speed and in-memory operation capabilities. When comparing memory efficiency and scalability, Dask stands out as the top performer for handling datasets that surpass available RAM resources. Pandas demonstrates the slowest performance alongside poor memory efficiency in relation to the other libraries but it remains the most user-friendly choice for standard data operations. The best library selection depends on dataset dimensions together with available system power along with speed priorities and user experience with library programming styles.</p>
 
 ### 5.2 Benefits and Limitations
 #### Benefits
-- [To be filled after analysis]
+There are four benefits that can be noted from the optimized methods, which include load less, chunking, appropriate data type, sampling, and Dask. They are particularly:
+- **Memory Reduction**
+- **Processing Speed Improvement**
+- **Performance Impact**
+- **Parallel Processing Efficiency**
 
 #### Limitations
-- [To be filled after analysis]
+- Limited data
+- Data utilization is not maximized
 
 ### 5.3 Learning Outcomes
-[To be filled after analysis]
+● Understand big data processing strategies using three Python libraries, which are Pandas, Dask and Polars.
+
+● Know how to compare the performance metrics of each library.
+
+● Know how to analyze the efficiency of each library in the aspects of memory usage, execution time and throughput.
 
 ## 6. References
 1. Pandas Documentation: https://pandas.pydata.org/

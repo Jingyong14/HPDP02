@@ -30,41 +30,11 @@ This project explores multiple strategies for handling and processing large-scal
 
 #### 📊 Dataset Overview
 
-- **Source**: [NYC Yellow Taxi Trip Data - Kaggle](https://www.kaggle.com/datasets/elemento/nyc-yellow-taxi-trip-data)
+- **Source**: [SPOTIFY CHARTS - Kaggle]([)](https://www.kaggle.com/datasets/dhruvildave/spotify-charts?resource=download)
 - **Domain**: Transportation / Ride Hailing
-- **Total Size**: ~800MB+
-- **Files Used**: 
-  - yellow_tripdata_2016-01.csv
-  - yellow_tripdata_2016-02.csv
-  - yellow_tripdata_2016-03.csv
-  - yellow_tripdata_2025-01.csv
-- **Number of Records (Jan 2016)**: ~10.6 million
+- **Total Size**: ~3.4GB+
 
-#### 🧾 Dataset Details
 
-| Column Name              | Description                                              |
-|--------------------------|----------------------------------------------------------|
-| vendor_id                | Code indicating the provider                             |
-| tpep_pickup_datetime     | Date and time of pickup                                  |
-| tpep_dropoff_datetime    | Date and time of drop-off                                |
-| passenger_count          | Number of passengers                                     |
-| trip_distance            | Distance of the trip in miles                            |
-| ratecode_id              | Rate code identifier                                     |
-| store_and_fwd_flag       | Whether the trip was stored before sending               |
-| pu_location_id           | Pickup location ID                                       |
-| do_location_id           | Drop-off location ID                                     |
-| payment_type             | Type of payment                                          |
-| fare_amount              | Fare amount                                              |
-| extra                    | Additional charges                                       |
-| mta_tax                  | MTA tax                                                  |
-| tip_amount               | Tip given                                                |
-| tolls_amount             | Tolls paid                                               |
-| improvement_surcharge    | Surcharge fee                                            |
-| total_amount             | Total charged amount                                     |
-
-<br><br>
-
----
 
 ### Task 2: Load and Inspect Data
 

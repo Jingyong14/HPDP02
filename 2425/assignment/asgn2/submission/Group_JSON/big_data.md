@@ -42,10 +42,12 @@ path = kagglehub.dataset_download("orvile/traffic-and-weather-datasets")
 
 ### 2.2 Basic Inspection Results
 <div align="center">
+<img src="Inscpection code snippet.png" alt="Inspection Code Snippet">
+    <p><strong>Figure 2.2.1:</strong> Code Snippet to inspect the dataset</p>
 <img src="Basic Inspection Result 1.png" alt="Inspection Result">
-    <p><strong>Figure 2.2.1:</strong> File 1 Inspection</p>
+    <p><strong>Figure 2.2.2:</strong> File 1 Inspection</p>
 <img src="Basic Inspection Result 2.png" alt="Inspection Result">
-    <p><strong>Figure 2.2.2:</strong> File 2 Inspection</p>
+    <p><strong>Figure 2.2.3:</strong> File 2 Inspection</p>
 </div>
 
 ## 3. Big Data Handling Strategies

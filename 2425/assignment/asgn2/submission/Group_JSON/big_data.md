@@ -42,7 +42,7 @@ path = kagglehub.dataset_download("orvile/traffic-and-weather-datasets")
 
 ### 2.2 Basic Inspection Results
 <div align="center">
-<img src="Inscpection code snippet.png" alt="Inspection Code Snippet">
+<img src="Inspection code snippet.png" alt="Inspection Code Snippet">
     <p><strong>Figure 2.2.1:</strong> Code Snippet to inspect the dataset</p>
 <img src="Basic Inspection Result 1.png" alt="Inspection Result">
     <p><strong>Figure 2.2.2:</strong> File 1 Inspection</p>

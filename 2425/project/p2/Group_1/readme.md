@@ -3,6 +3,10 @@
   <br>
 </h1>
 
+<div align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3R5aWF6YW93emZoNG41bDhneXg4MGxxaDlhb2U5MXdiaXpkdXJlNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/13Nc3xlO1kGg3S/giphy.gif" width="300px" alt="Sentiment Analysis GIF">
+</div>
+<br>
 <table border="solid" align="center">
   <tr>
     <th>Name</th>

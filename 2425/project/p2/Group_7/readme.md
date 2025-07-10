@@ -30,11 +30,11 @@
 | **Date** | **Activities** | **Challenges** | **Decisions / Actions Taken** | **Team Contribution** |
 |----------|----------------|----------------|-------------------------------|------------------------|
 | **30 May 2025** | Formed team and discussed initial ideas | None | Chose Malaysian news sentiment as topic | All members participated |
-| **5 June 2025** | Collected data from news websites | Data volume too low | Switched to Twitter as source | Split roles: scraping vs API testing |
+| **5 June 2025** | Collected data from news websites | Data volume too low | Switched to Twitter as source | All members participated |
 | **10 June 2025** | Tested Twitter API | Faced rate limiting issues | Shifted to Reddit API | Reassigned roles: Reddit API + Kafka |
 | **16 June 2025** | Implemented Kafka producer/consumer for Reddit data | Reddit data unlabeled | Labeled Reddit posts and found Kaggle dataset | Combined Reddit + sentiment140 |
 | **18 June 2025** | Merged and cleaned datasets | Schema mismatches | Standardized format | One handled merging, rest assisted |
-| **20 June 2025** | NLP preprocessing of text data | Handling special tokens/emojis | Applied consistent cleaning pipeline | Led by NLP-focused member |
+| **20 June 2025** | NLP preprocessing of text data | Handling special tokens | Applied consistent cleaning pipeline | Led by NLP-focused member |
 | **25 June 2025** | Trained Naive Bayes & Logistic Regression | Tuning Logistic Regression | Selected Logistic Regression for deployment | Split model training + evaluation |
 | **26 June 2025** | Streamed Reddit data into Spark and classified in real time | Model loading issues in streaming | Successfully deployed real-time pipeline | 2 handled Spark, 2 testing |
 | **9 July 2025** | Connected to Elasticsearch & built Kibana dashboard | Performance lags | Optimized filters and indexing | Split between design and performance |

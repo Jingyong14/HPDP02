@@ -1,0 +1,26 @@
+FROM python:3.10-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    gcc \
+    g++ \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements first for better caching
+COPY requirements_model.txt /app/
+RUN pip install --no-cache-dir -r requirements_model.txt
+
+# Copy application files
+COPY model.py /app/
+
+# Create data and model directories
+RUN mkdir -p /app/data /app/model
+
+# Set environment variables for matplotlib (for headless plotting)
+ENV MPLBACKEND=Agg
+
+# Run the model training
+CMD ["python", "model.py"]

@@ -1,0 +1,11 @@
+{
+  "model_name": "Logistic Regression",
+  "accuracy": 0.7126039428197701,
+  "f1_score": 0.7141131258620543,
+  "precision": 0.7199453627540663,
+  "recall": 0.7126039428197701,
+  "training_time": 39.199591636657715,
+  "model_path": "model/best_sentiment_model_logistic_regression.pkl",
+  "vectorizer_path": "model/tfidf_vectorizer.pkl",
+  "classifier_path": "model/logistic_regression_classifier.pkl"
+}

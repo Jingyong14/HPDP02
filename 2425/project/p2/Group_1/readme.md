@@ -35,10 +35,21 @@
   <tr>
     <td>Full Report</td>
     <td align="center">
-      <a href=""><img src="https://github.com/user-attachments/assets/4f5391d9-f205-4dd6-8c08-1f8307bd55bf" width=24px height=23px></a>
+      <a href="">
+        <img src="https://github.com/user-attachments/assets/4f5391d9-f205-4dd6-8c08-1f8307bd55bf" width="24px" height="23px">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>System Architecture</td>
+    <td align="center">
+      <a href="https://www.flaticon.com/free-icon/img_8760611?term=image&page=1&position=31&origin=search&related_id=8760611" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/8760/8760611.png" width="24px" height="23px" alt="System Architecture Icon">
+      </a>
     </td>
   </tr>
 </table>
+
 
 # 1.0 Introduction
 

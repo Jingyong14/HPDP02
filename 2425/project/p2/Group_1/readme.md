@@ -40,7 +40,7 @@
     <td>Full Report</td>
     <td align="center">
       <a href="">
-        <img src="https://github.com/user-attachments/assets/4f5391d9-f205-4dd6-8c08-1f8307bd55bf" width="24px" height="23px">
+        <img src="https://github.com/user-attachments/assets/4f5391d9-f205-4dd6-8c08-1f8307bd55bf" width="24px" height="23px" alt="Full Report Icon">
       </a>
     </td>
   </tr>
@@ -52,7 +52,16 @@
       </a>
     </td>
   </tr>
+  <tr>
+    <td>Source Code</td>
+    <td align="center">
+      <a href="[https://github.com/Jingyong14/HPDP02](https://github.com/Jingyong14/HPDP02/tree/main/2425/project/p2/Group_1/docker-compose)" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/9679/9679659.png" width="24px" height="23px" alt="Source Code Icon">
+      </a>
+    </td>
+  </tr>
 </table>
+
 
 
 # 1.0 Introduction

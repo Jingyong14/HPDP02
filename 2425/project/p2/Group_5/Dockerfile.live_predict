@@ -1,0 +1,25 @@
+FROM bitnami/spark:3.5.0
+
+USER root
+WORKDIR /app
+
+# Install Python deps
+RUN pip install --no-cache-dir \
+      elasticsearch \
+      kafka-python \
+      pyspark \
+      tensorflow \
+      scikit-learn \
+      joblib \
+      nltk \
+      psutil 
+
+# Pre-download NLTK data
+RUN python -m nltk.downloader punkt punkt_tab stopwords
+
+# Copy in predictor
+COPY live_predict.py /app/
+
+# Run it
+CMD ["python", "live_predict.py"]
+

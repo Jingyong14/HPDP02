@@ -1,0 +1,24 @@
+FROM bitnami/spark:3.5.0
+
+USER root
+WORKDIR /app
+
+# Install Python deps
+RUN pip install --no-cache-dir \
+      elasticsearch \
+      pyspark \
+      tensorflow \
+      scikit-learn \
+      joblib \
+      nltk \
+      pandas
+
+# Pre-download NLTK data
+RUN python -m nltk.downloader punkt punkt_tab stopwords vader_lexicon
+
+# Copy in batch trainer
+COPY batch_trainer.py /app/
+
+# Run it
+CMD ["python", "batch_trainer.py"]
+

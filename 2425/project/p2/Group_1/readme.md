@@ -43,7 +43,7 @@
   <tr>
     <td>System Architecture</td>
     <td align="center">
-      <a href="2425/project/p2/Group_1/img/System Architecture .jpg" target="_blank">
+      <a href="https://github.com/Jingyong14/HPDP02/blob/main/2425/project/p2/Group_1/img/System%20Architecture%20.jpg" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/8760/8760611.png" width="24px" height="23px" alt="System Architecture Icon">
       </a>
     </td>

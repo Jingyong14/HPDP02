@@ -76,3 +76,20 @@
 This project details the design and development of a real-time sentiment analysis pipeline leveraging Apache technologies. The primary aim is to collect and analyze substantial volumes of online news data to discern user sentiments regarding a product, event, or social issue pertinent to Malaysia. The initiative provides a practical application for exploring natural language processing (NLP) techniques, developing machine learning or deep learning models for sentiment classification, and establishing a scalable system architecture. This system utilizes Apache Spark for big data processing and Apache Kafka for real-time data streaming. Insights derived from the processed data will be stored and visualized using tools such as Elasticsearch and Kibana.
 
 ---
+
+## 🎯 Objectives
+The primary goals of this project are:
+- To establish a real-time streaming pipeline that ingests news articles from Free Malaysia Today (FMT) utilizing Apache Kafka and Apache Spark.
+- To implement standard Natural Language Processing (NLP) techniques for preprocessing textual data.
+- To develop and deploy a sentiment classification model for news articles using machine learning or deep learning approaches.
+- To store and visualize the sentiment analysis results through Elasticsearch and Kibana dashboards for real-time monitoring.
+
+---
+
+## ⚙️ System Architecture
+
+The system architecture diagram illustrates the sentiment analysis workflow from FMT news through Kafka and Spark to a live dashboard.
+
+![Workflow Diagram](System_Architecture.png)
+
+---

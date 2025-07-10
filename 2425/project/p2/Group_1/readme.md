@@ -26,6 +26,20 @@
   </tr>
 </table>
 
+### Links for related documents:
+<table>
+  <tr>
+    <th>Documents</th>
+    <th>Links</th>
+  </tr>
+  <tr>
+    <td>Full Report</td>
+    <td align="center">
+      <a href=""><img src="https://github.com/user-attachments/assets/4f5391d9-f205-4dd6-8c08-1f8307bd55bf" width=24px height=23px></a>
+    </td>
+  </tr>
+</table>
+
 # 1.0 Introduction
 
 ## 1.1 Background

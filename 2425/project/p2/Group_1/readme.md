@@ -74,7 +74,7 @@
 - [5.0 Analysis & Results](#50-analysis--results)
 - [6.0 Optimization & Comparison](#60-optimization--comparison)
 - [7.0 Conclusion & Future Work](#70-conclusion--future-work)
-- [📚 References](#references)
+
 
 ---
 
@@ -225,9 +225,7 @@ Each component is containerized via `docker-compose`.
 
 ## 6.0 Optimization & Comparison
 
-- Compared models: Logistic Regression, Naive Bayes, SVM
-- TF-IDF + SVM gave best results for accuracy and F1
-- Future comparisons could include deep learning models or transformers with fine-tuning
+
 
 ---
 

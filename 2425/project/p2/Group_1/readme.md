@@ -62,40 +62,64 @@
   </tr>
 </table>
 
+## 📌 Table of Contents
 
+- [1.0 Introduction](#10-introduction)
+  - [1.1 Background](#11-background)
+  - [1.2 Objectives](#12-objectives)
+  - [1.3 Scopes](#13-scopes)
+- [2.0 Data Acquisition & Preprocessing](#20-data-acquisition--preprocessing)
+- [3.0 Sentiment Model Development](#30-sentiment-model-development)
+- [4.0 Apache System Architecture](#40-apache-system-architecture)
+- [5.0 Analysis & Results](#50-analysis--results)
+- [6.0 Optimization & Comparison](#60-optimization--comparison)
+- [7.0 Conclusion & Future Work](#70-conclusion--future-work)
+- [📚 References](#references)
 
-# 1.0 Introduction
+---
 
-## 1.1 Background
+## 1.0 Introduction
 
-This project aims to design and implement a scalable real-time sentiment analysis pipeline for processing YouTube comments related to Malaysian content. The primary objective is to extract and analyze public sentiment in response to videos covering topics such as politics, history, culture, and social issues. By categorizing user comments into positive, negative, or neutral sentiments, the system offers a data-driven perspective on audience engagement and emotional response.
+### 1.1 Background
 
-Real-time sentiment analysis holds significant value in the Malaysian context. It enables:
-- Content creators
-- Marketers
-- Media analysts
-- Policymakers
+This system monitors Malaysian YouTube videos covering politics, culture, and history. By analyzing comment sentiment in real-time, stakeholders gain timely feedback and public opinion tracking.
 
-to monitor evolving public discourse, assess reactions to key events, and align content strategies accordingly. This timely feedback mechanism supports more responsive and informed decision-making.
+### 1.2 Objectives
 
-## 1.2 Objectives
+- Build an end-to-end real-time data pipeline using Kafka & Spark.
+- Classify sentiments using a machine learning model.
+- Visualize sentiment trends and keyword insights over time.
 
-This project focuses on the development of a real-time sentiment analysis system designed to monitor and interpret public sentiment from Malaysian YouTube comments. The primary objectives are:
+### 1.3 Scopes
 
-1. **Data Pipeline Development**  
-   To build an end-to-end data pipeline capable of ingesting, processing, and analyzing large volumes of YouTube comment data in real time using big data technologies such as:
-   - Apache Kafka
-   - Apache Spark
+- **Platform**: YouTube only  
+- **Language**: English  
+- **Model Task**: 3-class sentiment (positive, negative, neutral)  
+- **Tech stack**: Apache Kafka, Spark, Elasticsearch, Kibana
 
-2. **Sentiment Classification**  
-   To accurately classify public sentiment into three categories:
-   - Positive
-   - Negative
-   - Neutral  
-   based on the textual content of user comments, using trained machine learning models.
+---
 
-3. **Trend Visualization**  
-   To track and visualize sentiment trends associated with specific videos over time, enabling stakeholders to observe how public opinion evolves in response to:
-   - Different content themes
-   - Events
-   - Viral topics
+## 2.0 Data Acquisition & Preprocessing
+
+### 📥 Data Sources
+- **Batch**: YouTube Data API (via `youtube_extractor.py`)
+- **Real-Time**: `youtube-comment-downloader`, `yt-dlp`, and `KafkaProducer`
+
+### 🛠️ Tools Used
+
+- `langdetect`, `re` (Python regex), Hugging Face `transformers`
+- Apache Kafka, PySpark, scikit-learn
+
+### 🧹 Data Cleaning Steps
+
+- Lowercasing, removing URLs/symbols
+- Tokenization and TF-IDF via pre-trained `tfidf_vectorizer.pkl`
+- Sentiment prediction via `svm_sentiment_model.pkl`
+
+---
+
+## 3.0 Sentiment Model Development
+
+- **Models tested**: Logistic Regression, Naive Bayes, SVM
+- **Training**: On 100k+ labeled comments (via Hugging Face transformer)
+- **Evaluation**: Accuracy & F1-score on holdout dataset

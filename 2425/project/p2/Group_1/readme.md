@@ -55,7 +55,7 @@
   <tr>
     <td>Source Code</td>
     <td align="center">
-      <a href="https://github.com/Jingyong14/HPDP02](https://github.com/Jingyong14/HPDP02/tree/main/2425/project/p2/Group_1/docker-compose" target="_blank">
+      <a href="https://github.com/Jingyong14/HPDP02/tree/main/2425/project/p2/Group_1/docker-compose" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/9679/9679659.png" width="24px" height="23px" alt="Source Code Icon">
       </a>
     </td>

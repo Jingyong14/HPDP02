@@ -25,22 +25,21 @@
 </table>
 
 
-## 🗓️ Progress Log (By Date)
-
-| **Date** | **Activities** | **Challenges** | **Decisions / Actions Taken** | **Team Contribution** |
-|----------|----------------|----------------|-------------------------------|------------------------|
-| **30 May 2025** | Formed team and discussed initial ideas | None | Chose Malaysian news sentiment as topic | All members participated |
-| **5 June 2025** | Collected data from news websites | Data volume too low | Switched to Twitter as source | All members participated |
-| **10 June 2025** | Tested Twitter API | Faced rate limiting issues | Shifted to Reddit API | Reassigned roles: Reddit API + Kafka |
-| **16 June 2025** | Implemented Kafka producer/consumer for Reddit data | Reddit data unlabeled | Labeled Reddit posts and found Kaggle dataset | Combined Reddit + sentiment140 |
-| **18 June 2025** | Merged and cleaned datasets | Schema mismatches | Standardized format | One handled merging, rest assisted |
-| **20 June 2025** | NLP preprocessing of text data | Handling special tokens | Applied consistent cleaning pipeline | Led by NLP-focused member |
-| **25 June 2025** | Trained Naive Bayes & Logistic Regression | Tuning Logistic Regression | Selected Logistic Regression for deployment | Split model training + evaluation |
-| **26 June 2025** | Streamed Reddit data into Spark and classified in real time | Model loading issues in streaming | Successfully deployed real-time pipeline | 2 handled Spark, 2 testing |
-| **9 July 2025** | Connected to Elasticsearch & built Kibana dashboard | Performance lags | Optimized filters and indexing | Split between design and performance |
-| **8 July 2025** | Compared batch vs streaming performance | Measuring accuracy and latency | Added results to final report | Split documentation and analysis |
-| **11 July 2025** | Finalized all deliverables | Formatting issues | Reviewed and corrected | Team collaboration |
-| **11 July 2025** | Submitted report and GitHub repo | - | Completed project! | ✅ All contributed |
+## 🗓️ Logbook
+| **Date**       | **Task / Description**                                                                 | **PIC**        | **Result**                                                                 |
+|----------------|----------------------------------------------------------------------------------------|----------------|---------------------------------------------------------------------------|
+| 30 May 2025    | Team formation and initial discussion                                                  | All members    | Decided to analyze Malaysian public sentiment; initially chose news data |
+| 5 June 2025    | Collected sentiment-related news data                                                  | Farah            | Found insufficient data for training; switched focus to Twitter           |
+| 10 June 2025    | Attempted to use Twitter API                                                           | Joseph    | Faced severe rate limiting; explored Reddit as alternative                |
+| 15 June 2025    | Implemented Reddit API with Apache Kafka producer & consumer                          | All  | Successfully streamed Reddit posts and saved into `.jsonl` format         |
+|  18June 2025    | Collected labeled dataset (Sentiment140) from Kaggle and began manual labeling Reddit | Farah, Chuan Shen         | Created combined dataset with both labeled Reddit + Kaggle data           |
+| 20 June 2025   | Performed data preprocessing (cleaning, tokenization, lowercasing)                     | Farah    | Completed data cleaning and ready for model training                      |
+| 25 June 2025   | Trained sentiment models (Naive Bayes and Logistic Regression)                         | All       | Selected Logistic Regression as final model due to higher performance     |
+| 26 June 2025   | Integrated sentiment model with Apache Spark for real-time streaming                   | Joseph   | Real-time classification of Reddit posts working as expected              |
+| 7 July 2025   | Connected Elasticsearch and designed Kibana dashboard                                  | All | Visualization of sentiment trends completed                               |
+| 8 July 2025   | Conducted performance comparison: batch vs streaming                                   | All       | Included accuracy, latency, and resource usage comparison in report       |
+| 11 July 2025   | Finalized all documentation and cleaned code                                           | All members    | Ready for submission                                                      |
+| 11 July 2025   | Submitted final report, code, dataset, and dashboard | All           | Project completed and submitted on e-learning and GitHub     
 
 
 ## 📄 Project Documentation

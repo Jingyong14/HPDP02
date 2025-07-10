@@ -179,25 +179,37 @@ Each component is containerized via `docker-compose`.
 
 ### 5.1 Visualizations
 
-1. **Pie Chart**  
+1. **Donut Chart**
+     <p align="center"> <img src="https://github.com/Jingyong14/HPDP02/raw/main/2425/project/p2/Group_1/img/Donut.png" alt="Sum of Likes Graph" width="250"/> </p>
+     
    > 98.51% of comments were negative, revealing high dissatisfaction.
 
-2. **Bar Chart - Monthly Likes**  
+3. **Bar Chart - Monthly Likes**
+  <p align="center"> <img src="https://github.com/Jingyong14/HPDP02/raw/main/2425/project/p2/Group_1/img/BarChart.png" alt="Sum of Likes Graph" width="250"/> </p>
+  
    > Peak likes in June 2025 suggest viral content or trending topics.
 
-3. **Treemap - Video Popularity**  
+4. **Treemap - Video Popularity**
+   <p align="center"> <img src="https://github.com/Jingyong14/HPDP02/raw/main/2425/project/p2/Group_1/img/TreeMap.png" alt="Sum of Likes Graph" width="250"/> </p>
+   
    > _"History of Malaysia in 12 Minutes"_ accounts for 47% of total views.
 
-4. **Likes per Video**  
+5. **Likes per Video**  
    > Historical and geopolitically themed videos received most likes.
 
-5. **Total Comment Count**  
+6. **Total Comment Count**
+   <p align="center"> <img src="https://github.com/Jingyong14/HPDP02/raw/main/2425/project/p2/Group_1/img/TotalYoutubeComment.png" alt="Sum of Likes Graph" width="250"/> </p>
+   
    > 7,181 filtered comments analyzed.
 
-6. **Word Cloud**  
+7. **Word Cloud**
+   <p align="center"> <img src="https://github.com/Jingyong14/HPDP02/raw/main/2425/project/p2/Group_1/img/CloudTag.png" alt="Sum of Likes Graph" width="250"/> </p>
+   
    > Highlights political and historical terms like “1957 merdeka” and “Brunei wrongly illustrated”.
 
-7. **Total Likes Summary**  
+8. **Total Likes Summary**
+   <p align="center"> <img src="https://github.com/Jingyong14/HPDP02/raw/main/2425/project/p2/Group_1/img/Sum%20of%20Likes" alt="Sum of Likes Graph" width="250"/> </p>
+   
    > Cumulative likes: **112,637,424**
 
 ---

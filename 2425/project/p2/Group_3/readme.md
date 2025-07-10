@@ -90,6 +90,7 @@ The primary goals of this project are:
 
 The system architecture diagram illustrates the sentiment analysis workflow from FMT news through Kafka and Spark to a live dashboard.
 
-![Workflow Diagram](System_Architecture.png)
+![System Architecture Diagram](https://github.com/Jingyong14/HPDP02/blob/main/2425/project/p2/Group_3/System%20Architecture.png)
+
 
 ---

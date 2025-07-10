@@ -1,5 +1,5 @@
 <h1 align="center">
-  Real-Time Sentiment Analysis of Youtube Comments
+  🎥 Real-Time Sentiment Analysis of YouTube Comments
   <br>
 </h1>
 
@@ -25,5 +25,3 @@
     <td>A22EC0244</td>
   </tr>
 </table>
-
----

@@ -1,0 +1,14 @@
+
+:: loading settings :: url = jar:file:/opt/bitnami/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+
+≡ƒôî Training Logistic Regression...
+≡ƒôî Training Naive Bayes...
+
+≡ƒôè Model Performance Comparison:
+≡ƒö╣ Logistic Regression Accuracy : 0.8240
+≡ƒö╣ Naive Bayes Accuracy         : 0.8050
+
+Γ£à Selected Best Model: Logistic Regression
+≡ƒÄ» Accuracy: 0.8240
+≡ƒôü Model saved to: /tmp/imdb_sentiment_model_logistic_regression_20250711_025652
+Γ£à Predictions written to Elasticsearch.

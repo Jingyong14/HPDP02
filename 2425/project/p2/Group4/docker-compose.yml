@@ -1,0 +1,97 @@
+version: '3.8'
+
+services:
+  # --- BATCH-PROCESSING SERICE ---
+  batch-processing:
+    build: ./batch_processing
+    container_name: batch-processing
+    depends_on:
+      - es01
+    networks:
+      - app-network
+
+  # --- SPARK SERVICE ---
+  spark-app:
+    build: ./realtime_processing/spark-app
+    container_name: spark-app
+    depends_on:
+      - kafka
+      - es01
+    networks:
+      - app-network
+
+  # --- KAFKA SERVICE ---
+  kafka:
+    image: bitnami/kafka:3.7
+    container_name: kafka
+    ports:
+      - "9092:9092"
+    environment:
+      # Kraft settings
+      - KAFKA_ENABLE_KRAFT=yes
+      - KAFKA_CFG_PROCESS_ROLES=broker,controller
+      - KAFKA_CFG_NODE_ID=1
+      - KAFKA_KRAFT_CLUSTER_ID=2Amy3LbxRDq70Q4bSspktA # Using your specific Cluster ID
+      - ALLOW_PLAINTEXT_LISTENER=yes
+
+      # --- CORRECTED LISTENER CONFIGURATION ---
+      # Explicitly name the controller listener
+      - KAFKA_CFG_CONTROLLER_LISTENER_NAMES=CONTROLLER
+      
+      # The controller will listen on port 9094
+      - KAFKA_CFG_CONTROLLER_QUORUM_VOTERS=1@kafka:9094
+
+      # Define all listeners: INTERNAL for Spark, EXTERNAL for your laptop, CONTROLLER for Kraft
+      - KAFKA_CFG_LISTENERS=INTERNAL://:9093,EXTERNAL://:9092,CONTROLLER://:9094
+      
+      # Define how services connect from inside and outside Docker
+      - KAFKA_CFG_ADVERTISED_LISTENERS=INTERNAL://kafka:9093,EXTERNAL://localhost:9092
+      
+      # Map listener names to security protocols
+      - KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=CONTROLLER:PLAINTEXT,INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT
+      
+      # Define the listener used for communication between brokers
+      - KAFKA_CFG_INTER_BROKER_LISTENER_NAME=INTERNAL
+
+      # Topic settings
+      - KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE=true
+    volumes:
+      - kafka_data:/bitnami/kafka
+    networks:
+      - app-network
+    
+  # --- ELASTICSEARCH AND KIBANA SERVICES ---
+  es01:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.5.3
+    container_name: es01
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    ports:
+      - "9200:9200"
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+    networks:
+      - app-network
+
+  kibana01:
+    image: docker.elastic.co/kibana/kibana:8.5.3
+    container_name: kibana01
+    ports:
+      - "5601:5601"
+    depends_on:
+      - es01
+    environment:
+      - ELASTICSEARCH_HOSTS=http://es01:9200
+    networks:
+      - app-network
+
+volumes:
+  esdata:
+    driver: local
+  kafka_data: # Renamed for clarity from your friend's config
+    driver: local
+
+networks:
+  app-network:
+    driver: bridge

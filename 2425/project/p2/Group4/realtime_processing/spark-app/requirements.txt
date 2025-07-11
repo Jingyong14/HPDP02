@@ -1,0 +1,5 @@
+kafka-python==2.0.2
+elasticsearch==8.5.3
+nltk
+scikit-learn
+pandas

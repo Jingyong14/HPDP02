@@ -1,0 +1,6 @@
+pyspark==3.4.1
+numpy
+pandas
+scikit-learn
+nltk
+elasticsearch

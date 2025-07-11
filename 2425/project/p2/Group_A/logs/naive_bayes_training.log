@@ -1,0 +1,244 @@
+2025-07-10 22:01:33,541 - INFO - ============================================================
+2025-07-10 22:01:33,569 - INFO -   Total rows: 3313
+2025-07-10 22:01:33,577 - INFO -   Missing values: 11932
+2025-07-10 22:01:33,578 - INFO -   positive: 2062 (62.2%)
+2025-07-10 22:01:33,578 - INFO -   neutral: 647 (19.5%)
+2025-07-10 22:01:33,578 - INFO -   negative: 604 (18.2%)
+2025-07-10 22:01:33,580 - INFO -   Mean: 279.0 characters
+2025-07-10 22:01:33,580 - INFO -   Median: 136.0 characters
+2025-07-10 22:01:33,580 - INFO -   Max: 4973 characters
+2025-07-10 22:01:33,585 - INFO -   positive: 2062 (62.2%)
+2025-07-10 22:01:33,585 - INFO -   neutral: 647 (19.5%)
+2025-07-10 22:01:33,585 - INFO -   negative: 604 (18.2%)
+2025-07-10 22:01:33,590 - INFO -   positive: 2062 (62.2%)
+2025-07-10 22:01:33,590 - INFO -   neutral: 647 (19.5%)
+2025-07-10 22:01:33,590 - INFO -   negative: 604 (18.2%)
+2025-07-10 22:01:33,593 - INFO - After removing NaN: 3313 rows
+2025-07-10 22:01:33,593 - INFO - After removing empty content: 3313 rows
+2025-07-10 22:07:14,214 - INFO - ============================================================
+2025-07-10 22:07:14,225 - INFO -   Total rows: 237
+2025-07-10 22:07:14,225 - INFO -   Missing values: 876
+2025-07-10 22:07:14,231 - INFO -   positive: 106 (44.7%)
+2025-07-10 22:07:14,231 - INFO -   neutral: 70 (29.5%)
+2025-07-10 22:07:14,231 - INFO -   negative: 61 (25.7%)
+2025-07-10 22:07:14,231 - INFO -   Mean: 132.0 characters
+2025-07-10 22:07:14,231 - INFO -   Median: 76.0 characters
+2025-07-10 22:07:14,231 - INFO -   Max: 2030 characters
+2025-07-10 22:07:14,235 - INFO -   positive: 106 (44.7%)
+2025-07-10 22:07:14,235 - INFO -   neutral: 70 (29.5%)
+2025-07-10 22:07:14,235 - INFO -   negative: 61 (25.7%)
+2025-07-10 22:07:14,240 - INFO -   positive: 106 (44.7%)
+2025-07-10 22:07:14,240 - INFO -   neutral: 70 (29.5%)
+2025-07-10 22:07:14,240 - INFO -   negative: 61 (25.7%)
+2025-07-10 22:07:14,240 - INFO - After removing NaN: 237 rows
+2025-07-10 22:07:14,240 - INFO - After removing empty content: 237 rows
+2025-07-10 22:07:16,254 - INFO - Final preprocessed dataset: 234 samples
+2025-07-10 22:07:16,254 - INFO -   positive: 106 (45.3%)
+2025-07-10 22:07:16,254 - INFO -   negative: 61 (26.1%)
+2025-07-10 22:07:16,254 - INFO -   neutral: 67 (28.6%)
+2025-07-10 22:07:16,260 - INFO - Label encoding: {'negative': 0, 'neutral': 1, 'positive': 2}
+2025-07-10 22:07:16,261 - INFO - Training set: 187, Test set: 47
+2025-07-10 22:07:16,264 - INFO -   positive: 85 (45.5%)
+2025-07-10 22:07:16,264 - INFO -   neutral: 53 (28.3%)
+2025-07-10 22:07:16,264 - INFO -   negative: 49 (26.2%)
+2025-07-10 22:07:16,264 - INFO - Training multinomial_tfidf model...
+2025-07-10 22:07:16,344 - INFO - multinomial_tfidf: Accuracy=0.511, F1=0.474, CV=0.397±0.071
+2025-07-10 22:07:16,344 - INFO - Training multinomial_count model...
+2025-07-10 22:07:16,423 - INFO - multinomial_count: Accuracy=0.468, F1=0.449, CV=0.438±0.050
+2025-07-10 22:07:16,423 - INFO - Training complement_tfidf model...
+2025-07-10 22:07:16,500 - INFO - complement_tfidf: Accuracy=0.404, F1=0.396, CV=0.421±0.084
+2025-07-10 22:07:16,500 - INFO - Best model: multinomial_tfidf
+2025-07-10 22:07:19,305 - INFO - Tuned model: Accuracy=0.532, F1=0.503
+2025-07-10 22:07:19,305 - INFO - Best parameters: {'classifier__alpha': 0.1}
+2025-07-10 22:07:19,314 - INFO - Models saved:
+2025-07-10 22:07:19,314 - INFO -   Best model: models/naive_bayes/naive_bayes_best_model_20250710_220719.pkl
+2025-07-10 22:07:19,314 - INFO -   Tuned model: models/naive_bayes/naive_bayes_tuned_model_20250710_220719.pkl
+2025-07-10 22:07:19,314 - INFO -   Label encoder: models/naive_bayes/label_encoder_20250710_220719.pkl
+2025-07-10 22:07:19,314 - INFO -   Vectorizer: models/naive_bayes/vectorizer_20250710_220719.pkl
+2025-07-10 22:07:19,314 - INFO -   Report: reports/naive_bayes_training_report_20250710_220719.json
+2025-07-10 22:27:44,892 - INFO - ============================================================
+2025-07-10 22:27:44,942 - INFO -   Total rows: 5957
+2025-07-10 22:27:44,946 - INFO -   Missing values: 5411
+2025-07-10 22:27:44,946 - INFO -   positive: 3633 (61.0%)
+2025-07-10 22:27:44,946 - INFO -   neutral: 1224 (20.5%)
+2025-07-10 22:27:44,946 - INFO -   negative: 1100 (18.5%)
+2025-07-10 22:27:44,952 - INFO -   Mean: 269.2 characters
+2025-07-10 22:27:44,952 - INFO -   Median: 129.0 characters
+2025-07-10 22:27:44,952 - INFO -   Max: 4973 characters
+2025-07-10 22:27:44,954 - INFO -   positive: 3633 (61.0%)
+2025-07-10 22:27:44,954 - INFO -   neutral: 1224 (20.5%)
+2025-07-10 22:27:44,954 - INFO -   negative: 1100 (18.5%)
+2025-07-10 22:27:44,963 - INFO -   positive: 3633 (61.0%)
+2025-07-10 22:27:44,963 - INFO -   neutral: 1224 (20.5%)
+2025-07-10 22:27:44,963 - INFO -   negative: 1100 (18.5%)
+2025-07-10 22:27:44,965 - INFO - After removing NaN: 5957 rows
+2025-07-10 22:27:44,965 - INFO - After removing empty content: 5957 rows
+2025-07-10 22:27:49,133 - INFO - Processed 1000/5957 content texts
+2025-07-10 22:27:54,877 - INFO - Processed 2000/5957 content texts
+2025-07-10 22:28:02,983 - INFO - Processed 3000/5957 content texts
+2025-07-10 22:28:09,933 - INFO - Processed 4000/5957 content texts
+2025-07-10 22:28:18,742 - INFO - Processed 5000/5957 content texts
+2025-07-10 22:28:26,284 - INFO - Final preprocessed dataset: 5935 samples
+2025-07-10 22:28:26,284 - INFO -   positive: 3631 (61.2%)
+2025-07-10 22:28:26,284 - INFO -   negative: 1100 (18.5%)
+2025-07-10 22:28:26,284 - INFO -   neutral: 1204 (20.3%)
+2025-07-10 22:28:26,293 - INFO - Label encoding: {'negative': 0, 'neutral': 1, 'positive': 2}
+2025-07-10 22:28:26,308 - INFO - Training set: 4748, Test set: 1187
+2025-07-10 22:28:26,316 - INFO -   positive: 2905 (61.2%)
+2025-07-10 22:28:26,316 - INFO -   neutral: 963 (20.3%)
+2025-07-10 22:28:26,316 - INFO -   negative: 880 (18.5%)
+2025-07-10 22:28:26,316 - INFO - Training multinomial_tfidf model...
+2025-07-10 22:28:33,733 - INFO - multinomial_tfidf: Accuracy=0.634, F1=0.521, CV=0.518±0.009
+2025-07-10 22:28:33,733 - INFO - Training multinomial_count model...
+2025-07-10 22:28:40,324 - INFO - multinomial_count: Accuracy=0.671, F1=0.644, CV=0.627±0.008
+2025-07-10 22:28:40,324 - INFO - Training complement_tfidf model...
+2025-07-10 22:28:48,189 - INFO - complement_tfidf: Accuracy=0.698, F1=0.674, CV=0.652±0.006
+2025-07-10 22:28:48,189 - INFO - Best model: complement_tfidf
+2025-07-10 22:28:51,325 - INFO - Tuned model: Accuracy=0.676, F1=0.614
+2025-07-10 22:28:51,325 - INFO - Best parameters: {'classifier__alpha': 0.1}
+2025-07-10 22:28:51,506 - INFO - Models saved:
+2025-07-10 22:28:51,506 - INFO -   Best model: models/naive_bayes/naive_bayes_best_model_20250710_222851.pkl
+2025-07-10 22:28:51,506 - INFO -   Tuned model: models/naive_bayes/naive_bayes_tuned_model_20250710_222851.pkl
+2025-07-10 22:28:51,506 - INFO -   Label encoder: models/naive_bayes/label_encoder_20250710_222851.pkl
+2025-07-10 22:28:51,506 - INFO -   Vectorizer: models/naive_bayes/vectorizer_20250710_222851.pkl
+2025-07-10 22:28:51,506 - INFO -   Report: reports/naive_bayes_training_report_20250710_222851.json
+2025-07-10 22:37:07,118 - INFO - ============================================================
+2025-07-10 22:37:07,167 - INFO -   Total rows: 5957
+2025-07-10 22:37:07,168 - INFO -   Missing values: 5411
+2025-07-10 22:37:07,168 - INFO -   positive: 3633 (61.0%)
+2025-07-10 22:37:07,168 - INFO -   neutral: 1224 (20.5%)
+2025-07-10 22:37:07,168 - INFO -   negative: 1100 (18.5%)
+2025-07-10 22:37:07,179 - INFO -   Mean: 269.2 characters
+2025-07-10 22:37:07,179 - INFO -   Median: 129.0 characters
+2025-07-10 22:37:07,179 - INFO -   Max: 4973 characters
+2025-07-10 22:37:07,185 - INFO -   positive: 3633 (61.0%)
+2025-07-10 22:37:07,185 - INFO -   neutral: 1224 (20.5%)
+2025-07-10 22:37:07,185 - INFO -   negative: 1100 (18.5%)
+2025-07-10 22:37:07,195 - INFO -   positive: 3633 (61.0%)
+2025-07-10 22:37:07,195 - INFO -   neutral: 1224 (20.5%)
+2025-07-10 22:37:07,195 - INFO -   negative: 1100 (18.5%)
+2025-07-10 22:37:07,198 - INFO - After removing NaN: 5957 rows
+2025-07-10 22:37:07,204 - INFO - After removing empty content: 5957 rows
+2025-07-10 22:37:11,278 - INFO - Processed 1000/5957 content texts
+2025-07-10 22:37:13,542 - INFO - Processed 2000/5957 content texts
+2025-07-10 22:37:16,118 - INFO - Processed 3000/5957 content texts
+2025-07-10 22:37:18,328 - INFO - Processed 4000/5957 content texts
+2025-07-10 22:37:21,093 - INFO - Processed 5000/5957 content texts
+2025-07-10 22:37:24,293 - INFO - Final preprocessed dataset: 5935 samples
+2025-07-10 22:37:24,297 - INFO -   positive: 3631 (61.2%)
+2025-07-10 22:37:24,297 - INFO -   negative: 1100 (18.5%)
+2025-07-10 22:37:24,298 - INFO -   neutral: 1204 (20.3%)
+2025-07-10 22:37:24,310 - INFO - Label encoding: {'negative': 0, 'neutral': 1, 'positive': 2}
+2025-07-10 22:37:24,322 - INFO - Training set: 4748, Test set: 1187
+2025-07-10 22:37:24,338 - INFO -   positive: 2905 (61.2%)
+2025-07-10 22:37:24,338 - INFO -   neutral: 963 (20.3%)
+2025-07-10 22:37:24,338 - INFO -   negative: 880 (18.5%)
+2025-07-10 22:37:24,338 - INFO - Training multinomial_tfidf model...
+2025-07-10 22:37:31,211 - INFO - multinomial_tfidf: Accuracy=0.634, F1=0.521, CV=0.518±0.009
+2025-07-10 22:37:31,211 - INFO - Training multinomial_count model...
+2025-07-10 22:37:38,197 - INFO - multinomial_count: Accuracy=0.671, F1=0.644, CV=0.627±0.008
+2025-07-10 22:37:38,198 - INFO - Training complement_tfidf model...
+2025-07-10 22:37:45,759 - INFO - complement_tfidf: Accuracy=0.698, F1=0.674, CV=0.652±0.006
+2025-07-10 22:37:45,759 - INFO - Best model: complement_tfidf
+2025-07-10 22:37:48,822 - INFO - Tuned model: Accuracy=0.676, F1=0.614
+2025-07-10 22:37:48,822 - INFO - Best parameters: {'classifier__alpha': 0.1}
+2025-07-10 22:37:49,027 - INFO - Models saved:
+2025-07-10 22:37:49,027 - INFO -   Best model: models/naive_bayes/naive_bayes_best_model_20250710_223748.pkl
+2025-07-10 22:37:49,027 - INFO -   Tuned model: models/naive_bayes/naive_bayes_tuned_model_20250710_223748.pkl
+2025-07-10 22:37:49,027 - INFO -   Label encoder: models/naive_bayes/label_encoder_20250710_223748.pkl
+2025-07-10 22:37:49,027 - INFO -   Vectorizer: models/naive_bayes/vectorizer_20250710_223748.pkl
+2025-07-10 22:37:49,027 - INFO -   Report: reports/naive_bayes_training_report_20250710_223748.json
+2025-07-10 23:08:59,142 - INFO - ============================================================
+2025-07-10 23:08:59,173 - INFO -   Total rows: 5957
+2025-07-10 23:08:59,184 - INFO -   Missing values: 5411
+2025-07-10 23:08:59,184 - INFO -   positive: 3633 (61.0%)
+2025-07-10 23:08:59,184 - INFO -   neutral: 1224 (20.5%)
+2025-07-10 23:08:59,184 - INFO -   negative: 1100 (18.5%)
+2025-07-10 23:08:59,184 - INFO -   Mean: 269.2 characters
+2025-07-10 23:08:59,184 - INFO -   Median: 129.0 characters
+2025-07-10 23:08:59,184 - INFO -   Max: 4973 characters
+2025-07-10 23:08:59,184 - INFO -   positive: 3633 (61.0%)
+2025-07-10 23:08:59,193 - INFO -   neutral: 1224 (20.5%)
+2025-07-10 23:08:59,193 - INFO -   negative: 1100 (18.5%)
+2025-07-10 23:08:59,193 - INFO -   positive: 3633 (61.0%)
+2025-07-10 23:08:59,193 - INFO -   neutral: 1224 (20.5%)
+2025-07-10 23:08:59,193 - INFO -   negative: 1100 (18.5%)
+2025-07-10 23:08:59,200 - INFO - After removing NaN: 5957 rows
+2025-07-10 23:08:59,200 - INFO - After removing empty content: 5957 rows
+2025-07-10 23:09:02,219 - INFO - Processed 1000/5957 content texts
+2025-07-10 23:09:04,033 - INFO - Processed 2000/5957 content texts
+2025-07-10 23:09:06,013 - INFO - Processed 3000/5957 content texts
+2025-07-10 23:09:07,608 - INFO - Processed 4000/5957 content texts
+2025-07-10 23:09:09,720 - INFO - Processed 5000/5957 content texts
+2025-07-10 23:09:11,278 - INFO - Final preprocessed dataset: 5935 samples
+2025-07-10 23:09:11,278 - INFO -   positive: 3631 (61.2%)
+2025-07-10 23:09:11,278 - INFO -   negative: 1100 (18.5%)
+2025-07-10 23:09:11,278 - INFO -   neutral: 1204 (20.3%)
+2025-07-10 23:09:11,283 - INFO - Label encoding: {'negative': 0, 'neutral': 1, 'positive': 2}
+2025-07-10 23:09:11,287 - INFO - Training set: 4748, Test set: 1187
+2025-07-10 23:09:11,289 - INFO -   positive: 2905 (61.2%)
+2025-07-10 23:09:11,290 - INFO -   neutral: 963 (20.3%)
+2025-07-10 23:09:11,290 - INFO -   negative: 880 (18.5%)
+2025-07-10 23:09:11,290 - INFO - Training multinomial_tfidf model...
+2025-07-10 23:09:13,113 - INFO - multinomial_tfidf: Accuracy=0.634, F1=0.521, CV=0.518±0.009
+2025-07-10 23:09:13,118 - INFO - Training multinomial_count model...
+2025-07-10 23:09:14,939 - INFO - multinomial_count: Accuracy=0.671, F1=0.644, CV=0.627±0.008
+2025-07-10 23:09:14,939 - INFO - Training complement_tfidf model...
+2025-07-10 23:09:16,578 - INFO - complement_tfidf: Accuracy=0.698, F1=0.674, CV=0.652±0.006
+2025-07-10 23:09:16,578 - INFO - Best model: complement_tfidf
+2025-07-10 23:09:22,032 - INFO - Tuned model: Accuracy=0.676, F1=0.614
+2025-07-10 23:09:22,032 - INFO - Best parameters: {'classifier__alpha': 0.1}
+2025-07-10 23:09:22,145 - INFO - Models and reports saved:
+2025-07-10 23:09:22,145 - INFO -   Best model: models/naive_bayes/naive_bayes_best_model_20250710_230922.pkl
+2025-07-10 23:09:22,145 - INFO -   Tuned model: models/naive_bayes/naive_bayes_tuned_model_20250710_230922.pkl
+2025-07-10 23:09:22,145 - INFO -   Label encoder: models/naive_bayes/label_encoder_20250710_230922.pkl
+2025-07-10 23:09:22,145 - INFO -   Vectorizer: models/naive_bayes/vectorizer_20250710_230922.pkl
+2025-07-10 23:09:22,145 - INFO -   Main report: reports/naive_bayes_training_report_20250710_230922.json
+2025-07-10 23:09:22,145 - INFO -   Detailed reports: reports/naive_bayes_*_20250710_230922.json
+2025-07-10 23:18:45,129 - INFO - ============================================================
+2025-07-10 23:18:45,180 - INFO -   Total rows: 5957
+2025-07-10 23:18:45,182 - INFO -   Missing values: 5411
+2025-07-10 23:18:45,184 - INFO -   positive: 3633 (61.0%)
+2025-07-10 23:18:45,184 - INFO -   neutral: 1224 (20.5%)
+2025-07-10 23:18:45,184 - INFO -   negative: 1100 (18.5%)
+2025-07-10 23:18:45,188 - INFO -   Mean: 269.2 characters
+2025-07-10 23:18:45,188 - INFO -   Median: 129.0 characters
+2025-07-10 23:18:45,189 - INFO -   Max: 4973 characters
+2025-07-10 23:18:45,194 - INFO -   positive: 3633 (61.0%)
+2025-07-10 23:18:45,194 - INFO -   neutral: 1224 (20.5%)
+2025-07-10 23:18:45,194 - INFO -   negative: 1100 (18.5%)
+2025-07-10 23:18:45,200 - INFO -   positive: 3633 (61.0%)
+2025-07-10 23:18:45,201 - INFO -   neutral: 1224 (20.5%)
+2025-07-10 23:18:45,201 - INFO -   negative: 1100 (18.5%)
+2025-07-10 23:18:45,205 - INFO - After removing NaN: 5957 rows
+2025-07-10 23:18:45,208 - INFO - After removing empty content: 5957 rows
+2025-07-10 23:18:49,069 - INFO - Processed 1000/5957 content texts
+2025-07-10 23:18:50,776 - INFO - Processed 2000/5957 content texts
+2025-07-10 23:18:52,699 - INFO - Processed 3000/5957 content texts
+2025-07-10 23:18:54,159 - INFO - Processed 4000/5957 content texts
+2025-07-10 23:18:56,124 - INFO - Processed 5000/5957 content texts
+2025-07-10 23:18:57,712 - INFO - Final preprocessed dataset: 5935 samples
+2025-07-10 23:18:57,713 - INFO -   positive: 3631 (61.2%)
+2025-07-10 23:18:57,713 - INFO -   negative: 1100 (18.5%)
+2025-07-10 23:18:57,713 - INFO -   neutral: 1204 (20.3%)
+2025-07-10 23:18:57,715 - INFO - Label encoding: {'negative': 0, 'neutral': 1, 'positive': 2}
+2025-07-10 23:18:57,719 - INFO - Training set: 4748, Test set: 1187
+2025-07-10 23:18:57,722 - INFO -   positive: 2905 (61.2%)
+2025-07-10 23:18:57,722 - INFO -   neutral: 963 (20.3%)
+2025-07-10 23:18:57,722 - INFO -   negative: 880 (18.5%)
+2025-07-10 23:18:57,722 - INFO - Training multinomial_tfidf model...
+2025-07-10 23:18:59,534 - INFO - multinomial_tfidf: Accuracy=0.634, F1=0.521, CV=0.518±0.009
+2025-07-10 23:18:59,534 - INFO - Training multinomial_count model...
+2025-07-10 23:19:01,312 - INFO - multinomial_count: Accuracy=0.671, F1=0.644, CV=0.627±0.008
+2025-07-10 23:19:01,312 - INFO - Training complement_tfidf model...
+2025-07-10 23:19:03,105 - INFO - complement_tfidf: Accuracy=0.698, F1=0.674, CV=0.652±0.006
+2025-07-10 23:19:03,105 - INFO - Best model: complement_tfidf
+2025-07-10 23:19:09,720 - INFO - Tuned model: Accuracy=0.676, F1=0.614
+2025-07-10 23:19:09,721 - INFO - Best parameters: {'classifier__alpha': 0.1}
+2025-07-10 23:19:09,868 - INFO - Models and reports saved:
+2025-07-10 23:19:09,868 - INFO -   Best model: models/naive_bayes/naive_bayes_best_model_20250710_231909.pkl
+2025-07-10 23:19:09,868 - INFO -   Tuned model: models/naive_bayes/naive_bayes_tuned_model_20250710_231909.pkl
+2025-07-10 23:19:09,868 - INFO -   Label encoder: models/naive_bayes/label_encoder_20250710_231909.pkl
+2025-07-10 23:19:09,868 - INFO -   Vectorizer: models/naive_bayes/vectorizer_20250710_231909.pkl
+2025-07-10 23:19:09,868 - INFO -   Main report: reports/naive_bayes_training_report_20250710_231909.json
+2025-07-10 23:19:09,868 - INFO -   Detailed reports: reports/naive_bayes_*_20250710_231909.json

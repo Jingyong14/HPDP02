@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-07-11T01:59:35.131582",
+  "naive_bayes": {
+    "accuracy": 0.6764953664700927,
+    "f1_score": 0.614470991739112,
+    "precision": 0.6855970661235585,
+    "recall": 0.6764953664700927,
+    "status": "available"
+  },
+  "lstm": {
+    "accuracy": 0.7298657894134521,
+    "f1_score": 0.711788268028911,
+    "precision": 0.7136431682436993,
+    "recall": 0.7298657718120806,
+    "status": "available"
+  },
+  "pipeline_duration": "0:00:00.402080",
+  "data_source": "integrated_collection_with_vader"
+}

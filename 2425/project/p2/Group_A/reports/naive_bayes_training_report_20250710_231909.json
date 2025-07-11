@@ -1,0 +1,78 @@
+{
+  "timestamp": "20250710_231909",
+  "model_path": "models/naive_bayes/naive_bayes_tuned_model_20250710_231909.pkl",
+  "label_encoder": "models/naive_bayes/label_encoder_20250710_231909.pkl",
+  "vectorizer": "models/naive_bayes/vectorizer_20250710_231909.pkl",
+  "labels": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "test_accuracy": 0.6764953664700927,
+  "confusion_matrix": [
+    [
+      110,
+      14,
+      96
+    ],
+    [
+      55,
+      70,
+      116
+    ],
+    [
+      42,
+      36,
+      648
+    ]
+  ],
+  "classification_report": {
+    "negative": {
+      "precision": 0.6829268292682927,
+      "recall": 0.2545454545454545,
+      "f1-score": 0.37086092715231783,
+      "support": 220.0
+    },
+    "neutral": {
+      "precision": 0.7258064516129032,
+      "recall": 0.18672199170124482,
+      "f1-score": 0.297029702970297,
+      "support": 241.0
+    },
+    "positive": {
+      "precision": 0.673058485139022,
+      "recall": 0.9669421487603306,
+      "f1-score": 0.7936687394007913,
+      "support": 726.0
+    },
+    "accuracy": 0.6764953664700927,
+    "macro avg": {
+      "precision": 0.693930588673406,
+      "recall": 0.4694031983356766,
+      "f1-score": 0.48718645650780207,
+      "support": 1187.0
+    },
+    "weighted avg": {
+      "precision": 0.6855970661235585,
+      "recall": 0.6764953664700927,
+      "f1-score": 0.614470991739112,
+      "support": 1187.0
+    }
+  },
+  "strategy": "CSV with VADER sentiment labels",
+  "input_format": {
+    "file_type": "CSV",
+    "content_column": "content",
+    "label_column": "sentiment_label"
+  },
+  "data_source": "malaysia_tourism_data_collector_with_vader",
+  "model_type": "naive_bayes",
+  "best_model_name": "complement_tfidf",
+  "hyperparameters": {
+    "classifier__alpha": 0.1
+  },
+  "cv_score": 0.5846090349607291,
+  "f1_score": 0.614470991739112,
+  "precision": 0.6855970661235585,
+  "recall": 0.6764953664700927
+}

@@ -1,0 +1,56 @@
+2025-07-10 21:48:23,669 - INFO - SETUP: Pipeline directories created/verified
+2025-07-10 21:48:23,671 - INFO - STARTING: Malaysian Tourism Sentiment Analysis Batch Pipeline
+2025-07-10 21:48:23,671 - INFO - ======================================================================
+2025-07-10 21:48:23,671 - INFO - Pipeline Configuration:
+2025-07-10 21:48:23,672 - INFO -   Skip Data Collection: False
+2025-07-10 21:48:23,672 - INFO -   Skip Naive Bayes: False
+2025-07-10 21:48:23,672 - INFO -   Skip LSTM: False
+2025-07-10 21:48:23,674 - INFO -   Data File: data/raw/malaysia_tourism_data.csv
+2025-07-10 21:48:23,674 - INFO -   Minimum Samples: 100
+2025-07-10 21:48:23,674 - INFO - ======================================================================
+2025-07-10 21:48:23,674 - INFO - ============================================================
+2025-07-10 21:48:23,674 - INFO - STAGE START: Data Collection
+2025-07-10 21:48:23,674 - INFO - ============================================================
+2025-07-10 21:48:23,674 - INFO - EXECUTING: Running data_collector.py...
+2025-07-10 22:01:22,538 - INFO - INTERRUPTED: Pipeline stopped by user
+2025-07-10 22:01:28,648 - INFO - SETUP: Pipeline directories created/verified
+2025-07-10 22:01:28,648 - INFO - STARTING: Malaysian Tourism Sentiment Analysis Batch Pipeline
+2025-07-10 22:01:28,648 - INFO - ======================================================================
+2025-07-10 22:01:28,648 - INFO - Pipeline Configuration:
+2025-07-10 22:01:28,648 - INFO -   Skip Data Collection: False
+2025-07-10 22:01:28,648 - INFO -   Skip Naive Bayes: False
+2025-07-10 22:01:28,648 - INFO -   Skip LSTM: False
+2025-07-10 22:01:28,648 - INFO -   Data File: data/raw/malaysia_tourism_data.csv
+2025-07-10 22:01:28,648 - INFO -   Minimum Samples: 100
+2025-07-10 22:01:28,648 - INFO - ======================================================================
+2025-07-10 22:01:28,648 - INFO - ============================================================
+2025-07-10 22:01:28,648 - INFO - STAGE START: Data Collection
+2025-07-10 22:01:28,648 - INFO - ============================================================
+2025-07-10 22:01:28,653 - INFO - SKIP: Recent data file exists (age: 0:00:09.314942)
+2025-07-10 22:01:28,653 - INFO - Use --force-collection to override
+2025-07-10 22:01:28,863 - INFO - STAGE END: Data Collection - SUCCESS
+2025-07-10 22:01:28,863 - INFO - Duration: 0:00:00.210490
+2025-07-10 22:01:28,866 - INFO - Details: Using existing data: 3313 samples
+2025-07-10 22:01:28,866 - INFO - ============================================================
+2025-07-10 22:01:28,866 - INFO - ============================================================
+2025-07-10 22:01:28,866 - INFO - STAGE START: Naive Bayes Training
+2025-07-10 22:01:28,868 - INFO - ============================================================
+2025-07-10 22:01:28,868 - INFO - EXECUTING: Running train_naive_bayes_model.py...
+2025-07-10 22:01:37,390 - INFO - INTERRUPTED: Pipeline stopped by user
+2025-07-10 22:02:02,069 - INFO - SETUP: Pipeline directories created/verified
+2025-07-10 22:02:02,069 - INFO - STARTING: Malaysian Tourism Sentiment Analysis Batch Pipeline
+2025-07-10 22:02:02,069 - INFO - ======================================================================
+2025-07-10 22:02:02,069 - INFO - Pipeline Configuration:
+2025-07-10 22:02:02,069 - INFO -   Skip Data Collection: False
+2025-07-10 22:02:02,069 - INFO -   Skip Naive Bayes: False
+2025-07-10 22:02:02,069 - INFO -   Skip LSTM: False
+2025-07-10 22:02:02,069 - INFO -   Data File: data/raw/malaysia_tourism_data.csv
+2025-07-10 22:02:02,069 - INFO -   Minimum Samples: 100
+2025-07-10 22:02:02,069 - INFO - ======================================================================
+2025-07-10 22:02:02,073 - INFO - ============================================================
+2025-07-10 22:02:02,073 - INFO - STAGE START: Data Collection
+2025-07-10 22:02:02,073 - INFO - ============================================================
+2025-07-10 22:02:02,073 - INFO - EXECUTING: Running data_collector.py...
+2025-07-10 22:02:02,073 - INFO - 📊 Real-time data collection output:
+2025-07-10 22:02:02,073 - INFO - --------------------------------------------------
+2025-07-10 22:02:41,288 - INFO - INTERRUPTED: Pipeline stopped by user

@@ -1,0 +1,16 @@
+2025-07-10 21:48:27,631 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-07-10 21:48:27,631 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-07-10 21:48:29,651 - __main__ - INFO -   Output format: CSV with VADER sentiment analysis
+2025-07-10 21:48:29,651 - __main__ - INFO -   Subreddits: ['malaysia', 'malaysiatravel', 'travel', 'solotravel', 'backpacking', 'TravelNoPics', 'digitalnomad', 'AsiaTravel', 'KualaLumpur', 'MalaysianFood']
+2025-07-10 21:48:29,658 - __main__ - INFO -   Keywords: 22 Malaysian tourism terms
+2025-07-10 21:48:29,658 - __main__ - INFO -   Max posts: 800, Max comments per post: 15
+2025-07-10 21:48:29,660 - __main__ - INFO -   Strategies: ['hot', 'new', 'top', 'search']
+2025-07-10 21:48:29,671 - __main__ - INFO - ============================================================
+2025-07-10 22:02:05,219 - kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-07-10 22:02:05,219 - kafka.conn - INFO - Probing node bootstrap-0 broker version
+2025-07-10 22:02:07,253 - __main__ - INFO -   Output format: CSV with VADER sentiment analysis
+2025-07-10 22:02:07,253 - __main__ - INFO -   Subreddits: ['malaysia', 'malaysiatravel', 'travel', 'solotravel', 'backpacking', 'TravelNoPics', 'digitalnomad', 'AsiaTravel', 'KualaLumpur', 'MalaysianFood']
+2025-07-10 22:02:07,253 - __main__ - INFO -   Keywords: 22 Malaysian tourism terms
+2025-07-10 22:02:07,253 - __main__ - INFO -   Max posts: 800, Max comments per post: 15
+2025-07-10 22:02:07,253 - __main__ - INFO -   Strategies: ['hot', 'new', 'top', 'search']
+2025-07-10 22:02:07,269 - __main__ - INFO - ============================================================

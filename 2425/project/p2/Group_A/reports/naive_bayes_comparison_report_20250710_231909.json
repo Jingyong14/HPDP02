@@ -1,0 +1,93 @@
+{
+  "timestamp": "20250710_231909",
+  "comparison_type": "naive_bayes_configurations",
+  "configurations": {
+    "multinomial_tfidf": {
+      "test_accuracy": 0.6343723673125526,
+      "precision": 0.6871140694177784,
+      "recall": 0.6343723673125526,
+      "f1_score": 0.5206197753250271,
+      "cv_mean": 0.5177610295413195,
+      "cv_std": 0.008738469740219553,
+      "vectorizer_type": "tfidf",
+      "classifier_type": "multinomial"
+    },
+    "multinomial_count": {
+      "test_accuracy": 0.6714406065711879,
+      "precision": 0.6607197581901353,
+      "recall": 0.6714406065711879,
+      "f1_score": 0.6441559894697537,
+      "cv_mean": 0.6265704981872583,
+      "cv_std": 0.00821726161566351,
+      "vectorizer_type": "count",
+      "classifier_type": "multinomial"
+    },
+    "complement_tfidf": {
+      "test_accuracy": 0.6975568660488627,
+      "precision": 0.6777793631282685,
+      "recall": 0.6975568660488627,
+      "f1_score": 0.6740206367223958,
+      "cv_mean": 0.6520907086454958,
+      "cv_std": 0.006265225501938153,
+      "vectorizer_type": "tfidf",
+      "classifier_type": "complement"
+    }
+  },
+  "best_configuration": {
+    "name": "complement_tfidf",
+    "f1_score": 0.6740206367223958,
+    "details": {
+      "test_accuracy": 0.6975568660488627,
+      "precision": 0.6777793631282685,
+      "recall": 0.6975568660488627,
+      "f1_score": 0.6740206367223958,
+      "cv_mean": 0.6520907086454958,
+      "cv_std": 0.006265225501938153,
+      "vectorizer_type": "tfidf",
+      "classifier_type": "complement"
+    }
+  },
+  "summary": {
+    "total_configurations": 3,
+    "metrics_summary": {
+      "accuracy": {
+        "min": 0.6343723673125526,
+        "max": 0.6975568660488627,
+        "mean": 0.6677899466442011,
+        "std": 0.02592380770085768
+      },
+      "f1_score": {
+        "min": 0.5206197753250271,
+        "max": 0.6740206367223958,
+        "mean": 0.6129321338390589,
+        "std": 0.06640357891810016
+      },
+      "precision": {
+        "min": 0.6607197581901353,
+        "max": 0.6871140694177784,
+        "mean": 0.6752043969120608,
+        "std": 0.010928182360495897
+      },
+      "recall": {
+        "min": 0.6343723673125526,
+        "max": 0.6975568660488627,
+        "mean": 0.6677899466442011,
+        "std": 0.02592380770085768
+      }
+    },
+    "configuration_ranking": [
+      [
+        "complement_tfidf",
+        0.6740206367223958
+      ],
+      [
+        "multinomial_count",
+        0.6441559894697537
+      ],
+      [
+        "multinomial_tfidf",
+        0.5206197753250271
+      ]
+    ]
+  }
+}

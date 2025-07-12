@@ -39,7 +39,7 @@
   <tr>
     <td>Full Report</td>
     <td align="center">
-      <a href="">
+      <a href="https://github.com/Jingyong14/HPDP02/blob/56e5149cc45e8f258919780f79cce34d9396ca14/2425/project/p2/Group_1/Project%202_Group%201.pdf">
         <img src="https://github.com/user-attachments/assets/4f5391d9-f205-4dd6-8c08-1f8307bd55bf" width="24px" height="23px" alt="Full Report Icon">
       </a>
     </td>
@@ -47,7 +47,7 @@
   <tr>
     <td>System Architecture</td>
     <td align="center">
-      <a href="https://github.com/Jingyong14/HPDP02/blob/main/2425/project/p2/Group_1/img/System%20Architecture%20.jpg" target="_blank">
+      <a href="https://github.com/Jingyong14/HPDP02/blob/56e5149cc45e8f258919780f79cce34d9396ca14/2425/project/p2/Group_1/System%20Architecture_Group%201.png" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/8760/8760611.png" width="24px" height="23px" alt="System Architecture Icon">
       </a>
     </td>
@@ -120,7 +120,7 @@ This system monitors Malaysian YouTube videos covering politics, culture, and hi
 
 ## 3.0 Sentiment Model Development
 
-- **Models tested**: Logistic Regression, Naive Bayes, SVM
+- **Models tested**: Logistic Regression, Naive Bayes
 - **Training**: On 100k+ labeled comments (via Hugging Face transformer)
 - **Evaluation**: Accuracy & F1-score on holdout dataset
 ---

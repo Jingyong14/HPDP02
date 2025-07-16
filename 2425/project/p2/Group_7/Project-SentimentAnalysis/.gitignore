@@ -1,0 +1,105 @@
+# =============================================================================
+# Project-SentimentAnalysis .gitignore
+# =============================================================================
+
+# Environment Variables & Credentials
+.env
+.env.local
+.env.production
+*.pem
+*.key
+
+# Python Runtime Files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Data Files (Raw and Processed)
+data/raw_data/*.jsonl
+data/raw_data/*.json
+data/raw_data/*.csv
+data/cleaned_data.csv
+data/processed_data/
+data/temp/
+data/cache/
+data/staging/
+
+# Machine Learning Model Files
+data/trained_model/
+models/trained/
+models/checkpoints/
+*.pkl
+*.joblib
+*.model
+*.h5
+*.pb
+
+# Kafka Runtime Data
+kafka_spark_pipeline/data/
+kafka_spark_pipeline/logs/
+kafka_spark_pipeline/checkpoints/
+
+# Spark Runtime Files
+spark-warehouse/
+metastore_db/
+derby.log
+*.log
+
+# Jupyter Notebook Files
+.ipynb_checkpoints/
+notebooks/checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs and Temporary Files
+*.log
+logs/
+tmp/
+temp/
+.tmp/
+
+# Docker (if used)
+.dockerignore
+docker-compose.override.yml
+
+# Elasticsearch/Kibana (if running locally)
+elasticsearch/
+kibana/

@@ -1,0 +1,24 @@
+# Dockerfile for Real-Time Producer
+FROM python:3.9-slim
+
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    gcc \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy shared modules
+COPY shared/ ./shared/
+
+# Copy realtime producer code
+COPY realtime/reddit_realtime_producer.py .
+
+# Set environment variables
+ENV PYTHONPATH=/app:/app/shared
+
+CMD ["python", "reddit_realtime_producer.py"]

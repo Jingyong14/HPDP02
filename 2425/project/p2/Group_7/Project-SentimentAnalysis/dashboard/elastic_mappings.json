@@ -1,0 +1,50 @@
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 0
+  },
+  "mappings": {
+    "properties": {
+      "id": {
+        "type": "keyword"
+      },
+      "title": {
+        "type": "text",
+        "analyzer": "standard"
+      },
+      "clean_text": {
+        "type": "text",
+        "analyzer": "standard"
+      },
+      "author": {
+        "type": "keyword"
+      },
+      "subreddit": {
+        "type": "keyword"
+      },
+      "score": {
+        "type": "integer"
+      },
+      "sentiment_score": {
+        "type": "integer"
+      },
+      "sentiment_label": {
+        "type": "keyword"
+      },
+      "confidence": {
+        "type": "float"
+      },
+      "processed_timestamp": {
+        "type": "date",
+        "format": "strict_date_optional_time||epoch_millis"
+      },
+      "created_date": {
+        "type": "date",
+        "format": "strict_date_optional_time"
+      },
+      "@timestamp": {
+        "type": "date"
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+# Dockerfile for Batch Consumer
+FROM bitnami/spark:3.3.0
+
+USER root
+
+# Install Python packages
+COPY requirements.txt /tmp/
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
+
+# Copy shared modules
+COPY shared/ /app/shared/
+
+# Copy batch consumer code
+COPY batch/spark_batch_consumer.py /app/
+
+# Set working directory
+WORKDIR /app
+
+# Set environment variables
+ENV PYTHONPATH=/app:/app/shared
+
+CMD ["python", "spark_batch_consumer.py"]

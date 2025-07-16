@@ -1,0 +1,22 @@
+# Dockerfile for Real-Time Consumer
+FROM bitnami/spark:3.3.0
+
+USER root
+
+# Install Python packages
+COPY requirements.txt /tmp/
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
+
+# Copy shared modules
+COPY shared/ /app/shared/
+
+# Copy realtime consumer code
+COPY realtime/spark_realtime_consumer.py /app/
+
+# Set working directory
+WORKDIR /app
+
+# Set environment variables
+ENV PYTHONPATH=/app:/app/shared
+
+CMD ["python", "spark_realtime_consumer.py"]

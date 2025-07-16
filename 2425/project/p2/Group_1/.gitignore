@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.env
+.venv
+venv/
+ENV/
+env/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Docker
+*.log
+docker-compose/*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Other
+*.bak
+*.swp
+*.tmp
+*.out
+*.log
+
+# Ignore requirements lock files
+poetry.lock
+Pipfile.lock
+
+# Ignore test outputs
+test-results/
+coverage/
+
+# Ignore Spark checkpoints
+spark-checkpoint/
+/tmp/spark_checkpoint
